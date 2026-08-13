@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.213`
+## 📥 Download da Última Versão: `v2.3.214`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.213.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.213.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.214.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.214.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.213.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.213.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.214.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.214.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,15 +45,16 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.213:
-**Resumo:** Corrigimos o isolamento dos containers dos agentes: cada agente agora enxerga apenas os containers que ele mesmo criou, sem acesso aos projetos do usuário ou de outros agentes.
+### 🌟 Notas do Release v2.3.214:
+**Resumo:** Corrigimos a forma como as ações dos agentes são gravadas na memória de longo prazo, garantindo que cada agente fique com as próprias informações, sem mistura de nomes ou sessões. Também deixamos o processo de atualização mais rápido e enxuto.
 
 **Destaques:**
-- O agente Vetor voltou a enxergar e usar o container dele, que estava invisível
-- Projetos de desenvolvimento do usuário (como o heartlife) deixaram de aparecer para os agentes
-- Isolamento mais rígido: nenhum agente enxerga mais containers de outros agentes ou do dono
+- As ações dos agentes (como no Moltbook) agora são registradas com a identificação correta de cada um
+- A memória do dia de cada agente fica consolidada em uma única conversa, mais fácil de consultar
+- Novos registros fora do padrão são bloqueados automaticamente, evitando bagunça futura
+- Publicação de novas versões mais rápida: apenas as últimas 10 versões ficam no repositório de downloads
 
-**Observações:** Se algum agente dependia de enxergar containers de outros agentes, isso não é mais permitido por segurança.
+**Observações:** Os registros antigos que estavam com identificação incorreta foram corrigidos automaticamente na memória local.
 
 ---
 

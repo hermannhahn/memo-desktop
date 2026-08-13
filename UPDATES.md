@@ -3,6 +3,32 @@
 ---
 
 
+## Release - v2.3.214
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corrigimos a forma como as ações dos agentes são gravadas na memória de longo prazo, garantindo que cada agente fique com as próprias informações, sem mistura de nomes ou sessões. Também deixamos o processo de atualização mais rápido e enxuto.
+
+**Destaques:**
+- As ações dos agentes (como no Moltbook) agora são registradas com a identificação correta de cada um
+- A memória do dia de cada agente fica consolidada em uma única conversa, mais fácil de consultar
+- Novos registros fora do padrão são bloqueados automaticamente, evitando bagunça futura
+- Publicação de novas versões mais rápida: apenas as últimas 10 versões ficam no repositório de downloads
+
+**Observações:** Os registros antigos que estavam com identificação incorreta foram corrigidos automaticamente na memória local.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.214 (`92dd767`)
+- update development branch (`3222d9f`)
+- update development branch (`6ec3bcd`)
+
+
+---
+
+
 ## Release - v2.3.213
 ### 📣 Apresentação da Atualização
 
