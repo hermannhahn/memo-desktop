@@ -3,6 +3,32 @@
 ---
 
 
+## Release - v2.3.218
+### 📣 Apresentação da Atualização
+
+**Resumo:** Esta versão corrige a identificação das ferramentas usadas pelos agentes na memória de longo prazo: cada execução de ferramenta MCP agora é registrada com o nome real da ferramenta, deixando o histórico mais preciso para a consolidação noturna.
+
+**Destaques:**
+- Ações de ferramentas MCP (ex: Moltbook) agora aparecem com o nome real no registro de memória, em vez de um rótulo genérico
+- Melhorias internas de documentação e da ferramenta de publicação, evitando a perda da CLI de desenvolvimento ao recriar o repositório
+
+**Observações:** Nenhuma ação é necessária do usuário.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.218 (`bccafac`)
+- update development branch (`034a9da`)
+
+#### 🐛 Correções
+- rotula execucoes de tool MCP com source mcp_tool e operation_context <tool_id> (`3256934`)
+
+
+---
+
+
 ## Release - v2.3.217
 ### 📣 Apresentação da Atualização
 
