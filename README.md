@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.215`
+## 📥 Download da Última Versão: `v2.3.216`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.215.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.215.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.216.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.216.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.215.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.215.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.216.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.216.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,16 +45,14 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.215:
-**Resumo:** Melhoramos a forma como o AI-Bridge grava e usa a memória de longo prazo: agora todo registro pertence a um agente, e o uso das ferramentas fica registrado com mais detalhes, servindo de contexto real para o agente e para a consolidação noturna.
+### 🌟 Notas do Release v2.3.216:
+**Resumo:** Esta versão organiza as documentações internas do projeto e adiciona a nova skill de publicação via Dev API.
 
 **Destaques:**
-- A memória de longo prazo agora guarda apenas registros ligados a um agente, sem entradas soltas de sistema
-- A consolidação noturna (o Sono do Modelo) processa apenas as memórias dos agentes, concentrando o esforço no que importa
-- Os registros de uso de ferramentas agora incluem os parâmetros, o resultado e o pensamento do agente, virando contexto útil
-- Registros antigos que não pertenciam a nenhum agente foram removidos da memória ativa
+- Novas rotas de publicação e acompanhamento de releases pela Dev API (HTTP)
+- Skills do projeto movidas para a pasta padrão .agents/skills com referências corrigidas
 
-**Observações:** Nenhuma ação é necessária do usuário; as melhorias valem para os novos registros.
+**Observações:** Nenhuma ação é necessária do usuário.
 
 ---
 

@@ -3,6 +3,31 @@
 ---
 
 
+## Release - v2.3.216
+### 📣 Apresentação da Atualização
+
+**Resumo:** Esta versão organiza as documentações internas do projeto e adiciona a nova skill de publicação via Dev API.
+
+**Destaques:**
+- Novas rotas de publicação e acompanhamento de releases pela Dev API (HTTP)
+- Skills do projeto movidas para a pasta padrão .agents/skills com referências corrigidas
+
+**Observações:** Nenhuma ação é necessária do usuário.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.216 (`f818704`)
+
+#### 🔧 Manutenção / Refatoração
+- mover skills/ para .agents/skills/ e corrigir referencias (`560f841`)
+
+
+---
+
+
 ## Release - v2.3.215
 ### 📣 Apresentação da Atualização
 
