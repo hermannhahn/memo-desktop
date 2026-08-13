@@ -3,6 +3,22 @@
 ---
 
 
+## Release - v2.3.219
+### 📣 Apresentação da Atualização
+
+fix(labels): rotulagem real de tool calls MCP (source mcp_tool + operation_context <tool_id>) + sessao ativa persistida em SQLite
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.219 (`47387b8`)
+
+
+---
+
+
 ## Release - v2.3.218
 ### 📣 Apresentação da Atualização
 
