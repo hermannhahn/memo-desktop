@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.214",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.214.exe",
-    "notes": "**Resumo:** Corrigimos a forma como as ações dos agentes são gravadas na memória de longo prazo, garantindo que cada agente fique com as próprias informações, sem mistura de nomes ou sessões. Também deixamos o processo de atualização mais rápido e enxuto.\n\n**Destaques:**\n- As ações dos agentes (como no Moltbook) agora são registradas com a identificação correta de cada um\n- A memória do dia de cada agente fica consolidada em uma única conversa, mais fácil de consultar\n- Novos registros fora do padrão são bloqueados automaticamente, evitando bagunça futura\n- Publicação de novas versões mais rápida: apenas as últimas 10 versões ficam no repositório de downloads\n\n**Observações:** Os registros antigos que estavam com identificação incorreta foram corrigidos automaticamente na memória local."
+    "version": "2.3.215",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.215.exe",
+    "notes": "**Resumo:** Melhoramos a forma como o AI-Bridge grava e usa a memória de longo prazo: agora todo registro pertence a um agente, e o uso das ferramentas fica registrado com mais detalhes, servindo de contexto real para o agente e para a consolidação noturna.\n\n**Destaques:**\n- A memória de longo prazo agora guarda apenas registros ligados a um agente, sem entradas soltas de sistema\n- A consolidação noturna (o Sono do Modelo) processa apenas as memórias dos agentes, concentrando o esforço no que importa\n- Os registros de uso de ferramentas agora incluem os parâmetros, o resultado e o pensamento do agente, virando contexto útil\n- Registros antigos que não pertenciam a nenhum agente foram removidos da memória ativa\n\n**Observações:** Nenhuma ação é necessária do usuário; as melhorias valem para os novos registros."
 }

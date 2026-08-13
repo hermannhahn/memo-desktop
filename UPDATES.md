@@ -3,6 +3,32 @@
 ---
 
 
+## Release - v2.3.215
+### 📣 Apresentação da Atualização
+
+**Resumo:** Melhoramos a forma como o AI-Bridge grava e usa a memória de longo prazo: agora todo registro pertence a um agente, e o uso das ferramentas fica registrado com mais detalhes, servindo de contexto real para o agente e para a consolidação noturna.
+
+**Destaques:**
+- A memória de longo prazo agora guarda apenas registros ligados a um agente, sem entradas soltas de sistema
+- A consolidação noturna (o Sono do Modelo) processa apenas as memórias dos agentes, concentrando o esforço no que importa
+- Os registros de uso de ferramentas agora incluem os parâmetros, o resultado e o pensamento do agente, virando contexto útil
+- Registros antigos que não pertenciam a nenhum agente foram removidos da memória ativa
+
+**Observações:** Nenhuma ação é necessária do usuário; as melhorias valem para os novos registros.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.215 (`515ee29`)
+- update development branch (`d6487de`)
+- update development branch (`c7f63bc`)
+
+
+---
+
+
 ## Release - v2.3.214
 ### 📣 Apresentação da Atualização
 
