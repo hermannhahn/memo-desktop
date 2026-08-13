@@ -1,0 +1,6 @@
+{
+    "service_name": "ai-bridge",
+    "version": "2.3.213",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.213.exe",
+    "notes": "**Resumo:** Corrigimos o isolamento dos containers dos agentes: cada agente agora enxerga apenas os containers que ele mesmo criou, sem acesso aos projetos do usuário ou de outros agentes.\n\n**Destaques:**\n- O agente Vetor voltou a enxergar e usar o container dele, que estava invisível\n- Projetos de desenvolvimento do usuário (como o heartlife) deixaram de aparecer para os agentes\n- Isolamento mais rígido: nenhum agente enxerga mais containers de outros agentes ou do dono\n\n**Observações:** Se algum agente dependia de enxergar containers de outros agentes, isso não é mais permitido por segurança."
+}
