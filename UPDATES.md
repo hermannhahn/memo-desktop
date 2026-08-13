@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.3.217
+### 📣 Apresentação da Atualização
+
+**Resumo:** Esta versão corrige o registro das postagens do Moltbook na memória de longo prazo, garantindo que as ações feitas pelos agentes não sejam atribuídas ao dono da conta.
+
+**Destaques:**
+- Postagens do Moltbook feitas pelos agentes agora ficam registradas como ações do agente, mantendo a memória mais fiel
+- Melhorias internas nas ferramentas de consulta ao banco de memória (comando db da CLI, para desenvolvimento)
+
+**Observações:** Nenhuma ação é necessária do usuário.
+
+### 📋 Changelog da Versão
+
+**Total:** 8 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.217 (`82f2690`)
+- comando db (leitura do banco de memória) + skill db-reader-cli (`7614726`)
+
+#### 🐛 Correções
+- is_owner=false nas postagens moltbook (`492e015`)
+
+#### 🔧 Manutenção / Refatoração
+- remove arquivos temporarios de commit (`784bc56`)
+- remove arquivos temporarios de commit (`8a5317e`)
+- remove cli do rastreamento (ferramenta local do dev container) (`e05d50b`)
+
+#### 📚 Documentação
+- agendamento 3min pré-publish patch + comando follow; corrige path da skill (`2b02429`)
+- remove menções à dev-api (AGENTS, GEMINI e skill dev-api) (`53376b3`)
+
+
+---
+
+
 ## Release - v2.3.216
 ### 📣 Apresentação da Atualização
 
@@ -774,7 +809,7 @@ emoção), com teto por run.
 - `cmd/ai-bridge/main.go`
 - `frontend/index.html`, `frontend/js/app.js`, `frontend/js/i18n.js`
 - `cmd/ai-bridge/frontend/*` (cópia sincronizada)
-- `docs/NIGHTLY_MEMORY_CONSOLIDATION.md`, `skills/nightly-consolidation/SKILL.md`, `UPDATES.md`
+- `docs/NIGHTLY_MEMORY_CONSOLIDATION.md`, `.agents/skills/nightly-consolidation/SKILL.md`, `UPDATES.md`
 
 
 ## Release - v2.3.184

@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.216`
+## 📥 Download da Última Versão: `v2.3.217`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.216.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.216.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.217.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.217.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.216.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.216.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.217.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.217.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,12 +45,12 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.216:
-**Resumo:** Esta versão organiza as documentações internas do projeto e adiciona a nova skill de publicação via Dev API.
+### 🌟 Notas do Release v2.3.217:
+**Resumo:** Esta versão corrige o registro das postagens do Moltbook na memória de longo prazo, garantindo que as ações feitas pelos agentes não sejam atribuídas ao dono da conta.
 
 **Destaques:**
-- Novas rotas de publicação e acompanhamento de releases pela Dev API (HTTP)
-- Skills do projeto movidas para a pasta padrão .agents/skills com referências corrigidas
+- Postagens do Moltbook feitas pelos agentes agora ficam registradas como ações do agente, mantendo a memória mais fiel
+- Melhorias internas nas ferramentas de consulta ao banco de memória (comando db da CLI, para desenvolvimento)
 
 **Observações:** Nenhuma ação é necessária do usuário.
 

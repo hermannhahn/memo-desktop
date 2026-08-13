@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.216",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.216.exe",
-    "notes": "**Resumo:** Esta versão organiza as documentações internas do projeto e adiciona a nova skill de publicação via Dev API.\n\n**Destaques:**\n- Novas rotas de publicação e acompanhamento de releases pela Dev API (HTTP)\n- Skills do projeto movidas para a pasta padrão .agents/skills com referências corrigidas\n\n**Observações:** Nenhuma ação é necessária do usuário."
+    "version": "2.3.217",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.217.exe",
+    "notes": "**Resumo:** Esta versão corrige o registro das postagens do Moltbook na memória de longo prazo, garantindo que as ações feitas pelos agentes não sejam atribuídas ao dono da conta.\n\n**Destaques:**\n- Postagens do Moltbook feitas pelos agentes agora ficam registradas como ações do agente, mantendo a memória mais fiel\n- Melhorias internas nas ferramentas de consulta ao banco de memória (comando db da CLI, para desenvolvimento)\n\n**Observações:** Nenhuma ação é necessária do usuário."
 }
