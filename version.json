@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.219",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.219.exe",
-    "notes": "fix(labels): rotulagem real de tool calls MCP (source mcp_tool + operation_context <tool_id>) + sessao ativa persistida em SQLite"
+    "version": "2.3.220",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.220.exe",
+    "notes": "feat(credentials_vault): cofre de credenciais com hash chain para identidade garantida"
 }

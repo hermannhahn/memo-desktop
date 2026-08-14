@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.3.220
+### 📣 Apresentação da Atualização
+
+feat(credentials_vault): cofre de credenciais com hash chain para identidade garantida
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.220 (`5c1b743`)
+- adiciona credentials_vault - gerenciador de credenciais com hash chain (`5e6bebb`)
+
+
+---
+
+
 ## Release - v2.3.219
 ### 📣 Apresentação da Atualização
 
