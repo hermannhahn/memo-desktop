@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.220",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.220.exe",
-    "notes": "feat(credentials_vault): cofre de credenciais com hash chain para identidade garantida"
+    "version": "2.3.221",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.221.exe",
+    "notes": "feat(mcp): credentials_vault v2 multiagente com isolamento por agent_id e persistência no PostgreSQL do LTM (hash chain por agente, UNIQUE agent_id+name)"
 }

@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.3.221
+### 📣 Apresentação da Atualização
+
+feat(mcp): credentials_vault v2 multiagente com isolamento por agent_id e persistência no PostgreSQL do LTM (hash chain por agente, UNIQUE agent_id+name)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.221 (`ceadd1c`)
+- credentials_vault multiagente com persistência no PostgreSQL do LTM (`9a41538`)
+
+
+---
+
+
 ## Release - v2.3.220
 ### 📣 Apresentação da Atualização
 
