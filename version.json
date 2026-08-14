@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.221",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.221.exe",
-    "notes": "feat(mcp): credentials_vault v2 multiagente com isolamento por agent_id e persistência no PostgreSQL do LTM (hash chain por agente, UNIQUE agent_id+name)"
+    "version": "2.3.222",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.222.exe",
+    "notes": "feat(moltbook): adiciona acao comments para ler comentarios de um post via ferramenta MCP (GET /posts/:id/comments com sort new/top/old e limit), eliminando a dependencia de curl na leitura de comentarios."
 }

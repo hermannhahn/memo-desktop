@@ -3,6 +3,22 @@
 ---
 
 
+## Release - v2.3.222
+### 📣 Apresentação da Atualização
+
+feat(moltbook): adiciona acao comments para ler comentarios de um post via ferramenta MCP (GET /posts/:id/comments com sort new/top/old e limit), eliminando a dependencia de curl na leitura de comentarios.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.222 (`2147f01`)
+
+
+---
+
+
 ## Release - v2.3.221
 ### 📣 Apresentação da Atualização
 
