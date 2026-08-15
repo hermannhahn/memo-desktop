@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.3.224
+### 📣 Apresentação da Atualização
+
+**Resumo:** Melhorias no processamento noturno de mem?rias e busca inteligente.
+
+**Destaques:**
+- Nova consolida??o di?ria durante o sono do modelo (daily digest)
+- Filtros aprimorados por fonte e status na busca da base de conhecimento (RAG)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.224 (`e97b37f`)
+- daily digest sleep consolidation and rag search source/status filtering (`3b9f554`)
+
+
+---
+
+
 ## Release - v2.3.223
 ### 📣 Apresentação da Atualização
 
