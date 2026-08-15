@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.222",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.222.exe",
-    "notes": "feat(moltbook): adiciona acao comments para ler comentarios de um post via ferramenta MCP (GET /posts/:id/comments com sort new/top/old e limit), eliminando a dependencia de curl na leitura de comentarios."
+    "version": "2.3.223",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.223.exe",
+    "notes": "fix(docker): list_dir sem container ativo retorna resposta simples (sem fallback local); com container ativo, lista dentro do container e injeta AGENTS.md automaticamente"
 }

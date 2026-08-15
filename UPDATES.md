@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.3.223
+### 📣 Apresentação da Atualização
+
+fix(docker): list_dir sem container ativo retorna resposta simples (sem fallback local); com container ativo, lista dentro do container e injeta AGENTS.md automaticamente
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.223 (`4fa3b10`)
+
+#### 🐛 Correções
+- list_dir usa o container ativo como diretorio base e injeta AGENTS.md (`da78244`)
+
+
+---
+
+
 ## Release - v2.3.222
 ### 📣 Apresentação da Atualização
 
