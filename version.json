@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.226",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.226.exe",
-    "notes": "Resumo: Corre??o cr?tica na autorrevis?o noturna (Sono do Modelo) para proteger a integridade da mem?ria. Destaques: - Interrup??o expl?cita de adivinha??es da IA em caso de falta de contexto. - Inclus?o correta do registro de falta de contexto nos metadados para escalonamento. Observa??es: O sistema n?o far? mais ajustes caso falte contexto suficiente, respeitando as regras de integridade."
+    "version": "2.3.227",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.227.exe",
+    "notes": "fix(consolidation): parser tolerante a JSON malformado na autorrevisao noturna - repairJSON repara virgulas faltando/sobrando entre elementos de array e objeto sem tocar no conteudo de strings; ParseReviewResponse tenta reparo antes de falhar (default seguro mantido); +2 testes (6 casos de reparo + preservacao byte a byte de JSON valido). Elimina os errors=1 nos runs do sono."
 }

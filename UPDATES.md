@@ -3,6 +3,22 @@
 ---
 
 
+## Release - v2.3.227
+### 📣 Apresentação da Atualização
+
+fix(consolidation): parser tolerante a JSON malformado na autorrevisao noturna - repairJSON repara virgulas faltando/sobrando entre elementos de array e objeto sem tocar no conteudo de strings; ParseReviewResponse tenta reparo antes de falhar (default seguro mantido); +2 testes (6 casos de reparo + preservacao byte a byte de JSON valido). Elimina os errors=1 nos runs do sono.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.227 (`0984326`)
+
+
+---
+
+
 ## Release - v2.3.226
 ### 📣 Apresentação da Atualização
 
