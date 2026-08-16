@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.231`
+## 📥 Download da Última Versão: `v2.3.232`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.231.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.231.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.232.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.232.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.231.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.231.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.232.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.232.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,14 +45,14 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.231:
-**Resumo:** Corre????o para garantir que todos os commits gerados automaticamente pela CLI do projeto sejam certificados (Verified) via GPG.
+### 🌟 Notas do Release v2.3.232:
+**Resumo:** O Dashboard de Intelig?ncia de Mem?ria foi completamente remodelado com uma nova su?te de gr?ficos para fornecer an?lises detalhadas e em tempo real sobre a efici?ncia do seu assistente!
 
 **Destaques:**
-- Adicionada a flag de assinatura (-S) em todos os comandos autom??ticos de commit da CLI.
-- Assegura maior transpar??ncia e verifica????o de autenticidade nas atualiza????es do reposit??rio.
-
-**Observa????es:** Esta atualiza????o melhora a seguran??a e o rastreio do versionamento e n??o afeta o funcionamento do projeto.
+- Acompanhamento hist?rico do Sono do Modelo, ciclos de consolida??o e limpeza do ru?do mental.
+- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do AI-Bridge.
+- Adi??o das estat?sticas e an?lises em 8 idiomas diferentes nativamente no front-end.
+- Layout aprimorado utilizando a est?tica Glassmorphism Dark com novos KPIs quantitativos.
 
 ---
 

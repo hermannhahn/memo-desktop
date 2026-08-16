@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.231",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.231.exe",
-    "notes": "**Resumo:** Corre????o para garantir que todos os commits gerados automaticamente pela CLI do projeto sejam certificados (Verified) via GPG.\r\n\r\n**Destaques:**\r\n- Adicionada a flag de assinatura (-S) em todos os comandos autom??ticos de commit da CLI.\r\n- Assegura maior transpar??ncia e verifica????o de autenticidade nas atualiza????es do reposit??rio.\r\n\r\n**Observa????es:** Esta atualiza????o melhora a seguran??a e o rastreio do versionamento e n??o afeta o funcionamento do projeto."
+    "version": "2.3.232",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.232.exe",
+    "notes": "**Resumo:** O Dashboard de Intelig?ncia de Mem?ria foi completamente remodelado com uma nova su?te de gr?ficos para fornecer an?lises detalhadas e em tempo real sobre a efici?ncia do seu assistente!\n\n**Destaques:**\n- Acompanhamento hist?rico do Sono do Modelo, ciclos de consolida??o e limpeza do ru?do mental.\n- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do AI-Bridge.\n- Adi??o das estat?sticas e an?lises em 8 idiomas diferentes nativamente no front-end.\n- Layout aprimorado utilizando a est?tica Glassmorphism Dark com novos KPIs quantitativos."
 }

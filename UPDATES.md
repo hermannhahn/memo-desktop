@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.3.232
+### 📣 Apresentação da Atualização
+
+**Resumo:** O Dashboard de Intelig?ncia de Mem?ria foi completamente remodelado com uma nova su?te de gr?ficos para fornecer an?lises detalhadas e em tempo real sobre a efici?ncia do seu assistente!
+
+**Destaques:**
+- Acompanhamento hist?rico do Sono do Modelo, ciclos de consolida??o e limpeza do ru?do mental.
+- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do AI-Bridge.
+- Adi??o das estat?sticas e an?lises em 8 idiomas diferentes nativamente no front-end.
+- Layout aprimorado utilizando a est?tica Glassmorphism Dark com novos KPIs quantitativos.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.232 (`fb9a62b`)
+- updates in feature/memory-analytics-charts (`0a6f855`)
+
+
+---
+
+
 ## Release - v2.3.231
 ### 📣 Apresentação da Atualização
 
