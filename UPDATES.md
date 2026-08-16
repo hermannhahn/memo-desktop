@@ -3,6 +3,30 @@
 ---
 
 
+## Release - v2.3.238
+### 📣 Apresentação da Atualização
+
+**Resumo:** Separa??o das telas de Mem?rias e Anota??es em duas abas dedicadas, layout compacto com acorde?o e pagina??o completa.
+
+**Destaques:**
+- Separa??o entre a aba 'Memory Content' (mem?rias din?micas das sess?es de chat) e 'Notes Content' (anota??es sem?nticas do agente).
+- Layout compacto com visualiza??o de 1 linha e expans?o suave em acorde?o ao clicar para exibir conte?do completo, pensamentos do modelo e a??es de ferramentas.
+- Pagina??o completa em ambas as abas com sele??o de itens por p?gina (15, 25, 50, 100) e navega??o entre p?ginas.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.238 (`4ac3176`)
+- update development branch (`6d6d7a3`)
+- update development branch (`3d45d40`)
+- update development branch (`f67cbc9`)
+
+
+---
+
+
 ## Release - v2.3.237
 ### 📣 Apresentação da Atualização
 

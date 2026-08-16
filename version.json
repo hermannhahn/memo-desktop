@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.237",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.237/AI-Bridge-Setup-v2.3.237.exe",
-    "notes": "**Resumo:** Nova aba dedicada Memory Content, corre??o completa de internacionaliza??o e publica??o otimizada sem bin?rios na branch main.\n\n**Destaques:**\n- Cria??o de uma aba dedicada 'Memory Content' com visualiza??o detalhada de pensamentos, fatos e consolida??es, al?m de filtros avan?ados por Tipo (Lifecycle), N?vel de Acesso RAG e Import?ncia.\n- Corre??o completa do sistema de internacionaliza??o (i18n), garantindo troca instant?nea de idioma em todas as telas e menus.\n- Otimiza??o do fluxo de publica??o para manter a branch main do reposit?rio de downloads limpa (somente README e metadados), anexando os instaladores e bin?rios exclusivamente via GitHub Releases e liberando espa?o em disco."
+    "version": "2.3.238",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.238/AI-Bridge-Setup-v2.3.238.exe",
+    "notes": "**Resumo:** Separa??o das telas de Mem?rias e Anota??es em duas abas dedicadas, layout compacto com acorde?o e pagina??o completa.\n\n**Destaques:**\n- Separa??o entre a aba 'Memory Content' (mem?rias din?micas das sess?es de chat) e 'Notes Content' (anota??es sem?nticas do agente).\n- Layout compacto com visualiza??o de 1 linha e expans?o suave em acorde?o ao clicar para exibir conte?do completo, pensamentos do modelo e a??es de ferramentas.\n- Pagina??o completa em ambas as abas com sele??o de itens por p?gina (15, 25, 50, 100) e navega??o entre p?ginas."
 }
