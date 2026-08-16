@@ -3,6 +3,30 @@
 ---
 
 
+## Release - v2.3.228
+### 📣 Apresentação da Atualização
+
+**Resumo:** Uma grande atualiza??o na interface do AI-Bridge, trazendo um novo painel de estat?sticas de mem?ria, al?m de refinamentos na localiza??o da interface.
+
+**Destaques:**
+- Nova **Dashboard de Mem?ria**: Acompanhe o uso e a sa?de das mem?rias din?micas, sem?nticas e os ciclos de sono em tempo real na aba Memory.
+- Configura??es unificadas: As op??es de ranking e mem?rias foram organizadas de forma mais limpa dentro da guia de Configura??es.
+- Idioma padr?o aprimorado: O aplicativo agora persistir? corretamente a sua escolha de idioma entre inicializa??es, mantendo o ingl?s como idioma principal e corrigindo bot?es de status n?o traduzidos.
+
+**Observa??es:** Nenhuma a??o adicional ? necess?ria. Suas mem?rias e tokens continuam preservados ap?s a atualiza??o.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.228 (`0b09fff`)
+- update development branch (`561b5d1`)
+
+
+---
+
+
 ## Release - v2.3.227
 ### 📣 Apresentação da Atualização
 

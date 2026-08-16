@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.227`
+## 📥 Download da Última Versão: `v2.3.228`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.227.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.227.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.228.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.228.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.227.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.227.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.228.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.228.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,8 +45,15 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.227:
-fix(consolidation): parser tolerante a JSON malformado na autorrevisao noturna - repairJSON repara virgulas faltando/sobrando entre elementos de array e objeto sem tocar no conteudo de strings; ParseReviewResponse tenta reparo antes de falhar (default seguro mantido); +2 testes (6 casos de reparo + preservacao byte a byte de JSON valido). Elimina os errors=1 nos runs do sono.
+### 🌟 Notas do Release v2.3.228:
+**Resumo:** Uma grande atualiza??o na interface do AI-Bridge, trazendo um novo painel de estat?sticas de mem?ria, al?m de refinamentos na localiza??o da interface.
+
+**Destaques:**
+- Nova **Dashboard de Mem?ria**: Acompanhe o uso e a sa?de das mem?rias din?micas, sem?nticas e os ciclos de sono em tempo real na aba Memory.
+- Configura??es unificadas: As op??es de ranking e mem?rias foram organizadas de forma mais limpa dentro da guia de Configura??es.
+- Idioma padr?o aprimorado: O aplicativo agora persistir? corretamente a sua escolha de idioma entre inicializa??es, mantendo o ingl?s como idioma principal e corrigindo bot?es de status n?o traduzidos.
+
+**Observa??es:** Nenhuma a??o adicional ? necess?ria. Suas mem?rias e tokens continuam preservados ap?s a atualiza??o.
 
 ---
 
