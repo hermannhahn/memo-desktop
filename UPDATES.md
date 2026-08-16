@@ -3,6 +3,26 @@
 ---
 
 
+## Release - v2.3.229
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre??o cr?tica que impedia a abertura da interface gr?fica do AI Bridge (travamento no carregamento de 0%).
+
+**Destaques:**
+- Bugfix (Interface): Resolvido um erro de sintaxe nos scripts de frontend (app.js) que introduzia quebra de carregamento na Splash Screen devido aos novos templates do Dashboard de Mem?ria.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.229 (`41c6943`)
+- update development branch (`ab90e68`)
+
+
+---
+
+
 ## Release - v2.3.228
 ### 📣 Apresentação da Atualização
 

@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.228",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.228.exe",
-    "notes": "**Resumo:** Uma grande atualiza??o na interface do AI-Bridge, trazendo um novo painel de estat?sticas de mem?ria, al?m de refinamentos na localiza??o da interface.\n\n**Destaques:**\n- Nova **Dashboard de Mem?ria**: Acompanhe o uso e a sa?de das mem?rias din?micas, sem?nticas e os ciclos de sono em tempo real na aba Memory.\n- Configura??es unificadas: As op??es de ranking e mem?rias foram organizadas de forma mais limpa dentro da guia de Configura??es.\n- Idioma padr?o aprimorado: O aplicativo agora persistir? corretamente a sua escolha de idioma entre inicializa??es, mantendo o ingl?s como idioma principal e corrigindo bot?es de status n?o traduzidos.\n\n**Observa??es:** Nenhuma a??o adicional ? necess?ria. Suas mem?rias e tokens continuam preservados ap?s a atualiza??o."
+    "version": "2.3.229",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.229.exe",
+    "notes": "**Resumo:** Corre??o cr?tica que impedia a abertura da interface gr?fica do AI Bridge (travamento no carregamento de 0%).\n\n**Destaques:**\n- Bugfix (Interface): Resolvido um erro de sintaxe nos scripts de frontend (app.js) que introduzia quebra de carregamento na Splash Screen devido aos novos templates do Dashboard de Mem?ria."
 }
