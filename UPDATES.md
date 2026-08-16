@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.3.226
+### 📣 Apresentação da Atualização
+
+Resumo: Corre??o cr?tica na autorrevis?o noturna (Sono do Modelo) para proteger a integridade da mem?ria. Destaques: - Interrup??o expl?cita de adivinha??es da IA em caso de falta de contexto. - Inclus?o correta do registro de falta de contexto nos metadados para escalonamento. Observa??es: O sistema n?o far? mais ajustes caso falte contexto suficiente, respeitando as regras de integridade.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.226 (`9b6a110`)
+- update development branch (`bbaa4a6`)
+
+
+---
+
+
 ## Release - v2.3.225
 ### 📣 Apresentação da Atualização
 

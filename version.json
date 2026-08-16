@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.225",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.225.exe",
-    "notes": "Etapa 3.6 da consolidacao do sono: autorrevisao pos-consolidacao (autocritica + red team interno) com gatilho primario de falta de contexto - design v2.1. Memorias consolidadas passam por auto-verificacao (proveniencia, dados inventados) e tentativa de refutacao antes de gravar; falta de contexto nunca e resolvida por adivinhacao - marca falta_contexto e escala ao designador. Integridade como clausula petrea (sem ponderacao de mancha)."
+    "version": "2.3.226",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.226.exe",
+    "notes": "Resumo: Corre??o cr?tica na autorrevis?o noturna (Sono do Modelo) para proteger a integridade da mem?ria. Destaques: - Interrup??o expl?cita de adivinha??es da IA em caso de falta de contexto. - Inclus?o correta do registro de falta de contexto nos metadados para escalonamento. Observa??es: O sistema n?o far? mais ajustes caso falte contexto suficiente, respeitando as regras de integridade."
 }
