@@ -3,6 +3,28 @@
 ---
 
 
+## Release - v2.3.236
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre??o das tradu??es da aba Memory e adi??o da tabela de conte?do de mem?rias.
+
+**Destaques:**
+- Corrigido o bug onde as legendas e textos dos gr?ficos n?o eram atualizados ao trocar de idioma.
+- Adicionada uma nova tabela detalhada abaixo dos gr?ficos que lista todas as mem?rias com seus respectivos indicadores.
+- Inclus?o de filtros interativos na tabela por Ciclo de Vida (Ativas, Consolidadas, etc.) e N?vel de Acesso RAG.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.236 (`5a450d7`)
+- update development branch (`882042c`)
+
+
+---
+
+
 ## Release - v2.3.235
 ### 📣 Apresentação da Atualização
 

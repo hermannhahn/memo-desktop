@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.235`
+## 📥 Download da Última Versão: `v2.3.236`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.235.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.235.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.236.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.236.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.235.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.235.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.236.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.236.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,11 +45,13 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.235:
-**Resumo:** Ajuste fino de layout nos textos indicadores da aba de mem?ria.
+### 🌟 Notas do Release v2.3.236:
+**Resumo:** Corre??o das tradu??es da aba Memory e adi??o da tabela de conte?do de mem?rias.
 
 **Destaques:**
-- Reduzido o tamanho da fonte e ajustada a quebra de linha das legendas dos cards informativos da tela Memory para evitar que transbordem o container, garantindo melhor legibilidade para textos mais longos.
+- Corrigido o bug onde as legendas e textos dos gr?ficos n?o eram atualizados ao trocar de idioma.
+- Adicionada uma nova tabela detalhada abaixo dos gr?ficos que lista todas as mem?rias com seus respectivos indicadores.
+- Inclus?o de filtros interativos na tabela por Ciclo de Vida (Ativas, Consolidadas, etc.) e N?vel de Acesso RAG.
 
 ---
 

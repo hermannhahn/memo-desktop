@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.235",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.235.exe",
-    "notes": "**Resumo:** Ajuste fino de layout nos textos indicadores da aba de mem?ria.\n\n**Destaques:**\n- Reduzido o tamanho da fonte e ajustada a quebra de linha das legendas dos cards informativos da tela Memory para evitar que transbordem o container, garantindo melhor legibilidade para textos mais longos."
+    "version": "2.3.236",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.236.exe",
+    "notes": "**Resumo:** Corre??o das tradu??es da aba Memory e adi??o da tabela de conte?do de mem?rias.\n\n**Destaques:**\n- Corrigido o bug onde as legendas e textos dos gr?ficos n?o eram atualizados ao trocar de idioma.\n- Adicionada uma nova tabela detalhada abaixo dos gr?ficos que lista todas as mem?rias com seus respectivos indicadores.\n- Inclus?o de filtros interativos na tabela por Ciclo de Vida (Ativas, Consolidadas, etc.) e N?vel de Acesso RAG."
 }
