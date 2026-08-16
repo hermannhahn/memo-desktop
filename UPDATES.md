@@ -3,6 +3,28 @@
 ---
 
 
+## Release - v2.3.237
+### 📣 Apresentação da Atualização
+
+**Resumo:** Nova aba dedicada Memory Content, corre??o completa de internacionaliza??o e publica??o otimizada sem bin?rios na branch main.
+
+**Destaques:**
+- Cria??o de uma aba dedicada 'Memory Content' com visualiza??o detalhada de pensamentos, fatos e consolida??es, al?m de filtros avan?ados por Tipo (Lifecycle), N?vel de Acesso RAG e Import?ncia.
+- Corre??o completa do sistema de internacionaliza??o (i18n), garantindo troca instant?nea de idioma em todas as telas e menus.
+- Otimiza??o do fluxo de publica??o para manter a branch main do reposit?rio de downloads limpa (somente README e metadados), anexando os instaladores e bin?rios exclusivamente via GitHub Releases e liberando espa?o em disco.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.237 (`6c69a97`)
+- update development branch (`0c57da1`)
+
+
+---
+
+
 ## Release - v2.3.236
 ### 📣 Apresentação da Atualização
 

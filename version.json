@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.236",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.236.exe",
-    "notes": "**Resumo:** Corre??o das tradu??es da aba Memory e adi??o da tabela de conte?do de mem?rias.\n\n**Destaques:**\n- Corrigido o bug onde as legendas e textos dos gr?ficos n?o eram atualizados ao trocar de idioma.\n- Adicionada uma nova tabela detalhada abaixo dos gr?ficos que lista todas as mem?rias com seus respectivos indicadores.\n- Inclus?o de filtros interativos na tabela por Ciclo de Vida (Ativas, Consolidadas, etc.) e N?vel de Acesso RAG."
+    "version": "2.3.237",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.237/AI-Bridge-Setup-v2.3.237.exe",
+    "notes": "**Resumo:** Nova aba dedicada Memory Content, corre??o completa de internacionaliza??o e publica??o otimizada sem bin?rios na branch main.\n\n**Destaques:**\n- Cria??o de uma aba dedicada 'Memory Content' com visualiza??o detalhada de pensamentos, fatos e consolida??es, al?m de filtros avan?ados por Tipo (Lifecycle), N?vel de Acesso RAG e Import?ncia.\n- Corre??o completa do sistema de internacionaliza??o (i18n), garantindo troca instant?nea de idioma em todas as telas e menus.\n- Otimiza??o do fluxo de publica??o para manter a branch main do reposit?rio de downloads limpa (somente README e metadados), anexando os instaladores e bin?rios exclusivamente via GitHub Releases e liberando espa?o em disco."
 }
