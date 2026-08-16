@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.238",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.238/AI-Bridge-Setup-v2.3.238.exe",
-    "notes": "**Resumo:** Separa??o das telas de Mem?rias e Anota??es em duas abas dedicadas, layout compacto com acorde?o e pagina??o completa.\n\n**Destaques:**\n- Separa??o entre a aba 'Memory Content' (mem?rias din?micas das sess?es de chat) e 'Notes Content' (anota??es sem?nticas do agente).\n- Layout compacto com visualiza??o de 1 linha e expans?o suave em acorde?o ao clicar para exibir conte?do completo, pensamentos do modelo e a??es de ferramentas.\n- Pagina??o completa em ambas as abas com sele??o de itens por p?gina (15, 25, 50, 100) e navega??o entre p?ginas."
+    "version": "2.3.239",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.239/AI-Bridge-Setup-v2.3.239.exe",
+    "notes": "**Resumo:** Adicionado filtro por agente nas telas de memoria de longo prazo (Dashboard, Memory Content e Notes Content) para facilitar o acompanhamento individualizado de cada agente.\n\n**Destaques:**\n- Filtro por agente no Memory Dashboard com recalculo instantaneo de graficos e estatisticas\n- Filtro por agente na listagem de memorias dinamicas (Memory Content)\n- Filtro por agente nas anotacoes semanticas (Notes Content)\n- Suporte a traducao nos 8 idiomas do aplicativo"
 }

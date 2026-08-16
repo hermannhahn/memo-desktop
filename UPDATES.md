@@ -3,6 +3,32 @@
 ---
 
 
+## Release - v2.3.239
+### 📣 Apresentação da Atualização
+
+**Resumo:** Adicionado filtro por agente nas telas de memoria de longo prazo (Dashboard, Memory Content e Notes Content) para facilitar o acompanhamento individualizado de cada agente.
+
+**Destaques:**
+- Filtro por agente no Memory Dashboard com recalculo instantaneo de graficos e estatisticas
+- Filtro por agente na listagem de memorias dinamicas (Memory Content)
+- Filtro por agente nas anotacoes semanticas (Notes Content)
+- Suporte a traducao nos 8 idiomas do aplicativo
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.239 (`820fc7f`)
+- update development branch (`d4da270`)
+- updates in feature/filter-by-agent-memory-and-notes (`c6d7530`)
+- update development branch (`ae79c18`)
+- updates in feature/space-time-narrative-consolidation (`48b978f`)
+
+
+---
+
+
 ## Release - v2.3.238
 ### 📣 Apresentação da Atualização
 
