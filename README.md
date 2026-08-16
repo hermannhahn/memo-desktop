@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.229`
+## 📥 Download da Última Versão: `v2.3.230`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.229.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.229.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.230.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.230.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.229.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.229.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.230.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.230.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,11 +45,15 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.229:
-**Resumo:** Corre??o cr?tica que impedia a abertura da interface gr?fica do AI Bridge (travamento no carregamento de 0%).
+### 🌟 Notas do Release v2.3.230:
+**Resumo:** Corre????o no fluxo de publica????o para garantir que os arquivos do instalador sejam enviados corretamente para a p??gina de release, e atualiza????o do sistema de tags para serem certificadas automaticamente pelo GitHub.
 
 **Destaques:**
-- Bugfix (Interface): Resolvido um erro de sintaxe nos scripts de frontend (app.js) que introduzia quebra de carregamento na Splash Screen devido aos novos templates do Dashboard de Mem?ria.
+- Instaladores e bin??rios agora s??o anexados de forma confi??vel na release do reposit??rio de downloads, prevenindo falhas ocultas no terminal.
+- As tags do reposit??rio principal agora s??o geradas e validadas pelo GitHub como "Verified".
+- Implementado sistema de limpeza autom??tica que mant??m apenas as 10 ??ltimas vers??es no reposit??rio principal para organiza????o do projeto.
+
+**Observa????es:** Esta atualiza????o foca na estabilidade do fluxo de devOps da ferramenta e n??o possui altera????es vis??veis na interface para o usu??rio final.
 
 ---
 

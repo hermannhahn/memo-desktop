@@ -3,6 +3,30 @@
 ---
 
 
+## Release - v2.3.230
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre????o no fluxo de publica????o para garantir que os arquivos do instalador sejam enviados corretamente para a p??gina de release, e atualiza????o do sistema de tags para serem certificadas automaticamente pelo GitHub.
+
+**Destaques:**
+- Instaladores e bin??rios agora s??o anexados de forma confi??vel na release do reposit??rio de downloads, prevenindo falhas ocultas no terminal.
+- As tags do reposit??rio principal agora s??o geradas e validadas pelo GitHub como "Verified".
+- Implementado sistema de limpeza autom??tica que mant??m apenas as 10 ??ltimas vers??es no reposit??rio principal para organiza????o do projeto.
+
+**Observa????es:** Esta atualiza????o foca na estabilidade do fluxo de devOps da ferramenta e n??o possui altera????es vis??veis na interface para o usu??rio final.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.230 (`d6a9fbb`)
+- update development branch (`c84bed7`)
+
+
+---
+
+
 ## Release - v2.3.229
 ### 📣 Apresentação da Atualização
 

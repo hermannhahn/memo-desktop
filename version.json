@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.229",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.229.exe",
-    "notes": "**Resumo:** Corre??o cr?tica que impedia a abertura da interface gr?fica do AI Bridge (travamento no carregamento de 0%).\n\n**Destaques:**\n- Bugfix (Interface): Resolvido um erro de sintaxe nos scripts de frontend (app.js) que introduzia quebra de carregamento na Splash Screen devido aos novos templates do Dashboard de Mem?ria."
+    "version": "2.3.230",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.230.exe",
+    "notes": "**Resumo:** Corre????o no fluxo de publica????o para garantir que os arquivos do instalador sejam enviados corretamente para a p??gina de release, e atualiza????o do sistema de tags para serem certificadas automaticamente pelo GitHub.\r\n\r\n**Destaques:**\r\n- Instaladores e bin??rios agora s??o anexados de forma confi??vel na release do reposit??rio de downloads, prevenindo falhas ocultas no terminal.\r\n- As tags do reposit??rio principal agora s??o geradas e validadas pelo GitHub como \"Verified\".\r\n- Implementado sistema de limpeza autom??tica que mant??m apenas as 10 ??ltimas vers??es no reposit??rio principal para organiza????o do projeto.\r\n\r\n**Observa????es:** Esta atualiza????o foca na estabilidade do fluxo de devOps da ferramenta e n??o possui altera????es vis??veis na interface para o usu??rio final."
 }
