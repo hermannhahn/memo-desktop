@@ -3,6 +3,33 @@
 ---
 
 
+## Release - v2.3.240
+### 📣 Apresentação da Atualização
+
+**Resumo:** Esta vers?o traz melhorias visuais e operacionais na gest?o de mem?rias, permitindo identificar agentes pelos seus nomes reais e editar ou apagar anota??es e mensagens diretamente pela interface.
+
+**Destaques:**
+- Identifica??o clara dos agentes: os filtros e detalhes nas abas de mem?ria agora exibem o nome real do agente em vez do identificador t?cnico.
+- Gest?o completa de notas: possibilidade de editar e excluir anota??es sem?nticas diretamente na tabela de notas, com modal dedicado.
+- Limpeza de mem?rias: inclus?o de bot?o para apagar mensagens de hist?rico de mem?ria de forma r?pida e segura.
+- Interface aprimorada: remo??o de cabe?alhos redundantes no painel de intelig?ncia de mem?ria para uma visualiza??o mais limpa.
+
+**Observa??es:** Todas as a??es de altera??o e exclus?o atualizam os dados instantaneamente no banco de mem?ria local com suporte a m?ltiplos idiomas.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.240 (`6eb7e5e`)
+- updates in feature/memory-notes-actions (`2f183da`)
+- updates in feature/memory-agent-sender-name (`d5e96fd`)
+- updates in development (`e206d26`)
+
+
+---
+
+
 ## Release - v2.3.239
 ### 📣 Apresentação da Atualização
 

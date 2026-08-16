@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.239",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.239/AI-Bridge-Setup-v2.3.239.exe",
-    "notes": "**Resumo:** Adicionado filtro por agente nas telas de memoria de longo prazo (Dashboard, Memory Content e Notes Content) para facilitar o acompanhamento individualizado de cada agente.\n\n**Destaques:**\n- Filtro por agente no Memory Dashboard com recalculo instantaneo de graficos e estatisticas\n- Filtro por agente na listagem de memorias dinamicas (Memory Content)\n- Filtro por agente nas anotacoes semanticas (Notes Content)\n- Suporte a traducao nos 8 idiomas do aplicativo"
+    "version": "2.3.240",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.240/AI-Bridge-Setup-v2.3.240.exe",
+    "notes": "**Resumo:** Esta vers?o traz melhorias visuais e operacionais na gest?o de mem?rias, permitindo identificar agentes pelos seus nomes reais e editar ou apagar anota??es e mensagens diretamente pela interface.\n\n**Destaques:**\n- Identifica??o clara dos agentes: os filtros e detalhes nas abas de mem?ria agora exibem o nome real do agente em vez do identificador t?cnico.\n- Gest?o completa de notas: possibilidade de editar e excluir anota??es sem?nticas diretamente na tabela de notas, com modal dedicado.\n- Limpeza de mem?rias: inclus?o de bot?o para apagar mensagens de hist?rico de mem?ria de forma r?pida e segura.\n- Interface aprimorada: remo??o de cabe?alhos redundantes no painel de intelig?ncia de mem?ria para uma visualiza??o mais limpa.\n\n**Observa??es:** Todas as a??es de altera??o e exclus?o atualizam os dados instantaneamente no banco de mem?ria local com suporte a m?ltiplos idiomas."
 }
