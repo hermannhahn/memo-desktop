@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.233",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.233.exe",
-    "notes": "**Resumo:** Corre??o cr?tica de encoding e ajustes visuais na aba de mem?ria, al?m de estabilidade no atualizador do sistema.\n\n**Destaques:**\n- Resolvido o problema onde textos e caracteres acentuados apareciam desconfigurados em toda a aplica??o.\n- Ajustado o tamanho dos textos explicativos na aba de Mem?ria para evitar quebras visuais no layout.\n- Adicionada maior resili?ncia no sistema de atualiza??o autom?tica (auto-updater) com tratamentos de timeout no Docker, prevenindo travamentos em caso de falha do servi?o.\n\n**Observa??es:** Esta atualiza??o corrige os caracteres bugados observados durante o uso do novo painel de mem?ria. A produ??o dos gr?ficos de mem?ria ocorre localmente e n?o utiliza o LLM diretamente, preservando totalmente a privacidade e evitando consumo de tokens."
+    "version": "2.3.234",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.234.exe",
+    "notes": "**Resumo:** Corre??o definitiva do painel de mem?ria e restaura??o da visualiza??o gr?fica com resolu??o de bugs de codifica??o (encoding).\n\n**Destaques:**\n- Restaurada completamente a interface gr?fica da aba de Mem?ria (com Gr?ficos de Coluna, Linha e Pizza) que havia sido acidentalmente removida no patch anterior devido a um erro de merge de codifica??o.\n- Todos os caracteres, acentua??o e tradu??es globais preservados corretamente."
 }

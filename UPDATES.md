@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.3.234
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre??o definitiva do painel de mem?ria e restaura??o da visualiza??o gr?fica com resolu??o de bugs de codifica??o (encoding).
+
+**Destaques:**
+- Restaurada completamente a interface gr?fica da aba de Mem?ria (com Gr?ficos de Coluna, Linha e Pizza) que havia sido acidentalmente removida no patch anterior devido a um erro de merge de codifica??o.
+- Todos os caracteres, acentua??o e tradu??es globais preservados corretamente.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.234 (`6446555`)
+- update development branch (`e3f9710`)
+
+
+---
+
+
 ## Release - v2.3.233
 ### 📣 Apresentação da Atualização
 

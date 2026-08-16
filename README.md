@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.233`
+## 📥 Download da Última Versão: `v2.3.234`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.233.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.233.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.234.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.234.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.233.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.233.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.234.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.234.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,15 +45,12 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.233:
-**Resumo:** Corre??o cr?tica de encoding e ajustes visuais na aba de mem?ria, al?m de estabilidade no atualizador do sistema.
+### 🌟 Notas do Release v2.3.234:
+**Resumo:** Corre??o definitiva do painel de mem?ria e restaura??o da visualiza??o gr?fica com resolu??o de bugs de codifica??o (encoding).
 
 **Destaques:**
-- Resolvido o problema onde textos e caracteres acentuados apareciam desconfigurados em toda a aplica??o.
-- Ajustado o tamanho dos textos explicativos na aba de Mem?ria para evitar quebras visuais no layout.
-- Adicionada maior resili?ncia no sistema de atualiza??o autom?tica (auto-updater) com tratamentos de timeout no Docker, prevenindo travamentos em caso de falha do servi?o.
-
-**Observa??es:** Esta atualiza??o corrige os caracteres bugados observados durante o uso do novo painel de mem?ria. A produ??o dos gr?ficos de mem?ria ocorre localmente e n?o utiliza o LLM diretamente, preservando totalmente a privacidade e evitando consumo de tokens.
+- Restaurada completamente a interface gr?fica da aba de Mem?ria (com Gr?ficos de Coluna, Linha e Pizza) que havia sido acidentalmente removida no patch anterior devido a um erro de merge de codifica??o.
+- Todos os caracteres, acentua??o e tradu??es globais preservados corretamente.
 
 ---
 
