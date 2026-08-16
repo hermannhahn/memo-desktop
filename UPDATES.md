@@ -3,6 +3,30 @@
 ---
 
 
+## Release - v2.3.233
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre??o cr?tica de encoding e ajustes visuais na aba de mem?ria, al?m de estabilidade no atualizador do sistema.
+
+**Destaques:**
+- Resolvido o problema onde textos e caracteres acentuados apareciam desconfigurados em toda a aplica??o.
+- Ajustado o tamanho dos textos explicativos na aba de Mem?ria para evitar quebras visuais no layout.
+- Adicionada maior resili?ncia no sistema de atualiza??o autom?tica (auto-updater) com tratamentos de timeout no Docker, prevenindo travamentos em caso de falha do servi?o.
+
+**Observa??es:** Esta atualiza??o corrige os caracteres bugados observados durante o uso do novo painel de mem?ria. A produ??o dos gr?ficos de mem?ria ocorre localmente e n?o utiliza o LLM diretamente, preservando totalmente a privacidade e evitando consumo de tokens.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.233 (`df1c5e1`)
+- update development branch (`2b1f5ea`)
+
+
+---
+
+
 ## Release - v2.3.232
 ### 📣 Apresentação da Atualização
 

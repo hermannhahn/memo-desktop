@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.232",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.232.exe",
-    "notes": "**Resumo:** O Dashboard de Intelig?ncia de Mem?ria foi completamente remodelado com uma nova su?te de gr?ficos para fornecer an?lises detalhadas e em tempo real sobre a efici?ncia do seu assistente!\n\n**Destaques:**\n- Acompanhamento hist?rico do Sono do Modelo, ciclos de consolida??o e limpeza do ru?do mental.\n- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do AI-Bridge.\n- Adi??o das estat?sticas e an?lises em 8 idiomas diferentes nativamente no front-end.\n- Layout aprimorado utilizando a est?tica Glassmorphism Dark com novos KPIs quantitativos."
+    "version": "2.3.233",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.233.exe",
+    "notes": "**Resumo:** Corre??o cr?tica de encoding e ajustes visuais na aba de mem?ria, al?m de estabilidade no atualizador do sistema.\n\n**Destaques:**\n- Resolvido o problema onde textos e caracteres acentuados apareciam desconfigurados em toda a aplica??o.\n- Ajustado o tamanho dos textos explicativos na aba de Mem?ria para evitar quebras visuais no layout.\n- Adicionada maior resili?ncia no sistema de atualiza??o autom?tica (auto-updater) com tratamentos de timeout no Docker, prevenindo travamentos em caso de falha do servi?o.\n\n**Observa??es:** Esta atualiza??o corrige os caracteres bugados observados durante o uso do novo painel de mem?ria. A produ??o dos gr?ficos de mem?ria ocorre localmente e n?o utiliza o LLM diretamente, preservando totalmente a privacidade e evitando consumo de tokens."
 }
