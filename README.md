@@ -4,11 +4,11 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.230`
+## 📥 Download da Última Versão: `v2.3.231`
 
 - ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.bat)
 - 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-ai-bridge.ps1)
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.230.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.230.exe)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.231.exe](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.231.exe)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/raw/main/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/raw/main/AIBridgeDevCert.crt)
 
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.230.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.230.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.231.exe`](https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.231.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -45,15 +45,14 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.230:
-**Resumo:** Corre????o no fluxo de publica????o para garantir que os arquivos do instalador sejam enviados corretamente para a p??gina de release, e atualiza????o do sistema de tags para serem certificadas automaticamente pelo GitHub.
+### 🌟 Notas do Release v2.3.231:
+**Resumo:** Corre????o para garantir que todos os commits gerados automaticamente pela CLI do projeto sejam certificados (Verified) via GPG.
 
 **Destaques:**
-- Instaladores e bin??rios agora s??o anexados de forma confi??vel na release do reposit??rio de downloads, prevenindo falhas ocultas no terminal.
-- As tags do reposit??rio principal agora s??o geradas e validadas pelo GitHub como "Verified".
-- Implementado sistema de limpeza autom??tica que mant??m apenas as 10 ??ltimas vers??es no reposit??rio principal para organiza????o do projeto.
+- Adicionada a flag de assinatura (-S) em todos os comandos autom??ticos de commit da CLI.
+- Assegura maior transpar??ncia e verifica????o de autenticidade nas atualiza????es do reposit??rio.
 
-**Observa????es:** Esta atualiza????o foca na estabilidade do fluxo de devOps da ferramenta e n??o possui altera????es vis??veis na interface para o usu??rio final.
+**Observa????es:** Esta atualiza????o melhora a seguran??a e o rastreio do versionamento e n??o afeta o funcionamento do projeto.
 
 ---
 

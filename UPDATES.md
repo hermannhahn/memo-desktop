@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.3.231
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre????o para garantir que todos os commits gerados automaticamente pela CLI do projeto sejam certificados (Verified) via GPG.
+
+**Destaques:**
+- Adicionada a flag de assinatura (-S) em todos os comandos autom??ticos de commit da CLI.
+- Assegura maior transpar??ncia e verifica????o de autenticidade nas atualiza????es do reposit??rio.
+
+**Observa????es:** Esta atualiza????o melhora a seguran??a e o rastreio do versionamento e n??o afeta o funcionamento do projeto.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.231 (`4a94008`)
+- update development branch (`6659ddb`)
+
+
+---
+
+
 ## Release - v2.3.230
 ### 📣 Apresentação da Atualização
 
