@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.234",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.234.exe",
-    "notes": "**Resumo:** Corre??o definitiva do painel de mem?ria e restaura??o da visualiza??o gr?fica com resolu??o de bugs de codifica??o (encoding).\n\n**Destaques:**\n- Restaurada completamente a interface gr?fica da aba de Mem?ria (com Gr?ficos de Coluna, Linha e Pizza) que havia sido acidentalmente removida no patch anterior devido a um erro de merge de codifica??o.\n- Todos os caracteres, acentua??o e tradu??es globais preservados corretamente."
+    "version": "2.3.235",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.235.exe",
+    "notes": "**Resumo:** Ajuste fino de layout nos textos indicadores da aba de mem?ria.\n\n**Destaques:**\n- Reduzido o tamanho da fonte e ajustada a quebra de linha das legendas dos cards informativos da tela Memory para evitar que transbordem o container, garantindo melhor legibilidade para textos mais longos."
 }

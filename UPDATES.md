@@ -3,6 +3,26 @@
 ---
 
 
+## Release - v2.3.235
+### 📣 Apresentação da Atualização
+
+**Resumo:** Ajuste fino de layout nos textos indicadores da aba de mem?ria.
+
+**Destaques:**
+- Reduzido o tamanho da fonte e ajustada a quebra de linha das legendas dos cards informativos da tela Memory para evitar que transbordem o container, garantindo melhor legibilidade para textos mais longos.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.235 (`880c3bb`)
+- update development branch (`0cda908`)
+
+
+---
+
+
 ## Release - v2.3.234
 ### 📣 Apresentação da Atualização
 
