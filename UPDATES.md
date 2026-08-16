@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.3.225
+### 📣 Apresentação da Atualização
+
+Etapa 3.6 da consolidacao do sono: autorrevisao pos-consolidacao (autocritica + red team interno) com gatilho primario de falta de contexto - design v2.1. Memorias consolidadas passam por auto-verificacao (proveniencia, dados inventados) e tentativa de refutacao antes de gravar; falta de contexto nunca e resolvida por adivinhacao - marca falta_contexto e escala ao designador. Integridade como clausula petrea (sem ponderacao de mancha).
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.225 (`55813db`)
+- falta de contexto como gatilho primario na autorrevisao (design v2.1) (`60f6772`)
+- Etapa 3.6 autorrevisao pos-consolidacao (autocritica + red team interno) (`edd6ae0`)
+
+#### 🔧 Manutenção / Refatoração
+- ajusta Etapa 3.6 ao estilo do repo (diff cirurgico, preserva CRLF) (`554936c`)
+
+
+---
+
+
 ## Release - v2.3.224
 ### 📣 Apresentação da Atualização
 

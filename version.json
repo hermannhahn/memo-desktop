@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.224",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.224.exe",
-    "notes": "**Resumo:** Melhorias no processamento noturno de mem?rias e busca inteligente.\n\n**Destaques:**\n- Nova consolida??o di?ria durante o sono do modelo (daily digest)\n- Filtros aprimorados por fonte e status na busca da base de conhecimento (RAG)"
+    "version": "2.3.225",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/raw/main/AI-Bridge-Setup-v2.3.225.exe",
+    "notes": "Etapa 3.6 da consolidacao do sono: autorrevisao pos-consolidacao (autocritica + red team interno) com gatilho primario de falta de contexto - design v2.1. Memorias consolidadas passam por auto-verificacao (proveniencia, dados inventados) e tentativa de refutacao antes de gravar; falta de contexto nunca e resolvida por adivinhacao - marca falta_contexto e escala ao designador. Integridade como clausula petrea (sem ponderacao de mancha)."
 }
