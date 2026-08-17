@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.245
+### 📣 Apresentação da Atualização
+
+**Resumo:** Implementa????o do sistema de esquecimento din??mico e degrada????o gradual de mem??rias por rel??gio biol??gico configur??vel por agente.
+
+**Destaques:**
+- Rel??gio biol??gico de requisi????es por agente permitindo ritmo de esquecimento personalizado.
+- Degrada????o e descarte autom??tico de ru??dos, mensagens curtas e mem??rias cruas j?? consolidadas.
+- Poda de mem??rias consolidadas antigas sem acesso por longos per??odos virtuais.
+- Novos handlers WebSocket para sincroniza????o da m??trica biol??gica com o servidor.
+
+### 📋 Changelog da Versão
+
+**Total:** 8 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.245 (`0882e51`)
+- update development branch (`13e2dbe`)
+- implementa decaimento por relogio biologico e config por agente (itens 2, 4 e 5 do plano v5) (`718722b`)
+- item #3 do plano de decaimento - arbitro com threshold 0.8 e double-check em confianca intermediaria (`50829b1`)
+- item #1 do plano de decaimento - pruning frio de mensagens muito_curta sem acesso nem influencia (`672c16b`)
+
+#### 📚 Documentação
+- marca itens #1 e #3 do TODO como concluidos (`14e52ef`)
+- adiciona TODO_MEMORY_DECAY.md com as etapas das implementacoes do plano v5 (`ec78a80`)
+- adiciona plano operacional v5 - relogio biologico por requisicao e config por agente no ai-brain (`d181439`)
+
+
+---
+
+
 ## Release - v2.3.244
 ### 📣 Apresentação da Atualização
 

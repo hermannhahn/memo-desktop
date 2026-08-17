@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.244",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.244/AI-Bridge-Setup-v2.3.244.exe",
-    "notes": "**Resumo:** Aprimoramento da deteccao de ambiente na CLI e adocao de multiplas fontes resilientes de verificacao de atualizacao.\n\n**Destaques:**\n- Deteccao rigorosa de ambiente na CLI impedindo uso da Dev API no Windows nativo\n- Verificacao de atualizacao com fallback automatico (Raw GitHub, jsDelivr e GitHub Releases API)\n- Resiliencia contra lentidao ou instabilidades de CDN"
+    "version": "2.3.245",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.245/AI-Bridge-Setup-v2.3.245.exe",
+    "notes": "**Resumo:** Implementa????o do sistema de esquecimento din??mico e degrada????o gradual de mem??rias por rel??gio biol??gico configur??vel por agente.\r\n\r\n**Destaques:**\r\n- Rel??gio biol??gico de requisi????es por agente permitindo ritmo de esquecimento personalizado.\r\n- Degrada????o e descarte autom??tico de ru??dos, mensagens curtas e mem??rias cruas j?? consolidadas.\r\n- Poda de mem??rias consolidadas antigas sem acesso por longos per??odos virtuais.\r\n- Novos handlers WebSocket para sincroniza????o da m??trica biol??gica com o servidor."
 }
