@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.249",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.249/AI-Bridge-Setup-v2.3.249.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** CLI update with mandatory bilingual presentation support for releases.\n\n**Highlights:**\n- Interactive release prompts in both English (en) and Portuguese (pt-br).\n- Direct UTF-8 release notes file reading ensuring character encoding preservation.\n- Full compatibility with the AI-Brain panel bilingual update renderer.\n\n<!-- lang:pt -->\n**Resumo:** Atualização da CLI com suporte mandatório a apresentações bilíngues para releases.\n\n**Destaques:**\n- Prompts interativos de release em inglês (en) e português (pt-br).\n- Leitura direta de notas de release em UTF-8 garantindo a preservação da acentuação.\n- Compatibilidade total com a renderização bilíngue do painel AI-Brain."
+    "version": "2.3.250",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.250/AI-Bridge-Setup-v2.3.250.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Added memory decay and retention trend line chart to the dashboard.\n\n**Highlights:**\n- Line chart visualizing memory degradation, biological decay over time, and natural forgetting.\n- Track raw and consolidated decaying memories alongside active RAG reinforcement hits.\n- Full multi-language localization across all 8 supported interface languages.\n\n<!-- lang:pt -->\n**Resumo:** Adicionado gráfico de linhas de decaimento e retenção de memórias no dashboard.\n\n**Destaques:**\n- Gráfico de linhas visualizando a degradação e decaimento temporal das memórias e esquecimento natural.\n- Acompanhamento de memórias cruas e consolidadas em degradação junto ao reforço ativo por acessos RAG.\n- Suporte completo aos 8 idiomas de interface suportados."
 }
