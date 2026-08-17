@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.248",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.248/AI-Bridge-Setup-v2.3.248.exe",
-    "notes": "**Resumo:** Implementação do sistema de esquecimento dinâmico e degradação gradual de memórias por relógio biológico configurável por agente.\n\n**Destaques:**\n- Relógio biológico de requisições por agente permitindo ritmo de esquecimento personalizado.\n- Degradação e descarte automático de ruídos, mensagens curtas e memórias cruas já consolidadas.\n- Poda de memórias consolidadas antigas sem acesso por longos períodos virtuais.\n- Novos handlers WebSocket para sincronização da métrica biológica com o servidor."
+    "version": "2.3.249",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.249/AI-Bridge-Setup-v2.3.249.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** CLI update with mandatory bilingual presentation support for releases.\n\n**Highlights:**\n- Interactive release prompts in both English (en) and Portuguese (pt-br).\n- Direct UTF-8 release notes file reading ensuring character encoding preservation.\n- Full compatibility with the AI-Brain panel bilingual update renderer.\n\n<!-- lang:pt -->\n**Resumo:** Atualização da CLI com suporte mandatório a apresentações bilíngues para releases.\n\n**Destaques:**\n- Prompts interativos de release em inglês (en) e português (pt-br).\n- Leitura direta de notas de release em UTF-8 garantindo a preservação da acentuação.\n- Compatibilidade total com a renderização bilíngue do painel AI-Brain."
 }

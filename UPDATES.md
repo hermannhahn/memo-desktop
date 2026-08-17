@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.249
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** CLI update with mandatory bilingual presentation support for releases.
+
+**Highlights:**
+- Interactive release prompts in both English (en) and Portuguese (pt-br).
+- Direct UTF-8 release notes file reading ensuring character encoding preservation.
+- Full compatibility with the AI-Brain panel bilingual update renderer.
+
+<!-- lang:pt -->
+**Resumo:** Atualização da CLI com suporte mandatório a apresentações bilíngues para releases.
+
+**Destaques:**
+- Prompts interativos de release em inglês (en) e português (pt-br).
+- Leitura direta de notas de release em UTF-8 garantindo a preservação da acentuação.
+- Compatibilidade total com a renderização bilíngue do painel AI-Brain.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.249 (`e7c8f8b`)
+- update development branch (`9d4133b`)
+
+
+---
+
+
 ## Release - v2.3.248
 ### 📣 Apresentação da Atualização
 
