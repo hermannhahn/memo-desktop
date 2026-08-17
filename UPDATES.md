@@ -3,6 +3,50 @@
 ---
 
 
+## Release - v2.3.244
+### 📣 Apresentação da Atualização
+
+**Resumo:** Aprimoramento da deteccao de ambiente na CLI e adocao de multiplas fontes resilientes de verificacao de atualizacao.
+
+**Destaques:**
+- Deteccao rigorosa de ambiente na CLI impedindo uso da Dev API no Windows nativo
+- Verificacao de atualizacao com fallback automatico (Raw GitHub, jsDelivr e GitHub Releases API)
+- Resiliencia contra lentidao ou instabilidades de CDN
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.244 (`6745828`)
+- update development branch (`4e3661e`)
+
+
+---
+
+
+## Release - v2.3.243
+### 📣 Apresentação da Atualização
+
+**Resumo:** Aprimoramento da deteccao de ambiente na CLI e adocao de multiplas fontes resilientes de verificacao de atualizacao.
+
+**Destaques:**
+- Deteccao rigorosa de ambiente na CLI impedindo uso da Dev API no Windows nativo
+- Verificacao de atualizacao com fallback automatico (Raw GitHub, jsDelivr e GitHub Releases API)
+- Resiliencia contra lentidao ou instabilidades de CDN
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.243 (`937c7b4`)
+- update development branch (`e88ad02`)
+
+
+---
+
+
 ## Release - v2.3.242
 ### 📣 Apresentação da Atualização
 

@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.242",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.242/AI-Bridge-Setup-v2.3.242.exe",
-    "notes": "**Resumo:** Corre??o no carregamento das tabelas de mem?rias e notas, aprimoramento visual dos filtros e ado??o de ?cones e emojis nos status e emo??es.\n\n**Destaques:**\n- Carregamento est?vel e resiliente nas telas de Conte?do da Mem?ria e Notas\n- Filtros aprimorados sem corte de texto ou emojis\n- Uso expressivo de emojis e ?cones em emo??es, status, tipos e a??es\n- Reorganiza??o do menu lateral com a aba Dashboard posicionada logo abaixo de Status de Servi?os"
+    "version": "2.3.244",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.244/AI-Bridge-Setup-v2.3.244.exe",
+    "notes": "**Resumo:** Aprimoramento da deteccao de ambiente na CLI e adocao de multiplas fontes resilientes de verificacao de atualizacao.\n\n**Destaques:**\n- Deteccao rigorosa de ambiente na CLI impedindo uso da Dev API no Windows nativo\n- Verificacao de atualizacao com fallback automatico (Raw GitHub, jsDelivr e GitHub Releases API)\n- Resiliencia contra lentidao ou instabilidades de CDN"
 }
