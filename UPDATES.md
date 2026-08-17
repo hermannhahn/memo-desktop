@@ -3,6 +3,34 @@
 ---
 
 
+## Release - v2.3.241
+### 📣 Apresentação da Atualização
+
+**Resumo:** Aprimoramentos visuais e funcionais nas abas Memory Content e Notes Content com suporte a ordena??o por coluna, filtros emocionais corrigidos, nomes leg?veis de agentes e a??es de edi??o e exclus?o.
+
+**Destaques:**
+- Filtros emocionais corrigidos e sincronizados com todas as categorias do Sono do Modelo.
+- Seletores de agentes agora exibem os nomes reais de todos os agentes ativos.
+- Bot?es de exclus?o na tabela de mem?rias e edi??o e exclus?o na tabela de anota??es.
+- Ordena??o ascendente e descendente em todas as colunas das tabelas de mem?rias e anota??es.
+- Layout de tabela compacto e responsivo eliminando barras de rolagem horizontais em telas menores.
+- Cabe?alhos de topo unificados e din?micos com suporte a 8 idiomas.
+
+**Observa??es:** As anota??es editadas s?o salvas e persistidas diretamente no banco de longo prazo.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.241 (`2f54894`)
+- improve memory and notes UI with filters sorting and actions (`2f7c4b3`)
+- update development branch (`77acf66`)
+
+
+---
+
+
 ## Release - v2.3.240
 ### 📣 Apresentação da Atualização
 
