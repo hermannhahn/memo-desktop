@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.3.242
+### 📣 Apresentação da Atualização
+
+**Resumo:** Corre??o no carregamento das tabelas de mem?rias e notas, aprimoramento visual dos filtros e ado??o de ?cones e emojis nos status e emo??es.
+
+**Destaques:**
+- Carregamento est?vel e resiliente nas telas de Conte?do da Mem?ria e Notas
+- Filtros aprimorados sem corte de texto ou emojis
+- Uso expressivo de emojis e ?cones em emo??es, status, tipos e a??es
+- Reorganiza??o do menu lateral com a aba Dashboard posicionada logo abaixo de Status de Servi?os
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.242 (`1c83a91`)
+- update development branch (`9151410`)
+
+
+---
+
+
 ## Release - v2.3.241
 ### 📣 Apresentação da Atualização
 
