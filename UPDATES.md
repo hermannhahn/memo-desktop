@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.3.247
+### 📣 Apresentação da Atualização
+
+**Resumo:** Implementa??o do sistema de esquecimento din?mico e degrada??o gradual de mem?rias por rel?gio biol?gico configur?vel por agente.
+
+**Destaques:**
+- Rel?gio biol?gico de requisi??es por agente permitindo ritmo de esquecimento personalizado.
+- Degrada??o e descarte autom?tico de ru?dos, mensagens curtas e mem?rias cruas j? consolidadas.
+- Poda de mem?rias consolidadas antigas sem acesso por longos per?odos virtuais.
+- Novos handlers WebSocket para sincroniza??o da m?trica biol?gica com o servidor.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.247 (`c52ecd8`)
+- update development branch (`de947cd`)
+
+
+---
+
+
 ## Release - v2.3.246
 ### 📣 Apresentação da Atualização
 
