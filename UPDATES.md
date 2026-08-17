@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.3.248
+### 📣 Apresentação da Atualização
+
+**Resumo:** Implementação do sistema de esquecimento dinâmico e degradação gradual de memórias por relógio biológico configurável por agente.
+
+**Destaques:**
+- Relógio biológico de requisições por agente permitindo ritmo de esquecimento personalizado.
+- Degradação e descarte automático de ruídos, mensagens curtas e memórias cruas já consolidadas.
+- Poda de memórias consolidadas antigas sem acesso por longos períodos virtuais.
+- Novos handlers WebSocket para sincronização da métrica biológica com o servidor.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.248 (`4495f6f`)
+- update development branch (`41ab012`)
+
+
+---
+
+
 ## Release - v2.3.247
 ### 📣 Apresentação da Atualização
 

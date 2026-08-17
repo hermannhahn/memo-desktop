@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.247",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.247/AI-Bridge-Setup-v2.3.247.exe",
-    "notes": "**Resumo:** Implementa??o do sistema de esquecimento din?mico e degrada??o gradual de mem?rias por rel?gio biol?gico configur?vel por agente.\r\n\r\n**Destaques:**\r\n- Rel?gio biol?gico de requisi??es por agente permitindo ritmo de esquecimento personalizado.\r\n- Degrada??o e descarte autom?tico de ru?dos, mensagens curtas e mem?rias cruas j? consolidadas.\r\n- Poda de mem?rias consolidadas antigas sem acesso por longos per?odos virtuais.\r\n- Novos handlers WebSocket para sincroniza??o da m?trica biol?gica com o servidor."
+    "version": "2.3.248",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.248/AI-Bridge-Setup-v2.3.248.exe",
+    "notes": "**Resumo:** Implementação do sistema de esquecimento dinâmico e degradação gradual de memórias por relógio biológico configurável por agente.\n\n**Destaques:**\n- Relógio biológico de requisições por agente permitindo ritmo de esquecimento personalizado.\n- Degradação e descarte automático de ruídos, mensagens curtas e memórias cruas já consolidadas.\n- Poda de memórias consolidadas antigas sem acesso por longos períodos virtuais.\n- Novos handlers WebSocket para sincronização da métrica biológica com o servidor."
 }
