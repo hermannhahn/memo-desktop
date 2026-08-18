@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.3.263
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Moved the AI-BRAIN logo from the floating footer to the top header.
+
+**Highlights:**
+- Relocated the AI-BRAIN branding badge to the top header next to the language selector.
+- Removed the fixed bottom-right floating badge to prevent overlapping table pagination controls.
+
+<!-- lang:pt -->
+**Resumo:** Movida a logo do AI-BRAIN do rodape flutuante para o cabecalho superior.
+
+**Destaques:**
+- Relocalizado o badge com logo do AI-BRAIN para o cabecalho superior ao lado do seletor de idiomas.
+- Removido o badge flutuante fixo no canto inferior direito para desobstruir os botoes de paginacao das tabelas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.263 (`50ddb78`)
+- updates in feature/header-partner-branding (`b1b04cd`)
+- reposicionar logo flutuante AI-BRAIN do rodape para o cabecalho (`ba29fd2`)
+
+
+---
+
+
 ## Release - v2.3.262
 ### 📣 Apresentação da Atualização
 
