@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.3.258
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added memory decay and retention trend line chart to the dashboard.
+
+**Highlights:**
+- Line chart visualizing memory degradation, biological decay over time, and natural forgetting.
+- Track raw and consolidated decaying memories alongside active RAG reinforcement hits.
+- Full multi-language localization across all 8 supported interface languages.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado gráfico de linhas de decaimento e retenção de memórias no dashboard.
+
+**Destaques:**
+- Gráfico de linhas visualizando a degradação e decaimento temporal das memórias e esquecimento natural.
+- Acompanhamento de memórias cruas e consolidadas em degradação junto ao reforço ativo por acessos RAG.
+- Suporte completo aos 8 idiomas de interface suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.258 (`5858d92`)
+
+#### 🐛 Correções
+- persist enabled state for browser_use and default-disabled tools across restarts (`d955a24`)
+- default settings tab accordions to collapsed state (`27a9f42`)
+
+#### 📚 Documentação
+- create dedicated architecture documentation docs/AGENT_BIOGRAPHY.md for living agent auto-portrait (`75cc871`)
+- create dedicated master documentation docs/MEMORY_DECAY.md for biological memory decay (`3573cd9`)
+- create unified master documentation docs/MEMORY_CONSOLIDATION.md for memory consolidation and biological decay (`a850ae8`)
+- document biological memory decay formulas and time estimation curves (`bd7c583`)
+
+
+---
+
+
 ## Release - v2.3.257
 ### 📣 Apresentação da Atualização
 
