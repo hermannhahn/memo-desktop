@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.3.264
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Single-line header logo protection and UI refinements for IoT devices actions.
+
+**Highlights:**
+- Ensured the AI-BRAIN header logo badge never wraps across multiple lines across all window sizes.
+- Clean dark translucent action buttons in the Saved IoT Devices table without wrapping.
+- Eliminated duplicate plus sign in the Add Device button and automatically hidden Add button for already saved IoT devices.
+
+<!-- lang:pt -->
+**Resumo:** Protecao de linha unica na logo do cabecalho e refinamentos visuais nas acoes de dispositivos IoT.
+
+**Destaques:**
+- Garantido que a logo do AI-BRAIN no cabecalho nunca quebre em multiplas linhas em qualquer resolucao.
+- Botoes de acao da tabela de dispositivos IoT salvos em linha unica com fundo translucido escuro e sem quebra.
+- Eliminado o sinal de mais duplicado no botao de adicao e ocultacao automatica do botao para dispositivos ja salvos.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.264 (`667122a`)
+- updates in feature/iot-ui-branding-fixes (`9dc84fd`)
+- refinamentos de UI em IoT devices e logo AI-BRAIN em linha unica (`7829402`)
+
+
+---
+
+
 ## Release - v2.3.263
 ### 📣 Apresentação da Atualização
 

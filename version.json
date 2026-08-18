@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.263",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.263/AI-Bridge-Setup-v2.3.263.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Moved the AI-BRAIN logo from the floating footer to the top header.\n\n**Highlights:**\n- Relocated the AI-BRAIN branding badge to the top header next to the language selector.\n- Removed the fixed bottom-right floating badge to prevent overlapping table pagination controls.\n\n<!-- lang:pt -->\n**Resumo:** Movida a logo do AI-BRAIN do rodape flutuante para o cabecalho superior.\n\n**Destaques:**\n- Relocalizado o badge com logo do AI-BRAIN para o cabecalho superior ao lado do seletor de idiomas.\n- Removido o badge flutuante fixo no canto inferior direito para desobstruir os botoes de paginacao das tabelas."
+    "version": "2.3.264",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.264/AI-Bridge-Setup-v2.3.264.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Single-line header logo protection and UI refinements for IoT devices actions.\n\n**Highlights:**\n- Ensured the AI-BRAIN header logo badge never wraps across multiple lines across all window sizes.\n- Clean dark translucent action buttons in the Saved IoT Devices table without wrapping.\n- Eliminated duplicate plus sign in the Add Device button and automatically hidden Add button for already saved IoT devices.\n\n<!-- lang:pt -->\n**Resumo:** Protecao de linha unica na logo do cabecalho e refinamentos visuais nas acoes de dispositivos IoT.\n\n**Destaques:**\n- Garantido que a logo do AI-BRAIN no cabecalho nunca quebre em multiplas linhas em qualquer resolucao.\n- Botoes de acao da tabela de dispositivos IoT salvos em linha unica com fundo translucido escuro e sem quebra.\n- Eliminado o sinal de mais duplicado no botao de adicao e ocultacao automatica do botao para dispositivos ja salvos."
 }
