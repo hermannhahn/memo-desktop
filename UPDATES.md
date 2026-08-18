@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.253
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added memory decay and retention trend line chart to the dashboard.
+
+**Highlights:**
+- Line chart visualizing memory degradation, biological decay over time, and natural forgetting.
+- Track raw and consolidated decaying memories alongside active RAG reinforcement hits.
+- Full multi-language localization across all 8 supported interface languages.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado gráfico de linhas de decaimento e retenção de memórias no dashboard.
+
+**Destaques:**
+- Gráfico de linhas visualizando a degradação e decaimento temporal das memórias e esquecimento natural.
+- Acompanhamento de memórias cruas e consolidadas em degradação junto ao reforço ativo por acessos RAG.
+- Suporte completo aos 8 idiomas de interface suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.253 (`306fcab`)
+- dynamically inject agent LLM credentials from AI-Brain via WebSocket into browser_use (`7f91376`)
+
+
+---
+
+
 ## Release - v2.3.252
 ### 📣 Apresentação da Atualização
 
