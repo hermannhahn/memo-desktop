@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.3.262
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Full-height table layout without application scrollbars and fast dynamic database pagination for memories and notes.
+
+**Highlights:**
+- Memory and Notes tabs now occupy full window height with smooth internal scrolling solely inside the data tables.
+- Server-side PostgreSQL pagination with instant query response times (<3ms) loading records on-demand per page.
+- Debounced search filter and column sorting processed directly by the database engine.
+
+<!-- lang:pt -->
+**Resumo:** Layout de tabela em altura total sem barras de rolagem na aplicacao e paginacao dinamica rapida no banco para memorias e notas.
+
+**Destaques:**
+- Abas de Memorias e Notas agora ocupam toda a altura da janela com rolagem interna suave apenas nas tabelas de dados.
+- Paginacao PostgreSQL no servidor com tempo de resposta instantaneo (<3ms) carregando registros sob demanda por pagina.
+- Filtro de busca com debounce e ordenacao de colunas processados diretamente no motor de banco de dados.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.262 (`eb3026f`)
+- updates in feature/memory-notes-pagination-ui (`bbe7b26`)
+- layout full-height sem scroll na aplicacao e paginacao dinamica SQL para memory e notes (`fac5d30`)
+
+
+---
+
+
 ## Release - v2.3.261
 ### 📣 Apresentação da Atualização
 
