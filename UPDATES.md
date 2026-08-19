@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.3.266
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Batch prefetching of 100 records for memory and notes tables with centered loading indicator and non-clickable pagination buttons.
+
+**Highlights:**
+- Pre-fetches 100 records per backend query for instant local page navigation without re-fetching on every page turn.
+- Prominent centered loading spinner inside the table during database queries.
+- Non-clickable disabled previous and next buttons during active loading to prevent duplicate requests.
+
+<!-- lang:pt -->
+**Resumo:** Leitura em lotes de 100 registros para tabelas de memorias e notas com indicador de loading centralizado e botoes de paginacao nao-clicaveis.
+
+**Destaques:**
+- Leitura de 100 registros por consulta ao banco para navegacao instantanea local entre paginas sem recarregar a cada avancar.
+- Spinner de loading destacado e centralizado no meio da tabela durante o carregamento de novos lotes.
+- Botoes de voltar e avancar desabilitados e nao-clicaveis durante o carregamento para evitar requisicoes duplicadas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.266 (`7ddc9f3`)
+
+#### 🐛 Correções
+- usa time.Local (fuso do PC) em vez de America/Sao_Paulo fixo nos prompts (`6f80172`)
+- converte timestamps para America/Sao_Paulo na origem dos prompts (`eafba70`)
+
+
+---
+
+
 ## Release - v2.3.265
 ### 📣 Apresentação da Atualização
 
