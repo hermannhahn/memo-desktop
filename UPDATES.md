@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.3.269
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added system time endpoints and WebSocket actions to retrieve local client host date, time and timezone.
+
+**Highlights:**
+- New REST endpoint `GET /api/v1/system/time` returning local datetime, timezone offset and timestamp.
+- WebSocket handler support for `get_client_time`, `get_system_time` and `get_time` actions.
+
+<!-- lang:pt -->
+**Resumo:** Adicionados endpoints de sistema e ações WebSocket para obtenção de data, hora e fuso horário da máquina local.
+
+**Destaques:**
+- Nova rota REST `GET /api/v1/system/time` retornando data e hora local, fuso horário e timestamp.
+- Suporte a ações via WebSocket para `get_client_time`, `get_system_time` e `get_time`.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.269 (`0cbb31d`)
+- update development branch (`f84f4a4`)
+- add get_client_time route and action for host time retrieval (`43a64c9`)
+
+
+---
+
+
 ## Release - v2.3.268
 ### 📣 Apresentação da Atualização
 
