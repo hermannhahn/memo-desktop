@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.3.270
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Optimized long-term memory recording by preventing duplicate consecutive thoughts and unifying MCP action history.
+
+**Highlights:**
+- Deduplicated identical sequential thought records in chat history to keep memory storage clean.
+- Streamlined MCP action logging by storing thought data strictly in its dedicated column without duplicating in the action content.
+
+<!-- lang:pt -->
+**Resumo:** Otimização na gravação da memória de longo prazo prevenindo pensamentos sequenciais duplicados e unificando o histórico de ações MCP.
+
+**Destaques:**
+- Deduplicação de pensamentos idênticos consecutivos no histórico de chat para manter a base de memória limpa.
+- Otimização no registro de ações MCP, persistindo o pensamento exclusivamente em sua coluna dedicada sem duplicar no conteúdo da ação.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.270 (`560c5ac`)
+- update development branch (`09e958b`)
+
+#### 🐛 Correções
+- deduplicate consecutive identical thoughts and streamline MCP action LTM storage (`7773558`)
+
+
+---
+
+
 ## Release - v2.3.269
 ### 📣 Apresentação da Atualização
 

@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.269`
+## 📥 Download da Última Versão: `v2.3.270`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.269.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/AI-Bridge-Setup-v2.3.269.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.270.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/AI-Bridge-Setup-v2.3.270.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.269.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/AI-Bridge-Setup-v2.3.269.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.270.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/AI-Bridge-Setup-v2.3.270.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.269/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.270/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.269:
+### 🌟 Notas do Release v2.3.270:
 <!-- lang:en -->
-**Summary:** Added system time endpoints and WebSocket actions to retrieve local client host date, time and timezone.
+**Summary:** Optimized long-term memory recording by preventing duplicate consecutive thoughts and unifying MCP action history.
 
 **Highlights:**
-- New REST endpoint `GET /api/v1/system/time` returning local datetime, timezone offset and timestamp.
-- WebSocket handler support for `get_client_time`, `get_system_time` and `get_time` actions.
+- Deduplicated identical sequential thought records in chat history to keep memory storage clean.
+- Streamlined MCP action logging by storing thought data strictly in its dedicated column without duplicating in the action content.
 
 <!-- lang:pt -->
-**Resumo:** Adicionados endpoints de sistema e ações WebSocket para obtenção de data, hora e fuso horário da máquina local.
+**Resumo:** Otimização na gravação da memória de longo prazo prevenindo pensamentos sequenciais duplicados e unificando o histórico de ações MCP.
 
 **Destaques:**
-- Nova rota REST `GET /api/v1/system/time` retornando data e hora local, fuso horário e timestamp.
-- Suporte a ações via WebSocket para `get_client_time`, `get_system_time` e `get_time`.
+- Deduplicação de pensamentos idênticos consecutivos no histórico de chat para manter a base de memória limpa.
+- Otimização no registro de ações MCP, persistindo o pensamento exclusivamente em sua coluna dedicada sem duplicar no conteúdo da ação.
 
 ---
 
