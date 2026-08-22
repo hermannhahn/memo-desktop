@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.3.271
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Optimized long-term memory recording by preventing duplicate consecutive thoughts and unifying MCP action history.
+
+**Highlights:**
+- Deduplicated identical sequential thought records in chat history to keep memory storage clean.
+- Streamlined MCP action logging by storing thought data strictly in its dedicated column without duplicating in the action content.
+
+<!-- lang:pt -->
+**Resumo:** Otimização na gravação da memória de longo prazo prevenindo pensamentos sequenciais duplicados e unificando o histórico de ações MCP.
+
+**Destaques:**
+- Deduplicação de pensamentos idênticos consecutivos no histórico de chat para manter a base de memória limpa.
+- Otimização no registro de ações MCP, persistindo o pensamento exclusivamente em sua coluna dedicada sem duplicar no conteúdo da ação.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- update development branch (`c8efb27`)
+- tool MCP traccar + aba Rastreamento + porta configurável (Fases 2-5) (`7012ae3`)
+- integração Traccar como serviço gerenciado (Fase 1 + card Services Status) (`09b0092`)
+
+#### 🔧 Manutenção / Refatoração
+- release notes v2.3.271 (Traccar) + docs CLI build (AGENTS/GEMINI/SKILL) (`03adb80`)
+
+
+---
+
+
 ## Release - v2.3.270
 ### 📣 Apresentação da Atualização
 
