@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.3.292
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** New managed Traccar GPS tracking integration (service, MCP tool, embedded dashboard) and closed-source build command in the CLI.
+
+**Highlights:**
+- Traccar as a managed service: auto-installs via Docker on first boot, auto-configures admin + Access Token, health monitoring and Services card with local/external URLs.
+- New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
+- New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
+- Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
+- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+
+<!-- lang:pt -->
+**Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
+
+**Destaques:**
+- Traccar como serviço gerenciado: instala sozinho via Docker no 1º boot, autoconfigura admin + Access Token, monitoramento de saúde e card Services com URLs externa/local.
+- Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
+- Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
+- Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
+- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.292 (`2a53fa7`)
+- update development branch (`5f0f2c8`)
+- alertas inteligentes na aba Tracking + sync de config com o AI-Brain (Fase 4) (`40e7564`)
+- webhook local do Traccar + repasse via WebSocket (Fase 2) (`1c8060b`)
+- tool traccar com gestao de notificacoes webhook (Fase 1) (`86d4658`)
+
+#### 🐛 Correções
+- garantir git pull na branch development antes de compilar (build --direct) (`fd189ae`)
+
+
+---
+
+
 ## Release - v2.3.291
 ### 📣 Apresentação da Atualização
 
