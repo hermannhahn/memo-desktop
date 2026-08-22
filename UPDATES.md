@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.295
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Agents can now query the Smart Alerts configuration (read-only): enabled status, active event types, response channel, target bot, destination chat and rules. Activation and event rules remain under user control in the Smart Alerts tab.
+
+**Highlights:**
+- New MCP action traccar get_alert_config (read-only consultation)
+- The agent can inform the user about alert status on request (e.g. "are the alerts on? who receives them?")
+- User keeps full control: only the Smart Alerts tab can enable/disable and define what triggers
+
+<!-- lang:pt -->
+**Resumo:** Os agentes agora podem consultar a configuração dos Alertas Inteligentes (somente leitura): se está ativado, tipos de evento ligados, canal de resposta, bot alvo, chat de destino e regras. Ativar/desativar e definir o que dispara continuam sob controle do usuário na aba Smart Alerts.
+
+**Destaques:**
+- Nova ação MCP traccar get_alert_config (consulta read-only)
+- O agente informa o status dos alertas quando o usuário perguntar (ex: "os alertas estão ligados? pra quem vai?")
+- Usuário mantém o controle total: só a aba Smart Alerts ativa/desativa e define o que dispara
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.295 (`1f979c1`)
+- acao MCP get_alert_config (consulta read-only do status dos Smart Alerts) (`ed48192`)
+
+
+---
+
+
 ## Release - v2.3.294
 ### 📣 Apresentação da Atualização
 
