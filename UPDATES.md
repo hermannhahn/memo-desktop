@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.294
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Smart Alerts is now its own menu tab: the Tracking tab shows only the live map, and all Traccar event configuration (event types, response channel, target bot, rules) moved to the new "Smart Alerts" tab.
+
+**Highlights:**
+- New "Smart Alerts" tab in the menu with the full alert configuration
+- Tracking tab is now map-only (cleaner and faster)
+- i18n updated in all 8 languages
+
+<!-- lang:pt -->
+**Resumo:** Os Alertas Inteligentes agora têm aba própria no menu: a aba Rastreamento ficou só com o mapa ao vivo, e toda a configuração de eventos do Traccar (tipos de evento, canal de resposta, bot alvo, regras) foi para a nova aba "Smart Alerts".
+
+**Destaques:**
+- Nova aba "Smart Alerts" no menu com toda a configuração de alertas
+- Aba Rastreamento agora só com o mapa (mais limpa e leve)
+- i18n atualizado nos 8 idiomas
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.294 (`5a5debc`)
+- aba Smart Alerts propria no menu; Tracking fica so com o mapa (`024cbaf`)
+
+
+---
+
+
 ## Release - v2.3.293
 ### 📣 Apresentação da Atualização
 
