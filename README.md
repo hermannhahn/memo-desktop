@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.3.271`
+## 📥 Download da Última Versão: `v2.3.272`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.271.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/AI-Bridge-Setup-v2.3.271.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.3.272.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/AI-Bridge-Setup-v2.3.272.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.3.271.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/AI-Bridge-Setup-v2.3.271.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.3.272.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/AI-Bridge-Setup-v2.3.272.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.271/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.272/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,26 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.3.271:
+### 🌟 Notas do Release v2.3.272:
 <!-- lang:en -->
-**Summary:** Optimized long-term memory recording by preventing duplicate consecutive thoughts and unifying MCP action history.
+**Summary:** New managed Traccar GPS tracking integration (service, MCP tool, embedded dashboard) and closed-source build command in the CLI.
 
 **Highlights:**
-- Deduplicated identical sequential thought records in chat history to keep memory storage clean.
-- Streamlined MCP action logging by storing thought data strictly in its dedicated column without duplicating in the action content.
+- Traccar as a managed service: auto-installs via Docker on first boot, auto-configures admin + Access Token, health monitoring and Services card with local/external URLs.
+- New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
+- New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
+- Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
+- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
-**Resumo:** Otimização na gravação da memória de longo prazo prevenindo pensamentos sequenciais duplicados e unificando o histórico de ações MCP.
+**Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
 
 **Destaques:**
-- Deduplicação de pensamentos idênticos consecutivos no histórico de chat para manter a base de memória limpa.
-- Otimização no registro de ações MCP, persistindo o pensamento exclusivamente em sua coluna dedicada sem duplicar no conteúdo da ação.
+- Traccar como serviço gerenciado: instala sozinho via Docker no 1º boot, autoconfigura admin + Access Token, monitoramento de saúde e card Services com URLs externa/local.
+- Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
+- Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
+- Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
+- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ---
 
