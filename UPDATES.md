@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.3.293
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the Tracking tab so the map is always visible (Smart Alerts panel now scrolls within a max height) and made Traccar event delivery fully automatic: enabling Smart Alerts ensures the webhook notification exists on any installation — no manual setup.
+
+**Highlights:**
+- Tracking tab: map no longer disappears; Smart Alerts panel is height-limited and scrollable
+- Enabling Smart Alerts automatically creates the Traccar webhook notification (idempotent) pointing to the local AI-Bridge receiver — works on any machine/installation
+- Self-provisioning: Traccar service, technical user and Access Token are auto-created on first boot; the event pipeline (webhook) is now auto-wired too
+
+<!-- lang:pt -->
+**Resumo:** Corrigida a aba Rastreamento para o mapa ficar sempre visível (painel de Alertas Inteligentes agora rola dentro de altura máxima) e tornada automática a entrega de eventos do Traccar: ativar os Alertas Inteligentes garante a notificação webhook em qualquer instalação — sem configuração manual.
+
+**Destaques:**
+- Aba Rastreamento: o mapa não some mais; painel de alertas com altura limitada e rolagem interna
+- Ativar alertas cria automaticamente a notificação webhook do Traccar (idempotente) apontando para o receptor local do AI-Bridge — funciona em qualquer máquina/instalação
+- Auto-provisionamento: serviço Traccar, usuário técnico e Access Token já eram criados no 1º boot; agora o elo de eventos (webhook) também é automático
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.293 (`5665099`)
+
+#### 🐛 Correções
+- mapa da aba Tracking sempre visivel + notificacao webhook automatica (`894a0b7`)
+
+
+---
+
+
 ## Release - v2.3.292
 ### 📣 Apresentação da Atualização
 
