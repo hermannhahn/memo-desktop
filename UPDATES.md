@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.6
+### 📣 Apresentação da Atualização
+
+fix(tracking-users): v2.5.6 (PATCH) — leitura correta das permissões de cercas no form: a API de permissões do Traccar usa o PAR de filtros na query para decidir qual tabela consultar (?userId=X&deviceId=0 → tc_device_user; ?userId=X&geofenceId=0 → tc_geofence_user). O código usava os 3 filtros juntos, que retorna SOMENTE dispositivos — as cercas salvas eram criadas (POST 204) mas nunca apareciam marcadas ao reabrir o form (GET não retornava GEOFENCEID), parecendo 'não salvou'. GetTraccarUserPermissions e SetTraccarUserPermissions agora fazem duas chamadas separadas (devices + geofences) e o diff de cercas adiciona/remove corretamente.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.6 (`4acf13d`)
+
+#### 🐛 Correções
+- permissões de cercas agora são lidas corretamente (2 chamadas: devices + geofences) (`489b405`)
+
+
+---
+
+
 ## Release - v2.5.5
 ### 📣 Apresentação da Atualização
 
