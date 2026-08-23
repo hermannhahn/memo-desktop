@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.3.302
+### 📣 Apresentação da Atualização
+
+fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.302 (`d92cde8`)
+
+
+---
+
+
+## Release - v2.3.301
+### 📣 Apresentação da Atualização
+
+fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.301 (`8dd1b58`)
+
+#### 🐛 Correções
+- ordena lista de tools MCP (map iteration em Go é aleatória) (`2c4b1d9`)
+
+
+---
+
+
 ## Release - v2.3.300
 ### 📣 Apresentação da Atualização
 
