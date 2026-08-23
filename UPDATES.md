@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.9
+### 📣 Apresentação da Atualização
+
+feat(traccar): v2.5.9 (PATCH) — novas instalações garantidas: o fluxo de instalação/configuração (EnsureTraccarToken) agora chama EnsureTraccarPermissionTables após criar o usuário técnico, criando as 8 tabelas de permissão (tc_device_user, tc_geofence_user, tc_group_user, tc_calendar_user + variantes invertidas) com CREATE TABLE IF NOT EXISTS. Instalações novas já criam o schema completo no 1º boot do Traccar (banco do zero); este reforço garante que mesmo bancos antigos/incompletos tenham as tabelas de permissão desde o primeiro setup — sem erro no Tracking Users. Auto-reparo on-demand (v2.5.8) permanece como rede de segurança final.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.9 (`1e8bcb7`)
+- garante tabelas de permissao no fluxo de instalacao (novas instalacoes) (`15709d1`)
+
+
+---
+
+
 ## Release - v2.5.8
 ### 📣 Apresentação da Atualização
 

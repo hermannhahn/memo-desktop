@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.8",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.8/AI-Bridge-Setup-v2.5.8.exe",
-    "notes": "fix(traccar): v2.5.8 (PATCH) — o auto-reparo de schema agora cria TODAS as tabelas de permissão do Traccar (8 tabelas), incluindo tc_device_user que faltava — o DELETE de permissão de dispositivo falhava com 'Table TC_DEVICE_USER not found' ao desmarcar um device no Tracking Users (mesmo padrão do tc_geofence_user). EnsureTraccarPermissionTables cria nos dois formatos (tc_<entidade>_user e tc_user_<entidade>): device_user, geofence_user, group_user, calendar_user, user_device, user_geofence, user_group, user_calendar. Ao detectar o erro de tabela ausente, o app para o Traccar, cria o que falta e repete a operação automaticamente."
+    "version": "2.5.9",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.9/AI-Bridge-Setup-v2.5.9.exe",
+    "notes": "feat(traccar): v2.5.9 (PATCH) — novas instalações garantidas: o fluxo de instalação/configuração (EnsureTraccarToken) agora chama EnsureTraccarPermissionTables após criar o usuário técnico, criando as 8 tabelas de permissão (tc_device_user, tc_geofence_user, tc_group_user, tc_calendar_user + variantes invertidas) com CREATE TABLE IF NOT EXISTS. Instalações novas já criam o schema completo no 1º boot do Traccar (banco do zero); este reforço garante que mesmo bancos antigos/incompletos tenham as tabelas de permissão desde o primeiro setup — sem erro no Tracking Users. Auto-reparo on-demand (v2.5.8) permanece como rede de segurança final."
 }
