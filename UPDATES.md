@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.5
+### 📣 Apresentação da Atualização
+
+feat(traccar): v2.5.5 (PATCH) — auto-reparo de schema do Traccar: quando uma operacao de permissao (ex: salvar cercas no Tracking Users) falha com 'Table ... not found', o app detecta, para o container do Traccar (lock do H2), cria as tabelas de permissao ausentes (tc_geofence_user, tc_group_user, tc_calendar_user — CREATE TABLE IF NOT EXISTS via H2 Shell), sobe o servico e repete a operacao automaticamente. Instalacoes novas ja criam o schema completo no 1o boot; bancos antigos/atualizados se auto-corrigem na 1a tentativa, sem acao manual. Novo traccar_repair.go + docker.EnsureTraccarPermissionTables + wrapper traccarDoAuto em todas as chamadas de traccar_users.go.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.5 (`93c428e`)
+- auto-reparo de schema — cria tabelas de permissao ausentes no H2 (ex: tc_geofence_user) (`43ff718`)
+
+
+---
+
+
 ## Release - v2.5.4
 ### 📣 Apresentação da Atualização
 
