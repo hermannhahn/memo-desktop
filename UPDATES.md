@@ -3,6 +3,24 @@
 ---
 
 
+## Release - v2.5.10
+### 📣 Apresentação da Atualização
+
+**Fix: salvar permissões no Tracking Users**
+
+- Corrigido o problema que impedia de salvar (marcar/desmarcar) permissões de dispositivos e cercas no Tracking Users — o Traccar ignorava silenciosamente as alterações quando o userId não vinha primeiro no pedido; agora o envio é feito no formato correto e as permissões salvam de verdade.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.10 (`de2ed85`)
+
+
+---
+
+
 ## Release - v2.5.9
 ### 📣 Apresentação da Atualização
 

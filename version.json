@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.9",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.9/AI-Bridge-Setup-v2.5.9.exe",
-    "notes": "feat(traccar): v2.5.9 (PATCH) — novas instalações garantidas: o fluxo de instalação/configuração (EnsureTraccarToken) agora chama EnsureTraccarPermissionTables após criar o usuário técnico, criando as 8 tabelas de permissão (tc_device_user, tc_geofence_user, tc_group_user, tc_calendar_user + variantes invertidas) com CREATE TABLE IF NOT EXISTS. Instalações novas já criam o schema completo no 1º boot do Traccar (banco do zero); este reforço garante que mesmo bancos antigos/incompletos tenham as tabelas de permissão desde o primeiro setup — sem erro no Tracking Users. Auto-reparo on-demand (v2.5.8) permanece como rede de segurança final."
+    "version": "2.5.10",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.10/AI-Bridge-Setup-v2.5.10.exe",
+    "notes": "**Fix: salvar permissões no Tracking Users**\n\n- Corrigido o problema que impedia de salvar (marcar/desmarcar) permissões de dispositivos e cercas no Tracking Users — o Traccar ignorava silenciosamente as alterações quando o userId não vinha primeiro no pedido; agora o envio é feito no formato correto e as permissões salvam de verdade."
 }
