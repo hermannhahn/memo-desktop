@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.3.296
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the agent not seeing devices added after the initial setup: the Traccar technical user is now guaranteed to be administrator and linked to ALL devices, with automatic repair on boot and every 6h.
+
+**Highlights:**
+- Auto-repair: technical user admin flag + device links are enforced on boot and every 6h (independent of token validity)
+- Any device added by the client after setup becomes visible to the agent automatically
+- New EnsureTraccarTechnicalAccess routine in the token renewer cycle
+
+<!-- lang:pt -->
+**Resumo:** Corrigido o agente não enxergar dispositivos adicionados depois do setup inicial: o usuário técnico do Traccar agora é garantido como administrador e vinculado a TODOS os dispositivos, com reparo automático no boot e a cada 6h.
+
+**Destaques:**
+- Auto-reparo: admin do usuário técnico + vínculos de devices reforçados no boot e a cada 6h (independente da validade do token)
+- Qualquer dispositivo adicionado pelo cliente após o setup fica visível ao agente automaticamente
+- Nova rotina EnsureTraccarTechnicalAccess no ciclo do renovador de token
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.296 (`a53f598`)
+
+#### 🐛 Correções
+- garante admin e vinculo do usuario tecnico com devices novos (`e52df58`)
+
+
+---
+
+
 ## Release - v2.3.295
 ### 📣 Apresentação da Atualização
 
