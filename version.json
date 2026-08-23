@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.3",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.3/AI-Bridge-Setup-v2.5.3.exe",
-    "notes": "fix(tracking-users): v2.5.3 (PATCH) — o form de permissões do Tracking Users agora lista TODAS as cercas e dispositivos do Traccar para o admin marcar e salvar (GET /api/geofences?all=1 e /api/devices?all=1). Antes usava a listagem sem filtro, que retorna apenas os objetos vinculados ao token do usuário técnico do agente — fazendo a lista de cercas vir vazia quando não havia vínculo prévio e impedindo o admin de associar cercas a qualquer usuário/agente pelo painel."
+    "version": "2.5.4",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.4/AI-Bridge-Setup-v2.5.4.exe",
+    "notes": "fix(tracking-users): v2.5.4 (PATCH) — o form de permissões do Tracking Users agora lista TODAS as cercas e dispositivos do Traccar usando ?all=true (o parâmetro all do Traccar é booleano JAX-RS: só 'true' é aceito; '?all=1' era interpretado como false e continuava filtrando por permissão — por isso a lista de geofences continuava vazia sem vínculo prévio). Validado sem permissão: GET /api/geofences?all=true retorna Casa + Sylvio Casa e GET /api/devices?all=true retorna os 3 devices."
 }

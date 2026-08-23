@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.4
+### 📣 Apresentação da Atualização
+
+fix(tracking-users): v2.5.4 (PATCH) — o form de permissões do Tracking Users agora lista TODAS as cercas e dispositivos do Traccar usando ?all=true (o parâmetro all do Traccar é booleano JAX-RS: só 'true' é aceito; '?all=1' era interpretado como false e continuava filtrando por permissão — por isso a lista de geofences continuava vazia sem vínculo prévio). Validado sem permissão: GET /api/geofences?all=true retorna Casa + Sylvio Casa e GET /api/devices?all=true retorna os 3 devices.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.4 (`47c01e9`)
+
+#### 🐛 Correções
+- corrige listagem de cercas/devices no form de permissoes — ?all=true em vez de ?all=1 (`a89f487`)
+
+
+---
+
+
 ## Release - v2.5.3
 ### 📣 Apresentação da Atualização
 
