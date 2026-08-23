@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.0
+### 📣 Apresentação da Atualização
+
+feat(tracking-users): v2.5.0 (MINOR) — nova aba de gestão de usuários do Traccar no painel (listar, criar, editar, excluir, senha, papel, permissões de dispositivos/cercas) + Smart Alerts movido para accordion dentro dos Settings. Regras multi-tenant genéricas: usuário técnico @local.traccar protegido com badge AGENT (só permissões editáveis), ninguém pode excluir/rebaixar a si mesmo, nunca remove o último admin. Correção do deploy: commit 7204263 (código real do tracking-users) agora incluído no release. i18n pt-BR e en.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.0 (`702959e`)
+- gestao de usuarios do Traccar no painel + Smart Alerts movido para Settings (`7204263`)
+
+
+---
+
+
 ## Release - v2.4.0
 ### 📣 Apresentação da Atualização
 
