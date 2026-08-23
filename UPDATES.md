@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.1
+### 📣 Apresentação da Atualização
+
+fix(tracking): v2.5.1 (PATCH) — 1) CLI publish simples agora roda push da development no final, apos merge com a development e exclusao da branch temporaria (retry pull --rebase se o push falhar); 2) corrigido erro 'Bad control character in string literal in JSON' ao salvar permissoes do Tracking Users (mensagens de erro do backend agora com escape JSON correto via json.Marshal); 3) Smart Alerts movido para dentro do accordion Tracking como subsecao — accordion Smart Alerts removido e bug de layout com Model Sleep corrigido; 4) titulos do accordion e da aba Tracking agora apenas 'Tracking'.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.1 (`fb00c1c`)
+
+#### 🐛 Correções
+- correcoes pos-v2.5.0 — JSON de erro, Smart Alerts no accordion Tracking, titulos e CLI publish simples (`0fcd618`)
+
+
+---
+
+
 ## Release - v2.5.0
 ### 📣 Apresentação da Atualização
 

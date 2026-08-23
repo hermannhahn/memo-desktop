@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.0",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.0/AI-Bridge-Setup-v2.5.0.exe",
-    "notes": "feat(tracking-users): v2.5.0 (MINOR) — nova aba de gestão de usuários do Traccar no painel (listar, criar, editar, excluir, senha, papel, permissões de dispositivos/cercas) + Smart Alerts movido para accordion dentro dos Settings. Regras multi-tenant genéricas: usuário técnico @local.traccar protegido com badge AGENT (só permissões editáveis), ninguém pode excluir/rebaixar a si mesmo, nunca remove o último admin. Correção do deploy: commit 7204263 (código real do tracking-users) agora incluído no release. i18n pt-BR e en."
+    "version": "2.5.1",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AI-Bridge-Setup-v2.5.1.exe",
+    "notes": "fix(tracking): v2.5.1 (PATCH) — 1) CLI publish simples agora roda push da development no final, apos merge com a development e exclusao da branch temporaria (retry pull --rebase se o push falhar); 2) corrigido erro 'Bad control character in string literal in JSON' ao salvar permissoes do Tracking Users (mensagens de erro do backend agora com escape JSON correto via json.Marshal); 3) Smart Alerts movido para dentro do accordion Tracking como subsecao — accordion Smart Alerts removido e bug de layout com Model Sleep corrigido; 4) titulos do accordion e da aba Tracking agora apenas 'Tracking'."
 }
