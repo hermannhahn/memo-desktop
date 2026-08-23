@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.299
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** The "target bot/agent ID" field in the Smart Alerts tab is now a dropdown listing the user's agents (loaded from AI-BRAIN) — the user picks the agent by name, no ID needed.
+
+**Highlights:**
+- Dropdown with the owner's agents (GET /api/bridge/agents, authenticated with the bridge token)
+- Pick by agent name; saved value is preserved
+- Labels/hints updated in all 8 languages
+
+<!-- lang:pt -->
+**Resumo:** O campo "bot alvo / agent ID" da aba Smart Alerts agora é uma caixa seletora com os agentes do usuário (carregados do AI-BRAIN) — o usuário escolhe o agente pelo nome, sem precisar saber o ID.
+
+**Destaques:**
+- Caixa seletora com os agentes do dono (GET /api/bridge/agents, autenticado com o token do bridge)
+- Escolha pelo nome; valor salvo é preservado
+- Labels/dicas atualizados nos 8 idiomas
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.299 (`613c0a3`)
+- caixa seletora de bot alvo na aba Smart Alerts (lista os agentes do usuario) (`5f1db7d`)
+
+
+---
+
+
 ## Release - v2.3.298
 ### 📣 Apresentação da Atualização
 
