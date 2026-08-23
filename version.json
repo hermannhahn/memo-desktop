@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.1",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AI-Bridge-Setup-v2.5.1.exe",
-    "notes": "fix(tracking): v2.5.1 (PATCH) — 1) CLI publish simples agora roda push da development no final, apos merge com a development e exclusao da branch temporaria (retry pull --rebase se o push falhar); 2) corrigido erro 'Bad control character in string literal in JSON' ao salvar permissoes do Tracking Users (mensagens de erro do backend agora com escape JSON correto via json.Marshal); 3) Smart Alerts movido para dentro do accordion Tracking como subsecao — accordion Smart Alerts removido e bug de layout com Model Sleep corrigido; 4) titulos do accordion e da aba Tracking agora apenas 'Tracking'."
+    "version": "2.5.2",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/AI-Bridge-Setup-v2.5.2.exe",
+    "notes": "fix(tracking-users): v2.5.2 (PATCH) — corrige a integração com a API de permissões do Traccar: 1) GET /api/permissions agora usa query com 2+ pares (userId=X&deviceId=0&geofenceId=0) porque a versão atual do Traccar quebra com query de 1 par ou 'all=true' (ArrayIndexOutOfBoundsException no PermissionsResource.get); 2) POST e DELETE de permissões agora enviam a entidade no CORPO da requisição JSON (DELETE com query retornava 400 entity is null); 3) parse do retorno case-insensitive (chaves MAIÚSCULAS USERID/DEVICEID/GEOFENCEID que esta versão retorna). Validado com testes diretos na API (criar/listar/adicionar/remover permissão: 200/204)."
 }

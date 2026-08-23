@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.2
+### 📣 Apresentação da Atualização
+
+fix(tracking-users): v2.5.2 (PATCH) — corrige a integração com a API de permissões do Traccar: 1) GET /api/permissions agora usa query com 2+ pares (userId=X&deviceId=0&geofenceId=0) porque a versão atual do Traccar quebra com query de 1 par ou 'all=true' (ArrayIndexOutOfBoundsException no PermissionsResource.get); 2) POST e DELETE de permissões agora enviam a entidade no CORPO da requisição JSON (DELETE com query retornava 400 entity is null); 3) parse do retorno case-insensitive (chaves MAIÚSCULAS USERID/DEVICEID/GEOFENCEID que esta versão retorna). Validado com testes diretos na API (criar/listar/adicionar/remover permissão: 200/204).
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.2 (`a61af4f`)
+
+#### 🐛 Correções
+- corrige API de permissoes do Traccar (erro ArrayIndexOutOfBounds ao salvar) (`771b786`)
+
+
+---
+
+
 ## Release - v2.5.1
 ### 📣 Apresentação da Atualização
 

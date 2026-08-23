@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.1`
+## 📥 Download da Última Versão: `v2.5.2`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.1.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AI-Bridge-Setup-v2.5.1.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.2.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/AI-Bridge-Setup-v2.5.2.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.1.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AI-Bridge-Setup-v2.5.1.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.2.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/AI-Bridge-Setup-v2.5.2.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.1/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.2/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,8 +45,8 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.1:
-fix(tracking): v2.5.1 (PATCH) — 1) CLI publish simples agora roda push da development no final, apos merge com a development e exclusao da branch temporaria (retry pull --rebase se o push falhar); 2) corrigido erro 'Bad control character in string literal in JSON' ao salvar permissoes do Tracking Users (mensagens de erro do backend agora com escape JSON correto via json.Marshal); 3) Smart Alerts movido para dentro do accordion Tracking como subsecao — accordion Smart Alerts removido e bug de layout com Model Sleep corrigido; 4) titulos do accordion e da aba Tracking agora apenas 'Tracking'.
+### 🌟 Notas do Release v2.5.2:
+fix(tracking-users): v2.5.2 (PATCH) — corrige a integração com a API de permissões do Traccar: 1) GET /api/permissions agora usa query com 2+ pares (userId=X&deviceId=0&geofenceId=0) porque a versão atual do Traccar quebra com query de 1 par ou 'all=true' (ArrayIndexOutOfBoundsException no PermissionsResource.get); 2) POST e DELETE de permissões agora enviam a entidade no CORPO da requisição JSON (DELETE com query retornava 400 entity is null); 3) parse do retorno case-insensitive (chaves MAIÚSCULAS USERID/DEVICEID/GEOFENCEID que esta versão retorna). Validado com testes diretos na API (criar/listar/adicionar/remover permissão: 200/204).
 
 ---
 
