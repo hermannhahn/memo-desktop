@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.3.301",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.301/AI-Bridge-Setup-v2.3.301.exe",
-    "notes": "fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate."
+    "version": "2.3.303",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.3.303/AI-Bridge-Setup-v2.3.303.exe",
+    "notes": "feat(tracking-users): nova aba de gestão de usuários do Traccar no painel (listar, criar, editar, excluir, senha, papel, permissões de dispositivos/cercas) + Smart Alerts movido para accordion dentro dos Settings. Regras multi-tenant genéricas: usuário técnico @local.traccar protegido com badge AGENT (só permissões editáveis), ninguém pode excluir/rebaixar a si mesmo, nunca remove o último admin. i18n pt-BR e en."
 }

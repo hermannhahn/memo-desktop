@@ -3,6 +3,22 @@
 ---
 
 
+## Release - v2.3.303
+### 📣 Apresentação da Atualização
+
+feat(tracking-users): nova aba de gestão de usuários do Traccar no painel (listar, criar, editar, excluir, senha, papel, permissões de dispositivos/cercas) + Smart Alerts movido para accordion dentro dos Settings. Regras multi-tenant genéricas: usuário técnico @local.traccar protegido com badge AGENT (só permissões editáveis), ninguém pode excluir/rebaixar a si mesmo, nunca remove o último admin. i18n pt-BR e en.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.303 (`efe9a30`)
+
+
+---
+
+
 ## Release - v2.3.302
 ### 📣 Apresentação da Atualização
 
