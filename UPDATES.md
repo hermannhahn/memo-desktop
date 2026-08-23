@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.3.300
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the "Update permissions" button messages (now fully translated via i18n in all 8 languages) and the root cause of the empty agent dropdown: the AI-BRAIN global auth middleware was blocking the new /api/bridge/agents endpoint (it required a panel session before the endpoint could validate the bridge token).
+
+**Highlights:**
+- Button feedback now uses i18n keys (traccarPermsUpdating/Ok/Error) with English fallback
+- AI-BRAIN middleware exception for /api/bridge/* (commit 0319f4b)
+- Dropdown now lists the owner agents once both sides are updated
+
+<!-- lang:pt -->
+**Resumo:** Corrigidas as mensagens do botão "Atualizar permissões" (agora totalmente traduzidas via i18n nos 8 idiomas) e a causa raiz da caixa seletora vazia: o middleware global de autenticação do AI-BRAIN barrava o endpoint /api/bridge/agents (exigia sessão do painel antes do endpoint validar o token do bridge).
+
+**Destaques:**
+- Feedback do botão usa chaves i18n (traccarPermsUpdating/Ok/Error) com fallback em inglês
+- Exceção no middleware do AI-BRAIN para /api/bridge/* (commit 0319f4b)
+- Caixa seletora lista os agentes do dono após atualizar os dois lados
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.300 (`796f986`)
+
+#### 🐛 Correções
+- mensagens do botao Atualizar permissoes traduzidas (i18n) (`ad8976e`)
+
+
+---
+
+
 ## Release - v2.3.299
 ### 📣 Apresentação da Atualização
 
