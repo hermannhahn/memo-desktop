@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.3.297
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added an "Update agent permissions" button to the Smart Alerts tab: it immediately links ALL Traccar devices to the agent technical user (admin + device links), so newly added devices become visible to the agent without waiting for the 6h cycle.
+
+**Highlights:**
+- New button on the Smart Alerts tab with progress/result feedback
+- One click: guarantees the agent technical user is admin and linked to every Traccar device
+- Complements the automatic repair on boot/6h (v2.3.296)
+
+<!-- lang:pt -->
+**Resumo:** Adicionado o botão "Atualizar permissões do agente" na aba Smart Alerts: ele associa na hora TODOS os dispositivos do Traccar ao usuário técnico do agente (admin + vínculos), para que devices adicionados depois fiquem visíveis ao agente sem esperar o ciclo de 6h.
+
+**Destaques:**
+- Novo botão na aba Smart Alerts com feedback de progresso e resultado
+- Um clique: garante o admin do usuário técnico e o vínculo com todos os dispositivos do Traccar
+- Complementa o reparo automático no boot/6h (v2.3.296)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.297 (`e103a00`)
+- botao 'Atualizar permissões' na aba Smart Alerts (`5a04799`)
+
+
+---
+
+
 ## Release - v2.3.296
 ### 📣 Apresentação da Atualização
 
