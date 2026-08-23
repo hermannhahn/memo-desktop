@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.8
+### 📣 Apresentação da Atualização
+
+fix(traccar): v2.5.8 (PATCH) — o auto-reparo de schema agora cria TODAS as tabelas de permissão do Traccar (8 tabelas), incluindo tc_device_user que faltava — o DELETE de permissão de dispositivo falhava com 'Table TC_DEVICE_USER not found' ao desmarcar um device no Tracking Users (mesmo padrão do tc_geofence_user). EnsureTraccarPermissionTables cria nos dois formatos (tc_<entidade>_user e tc_user_<entidade>): device_user, geofence_user, group_user, calendar_user, user_device, user_geofence, user_group, user_calendar. Ao detectar o erro de tabela ausente, o app para o Traccar, cria o que falta e repete a operação automaticamente.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.8 (`4953f95`)
+
+#### 🐛 Correções
+- auto-reparo agora cria tambem tc_device_user e variantes de permissao (`a2324fa`)
+
+
+---
+
+
 ## Release - v2.5.7
 ### 📣 Apresentação da Atualização
 

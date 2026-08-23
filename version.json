@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.7",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.7/AI-Bridge-Setup-v2.5.7.exe",
-    "notes": "fix(traccar): v2.5.7 (PATCH) — conexão com o Traccar normalizada para 127.0.0.1 (IPv4 fixo) em vez de localhost. No Windows, 'localhost' pode resolver apenas para IPv6 (::1) — quando o Docker publica o Traccar somente em IPv4, o app falha com 'dial tcp [::1]:27793: connectex: conexao recusada' mesmo com o container no ar (erro visto no Tracking Users ao salvar permissões de devices/cercas). Corrigido em 4 pontos: traccarDo normaliza http(s)://localhost -> http(s)://127.0.0.1 (cobre configs antigas já salvas), montagem da TraccarURL usa 127.0.0.1, default do config usa 127.0.0.1 e traccarBaseURL idem."
+    "version": "2.5.8",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.8/AI-Bridge-Setup-v2.5.8.exe",
+    "notes": "fix(traccar): v2.5.8 (PATCH) — o auto-reparo de schema agora cria TODAS as tabelas de permissão do Traccar (8 tabelas), incluindo tc_device_user que faltava — o DELETE de permissão de dispositivo falhava com 'Table TC_DEVICE_USER not found' ao desmarcar um device no Tracking Users (mesmo padrão do tc_geofence_user). EnsureTraccarPermissionTables cria nos dois formatos (tc_<entidade>_user e tc_user_<entidade>): device_user, geofence_user, group_user, calendar_user, user_device, user_geofence, user_group, user_calendar. Ao detectar o erro de tabela ausente, o app para o Traccar, cria o que falta e repete a operação automaticamente."
 }
