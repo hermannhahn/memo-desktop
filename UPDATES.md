@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.5.11
+### 📣 Apresentação da Atualização
+
+**Fix: salvar permissões no Tracking Users**
+
+- Corrigido o problema que impedia de salvar (marcar/desmarcar) permissões de dispositivos e cercas no Tracking Users — o Traccar ignorava silenciosamente as alterações quando o userId não vinha primeiro no pedido; agora o envio é feito no formato correto e as permissões salvam de verdade.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.11 (`0f23fd3`)
+
+#### 🐛 Correções
+- corpo de POST/DELETE de permissoes com userId PRIMEIRO no JSON — o Traccar 6.15.x ignora silenciosamente (204 sem efeito) quando userId nao vem primeiro; map do Go serializa em ordem alfabetica (deviceId/geofenceId antes de userId) → save de permissoes nunca persistia. Agora usa struct traccarPermissionBody (ordem de declaracao preservada) (`8cca8c3`)
+
+
+---
+
+
 ## Release - v2.5.10
 ### 📣 Apresentação da Atualização
 
