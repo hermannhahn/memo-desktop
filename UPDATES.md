@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.3.298
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the "Update agent permissions" button error on existing installs: the Traccar technical password is now auto-generated and persisted when missing (self-healing), and new installs already include it in the .env template.
+
+**Highlights:**
+- New ensureTraccarTechPassword helper: generates + saves the technical password on demand
+- Repair button, token renewer and installer no longer fail with "missing technical password"
+- .env template now includes TRACCAR_TECH_PASSWORD for new installs
+
+<!-- lang:pt -->
+**Resumo:** Corrigido o erro do botão "Atualizar permissões do agente" em instalações existentes: a senha técnica do Traccar agora é gerada e persistida automaticamente quando ausente (auto-cura), e novas instalações já nascem com ela no template do .env.
+
+**Destaques:**
+- Novo helper ensureTraccarTechPassword: gera e salva a senha técnica sob demanda
+- Botão de reparo, renovador de token e instalador não falham mais com "senha técnica ausente"
+- Template do .env agora inclui TRACCAR_TECH_PASSWORD para instalações novas
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.3.298 (`f07e9ac`)
+
+#### 🐛 Correções
+- auto-cura da senha tecnica no .env (botao Atualizar permissoes) (`f5806c8`)
+
+
+---
+
+
 ## Release - v2.3.297
 ### 📣 Apresentação da Atualização
 
