@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.6",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.6/AI-Bridge-Setup-v2.5.6.exe",
-    "notes": "fix(tracking-users): v2.5.6 (PATCH) — leitura correta das permissões de cercas no form: a API de permissões do Traccar usa o PAR de filtros na query para decidir qual tabela consultar (?userId=X&deviceId=0 → tc_device_user; ?userId=X&geofenceId=0 → tc_geofence_user). O código usava os 3 filtros juntos, que retorna SOMENTE dispositivos — as cercas salvas eram criadas (POST 204) mas nunca apareciam marcadas ao reabrir o form (GET não retornava GEOFENCEID), parecendo 'não salvou'. GetTraccarUserPermissions e SetTraccarUserPermissions agora fazem duas chamadas separadas (devices + geofences) e o diff de cercas adiciona/remove corretamente."
+    "version": "2.5.7",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.7/AI-Bridge-Setup-v2.5.7.exe",
+    "notes": "fix(traccar): v2.5.7 (PATCH) — conexão com o Traccar normalizada para 127.0.0.1 (IPv4 fixo) em vez de localhost. No Windows, 'localhost' pode resolver apenas para IPv6 (::1) — quando o Docker publica o Traccar somente em IPv4, o app falha com 'dial tcp [::1]:27793: connectex: conexao recusada' mesmo com o container no ar (erro visto no Tracking Users ao salvar permissões de devices/cercas). Corrigido em 4 pontos: traccarDo normaliza http(s)://localhost -> http(s)://127.0.0.1 (cobre configs antigas já salvas), montagem da TraccarURL usa 127.0.0.1, default do config usa 127.0.0.1 e traccarBaseURL idem."
 }

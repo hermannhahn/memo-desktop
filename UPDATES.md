@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.7
+### 📣 Apresentação da Atualização
+
+fix(traccar): v2.5.7 (PATCH) — conexão com o Traccar normalizada para 127.0.0.1 (IPv4 fixo) em vez de localhost. No Windows, 'localhost' pode resolver apenas para IPv6 (::1) — quando o Docker publica o Traccar somente em IPv4, o app falha com 'dial tcp [::1]:27793: connectex: conexao recusada' mesmo com o container no ar (erro visto no Tracking Users ao salvar permissões de devices/cercas). Corrigido em 4 pontos: traccarDo normaliza http(s)://localhost -> http(s)://127.0.0.1 (cobre configs antigas já salvas), montagem da TraccarURL usa 127.0.0.1, default do config usa 127.0.0.1 e traccarBaseURL idem.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.7 (`c5cb3ab`)
+
+#### 🐛 Correções
+- normaliza URL de conexao para 127.0.0.1 (evita falha de IPv6 no Windows) (`99022b8`)
+
+
+---
+
+
 ## Release - v2.5.6
 ### 📣 Apresentação da Atualização
 
