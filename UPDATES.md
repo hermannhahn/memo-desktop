@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.3
+### 📣 Apresentação da Atualização
+
+fix(tracking-users): v2.5.3 (PATCH) — o form de permissões do Tracking Users agora lista TODAS as cercas e dispositivos do Traccar para o admin marcar e salvar (GET /api/geofences?all=1 e /api/devices?all=1). Antes usava a listagem sem filtro, que retorna apenas os objetos vinculados ao token do usuário técnico do agente — fazendo a lista de cercas vir vazia quando não havia vínculo prévio e impedindo o admin de associar cercas a qualquer usuário/agente pelo painel.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.3 (`1a1a66a`)
+
+#### 🐛 Correções
+- lista de cercas/devices no form de permissoes agora usa ?all=1 (admin ve tudo) (`636cfeb`)
+
+
+---
+
+
 ## Release - v2.5.2
 ### 📣 Apresentação da Atualização
 
