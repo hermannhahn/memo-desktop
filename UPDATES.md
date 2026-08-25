@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.5.14
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Skills are now simpler and smarter: active skills go straight into the agent system prompt, and agents can always see, read and enable/disable any skill.
+
+**Highlights:**
+- Active skills (checkbox on) are injected into the agent's system prompt automatically
+- The skills list now shows ALL skills - active and inactive - with pagination, so nothing disappears
+- Agents can enable or disable skills for themselves at any time
+
+<!-- lang:pt -->
+**Resumo:** As Skills ficaram mais simples e inteligentes: skills ativas entram direto no system prompt do agente, e o agente sempre consegue ver, ler e ativar/desativar qualquer skill.
+
+**Destaques:**
+- Skills ativas (checkbox marcada) são injetadas automaticamente no system prompt do agente
+- A lista de skills agora mostra TODAS - ativas e inativas - com paginação, então nenhuma desaparece
+- O agente pode ativar ou desativar skills para si mesmo a qualquer momento
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.14 (`016bc1d`)
+- skills no SYSTEM PROMPT via push skills_changed (checkbox = injeta), list MCP mostra todas com paginacao, remocao do match por diretorio (`7110566`)
+- skills injection v2 - subdirectory path matching, lean block (5 cap, fixed alphabetical), access counter and 60s cache with instant invalidation (`85dc282`)
+
+#### 🐛 Correções
+- agente sempre ve todas as skills em list/get (sem gate por checkbox) - checkbox controla apenas a injecao no system prompt (`41ad2a8`)
+
+#### 📚 Documentação
+- remove marcadores de conflito de merge commitados em AGENTS.md/GEMINI.md e corrige bullets do mapa de skills (`8c1b41d`)
+
+
+---
+
+
 ## Release - v2.5.13
 ### 📣 Apresentação da Atualização
 
