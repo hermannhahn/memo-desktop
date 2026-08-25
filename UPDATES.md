@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.13
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** [SKILLS] context injection: whenever the docker tool is used and its parameters reference a folder linked to an ACTIVE skill (checkbox checked in the panel), a [SKILLS] block is injected into the prompt with the related project and the list of skills (id, title, truncated text) plus an instruction to consult the full skills via the MCP skills tool.
+
+**Highlights:**
+- Docker tool calls now auto-inject a [SKILLS] context block when working in a skill-related directory
+- Only skills enabled for the calling agent (checkbox in panel) are considered
+- New unit tests for folder matching and block formatting
+
+<!-- lang:pt -->
+**Resumo:** Injeção de contexto [SKILLS]: sempre que a ferramenta docker for usada e os parâmetros referenciarem uma pasta ligada a uma skill ATIVA (checkbox marcada no painel), um bloco [SKILLS] é injetado no prompt com o projeto relacionado e a lista de skills (id, título e texto truncado) + instrução para consultar as skills completas via a ferramenta MCP skills.
+
+**Destaques:**
+- Chamadas da ferramenta docker agora injetam automaticamente o bloco [SKILLS] ao trabalhar em diretório relacionado a uma skill
+- Somente skills habilitadas para o agente chamador (checkbox no painel) são consideradas
+- Novos testes unitários para o match de pastas e formatação do bloco
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.13 (`d88b7b8`)
+- injecao [SKILLS] no prompt quando a ferramenta docker e usada em pasta de skill ativa (checkbox no painel) (`e8ac283`)
+- update development branch (`5ffdf4f`)
+
+
+---
+
+
 ## Release - v2.5.12
 ### 📣 Apresentação da Atualização
 
