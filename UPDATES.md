@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.16
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Skills priority, Keep in Mind temporary self-notes, agent container sandbox toggle and a brand new Local Tools card UI.
+
+**Highlights:**
+- Skills tool: up to 5 priority skills injected first in the [SKILLS] prompt block.
+- New keep_in_mind MCP tool: short temporary self-notes (max 5 active, 500 chars, up to 24h) injected into your system prompt and auto-deleted on expiry.
+- Settings > Agente Container renamed with a Sandbox Mode checkbox (ON by default). Unchecked lets agents create containers with full host/network access.
+- Local Tools tab redesigned as colorful grouped cards (Infrastructure, Browser, Vault, Knowledge, Social, IoT).
+<!-- lang:pt -->
+**Resumo:** Prioridade de skills, anotacoes temporarias Keep in Mind, toggle de sandbox para containers de agentes e visual novo em cards na aba Local Tools.
+
+**Destaques:**
+- Ferramenta skills: ate 5 skills prioritarias injetadas primeiro no bloco [SKILLS] do prompt.
+- Nova ferramenta MCP keep_in_mind: anotacoes temporarias (max 5 ativas, 500 caracteres, ate 24h) injetadas no system prompt e apagadas automaticamente ao expirar.
+- Settings > Agente Container renomeado com checkbox Sandbox Mode (marcada por padrao). Desmarcada permite containers com acesso livre a maquina e rede.
+- Aba Local Tools redesenhada em cards coloridos agrupados por tipo (Infraestrutura, Navegador, Cofre, Conhecimento, Social, IoT).
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.16 (`d3d16d5`)
+- sandbox toggle p/ containers de agentes (Settings > Agente Container, default ON) + Local Tools em cards coloridos agrupados por tipo (`8088f5d`)
+- ferramenta MCP keep_in_mind (Mantenha em mente) - anotacoes temporarias por agente (max 5 ativas, 500 chars, 24h), bloco [KEEP IN MIND] no system prompt com push em tempo real e purge automatico na expiracao (`3887234`)
+- campo priority global nas skills (max 5) - prioridades primeiro na injecao do system prompt + acao set_priority na ferramenta MCP + rota WS skills_toggle_priority (`3e75bbc`)
+
+
+---
+
+
 ## Release - v2.5.15
 ### 📣 Apresentação da Atualização
 
