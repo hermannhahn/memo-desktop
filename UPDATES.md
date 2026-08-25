@@ -3,6 +3,29 @@
 ---
 
 
+## Release - v2.5.17
+### 📣 Apresentação da Atualização
+
+<!-- lang:en --> **Summary:** Full per-agent privacy for the two local memory tools — Notes and Keep in Mind now deny any operation without a canonical agent_id and scope every database query strictly to the calling agent (no shared/global buckets).
+**Highlights:** notes MCP executor rejects empty agent_id with clear error; WebSocket handlers enforce per-agent isolation on all notes routes; keep_in_mind fully isolated per agent; tool descriptions document the privacy model.
+<!-- lang:pt --> **Resumo:** Privacidade total por agente nas duas tools de memória local — Notes e Keep in Mind agora negam qualquer operação sem agent_id canônico e restringem todas as queries do banco ao agente chamador (sem bucket global).
+**Destaques:** executor MCP do notes rejeita agent_id vazio com erro claro; handlers WebSocket aplicam isolamento por agente em todas as rotas de notas; keep_in_mind totalmente isolado por agente; descrições das tools documentam o modelo de privacidade.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.17 (`e2a9146`)
+
+#### 🐛 Correções
+- isolamento total por agente nas anotacoes - handlers WS negam agent_id vazio (sem bucket global) e queries do banco ficam estritas ao agente (list/get/search/delete/update/days/categories/most_accessed) (`0cfc682`)
+- isolamento total por agente - sem agent_id canonico a operacao e negada (sem bucket global); descricao da tool documenta a privacidade (`549c183`)
+
+
+---
+
+
 ## Release - v2.5.16
 ### 📣 Apresentação da Atualização
 
