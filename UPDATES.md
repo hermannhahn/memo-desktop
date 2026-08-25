@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.15
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Skills are now simpler and smarter: active skills go straight into the agent system prompt, and agents can always see, read and enable/disable any skill.
+
+**Highlights:**
+- Active skills (checkbox on) are injected into the agent's system prompt automatically
+- The skills list now shows ALL skills - active and inactive - with pagination, so nothing disappears
+- Agents can enable or disable skills for themselves at any time
+
+<!-- lang:pt -->
+**Resumo:** As Skills ficaram mais simples e inteligentes: skills ativas entram direto no system prompt do agente, e o agente sempre consegue ver, ler e ativar/desativar qualquer skill.
+
+**Destaques:**
+- Skills ativas (checkbox marcada) são injetadas automaticamente no system prompt do agente
+- A lista de skills agora mostra TODAS - ativas e inativas - com paginação, então nenhuma desaparece
+- O agente pode ativar ou desativar skills para si mesmo a qualquer momento
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.15 (`85b0665`)
+
+
+---
+
+
 ## Release - v2.5.14
 ### 📣 Apresentação da Atualização
 
