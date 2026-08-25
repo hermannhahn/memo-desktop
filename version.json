@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.11",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.11/AI-Bridge-Setup-v2.5.11.exe",
-    "notes": "**Fix: salvar permissões no Tracking Users**\n\n- Corrigido o problema que impedia de salvar (marcar/desmarcar) permissões de dispositivos e cercas no Tracking Users — o Traccar ignorava silenciosamente as alterações quando o userId não vinha primeiro no pedido; agora o envio é feito no formato correto e as permissões salvam de verdade."
+    "version": "2.5.12",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.12/AI-Bridge-Setup-v2.5.12.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Skills are here: create reusable instruction cards and enable them per agent.\n\n**Highlights:**\n- New skills tool lets your agents store and consult detailed how-to instructions\n- Enable or disable each skill for every agent with a simple checkbox\n\n<!-- lang:pt -->\n**Resumo:** Chegaram as skills: crie cartoes de instrucao reutilizaveis e libere-os por agente.\n\n**Destaques:**\n- A nova ferramenta skills permite que seus agentes guardem e consultem instrucoes detalhadas\n- Ative ou desative cada skill para cada agente com uma simples checkbox"
 }

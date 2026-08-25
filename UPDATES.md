@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.12
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Skills are here: create reusable instruction cards and enable them per agent.
+
+**Highlights:**
+- New skills tool lets your agents store and consult detailed how-to instructions
+- Enable or disable each skill for every agent with a simple checkbox
+
+<!-- lang:pt -->
+**Resumo:** Chegaram as skills: crie cartoes de instrucao reutilizaveis e libere-os por agente.
+
+**Destaques:**
+- A nova ferramenta skills permite que seus agentes guardem e consultem instrucoes detalhadas
+- Ative ou desative cada skill para cada agente com uma simples checkbox
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.12 (`c02fadb`)
+- ferramenta MCP skills + tabela skills no PostgreSQL local e acoes WebSocket de CRUD para o painel (`6f498fc`)
+
+
+---
+
+
 ## Release - v2.5.11
 ### 📣 Apresentação da Atualização
 
