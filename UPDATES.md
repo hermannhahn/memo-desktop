@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.5.26
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This update introduces an automatic setup and authentication modal for your AI-Bridge token, enhances Docker Desktop provisioning with administrator privileges on Windows, and optimizes the initial application startup.
+
+**Highlights:**
+- First-launch setup modal with step-by-step guidance to connect your AI-Brain account
+- Seamless Docker Desktop background provisioning with native UAC elevation
+- Instant main window display with non-blocking splash screen
+- Added AI-Brain agents directly into the Sleep & Consolidation model selector
+- Real-time connection feedback with categorized error handling and full 8-language i18n support
+
+<!-- lang:pt -->
+**Resumo:** Esta atualizacao introduz um modal automatico de configuracao e autenticacao do seu token AI-Bridge, aprimora o provisionamento do Docker Desktop com privilegios de administrador no Windows e otimiza a inicializacao da aplicacao.
+
+**Destaques:**
+- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta AI-Brain
+- Provisionamento suave do Docker Desktop com elevacao UAC nativa
+- Abertura instantanea da janela principal com splash screen nao bloqueante
+- Adicao dos agentes do AI-Brain diretamente no seletor de modelos do Sono e Consolidacao
+- Verificacao de conexao em tempo real com tratamento de erros por categoria e suporte a 8 idiomas
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.26 (`06a0e23`)
+- updates in feature/token-setup-modal (`f85bc8f`)
+- updates in development (`1966027`)
+- add AI-Brain agents in sleep model selector with API and fallback inheritance (`7c6128f`)
+
+
+---
+
+
 ## Release - v2.5.25
 ### 📣 Apresentação da Atualização
 
