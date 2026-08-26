@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.27
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release synchronizes the automatic installation with the main window startup and adds an authentication setup modal for your AI-Bridge token.
+
+**Highlights:**
+- Smart provisioning startup that waits for the main application window to be fully visible before starting Docker or container downloads
+- First-launch setup modal with step-by-step guidance to connect your AI-Brain account
+- Elevated administrator execution for Docker Desktop installer on Windows
+- Live real-time progress display across the global banner and services tab
+
+<!-- lang:pt -->
+**Resumo:** Esta versao sincroniza o inicio da auto-instalacao com a abertura da janela principal e adiciona o modal de configuracao e autenticacao do seu token AI-Bridge.
+
+**Destaques:**
+- Inicializacao inteligente do provisionamento que aguarda a janela principal estar 100% visivel antes de iniciar downloads do Docker ou containers
+- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta AI-Brain
+- Execucao com privilegios de administrador para o instalador do Docker Desktop no Windows
+- Exibicao do progresso em tempo real no banner global e na aba de servicos
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.27 (`0a73b87`)
+- updates in feature/provision-delayed-start (`0ec5c9e`)
+
+
+---
+
+
 ## Release - v2.5.26
 ### 📣 Apresentação da Atualização
 
