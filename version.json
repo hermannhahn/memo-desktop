@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.22",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.22/AI-Bridge-Setup-v2.5.22.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Standardized progress banner, splash loader and status texts to English with full 8-language i18n support.\n\n**Highlights:**\n- All HTML templates, splash loaders and live progress banners set to official English defaults.\n- Added comprehensive i18n keys and translations for the top progress banner across all 8 supported languages.\n\n<!-- lang:pt -->\n**Resumo:** Padronizacao do banner de progresso, tela de splash e textos de status em ingles com suporte completo aos 8 idiomas no i18n.\n\n**Destaques:**\n- Todos os templates HTML, telas de splash e banners de progresso padronizados no ingles oficial.\n- Adicionadas chaves e traducoes completas do banner global de progresso para os 8 idiomas suportados."
+    "version": "2.5.23",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/AI-Bridge-Setup-v2.5.23.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Strict loopback binding for internal container ports (PostgreSQL, Ollama, WAHA) to enhance security and prevent external exposure.\n\n**Highlights:**\n- Internal container ports now strictly bind to 127.0.0.1, blocking any external network or LAN access.\n- Only the Traccar GPS tracking platform retains public/LAN exposure as configured by the user.\n\n<!-- lang:pt -->\n**Resumo:** Vinculacao estrita em loopback (127.0.0.1) para as portas dos containers internos (PostgreSQL, Ollama, WAHA), reforcando a seguranca e bloqueando exposicao externa.\n\n**Destaques:**\n- Portas dos containers internos agora vinculadas exclusivamente em 127.0.0.1, bloqueando acesso externo ou via LAN.\n- Apenas a plataforma Traccar GPS mantem portas acessiveis na rede conforme definido pelo usuario."
 }

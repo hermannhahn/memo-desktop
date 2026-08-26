@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.23
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Strict loopback binding for internal container ports (PostgreSQL, Ollama, WAHA) to enhance security and prevent external exposure.
+
+**Highlights:**
+- Internal container ports now strictly bind to 127.0.0.1, blocking any external network or LAN access.
+- Only the Traccar GPS tracking platform retains public/LAN exposure as configured by the user.
+
+<!-- lang:pt -->
+**Resumo:** Vinculacao estrita em loopback (127.0.0.1) para as portas dos containers internos (PostgreSQL, Ollama, WAHA), reforcando a seguranca e bloqueando exposicao externa.
+
+**Destaques:**
+- Portas dos containers internos agora vinculadas exclusivamente em 127.0.0.1, bloqueando acesso externo ou via LAN.
+- Apenas a plataforma Traccar GPS mantem portas acessiveis na rede conforme definido pelo usuario.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.23 (`9b6a8a1`)
+- bind internal container ports (postgres, ollama, waha) strictly to 127.0.0.1 (`dc054cf`)
+
+
+---
+
+
 ## Release - v2.5.22
 ### 📣 Apresentação da Atualização
 
