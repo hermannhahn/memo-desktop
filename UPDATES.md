@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.28
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed frontend script syntax to ensure smooth splash screen transition and synchronized background container provisioning with the main application window.
+
+**Highlights:**
+- Resolved JavaScript syntax errors in application initialization script
+- Splash screen progress animation runs smoothly and transitions to the main window in 2-3 seconds
+- Automatic Docker Desktop and container provisioning begins 3 seconds after the main window is rendered
+- Live provisioning progress displayed reliably in the top banner and services tab
+
+<!-- lang:pt -->
+**Resumo:** Correcao na sintaxe dos scripts do frontend para garantir a transicao suave da splash screen e sincronizacao do provisionamento de containers com a abertura da janela principal.
+
+**Destaques:**
+- Resolvidos erros de sintaxe JavaScript no script de inicializacao do aplicativo
+- Animacao de progresso da splash screen executa suavemente e faz a transicao para a janela principal em 2 a 3 segundos
+- Auto-instalacao do Docker Desktop e provisionamento iniciam 3 segundos apos a janela principal ser renderizada
+- Exibicao do progresso em tempo real no banner superior e na aba de servicos
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.28 (`61ca170`)
+- updates in fix/appjs-syntax-and-provisioning-delay (`8183e2d`)
+
+
+---
+
+
 ## Release - v2.5.27
 ### 📣 Apresentação da Atualização
 
