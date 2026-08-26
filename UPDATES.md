@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.22
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized progress banner, splash loader and status texts to English with full 8-language i18n support.
+
+**Highlights:**
+- All HTML templates, splash loaders and live progress banners set to official English defaults.
+- Added comprehensive i18n keys and translations for the top progress banner across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Padronizacao do banner de progresso, tela de splash e textos de status em ingles com suporte completo aos 8 idiomas no i18n.
+
+**Destaques:**
+- Todos os templates HTML, telas de splash e banners de progresso padronizados no ingles oficial.
+- Adicionadas chaves e traducoes completas do banner global de progresso para os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.22 (`9f0686d`)
+- standardize progress banner and splash in English with full 8-language translations (`f899862`)
+
+
+---
+
+
 ## Release - v2.5.21
 ### 📣 Apresentação da Atualização
 
