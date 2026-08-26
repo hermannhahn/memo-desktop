@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.20
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resilient missing container auto-installer on boot, silent official Docker Desktop setup and UI status update to Installing.
+
+**Highlights:**
+- Individual check and auto-provisioning for any missing container on launch.
+- Enforced 100% silent direct installer for Docker Desktop to avoid console freezes.
+- Service card status updated to Installing with manual install button removed.
+
+<!-- lang:pt -->
+**Resumo:** Auto-instalador resiliente de containers ausentes no boot, instalador silencioso do Docker Desktop e status da interface atualizado para Instalando.
+
+**Destaques:**
+- Verificacao e provisionamento automatico individual para qualquer container ausente na inicializacao.
+- Instalador oficial do Docker Desktop 100% silencioso para evitar janelas de console congeladas.
+- Status dos cards de servicos atualizado para Instalando e botao manual de instalacao removido.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.20 (`eb0532e`)
+- replace Need Install with Installing and remove manual install action button (`217d397`)
+- install missing containers individually on boot and enforce silent direct installer for docker desktop (`eebd8ba`)
+
+
+---
+
+
 ## Release - v2.5.19
 ### 📣 Apresentação da Atualização
 
