@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.21
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Live top global progress banner with real-time percentage, download speed/size tracking, and step-by-step installation status.
+
+**Highlights:**
+- Top global progress banner showing the exact service, step number, percentage and status message.
+- Live download size tracking (MB downloaded vs total MB) during Docker Desktop setup.
+- Automatic transition with success notification and auto-refresh upon completion.
+
+<!-- lang:pt -->
+**Resumo:** Banner global de progresso no topo com porcentagem em tempo real, rastreamento de tamanho de download e status detalhado por etapas.
+
+**Destaques:**
+- Banner global de progresso no topo exibindo o servico exato, numero da etapa, porcentagem e mensagem de status.
+- Rastreamento de tamanho baixado em tempo real (MBs baixados vs total) durante o download do Docker Desktop.
+- Transicao automatica com notificacao de sucesso e atualizacao instantanea dos cards ao concluir.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.21 (`603612b`)
+- add persistent top global progress banner with live percentage and step tracking (`67c7260`)
+- add real-time download and installation progress reporting for docker and services (`88b6544`)
+
+
+---
+
+
 ## Release - v2.5.20
 ### 📣 Apresentação da Atualização
 
