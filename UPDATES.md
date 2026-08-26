@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.5.19
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automated and resilient Docker Desktop and container installation on first launch with real-time step progress.
+
+**Highlights:**
+- Automated Docker Desktop download and silent setup fallback with WSL2 backend.
+- Resilient container provisioning with extended timeouts and automatic retries.
+- Guided splash screen and status modals with real-time step-by-step progress tracking.
+
+<!-- lang:pt -->
+**Resumo:** Instalacao automatizada e resiliente do Docker Desktop e dos containers de servicos no primeiro boot, com acompanhamento de etapas em tempo real.
+
+**Destaques:**
+- Download direto e instalacao silenciosa do Docker Desktop oficial com backend WSL2.
+- Provisionamento resiliente de containers com timeouts estendidos e retries automaticos.
+- Splash screen e paineis de status guiados com indicador de etapas e barra de progresso em tempo real.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.19 (`1e4ce7d`)
+- update setup.iss and install-ai-bridge.bat for automated onboarding (`d7a5e1c`)
+- add real installation progress tracking by steps and dynamic splash screen (`a253fff`)
+- add direct download fallback, extended engine wait and resilient InstallAll with retries (`eb3775c`)
+- bridge tools expoem campo icon no catalogo mcp_list_tools — painel passa a usar o mesmo padrao de icones das ferramentas nativas (`6847f71`)
+
+#### 📚 Documentação
+- finalize TODO.md for auto-install-services feature (`aae9ff2`)
+
+#### 📝 Geral
+- remove campo Icon do MCPTool e literais de icone (icones agora sao responsabilidade do painel ai-brain) (`7daee9c`)
+
+
+---
+
+
 ## Release - v2.5.18
 ### 📣 Apresentação da Atualização
 
