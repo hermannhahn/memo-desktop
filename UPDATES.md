@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.5.18
+### 📣 Apresentação da Atualização
+
+<!-- lang:en --> **Summary:** v2.5.18 - Local Tools reorganization and Notes Content agent-name fix.
+**Highlights:** Docker cards now live under Infrastructure & Docker (Host Tools group removed); tool names renamed to Docker - Create/Delete Container and Docker; Notes Content tab shows the agent name instead of the raw ID. <!-- lang:pt --> **Resumo:** v2.5.18 - Reorganização das Local Tools e correção do nome do agente no Notes Content. **Destaques:** cards Docker agora em Infrastructure & Docker (grupo Host Tools removido); nomes renomeados para Docker - Create/Delete Container e Docker; aba Notes Content exibe o nome do agente em vez do ID bruto.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.18 (`9586b2f`)
+- reorganiza Local Tools - docker_delete entra em Infrastructure & Docker, grupo Host Tools eliminado (fallback default agora Infrastructure & Docker); cards renomeados: Docker - Create/Delete Container e Docker (ops centralizada) (`a44258b`)
+
+#### 🐛 Correções
+- Notes Content mostra nome do agente em vez do ID bruto - reusa o mapa id->nome ja carregado pelo Memory Content (window._agentNameMap) e garante carregamento antes de renderizar a tabela; fallback mantem o ID se o agente nao existir mais (`37a05bf`)
+
+
+---
+
+
 ## Release - v2.5.17
 ### 📣 Apresentação da Atualização
 
