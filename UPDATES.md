@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.5.25
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added OpenRouter provider and 14 AI models to the Sleep Model (Nightly Memory Consolidation) settings with dynamic API key configuration.
+
+**Highlights:**
+- Direct support for OpenRouter API in the consolidation pipeline with 14 selectable models.
+- Dedicated OpenRouter API Key input field in the Settings tab with dynamic toggle.
+- Comprehensive multi-language support across all 8 supported UI languages.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado o provedor OpenRouter e 14 modelos de IA nas configuracoes do Modelo do Sono (Consolidacao Noturna de Memoria) com chave de API dinamica.
+
+**Destaques:**
+- Suporte direto a API OpenRouter no pipeline de consolidacao com 14 modelos selecionaveis.
+- Campo dedicado para Chave de API OpenRouter na aba Settings com exibicao dinamica.
+- Suporte completo a internacionalizacao em todos os 8 idiomas da interface.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.25 (`28f270f`)
+- add OpenRouter provider and models to sleep model consolidation in Settings (`714ccd3`)
+
+#### 🐛 Correções
+- remove unused import in memory_handlers.go (`696112d`)
+
+#### 📚 Documentação
+- update TODO.md with OpenRouter sleep model phase (`ed37298`)
+
+
+---
+
+
 ## Release - v2.5.24
 ### 📣 Apresentação da Atualização
 
