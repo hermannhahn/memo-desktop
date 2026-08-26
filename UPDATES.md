@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.24
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Live streaming layer download progress for Docker container images and full standardization of backend messages to English.
+
+**Highlights:**
+- Real-time layer download percentage and status streaming for all container images (PostgreSQL, Ollama, WAHA, Traccar).
+- Eliminated 0% stalling during image pulls with smooth, dynamic progress updates.
+- 100% of Go backend installation messages, titles and logs standardized to official English.
+
+<!-- lang:pt -->
+**Resumo:** Progresso em tempo real do download de camadas das imagens dos containers Docker e padronizacao completa das mensagens do backend em ingles.
+
+**Destaques:**
+- Rastreamento din?mico de porcentagem e status do download de camadas de todas as imagens de containers (PostgreSQL, Ollama, WAHA, Traccar).
+- Eliminado o congelamento em 0% durante o pull de imagens com atualizacoes continuas de progresso.
+- 100% das mensagens, titulos e logs de instalacao do backend Go padronizados no ingles oficial.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.24 (`55a2246`)
+- implement real-time streaming progress for container image pulls and standardize backend messages in English (`71f9d9c`)
+
+
+---
+
+
 ## Release - v2.5.23
 ### 📣 Apresentação da Atualização
 

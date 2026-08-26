@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.23`
+## 📥 Download da Última Versão: `v2.5.24`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.23.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/AI-Bridge-Setup-v2.5.23.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.24.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/AI-Bridge-Setup-v2.5.24.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.23.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/AI-Bridge-Setup-v2.5.23.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.24.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/AI-Bridge-Setup-v2.5.24.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.23/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.24/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.23:
+### 🌟 Notas do Release v2.5.24:
 <!-- lang:en -->
-**Summary:** Strict loopback binding for internal container ports (PostgreSQL, Ollama, WAHA) to enhance security and prevent external exposure.
+**Summary:** Live streaming layer download progress for Docker container images and full standardization of backend messages to English.
 
 **Highlights:**
-- Internal container ports now strictly bind to 127.0.0.1, blocking any external network or LAN access.
-- Only the Traccar GPS tracking platform retains public/LAN exposure as configured by the user.
+- Real-time layer download percentage and status streaming for all container images (PostgreSQL, Ollama, WAHA, Traccar).
+- Eliminated 0% stalling during image pulls with smooth, dynamic progress updates.
+- 100% of Go backend installation messages, titles and logs standardized to official English.
 
 <!-- lang:pt -->
-**Resumo:** Vinculacao estrita em loopback (127.0.0.1) para as portas dos containers internos (PostgreSQL, Ollama, WAHA), reforcando a seguranca e bloqueando exposicao externa.
+**Resumo:** Progresso em tempo real do download de camadas das imagens dos containers Docker e padronizacao completa das mensagens do backend em ingles.
 
 **Destaques:**
-- Portas dos containers internos agora vinculadas exclusivamente em 127.0.0.1, bloqueando acesso externo ou via LAN.
-- Apenas a plataforma Traccar GPS mantem portas acessiveis na rede conforme definido pelo usuario.
+- Rastreamento din?mico de porcentagem e status do download de camadas de todas as imagens de containers (PostgreSQL, Ollama, WAHA, Traccar).
+- Eliminado o congelamento em 0% durante o pull de imagens com atualizacoes continuas de progresso.
+- 100% das mensagens, titulos e logs de instalacao do backend Go padronizados no ingles oficial.
 
 ---
 
