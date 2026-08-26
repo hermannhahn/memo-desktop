@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.29
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Improved token authentication and WebSocket reconnection resilience in the first-launch setup modal.
+
+**Highlights:**
+- Filtered transient socket closure messages during intentional reconnections
+- Added resilient 8-second verification polling for immediate WebSocket authentication feedback
+- Real-time reactive status watcher in the token setup modal that transitions to success as soon as the connection is active
+- Immediate access with OK Continue confirmation button
+
+<!-- lang:pt -->
+**Resumo:** Melhorias na autenticacao do token e resiliencia de reconexao WebSocket no modal de configuracao inicial.
+
+**Destaques:**
+- Filtragem de mensagens transitorias de fechamento de socket durante reconexoes intencionais
+- Polling resiliente de 8 segundos para feedback imediato de autenticacao WebSocket
+- Monitor reativo em tempo real no modal de token que alterna para sucesso assim que a conexao fica ativa
+- Acesso imediato com botao de confirmacao OK Continuar
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.29 (`87648f0`)
+- updates in fix/token-modal-verification-reconnect (`44a0546`)
+
+
+---
+
+
 ## Release - v2.5.28
 ### 📣 Apresentação da Atualização
 
