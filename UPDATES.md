@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.30
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automatic on-demand Traccar token configuration and visual progress feedback for database restore.
+
+**Highlights:**
+- Added on-demand auto-configuration for Traccar access tokens, ensuring seamless GPS fleet and geofence tracking without manual token generation.
+- Added visual progress bar, real-time stage indicators, and feedback messages during database backup restore across all supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Configura????o autom??tica e sob demanda do token do Traccar e feedback visual de progresso na restaura????o de backup.
+
+**Destaques:**
+- Adicionada auto-configura????o sob demanda do token de acesso do Traccar, garantindo conex??o transparente para rastreamento de frotas e cercas sem necessidade de gera????o manual.
+- Adicionada barra de progresso visual, indicadores de etapas em tempo real e mensagens de feedback na restaura????o de backup com suporte completo aos 8 idiomas.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.30 (`ed7b1fb`)
+- update development branch (`efc796f`)
+- updates in feat/backup-restore-feedback-progress (`ecc64a7`)
+- updates in fix/traccar-auto-config-on-demand (`bdca283`)
+
+
+---
+
+
 ## Release - v2.5.29
 ### 📣 Apresentação da Atualização
 
