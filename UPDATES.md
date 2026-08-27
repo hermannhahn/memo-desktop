@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.39
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resilient WhatsApp QR Code auto-recovery and extended MCP Docker execution timeouts.
+
+**Highlights:**
+- Added automatic session recovery and short-term caching for WhatsApp QR Code to eliminate pairing timeouts.
+- Extended MCP Docker container creation and tool execution timeout to 5 minutes with custom timeout support.
+- Added direct base image parameter support in docker_create tool with automatic Dockerfile generation.
+
+<!-- lang:pt -->
+**Resumo:** Auto-recuperacao resiliente do QR Code do WhatsApp e ampliacao de timeouts do MCP Docker.
+
+**Destaques:**
+- Adicionada auto-recuperacao automatica de sessao e cache de curta duracao para o QR Code do WhatsApp, eliminando falhas de pareamento.
+- Ampliado o tempo limite de criacao e execucao de containers MCP Docker para 5 minutos com suporte a timeouts customizados.
+- Adicionado suporte direto ao parametro de imagem base na ferramenta docker_create com geracao automatica de Dockerfile.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.39 (`b6a2bf4`)
+- update development branch (`54418e4`)
+
+#### 🐛 Correções
+- extend mcp docker timeout to 300s, support custom timeout and image param in docker_create (`3d0c5bb`)
+- resolve intermittent whatsapp qr code display and session timeout recovery (`77cc784`)
+
+
+---
+
+
 ## Release - v2.5.37
 ### 📣 Apresentação da Atualização
 
