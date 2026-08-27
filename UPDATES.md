@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.41
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Rock-solid WhatsApp QR Code pairing handshake stability and concurrency protection.
+
+**Highlights:**
+- Eliminated concurrent session restarts during WhatsApp Web QR Code scanning, preventing device connection failures.
+- Added a 25-second cooldown on session restart requests to safeguard cryptographic handshakes.
+- Allocated 512MB shared memory (shm_size) for WhatsApp Web browser stability in Docker.
+
+<!-- lang:pt -->
+**Resumo:** Estabilidade absoluta no handshake de pareamento do QR Code do WhatsApp e protecao contra concorrencia.
+
+**Destaques:**
+- Eliminadas reinicializacoes concorrentes de sessao durante o escaneamento do QR Code, prevenindo falhas de conexao no celular.
+- Adicionado cooldown de 25 segundos para solicitacoes de restart de sessao para proteger o handshake criptografico.
+- Configurados 512MB de memoria compartilhada (shm_size) para a estabilidade do navegador do WhatsApp Web no Docker.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.41 (`3fa3a10`)
+- update development branch (`088fe41`)
+
+#### 🐛 Correções
+- resolve whatsapp qr pairing handshake timeout by preventing concurrent session restarts and adding shm_size 512mb (`b8faf5e`)
+
+
+---
+
+
 ## Release - v2.5.40
 ### 📣 Apresentação da Atualização
 
