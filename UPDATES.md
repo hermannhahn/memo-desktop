@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.35
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Reactive loading of AI-Brain agents in Model Sleep processing dropdown with fallback API indicators.
+
+**Highlights:**
+- Enabled reactive on-demand fetching of owner agents in Settings whenever navigating to the tab, expanding the Model Sleep accordion, or focusing the model selector.
+- Added visual indicators for active fallback LLM providers in agent labels and reinforced query authentication when retrieving agent profiles from the server.
+
+<!-- lang:pt -->
+**Resumo:** Carregamento reativo dos agentes do AI-Brain no seletor do Sono do Modelo com indicador de APIs de fallback.
+
+**Destaques:**
+- Habilitado o carregamento reativo sob demanda dos agentes do usu??rio nas Configura????es ao abrir a aba, expandir o accordion do Sono do Modelo ou focar no seletor de modelos.
+- Adicionada indica????o visual de provedores de fallback ativos no nome dos agentes e refor??ada a autentica????o da requisi????o ao buscar a lista no servidor.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.35 (`cf14d9e`)
+- update development branch (`7085218`)
+- updates in development (`1f583d3`)
+
+
+---
+
+
 ## Release - v2.5.34
 ### 📣 Apresentação da Atualização
 
