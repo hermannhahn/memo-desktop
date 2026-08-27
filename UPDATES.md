@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.37
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced long-term memory search with unlimited time span, declarative notes integration, and access frequency ranking.
+
+**Highlights:**
+- Expanded memory search across all sessions and historical timeframes without date boundaries.
+- Integrated semantic vector search directly for declarative notes alongside session memories and raw messages.
+- Added intelligent ranking ordered by importance score and access count.
+
+<!-- lang:pt -->
+**Resumo:** Busca aprimorada de mem?rias de longo prazo com per?odo ilimitado, integra??o de notas declarativas e ordena??o por frequ?ncia de acesso.
+
+**Destaques:**
+- Ampliada a busca de mem?rias por todas as sess?es e per?odos hist?ricos sem restri??o de data.
+- Integrada a busca vetorial sem?ntica de notas declarativas em conjunto com sess?es e mensagens brutas.
+- Adicionada ordena??o inteligente por pontua??o de import?ncia e contagem de acessos.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.37 (`fce0ba8`)
+- update development branch (`228b0fe`)
+- enhance long-term memory search with unlimited time, notes and access count ordering (`2e2925b`)
+
+
+---
+
+
 ## Release - v2.5.36
 ### 📣 Apresentação da Atualização
 
