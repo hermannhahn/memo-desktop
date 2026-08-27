@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.42
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added headless Chrome web search and page fetch tools, removed browser-use, and enabled automatic reverse geocoding for Traccar GPS positions.
+
+**Highlights:**
+- Added fetch_web_page and search_web_data tools running with headless Chrome/Edge and automatic JS/SPA rendering.
+- Removed legacy browser-use module and dependencies for a lighter footprint.
+- Added automatic reverse geocoding to Traccar positions with memory cache, returning full street addresses and Google Maps links.
+
+<!-- lang:pt -->
+**Resumo:** Adicao de ferramentas silenciosas de busca e leitura web via Chrome, remocao do browser-use e geocodificacao reversa automatica para posicoes GPS do Traccar.
+
+**Destaques:**
+- Novas ferramentas fetch_web_page e search_web_data executadas em segundo plano no Chrome/Edge com renderizacao de SPAs e React.
+- Remocao completa do modulo browser-use para reducao de consumo de recursos.
+- Geocodificacao reversa automatica nas consultas de localizacao do Traccar com cache em memoria, entregando endereco completo e links do Google Maps.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.42 (`f6a0d0e`)
+- add automatic reverse geocoding to traccar positions (`488ba5a`)
+- add headless chrome fetch_web_page and search_web_data tools (`586de5b`)
+- remove browser-use module and clean up references (`9a53577`)
+- updates in development (`4e275db`)
+
+
+---
+
+
 ## Release - v2.5.41
 ### 📣 Apresentação da Atualização
 
