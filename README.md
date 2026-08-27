@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.33`
+## 📥 Download da Última Versão: `v2.5.34`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.33.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/AI-Bridge-Setup-v2.5.33.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.34.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/AI-Bridge-Setup-v2.5.34.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.33.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/AI-Bridge-Setup-v2.5.33.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.34.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/AI-Bridge-Setup-v2.5.34.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.33/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.34/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.33:
+### 🌟 Notas do Release v2.5.34:
 <!-- lang:en -->
-**Summary:** Complete uninstaller cleanup for all persistent services data and redirection of updater temporary folders to Windows Temp directory.
+**Summary:** Fix Traccar API token request payload with ISO 8601 expiration form data.
 
 **Highlights:**
-- Enhanced uninstaller to recursively wipe all files in AppData AI Bridge (including ai-bridge-services, .env, docker-compose.yml, and init.sql) when full data removal is confirmed.
-- Redirected updater WebView2 user data to Windows Temp directory, eliminating residual update.exe folders in AppData Roaming and adding automated cleanup for legacy updater artifacts.
+- Properly formatted Traccar token issuance requests with form-urlencoded expiration payload, resolving HTTP 400 Bad Request and enabling seamless GPS tracking user management.
+- Added automatic fallback handling for legacy and modern Traccar server versions.
 
 <!-- lang:pt -->
-**Resumo:** Limpeza completa de todos os dados residuais na desinstala????o e redirecionamento de pastas tempor??rias do atualizador para a pasta Temp do Windows.
+**Resumo:** Corre????o no payload de requisi????o do token do Traccar com dados de formul??rio e expira????o em ISO 8601.
 
 **Destaques:**
-- Aprimorado o desinstalador para remover recursivamente todos os arquivos em AppData AI Bridge (incluindo ai-bridge-services, .env, docker-compose.yml e init.sql) quando confirmada a remo????o total de dados.
-- Redirecionados os dados de navega????o do atualizador para o diret??rio Temp do Windows, eliminando a cria????o de pastas residuais update.exe no AppData Roaming e incluindo limpeza autom??tica de res??duos antigos.
+- Formatadas adequadamente as requisi????es de emiss??o de token do Traccar com dados de formul??rio e par??metro de expira????o, corrigindo o erro HTTP 400 e liberando a gest??o de usu??rios no m??dulo de rastreamento GPS.
+- Adicionado tratamento de fallback autom??tico para compatibilidade com vers??es legadas e modernas do servidor Traccar.
 
 ---
 

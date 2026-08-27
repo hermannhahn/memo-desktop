@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.34
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix Traccar API token request payload with ISO 8601 expiration form data.
+
+**Highlights:**
+- Properly formatted Traccar token issuance requests with form-urlencoded expiration payload, resolving HTTP 400 Bad Request and enabling seamless GPS tracking user management.
+- Added automatic fallback handling for legacy and modern Traccar server versions.
+
+<!-- lang:pt -->
+**Resumo:** Corre????o no payload de requisi????o do token do Traccar com dados de formul??rio e expira????o em ISO 8601.
+
+**Destaques:**
+- Formatadas adequadamente as requisi????es de emiss??o de token do Traccar com dados de formul??rio e par??metro de expira????o, corrigindo o erro HTTP 400 e liberando a gest??o de usu??rios no m??dulo de rastreamento GPS.
+- Adicionado tratamento de fallback autom??tico para compatibilidade com vers??es legadas e modernas do servidor Traccar.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.34 (`3eaae4f`)
+- update development branch (`454ed20`)
+- updates in development (`8ca9be4`)
+
+
+---
+
+
 ## Release - v2.5.33
 ### 📣 Apresentação da Atualização
 
