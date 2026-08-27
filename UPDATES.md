@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.32
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix Traccar API token generation with session cookiejar support and real-time LTM status on first boot.
+
+**Highlights:**
+- Added cookiejar session persistence in Traccar authentication client, resolving HTTP 401 on token generation and enabling instant user management in Tracking Users.
+- Eliminated container stops during token issuance for zero-downtime background provisioning.
+- Dynamic auto-reconnect and instant database propagation across all WebSocket and REST services on initial install boot.
+
+<!-- lang:pt -->
+**Resumo:** Corre????o na gera????o de token do Traccar com suporte a cookiejar e status LTM em tempo real no primeiro boot.
+
+**Destaques:**
+- Adicionada persist??ncia de sess??o com cookiejar no cliente de autentica????o do Traccar, corrigindo o erro 401 na gera????o de token e liberando a gest??o de usu??rios em Usu??rios do Rastreamento.
+- Eliminada a parada desnecess??ria do container durante a emiss??o de token, garantindo provisionamento em segundo plano sem interrup????es.
+- Reconex??o autom??tica sob demanda e inje????o imediata do banco de dados em todos os servi??os WebSocket e REST ap??s a instala????o inicial.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.32 (`8206888`)
+- update development branch (`95d549c`)
+- updates in development (`9d6527e`)
+- updates in development (`63cb0e3`)
+
+
+---
+
+
 ## Release - v2.5.31
 ### 📣 Apresentação da Atualização
 

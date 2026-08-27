@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.31`
+## 📥 Download da Última Versão: `v2.5.32`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.31.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/AI-Bridge-Setup-v2.5.31.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.32.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/AI-Bridge-Setup-v2.5.32.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.31.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/AI-Bridge-Setup-v2.5.31.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.32.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/AI-Bridge-Setup-v2.5.32.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.31/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.32/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.31:
+### 🌟 Notas do Release v2.5.32:
 <!-- lang:en -->
-**Summary:** Robust Traccar admin session validation and automatic UI refresh after backup restore.
+**Summary:** Fix Traccar API token generation with session cookiejar support and real-time LTM status on first boot.
 
 **Highlights:**
-- Fixed Traccar technical user authentication to directly validate administrator status via active session, preventing unwanted container restarts and ensuring instant token provisioning in Tracking Users.
-- Enhanced database backup restore with isolated temporary files, detailed error capture, and automatic real-time reloading of Memory Content, Notes, and Analytics views.
+- Added cookiejar session persistence in Traccar authentication client, resolving HTTP 401 on token generation and enabling instant user management in Tracking Users.
+- Eliminated container stops during token issuance for zero-downtime background provisioning.
+- Dynamic auto-reconnect and instant database propagation across all WebSocket and REST services on initial install boot.
 
 <!-- lang:pt -->
-**Resumo:** Valida????o robusta de sess??o admin no Traccar e atualiza????o autom??tica da interface ap??s restaura????o de backup.
+**Resumo:** Corre????o na gera????o de token do Traccar com suporte a cookiejar e status LTM em tempo real no primeiro boot.
 
 **Destaques:**
-- Corrigida a autentica????o do usu??rio t??cnico do Traccar para validar o privil??gio de administrador diretamente pela sess??o ativa, evitando reinicializa????es indevidas do container e garantindo provisionamento instant??neo do token em Usu??rios do Rastreamento.
-- Aprimorada a restaura????o de backup do banco de dados com arquivos tempor??rios isolados, captura detalhada de erros e recarregamento autom??tico em tempo real das telas de Conte??do da Mem??ria, Anota????es e Anal??ticos.
+- Adicionada persist??ncia de sess??o com cookiejar no cliente de autentica????o do Traccar, corrigindo o erro 401 na gera????o de token e liberando a gest??o de usu??rios em Usu??rios do Rastreamento.
+- Eliminada a parada desnecess??ria do container durante a emiss??o de token, garantindo provisionamento em segundo plano sem interrup????es.
+- Reconex??o autom??tica sob demanda e inje????o imediata do banco de dados em todos os servi??os WebSocket e REST ap??s a instala????o inicial.
 
 ---
 
