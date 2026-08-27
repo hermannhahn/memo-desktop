@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.39`
+## 📥 Download da Última Versão: `v2.5.40`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.39.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/AI-Bridge-Setup-v2.5.39.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.40.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/AI-Bridge-Setup-v2.5.40.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.39.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/AI-Bridge-Setup-v2.5.39.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.40.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/AI-Bridge-Setup-v2.5.40.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.39/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.40/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.39:
+### 🌟 Notas do Release v2.5.40:
 <!-- lang:en -->
-**Summary:** Resilient WhatsApp QR Code auto-recovery and extended MCP Docker execution timeouts.
+**Summary:** Persistent Windows workspace bind mount, async non-blocking container creation, and shell stability fixes.
 
 **Highlights:**
-- Added automatic session recovery and short-term caching for WhatsApp QR Code to eliminate pairing timeouts.
-- Extended MCP Docker container creation and tool execution timeout to 5 minutes with custom timeout support.
-- Added direct base image parameter support in docker_create tool with automatic Dockerfile generation.
+- Implemented automatic persistent workspace and home directory bind mount in Windows (%USERPROFILE%/Agents) for all agent containers.
+- Added non-blocking asynchronous container creation in docker_create with real-time status and logs monitoring to eliminate timeouts.
+- Injected stdin_open and tty into container compose files preventing shell exit and CrashLoop Restarting(0).
 
 <!-- lang:pt -->
-**Resumo:** Auto-recuperacao resiliente do QR Code do WhatsApp e ampliacao de timeouts do MCP Docker.
+**Resumo:** Bind mount persistente de workspace no Windows, criacao assincrona nao-bloqueante de containers e correcoes de estabilidade de shell.
 
 **Destaques:**
-- Adicionada auto-recuperacao automatica de sessao e cache de curta duracao para o QR Code do WhatsApp, eliminando falhas de pareamento.
-- Ampliado o tempo limite de criacao e execucao de containers MCP Docker para 5 minutos com suporte a timeouts customizados.
-- Adicionado suporte direto ao parametro de imagem base na ferramenta docker_create com geracao automatica de Dockerfile.
+- Implementado mapeamento automatico permanente de workspace e diretorio home no Windows (%USERPROFILE%/Agents) para todos os containers de agentes.
+- Adicionada criacao assincrona nao-bloqueante no docker_create com acompanhamento de progresso em tempo real via status e logs para eliminar timeouts.
+- Injetados stdin_open e tty nos arquivos compose prevenindo finalizacao imediata de shell e CrashLoop de reinicializacao Restarting(0).
 
 ---
 

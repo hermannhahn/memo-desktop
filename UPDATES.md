@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.40
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Persistent Windows workspace bind mount, async non-blocking container creation, and shell stability fixes.
+
+**Highlights:**
+- Implemented automatic persistent workspace and home directory bind mount in Windows (%USERPROFILE%/Agents) for all agent containers.
+- Added non-blocking asynchronous container creation in docker_create with real-time status and logs monitoring to eliminate timeouts.
+- Injected stdin_open and tty into container compose files preventing shell exit and CrashLoop Restarting(0).
+
+<!-- lang:pt -->
+**Resumo:** Bind mount persistente de workspace no Windows, criacao assincrona nao-bloqueante de containers e correcoes de estabilidade de shell.
+
+**Destaques:**
+- Implementado mapeamento automatico permanente de workspace e diretorio home no Windows (%USERPROFILE%/Agents) para todos os containers de agentes.
+- Adicionada criacao assincrona nao-bloqueante no docker_create com acompanhamento de progresso em tempo real via status e logs para eliminar timeouts.
+- Injetados stdin_open e tty nos arquivos compose prevenindo finalizacao imediata de shell e CrashLoop de reinicializacao Restarting(0).
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.40 (`5b90ba7`)
+- update development branch (`013fc4c`)
+- add persistent windows workspace bind mount and async non-blocking docker container creation (`d2e5958`)
+
+#### 🐛 Correções
+- inject stdin_open and tty to prevent CrashLoop Restarting(0) in agent containers (`a4703a7`)
+
+
+---
+
+
 ## Release - v2.5.39
 ### 📣 Apresentação da Atualização
 
