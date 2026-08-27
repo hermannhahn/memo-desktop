@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.35`
+## 📥 Download da Última Versão: `v2.5.36`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.35.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/AI-Bridge-Setup-v2.5.35.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/install-ai-bridge.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/AIBridgeDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.36.exe](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/AI-Bridge-Setup-v2.5.36.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/install-ai-bridge.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/install-ai-bridge.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/AIBridgeDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/install-ai-bridge.bat).
+1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/install-ai-bridge.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.35.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/AI-Bridge-Setup-v2.5.35.exe).
+1. Baixe o instalador [`AI-Bridge-Setup-v2.5.36.exe`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/AI-Bridge-Setup-v2.5.36.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.35/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBridgeDevCert.crt`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/AIBridgeDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.36/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.35:
+### 🌟 Notas do Release v2.5.36:
 <!-- lang:en -->
-**Summary:** Reactive loading of AI-Brain agents in Model Sleep processing dropdown with fallback API indicators.
+**Summary:** Professional and generic AI System service account for Traccar GPS fleet intelligence.
 
 **Highlights:**
-- Enabled reactive on-demand fetching of owner agents in Settings whenever navigating to the tab, expanding the Model Sleep accordion, or focusing the model selector.
-- Added visual indicators for active fallback LLM providers in agent labels and reinforced query authentication when retrieving agent profiles from the server.
+- Updated Traccar internal technical service account name and email to AI System (AI Bridge) and ai.system@local.traccar for enterprise AI fleet tracking environments.
+- Added automated database migration in Traccar H2 storage to seamlessly update existing service accounts.
 
 <!-- lang:pt -->
-**Resumo:** Carregamento reativo dos agentes do AI-Brain no seletor do Sono do Modelo com indicador de APIs de fallback.
+**Resumo:** Conta de servi??o de IA gen??rica e profissional para o m??dulo de rastreamento inteligente Traccar.
 
 **Destaques:**
-- Habilitado o carregamento reativo sob demanda dos agentes do usu??rio nas Configura????es ao abrir a aba, expandir o accordion do Sono do Modelo ou focar no seletor de modelos.
-- Adicionada indica????o visual de provedores de fallback ativos no nome dos agentes e refor??ada a autentica????o da requisi????o ao buscar a lista no servidor.
+- Atualizado o nome e e-mail do usu??rio t??cnico padr??o do Traccar para AI System (AI Bridge) e ai.system@local.traccar, garantindo um padr??o corporativo e profissional para rastreamento veicular e de frotas com IA.
+- Adicionada rotina de migra????o autom??tica no banco de dados local do Traccar para atualizar instala????es existentes de forma transparente.
 
 ---
 

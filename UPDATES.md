@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.36
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Professional and generic AI System service account for Traccar GPS fleet intelligence.
+
+**Highlights:**
+- Updated Traccar internal technical service account name and email to AI System (AI Bridge) and ai.system@local.traccar for enterprise AI fleet tracking environments.
+- Added automated database migration in Traccar H2 storage to seamlessly update existing service accounts.
+
+<!-- lang:pt -->
+**Resumo:** Conta de servi??o de IA gen??rica e profissional para o m??dulo de rastreamento inteligente Traccar.
+
+**Destaques:**
+- Atualizado o nome e e-mail do usu??rio t??cnico padr??o do Traccar para AI System (AI Bridge) e ai.system@local.traccar, garantindo um padr??o corporativo e profissional para rastreamento veicular e de frotas com IA.
+- Adicionada rotina de migra????o autom??tica no banco de dados local do Traccar para atualizar instala????es existentes de forma transparente.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.36 (`54fb858`)
+- update development branch (`6fd5304`)
+- updates in development (`788d884`)
+
+
+---
+
+
 ## Release - v2.5.35
 ### 📣 Apresentação da Atualização
 
