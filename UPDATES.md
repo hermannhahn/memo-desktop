@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.43
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Configured silent browser visibility mode by default and disabled Chrome DevTools automation tool by default.
+
+**Highlights:**
+- Default browser visibility mode is now set to Silent (Background/Headless) for all automation tasks.
+- Chrome DevTools MCP tool is now disabled by default and can be enabled whenever needed.
+- Existing user installations are automatically migrated to the new default settings upon updating.
+
+<!-- lang:pt -->
+**Resumo:** Configurado o modo silencioso de visibilidade do navegador por padrao e desabilitada a ferramenta de automacao Chrome DevTools por padrao.
+
+**Destaques:**
+- O modo padrao de visibilidade do navegador agora e Silencioso (Segundo Plano / Headless).
+- A ferramenta MCP Chrome DevTools passa a vir desabilitada por padrao, podendo ser ativada quando necessario.
+- As instalacoes existentes dos usuarios sao migradas automaticamente para essas novas preferencias ao atualizar.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.43 (`fc973fb`)
+- default chrome mode to headless and disable chrome mcp tool by default with forced migration (`5f63a4a`)
+
+
+---
+
+
 ## Release - v2.5.42
 ### 📣 Apresentação da Atualização
 
