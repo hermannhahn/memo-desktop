@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.33
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Complete uninstaller cleanup for all persistent services data and redirection of updater temporary folders to Windows Temp directory.
+
+**Highlights:**
+- Enhanced uninstaller to recursively wipe all files in AppData AI Bridge (including ai-bridge-services, .env, docker-compose.yml, and init.sql) when full data removal is confirmed.
+- Redirected updater WebView2 user data to Windows Temp directory, eliminating residual update.exe folders in AppData Roaming and adding automated cleanup for legacy updater artifacts.
+
+<!-- lang:pt -->
+**Resumo:** Limpeza completa de todos os dados residuais na desinstala????o e redirecionamento de pastas tempor??rias do atualizador para a pasta Temp do Windows.
+
+**Destaques:**
+- Aprimorado o desinstalador para remover recursivamente todos os arquivos em AppData AI Bridge (incluindo ai-bridge-services, .env, docker-compose.yml e init.sql) quando confirmada a remo????o total de dados.
+- Redirecionados os dados de navega????o do atualizador para o diret??rio Temp do Windows, eliminando a cria????o de pastas residuais update.exe no AppData Roaming e incluindo limpeza autom??tica de res??duos antigos.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.33 (`601331f`)
+- update development branch (`d80dd82`)
+- updates in development (`2622d88`)
+
+
+---
+
+
 ## Release - v2.5.32
 ### 📣 Apresentação da Atualização
 
