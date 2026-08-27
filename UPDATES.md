@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.31
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Robust Traccar admin session validation and automatic UI refresh after backup restore.
+
+**Highlights:**
+- Fixed Traccar technical user authentication to directly validate administrator status via active session, preventing unwanted container restarts and ensuring instant token provisioning in Tracking Users.
+- Enhanced database backup restore with isolated temporary files, detailed error capture, and automatic real-time reloading of Memory Content, Notes, and Analytics views.
+
+<!-- lang:pt -->
+**Resumo:** Valida????o robusta de sess??o admin no Traccar e atualiza????o autom??tica da interface ap??s restaura????o de backup.
+
+**Destaques:**
+- Corrigida a autentica????o do usu??rio t??cnico do Traccar para validar o privil??gio de administrador diretamente pela sess??o ativa, evitando reinicializa????es indevidas do container e garantindo provisionamento instant??neo do token em Usu??rios do Rastreamento.
+- Aprimorada a restaura????o de backup do banco de dados com arquivos tempor??rios isolados, captura detalhada de erros e recarregamento autom??tico em tempo real das telas de Conte??do da Mem??ria, Anota????es e Anal??ticos.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.31 (`462f369`)
+- update development branch (`d5b4d9f`)
+- updates in fix/traccar-auth-and-backup-restore-reload (`6db7498`)
+- updates in development (`6773018`)
+
+
+---
+
+
 ## Release - v2.5.30
 ### 📣 Apresentação da Atualização
 
