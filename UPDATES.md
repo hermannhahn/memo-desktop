@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.48
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added complete Full Backup and Restore features for all user definitions and Traccar data, fixed automatic memory backup scheduling, and updated Dashboard metrics to feature Waking Memories.
+
+**Highlights:**
+- Added Full Backup and Full Restore cards in Backup tab to export/import all user configs, IoT keys, and Traccar users and devices.
+- Fixed automatic memory backup scheduler with continuous check and persistent timestamp tracking.
+- Renamed backup labels to Memory Backup and Restore Memory, preserving strict vector memory scope.
+- Updated Dashboard KPI to Waking Memories, strictly displaying active pre-sleep memories.
+
+<!-- lang:pt -->
+**Resumo:** Adicionados recursos completos de Full Backup e Restaurar Full Backup para todas as definições do usuário e dados do Traccar, corrigido o agendador de backup automático da memória e atualizado o indicador do Dashboard para Memórias de Vigília.
+
+**Destaques:**
+- Adicionados cards de Full Backup e Restaurar Full Backup na aba Backup para exportar/importar todas as configurações do usuário, chaves IoT e usuários/dispositivos do Traccar.
+- Corrigido o agendador de backup automático de memória com checagem contínua e persistência do último backup.
+- Renomeadas as nomenclaturas para Memory Backup e Restore Memory, mantendo escopo estrito no banco vetorial.
+- Atualizado o indicador do Dashboard para Memórias de Vigília, exibindo estritamente as memórias ativas pré-sono.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.48 (`65447a3`)
+- updates for release v2.5.47 (`a19d445`)
+- updates in feature/full-backup-and-scheduler-fix (`fc392d6`)
+- updates in development (`1efad64`)
+
+
+---
+
+
 ## Release - v2.5.46
 ### 📣 Apresentação da Atualização
 

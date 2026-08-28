@@ -1,6 +1,5 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.46",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.46/AI-Bridge-Setup-v2.5.46.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Added GPS precision filters (accuracy 100m + max speed) to eliminate phantom distance and jitter in Traccar positions. Fixes false route reporting.\n\n<!-- lang:pt -->\n**Resumo:** Implementados filtros de precisão GPS (precisão 100m + velocidade máxima) eliminando distância fantasma e jitter nas posições do Traccar. Corrige o relato de rotas falsas."
+    "version": "2.5.48",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.48/AI-Bridge-Setup-v2.5.48.exe"
 }
