@@ -3,6 +3,49 @@
 ---
 
 
+## Release - v2.5.46
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added GPS precision filters (accuracy 100m + max speed) to eliminate phantom distance and jitter in Traccar positions. Fixes false route reporting.
+
+<!-- lang:pt -->
+**Resumo:** Implementados filtros de precisão GPS (precisão 100m + velocidade máxima) eliminando distância fantasma e jitter nas posições do Traccar. Corrige o relato de rotas falsas.
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.46 (`fbbad0a`)
+
+
+---
+
+
+## Release - v2.5.45
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added GPS precision filters (accuracy 100m + max speed) to eliminate phantom distance and jitter in Traccar positions. Fixes false route reporting.
+
+<!-- lang:pt -->
+**Resumo:** Implementados filtros de precisão GPS (precisão 100m + velocidade máxima) eliminando distância fantasma e jitter nas posições do Traccar. Corrige o relato de rotas falsas.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.45 (`eef0fb6`)
+
+#### 🐛 Correções
+- filtro de precisão GPS anti-jitter (camadas 1 e 2) — elimina distância fantasma (`a3e2705`)
+
+
+---
+
+
 ## Release - v2.5.44
 ### 📣 Apresentação da Atualização
 
