@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.44
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Restored strict preservation of user-configured browser visibility mode and Chrome DevTools tool status.
+
+**Highlights:**
+- User customizations for Browser Visibility Mode (Maximized or Silent) and Chrome DevTools toggle are now strictly respected.
+- Silent mode and disabled Chrome tool remain the clean defaults for new installations.
+
+<!-- lang:pt -->
+**Resumo:** Restaurada a preservacao estrita do modo de visibilidade do navegador e do status da ferramenta Chrome DevTools configurados pelo usuario.
+
+**Destaques:**
+- As configuracoes personalizadas do usuario para o Modo de Visibilidade (Maximizado ou Silencioso) e ativacao do Chrome DevTools agora sao estritamente respeitadas.
+- O modo silencioso e a ferramenta Chrome desabilitada permanecem como padroes limpos para novas instalacoes.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.44 (`c599f3c`)
+
+#### 🐛 Correções
+- preserve user-defined chrome mode and tool toggles on config load (`652e7c4`)
+
+
+---
+
+
 ## Release - v2.5.43
 ### 📣 Apresentação da Atualização
 
