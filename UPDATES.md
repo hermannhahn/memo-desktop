@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.62
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This update adds the new YouTube Music local tool, letting your AI assistant search and play videos/music on your computer, control playback, and read video transcripts when available.
+
+**Highlights:**
+- New Local Tools card "YouTube Music" for searching YouTube and playing videos/music with play, pause, next, previous, and volume controls.
+- After updating, the app automatically installs the required components, so the tool works on any computer with internet.
+- Video transcripts are read automatically when subtitles are available.
+
+<!-- lang:pt -->
+**Resumo:** Esta atualização adiciona a nova ferramenta local YouTube Music, permitindo que seu assistente de IA procure e toque vídeos/músicas no computador, controle a reprodução e leia a transcrição dos vídeos quando disponível.
+
+**Destaques:**
+- Novo card YouTube Music em Ferramentas Locais para buscar no YouTube e tocar vídeos/músicas com controles de play, pausa, próximo, anterior e volume.
+- Após atualizar, o aplicativo instala automaticamente os componentes necessários, funcionando em qualquer computador com internet.
+- A transcrição do vídeo é lida automaticamente quando há legendas disponíveis.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.62 (`15a33aa`)
+- update development branch (`8b1640d`)
+
+
+---
+
+
 ## Release - v2.5.61
 ### 📣 Apresentação da Atualização
 
