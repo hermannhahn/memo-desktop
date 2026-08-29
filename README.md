@@ -1,14 +1,14 @@
-# 🚀 AI Bridge - Repositório Oficial de Downloads
+﻿# 🚀 AI-Brain Desktop - Repositório Oficial de Downloads
 
-Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Bridge Desktop para Windows (Go Native GUI)**.
+Bem-vindo ao repositório oficial de distribuições e instaladores do **AI-Brain Desktop para Windows (Go Native GUI)**.
 
 ---
 
 ## 📥 Download da Última Versão: `v2.5.55`
 
-- 📦 **Instalador Executável Direto**: [Baixar AI-Bridge-Setup-v2.5.55.exe](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Bridge-Setup-v2.5.55.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-bridge.bat](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-bridge.bat)
-- 📄 **Script PowerShell**: [Baixar install-ai-bridge.ps1](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-bridge.ps1)
+- 📦 **Instalador Executável Direto**: [Baixar AI-Brain-Setup-v2.5.55.exe](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Brain-Setup-v2.5.55.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-ai-brain.bat](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-brain.bat)
+- 📄 **Script PowerShell**: [Baixar install-ai-brain.ps1](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-brain.ps1)
 - 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-cert.bat)
 - 📄 **Certificado Digital**: [Baixar AIBridgeDevCert.crt](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AIBridgeDevCert.crt)
 
@@ -17,15 +17,15 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **AI Brid
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-ai-bridge.bat`](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-bridge.bat).
-2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI Bridge automaticamente.
+1. Baixe o instalador [`install-ai-brain.bat`](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/install-ai-brain.bat).
+2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do AI-Brain Desktop automaticamente.
 
 ---
 
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`AI-Bridge-Setup-v2.5.55.exe`](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Bridge-Setup-v2.5.55.exe).
+1. Baixe o instalador [`AI-Brain-Setup-v2.5.55.exe`](https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Brain-Setup-v2.5.55.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -55,11 +55,11 @@ Para visualizar o histórico completo de notas de release, correções e novas f
 - Full i18n support in 8 languages for the new tab
 
 <!-- lang:pt -->
-**Resumo:** Adi??o da nova aba Console de Agentes no menu lateral e simplifica??o do cabe?alho.
+**Resumo:** Adição da nova aba Console de Agentes no menu lateral e simplificação do cabeçalho.
 
 **Destaques:**
 - Nova aba Agentes integrada abaixo de Dashboard abrindo o console web
-- Remo??o do bot?o AI-BRAIN do topo para um visual mais limpo
+- Remoção do botão AI-BRAIN do topo para um visual mais limpo
 - Suporte i18n completo nos 8 idiomas para a nova aba
 
 ---
