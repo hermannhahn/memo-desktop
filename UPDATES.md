@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.60
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This update makes the app simpler and safer: the Agents tab was removed, WhatsApp works again with end-to-end encryption, and the E2EE security details now live in a dedicated section in Settings.
+
+**Highlights:**
+- WhatsApp restored after the end-to-end encryption upgrade.
+- E2EE protection details moved to Settings, under E2EE Encryption.
+- Cleaner navigation with shorter descriptions on the main tabs.
+
+<!-- lang:pt -->
+**Resumo:** Esta atualização deixa o aplicativo mais simples e seguro: a aba Agents foi removida, o WhatsApp voltou a funcionar com criptografia de ponta a ponta e os detalhes de segurança E2EE agora ficam em uma seção própria em Configurações.
+
+**Destaques:**
+- WhatsApp funcionando novamente após a atualização da criptografia de ponta a ponta.
+- Detalhes da proteção E2EE movidos para Configurações, na opção E2EE Encryption.
+- Navegação mais limpa e descrições mais curtas nas abas principais.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.60 (`98f5246`)
+- update development branch (`4c9428e`)
+
+
+---
+
+
 ## Release - v2.5.59
 ### 📣 Apresentação da Atualização
 
