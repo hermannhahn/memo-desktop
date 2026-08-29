@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.59
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Optimized the End-to-End Protection banner to fit on a single line with compact typography and hover-expandable Safety Number.
+
+**Highlights:**
+- Compact single-line security banner with nowrap constraints
+- Truncated Safety Number with smooth expansion on hover
+- Proportional font sizes and cleaner desktop visual footprint
+
+<!-- lang:pt -->
+**Resumo:** Otimiza??o da barra de Prote??o de Ponta a Ponta para linha ?nica com tipografia compacta e Safety Number expans?vel no hover.
+
+**Destaques:**
+- Banner de seguran?a compacto em linha ?nica sem quebras de texto
+- Safety Number truncado com expans?o suave ao passar o mouse
+- Tipografia proporcional e layout mais limpo na interface
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.59 (`46876ac`)
+
+#### 🔧 Manutenção / Refatoração
+- made E2EE banner single line with compact typography and truncated safety number (`b296495`)
+
+
+---
+
+
 ## Release - v2.5.58
 ### 📣 Apresentação da Atualização
 

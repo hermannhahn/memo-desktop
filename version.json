@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.58",
-    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.58/AI-Bridge-Setup-v2.5.58.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Refined the layout and borders of the global End-to-End Protection banner with aligned margins, spacing, and square borders.\n\n**Highlights:**\n- Added 2rem lateral margins and spacious padding for seamless alignment with header and tabs\n- Styled the security banner with clean square borders\n- Preserved dynamic real-time Safety Number and frame counters\n\n<!-- lang:pt -->\n**Resumo:** Ajuste no layout e bordas da barra global de Prote??o de Ponta a Ponta com margens alinhadas, espa?amento e bordas quadradas.\n\n**Destaques:**\n- Margens laterais de 2rem e padding espa?oso para alinhamento perfeito com o cabe?alho e abas\n- Estiliza??o do banner de seguran?a com bordas quadradas\n- Preserva??o do Safety Number din?mico e contadores de frames em tempo real"
+    "version": "2.5.59",
+    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.59/AI-Bridge-Setup-v2.5.59.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Optimized the End-to-End Protection banner to fit on a single line with compact typography and hover-expandable Safety Number.\n\n**Highlights:**\n- Compact single-line security banner with nowrap constraints\n- Truncated Safety Number with smooth expansion on hover\n- Proportional font sizes and cleaner desktop visual footprint\n\n<!-- lang:pt -->\n**Resumo:** Otimiza??o da barra de Prote??o de Ponta a Ponta para linha ?nica com tipografia compacta e Safety Number expans?vel no hover.\n\n**Destaques:**\n- Banner de seguran?a compacto em linha ?nica sem quebras de texto\n- Safety Number truncado com expans?o suave ao passar o mouse\n- Tipografia proporcional e layout mais limpo na interface"
 }
