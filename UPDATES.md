@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.61
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the 'Verify Security' button in Settings so the E2EE verification window opens correctly and you can compare the Safety Number with the AI-Brain panel.
+
+**Highlights:**
+- The E2EE Security button now opens the verification modal with the Safety Number, encryption status and counters.
+- Small internal layout fix so the security window is shown above other dialogs.
+
+<!-- lang:pt -->
+**Resumo:** Corrigido o botão 'Verify Security' nas Configurações para que a janela de verificação E2EE abra corretamente e você possa comparar o Safety Number com o painel AI-Brain.
+
+**Destaques:**
+- O botão de segurança E2EE agora abre o modal de verificação com o Safety Number, status da criptografia e contadores.
+- Correção interna de layout para a janela de segurança aparecer acima das demais.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.61 (`54a1b2c`)
+- update development branch (`d1d65bd`)
+
+
+---
+
+
 ## Release - v2.5.60
 ### 📣 Apresentação da Atualização
 
