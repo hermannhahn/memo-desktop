@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.56
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized the public code signing certificate to AIBrainDevCert.crt with legacy compatibility fallbacks and updated installation scripts.
+
+**Highlights:**
+- Renamed public digital certificate to AIBrainDevCert.crt
+- Enhanced install-cert.bat and automated installers with fallback support
+- Documented planned migration cleanup cycle
+
+<!-- lang:pt -->
+**Resumo:** Padroniza??o do certificado digital p?blico para AIBrainDevCert.crt com fallback de compatibilidade e scripts de instala??o atualizados.
+
+**Destaques:**
+- Certificado digital p?blico renomeado para AIBrainDevCert.crt
+- Scripts install-cert.bat e instaladores com suporte a fallback
+- Documenta??o do ciclo planejado de limpeza de migra??o
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.56 (`527150f`)
+- standardized digital certificate naming to AIBrainDevCert.crt with backward compatibility fallback (`853c079`)
+- update development branch (`36f60a8`)
+
+#### 📚 Documentação
+- added closed-source freeware and commercial EULA license (`53611db`)
+- updated README.md with AI-Brain Desktop branding, features and instructions (`61a25bb`)
+
+
+---
+
+
 ## Release - v2.5.55
 ### 📣 Apresentação da Atualização
 

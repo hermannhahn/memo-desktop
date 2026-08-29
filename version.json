@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.55",
-    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Bridge-Setup-v2.5.55.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Added the new Agents Console tab directly in the sidebar and cleaned up the header navigation.\n\n**Highlights:**\n- New Agents tab integrated below Dashboard opening the web console\n- Removed header AI-BRAIN button for a cleaner layout\n- Full i18n support in 8 languages for the new tab\n\n<!-- lang:pt -->\n**Resumo:** Adi??o da nova aba Console de Agentes no menu lateral e simplifica??o do cabe?alho.\n\n**Destaques:**\n- Nova aba Agentes integrada abaixo de Dashboard abrindo o console web\n- Remo??o do bot?o AI-BRAIN do topo para um visual mais limpo\n- Suporte i18n completo nos 8 idiomas para a nova aba"
+    "version": "2.5.56",
+    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.56/AI-Bridge-Setup-v2.5.56.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Standardized the public code signing certificate to AIBrainDevCert.crt with legacy compatibility fallbacks and updated installation scripts.\n\n**Highlights:**\n- Renamed public digital certificate to AIBrainDevCert.crt\n- Enhanced install-cert.bat and automated installers with fallback support\n- Documented planned migration cleanup cycle\n\n<!-- lang:pt -->\n**Resumo:** Padroniza??o do certificado digital p?blico para AIBrainDevCert.crt com fallback de compatibilidade e scripts de instala??o atualizados.\n\n**Destaques:**\n- Certificado digital p?blico renomeado para AIBrainDevCert.crt\n- Scripts install-cert.bat e instaladores com suporte a fallback\n- Documenta??o do ciclo planejado de limpeza de migra??o"
 }
