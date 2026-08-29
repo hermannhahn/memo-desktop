@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.53",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.53/AI-Bridge-Setup-v2.5.53.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Fixed E2EE Safety Number display in verification modal and enhanced WebSocket handshake negotiation.\n\n**Highlights:**\n- Robust camelCase/snake_case property mapping for E2EE status\n- Fallback payload parser for E2EE handshake acknowledgements\n- Direct interactive Safety Number and key fingerprint verification\n\n<!-- lang:pt -->\n**Resumo:** Corre??o na exibi??o do Safety Number no modal de verifica??o E2EE e aprimoramento no handshake WebSocket.\n\n**Destaques:**\n- Mapeamento robusto de propriedades camelCase/snake_case para status E2EE\n- Parser resiliente de payload para confirma??es de handshake E2EE\n- Verifica??o interativa direta do Safety Number e impress?o digital das chaves"
+    "version": "2.5.54",
+    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.54/AI-Bridge-Setup-v2.5.54.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Updated logo subtitle to Desktop App vX.X.X, standardized UI branding and configured new distribution repository.\n\n**Highlights:**\n- Updated logo branding to Desktop App vX.X.X\n- Standardized UI and translation keys\n- Configured distribution to hermannhahn/ai-brain-desktop\n\n<!-- lang:pt -->\n**Resumo:** Texto abaixo da logo atualizado para Desktop App vX.X.X, padroniza??o visual e novo reposit?rio de distribui??o configurado.\n\n**Destaques:**\n- Texto abaixo da logo atualizado para Desktop App vX.X.X\n- Padroniza??o da interface e chaves de tradu??o\n- Configura??o do reposit?rio de distribui??o hermannhahn/ai-brain-desktop"
 }

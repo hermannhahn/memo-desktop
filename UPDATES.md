@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.54
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated logo subtitle to Desktop App vX.X.X, standardized UI branding and configured new distribution repository.
+
+**Highlights:**
+- Updated logo branding to Desktop App vX.X.X
+- Standardized UI and translation keys
+- Configured distribution to hermannhahn/ai-brain-desktop
+
+<!-- lang:pt -->
+**Resumo:** Texto abaixo da logo atualizado para Desktop App vX.X.X, padroniza??o visual e novo reposit?rio de distribui??o configurado.
+
+**Destaques:**
+- Texto abaixo da logo atualizado para Desktop App vX.X.X
+- Padroniza??o da interface e chaves de tradu??o
+- Configura??o do reposit?rio de distribui??o hermannhahn/ai-brain-desktop
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.54 (`c73ff7a`)
+- standardized user-facing nomenclature to AI-BRAIN Desktop App across UI, i18n, installer and skills (`a60ae9d`)
+- updated download and releases repository references from ai-bridge-download to ai-brain-desktop (`cfcc945`)
+
+
+---
+
+
 ## Release - v2.5.53
 ### 📣 Apresentação da Atualização
 
