@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.51",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.51/AI-Bridge-Setup-v2.5.51.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Updated all UI labels and service cards to AI-BRAIN and ensured Windows installer updates both ai-brain.exe and existing ai-bridge.exe shortcuts.\n\n**Highlights:**\n- Renamed central service card and connection modals to AI-BRAIN in all 8 languages\n- Fixed Windows installer to update both ai-brain.exe and existing ai-bridge.exe binaries in Program Files\n- Automatically cleaned up legacy desktop shortcuts\n\n<!-- lang:pt -->\n**Resumo:** Atualizados todos os r?tulos de interface e cards de servi?o para AI-BRAIN e garantida a atualiza??o pelo instalador tanto do ai-brain.exe quanto de atalhos existentes do ai-bridge.exe.\n\n**Destaques:**\n- Card central de servi?os e modais de conex?o renomeados para AI-BRAIN em todos os 8 idiomas\n- Instalador do Windows ajustado para atualizar tanto ai-brain.exe quanto ai-bridge.exe na pasta de instala??o\n- Limpeza autom?tica de atalhos antigos na ?rea de trabalho"
+    "version": "2.5.52",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.52/AI-Bridge-Setup-v2.5.52.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** End-to-end encryption (E2EE) with X25519 and AES-256-GCM for the WebSocket bridge between AI-Bridge and AI-Brain.\n\n**Highlights:**\n- Full Zero-Knowledge WebSocket encryption\n- Safety Number verification modal and real-time statistics\n- i18n support in 8 languages\n\n<!-- lang:pt -->\n**Resumo:** Criptografia de ponta a ponta (E2EE) com X25519 e AES-256-GCM para o canal WebSocket entre AI-Bridge e AI-Brain.\n\n**Destaques:**\n- Blindagem Zero-Knowledge no canal WebSocket\n- Modal de verifica??o de Safety Number e estat?sticas em tempo real\n- Suporte i18n em 8 idiomas"
 }

@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.52
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** End-to-end encryption (E2EE) with X25519 and AES-256-GCM for the WebSocket bridge between AI-Bridge and AI-Brain.
+
+**Highlights:**
+- Full Zero-Knowledge WebSocket encryption
+- Safety Number verification modal and real-time statistics
+- i18n support in 8 languages
+
+<!-- lang:pt -->
+**Resumo:** Criptografia de ponta a ponta (E2EE) com X25519 e AES-256-GCM para o canal WebSocket entre AI-Bridge e AI-Brain.
+
+**Destaques:**
+- Blindagem Zero-Knowledge no canal WebSocket
+- Modal de verifica??o de Safety Number e estat?sticas em tempo real
+- Suporte i18n em 8 idiomas
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.52 (`79f3251`)
+- updates for release v2.5.52 (`2aa7056`)
+- updates in feature/e2ee-websocket-encryption (`161aad6`)
+- implement end-to-end encryption (E2EE) with X25519, AES-256-GCM and Safety Number verification (`6228bd9`)
+
+#### 🔧 Manutenção / Refatoração
+- prepare version for release (`2c65e4c`)
+
+
+---
+
+
 ## Release - v2.5.51
 ### 📣 Apresentação da Atualização
 
