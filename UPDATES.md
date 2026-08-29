@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.58
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Refined the layout and borders of the global End-to-End Protection banner with aligned margins, spacing, and square borders.
+
+**Highlights:**
+- Added 2rem lateral margins and spacious padding for seamless alignment with header and tabs
+- Styled the security banner with clean square borders
+- Preserved dynamic real-time Safety Number and frame counters
+
+<!-- lang:pt -->
+**Resumo:** Ajuste no layout e bordas da barra global de Prote??o de Ponta a Ponta com margens alinhadas, espa?amento e bordas quadradas.
+
+**Destaques:**
+- Margens laterais de 2rem e padding espa?oso para alinhamento perfeito com o cabe?alho e abas
+- Estiliza??o do banner de seguran?a com bordas quadradas
+- Preserva??o do Safety Number din?mico e contadores de frames em tempo real
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.58 (`4d28b0c`)
+
+#### 🔧 Manutenção / Refatoração
+- set square borders for global E2EE banner (`91c602c`)
+- added margin and padding spacing to global E2EE banner (`0d88e03`)
+
+
+---
+
+
 ## Release - v2.5.57
 ### 📣 Apresentação da Atualização
 
