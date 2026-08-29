@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.57
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Relocated the End-to-End Encryption status bar to a full-width header banner and renamed branding to End-to-End Protection.
+
+**Highlights:**
+- Full-width horizontal E2EE security banner positioned below the header
+- Renamed security title to End-to-End Protection across 8 languages
+- Removed inner card sub-badge for a cleaner services grid layout
+
+<!-- lang:pt -->
+**Resumo:** Barra de status da Criptografia de Ponta a Ponta reposicionada para banner horizontal em largura total abaixo do cabe?alho.
+
+**Destaques:**
+- Banner horizontal E2EE em largura total logo abaixo do topo
+- T?tulo de seguran?a renomeado para Prote??o de Ponta a Ponta nos 8 idiomas
+- Sub-badge interno removido do card para uma grade de servi?os mais limpa
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.57 (`a33dedb`)
+- moved E2EE status bar below header full-width and renamed to End-to-End Protection (`66e0989`)
+
+
+---
+
+
 ## Release - v2.5.56
 ### 📣 Apresentação da Atualização
 

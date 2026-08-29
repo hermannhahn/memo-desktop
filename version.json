@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.56",
-    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.56/AI-Bridge-Setup-v2.5.56.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Standardized the public code signing certificate to AIBrainDevCert.crt with legacy compatibility fallbacks and updated installation scripts.\n\n**Highlights:**\n- Renamed public digital certificate to AIBrainDevCert.crt\n- Enhanced install-cert.bat and automated installers with fallback support\n- Documented planned migration cleanup cycle\n\n<!-- lang:pt -->\n**Resumo:** Padroniza??o do certificado digital p?blico para AIBrainDevCert.crt com fallback de compatibilidade e scripts de instala??o atualizados.\n\n**Destaques:**\n- Certificado digital p?blico renomeado para AIBrainDevCert.crt\n- Scripts install-cert.bat e instaladores com suporte a fallback\n- Documenta??o do ciclo planejado de limpeza de migra??o"
+    "version": "2.5.57",
+    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.57/AI-Bridge-Setup-v2.5.57.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Relocated the End-to-End Encryption status bar to a full-width header banner and renamed branding to End-to-End Protection.\n\n**Highlights:**\n- Full-width horizontal E2EE security banner positioned below the header\n- Renamed security title to End-to-End Protection across 8 languages\n- Removed inner card sub-badge for a cleaner services grid layout\n\n<!-- lang:pt -->\n**Resumo:** Barra de status da Criptografia de Ponta a Ponta reposicionada para banner horizontal em largura total abaixo do cabe?alho.\n\n**Destaques:**\n- Banner horizontal E2EE em largura total logo abaixo do topo\n- T?tulo de seguran?a renomeado para Prote??o de Ponta a Ponta nos 8 idiomas\n- Sub-badge interno removido do card para uma grade de servi?os mais limpa"
 }
