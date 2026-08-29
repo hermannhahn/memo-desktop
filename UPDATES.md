@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.51
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated all UI labels and service cards to AI-BRAIN and ensured Windows installer updates both ai-brain.exe and existing ai-bridge.exe shortcuts.
+
+**Highlights:**
+- Renamed central service card and connection modals to AI-BRAIN in all 8 languages
+- Fixed Windows installer to update both ai-brain.exe and existing ai-bridge.exe binaries in Program Files
+- Automatically cleaned up legacy desktop shortcuts
+
+<!-- lang:pt -->
+**Resumo:** Atualizados todos os r?tulos de interface e cards de servi?o para AI-BRAIN e garantida a atualiza??o pelo instalador tanto do ai-brain.exe quanto de atalhos existentes do ai-bridge.exe.
+
+**Destaques:**
+- Card central de servi?os e modais de conex?o renomeados para AI-BRAIN em todos os 8 idiomas
+- Instalador do Windows ajustado para atualizar tanto ai-brain.exe quanto ai-bridge.exe na pasta de instala??o
+- Limpeza autom?tica de atalhos antigos na ?rea de trabalho
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.51 (`9a23574`)
+- update development branch (`0436fbb`)
+
+
+---
+
+
 ## Release - v2.5.50
 ### 📣 Apresentação da Atualização
 
