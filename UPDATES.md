@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.49
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added phonetic query expansion to semantic memory search. The MetaphoneBR module now generates sound-alike variants (e.g. 'beats' -> 'bits') so voice-transcription typos are recovered. Applies to both /memories/search and /rag/search.
+
+**Highlights:**
+- New pure-Go internal/phonetic package (MetaphoneBR): accents normalization, digraph collapsing (ch->x, ph->f, qu->k, ea/ee->i), conditioned consonants and vowel removal
+- Phonetic recall as complement: variants merged ranked just below pure semantic hits (0.8 factor), respecting the requested limit
+- RAG benefits automatically (same handler)
+
+<!-- lang:pt -->
+**Resumo:** Adicionada expansão fonética da query na busca semântica de memórias. O módulo MetaphoneBR agora gera variantes com som parecido (ex: 'beats' -> 'bits') para recuperar erros de transcrição de voz. Vale tanto para /memories/search quanto para /rag/search.
+
+**Destaques:**
+- Novo pacote internal/phonetic (Go puro): normalização de acentos, colapso de dígrafos (ch->x, ph->f, qu->k, ea/ee->i), consoantes condicionadas e remoção de vogais
+- Recall fonético complementar: variantes mescladas rankeando logo abaixo dos resultados semânticos puros (fator 0.8), respeitando o limite pedido
+- RAG beneficiado automaticamente (mesmo handler)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.49 (`b1081b3`)
+- expansão fonética da query na busca semântica (MetaphoneBR) (`be9c435`)
+
+
+---
+
+
 ## Release - v2.5.48
 ### 📣 Apresentação da Atualização
 
