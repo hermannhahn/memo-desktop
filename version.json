@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.54",
-    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.54/AI-Bridge-Setup-v2.5.54.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Updated logo subtitle to Desktop App vX.X.X, standardized UI branding and configured new distribution repository.\n\n**Highlights:**\n- Updated logo branding to Desktop App vX.X.X\n- Standardized UI and translation keys\n- Configured distribution to hermannhahn/ai-brain-desktop\n\n<!-- lang:pt -->\n**Resumo:** Texto abaixo da logo atualizado para Desktop App vX.X.X, padroniza??o visual e novo reposit?rio de distribui??o configurado.\n\n**Destaques:**\n- Texto abaixo da logo atualizado para Desktop App vX.X.X\n- Padroniza??o da interface e chaves de tradu??o\n- Configura??o do reposit?rio de distribui??o hermannhahn/ai-brain-desktop"
+    "version": "2.5.55",
+    "download_url": "https://github.com/hermannhahn/ai-brain-desktop/releases/download/v2.5.55/AI-Bridge-Setup-v2.5.55.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Added the new Agents Console tab directly in the sidebar and cleaned up the header navigation.\n\n**Highlights:**\n- New Agents tab integrated below Dashboard opening the web console\n- Removed header AI-BRAIN button for a cleaner layout\n- Full i18n support in 8 languages for the new tab\n\n<!-- lang:pt -->\n**Resumo:** Adi??o da nova aba Console de Agentes no menu lateral e simplifica??o do cabe?alho.\n\n**Destaques:**\n- Nova aba Agentes integrada abaixo de Dashboard abrindo o console web\n- Remo??o do bot?o AI-BRAIN do topo para um visual mais limpo\n- Suporte i18n completo nos 8 idiomas para a nova aba"
 }

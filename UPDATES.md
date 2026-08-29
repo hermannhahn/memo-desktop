@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.55
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added the new Agents Console tab directly in the sidebar and cleaned up the header navigation.
+
+**Highlights:**
+- New Agents tab integrated below Dashboard opening the web console
+- Removed header AI-BRAIN button for a cleaner layout
+- Full i18n support in 8 languages for the new tab
+
+<!-- lang:pt -->
+**Resumo:** Adi??o da nova aba Console de Agentes no menu lateral e simplifica??o do cabe?alho.
+
+**Destaques:**
+- Nova aba Agentes integrada abaixo de Dashboard abrindo o console web
+- Remo??o do bot?o AI-BRAIN do topo para um visual mais limpo
+- Suporte i18n completo nos 8 idiomas para a nova aba
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.55 (`3ed41c5`)
+- removed AI-BRAIN header button and added Agents console tab below Dashboard (`a7c7351`)
+
+
+---
+
+
 ## Release - v2.5.54
 ### 📣 Apresentação da Atualização
 
