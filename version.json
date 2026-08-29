@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.52",
-    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.52/AI-Bridge-Setup-v2.5.52.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** End-to-end encryption (E2EE) with X25519 and AES-256-GCM for the WebSocket bridge between AI-Bridge and AI-Brain.\n\n**Highlights:**\n- Full Zero-Knowledge WebSocket encryption\n- Safety Number verification modal and real-time statistics\n- i18n support in 8 languages\n\n<!-- lang:pt -->\n**Resumo:** Criptografia de ponta a ponta (E2EE) com X25519 e AES-256-GCM para o canal WebSocket entre AI-Bridge e AI-Brain.\n\n**Destaques:**\n- Blindagem Zero-Knowledge no canal WebSocket\n- Modal de verifica??o de Safety Number e estat?sticas em tempo real\n- Suporte i18n em 8 idiomas"
+    "version": "2.5.53",
+    "download_url": "https://github.com/hermannhahn/ai-bridge-download/releases/download/v2.5.53/AI-Bridge-Setup-v2.5.53.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Fixed E2EE Safety Number display in verification modal and enhanced WebSocket handshake negotiation.\n\n**Highlights:**\n- Robust camelCase/snake_case property mapping for E2EE status\n- Fallback payload parser for E2EE handshake acknowledgements\n- Direct interactive Safety Number and key fingerprint verification\n\n<!-- lang:pt -->\n**Resumo:** Corre??o na exibi??o do Safety Number no modal de verifica??o E2EE e aprimoramento no handshake WebSocket.\n\n**Destaques:**\n- Mapeamento robusto de propriedades camelCase/snake_case para status E2EE\n- Parser resiliente de payload para confirma??es de handshake E2EE\n- Verifica??o interativa direta do Safety Number e impress?o digital das chaves"
 }

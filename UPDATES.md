@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.53
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed E2EE Safety Number display in verification modal and enhanced WebSocket handshake negotiation.
+
+**Highlights:**
+- Robust camelCase/snake_case property mapping for E2EE status
+- Fallback payload parser for E2EE handshake acknowledgements
+- Direct interactive Safety Number and key fingerprint verification
+
+<!-- lang:pt -->
+**Resumo:** Corre??o na exibi??o do Safety Number no modal de verifica??o E2EE e aprimoramento no handshake WebSocket.
+
+**Destaques:**
+- Mapeamento robusto de propriedades camelCase/snake_case para status E2EE
+- Parser resiliente de payload para confirma??es de handshake E2EE
+- Verifica??o interativa direta do Safety Number e impress?o digital das chaves
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.53 (`37c5713`)
+- enhanced E2EE visual proof with sub-card, Safety Number and real-time counters on AI-BRAIN card + i18n for 8 languages (`7b7d80c`)
+
+#### 🐛 Correções
+- robust E2EE property mappings and fallback payload parsing for Safety Number display in desktop app (`f5773cb`)
+
+
+---
+
+
 ## Release - v2.5.52
 ### 📣 Apresentação da Atualização
 
