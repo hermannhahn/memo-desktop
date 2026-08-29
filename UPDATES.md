@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.50
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Full rebranding to AI-Brain Desktop with unified visual identity and complete support for NVIDIA API (build.nvidia.com), TokenRa and multi-provider LLMs in the Model Sleep module.
+
+**Highlights:**
+- Official rebranding to AI-Brain Desktop with updated branding, versioning and canonical installers
+- NVIDIA API integration with 19 high-performance and free models for model sleep and emotional indexing
+- Multi-provider support including TokenRa, OpenAI, Gemini, Claude, Grok and DeepSeek
+- Canonical AI-Brain-Setup.exe binary for persistent Windows Defender and SmartScreen reputation
+
+<!-- lang:pt -->
+**Resumo:** Rebranding completo para AI-Brain Desktop com identidade visual unificada e suporte total ? API da NVIDIA (build.nvidia.com), TokenRa e m?ltiplos provedores LLM no m?dulo do Sono do Modelo.
+
+**Destaques:**
+- Rebranding oficial para AI-Brain Desktop com logo atualizada, nova tag de vers?o e instaladores can?nicos
+- Integra??o com a API da NVIDIA com 19 modelos gratuitos e de alto desempenho para o sono e indexa??o emocional
+- Suporte a m?ltiplos provedores incluindo TokenRa, OpenAI, Gemini, Claude, Grok e DeepSeek
+- Bin?rio can?nico AI-Brain-Setup.exe para ac?mulo cont?nuo de reputa??o no Windows Defender e SmartScreen
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.50 (`8ff9770`)
+- updates in feature/nvidia-and-rebrand-ai-brain-desktop (`44755d4`)
+
+
+---
+
+
 ## Release - v2.5.49
 ### 📣 Apresentação da Atualização
 
