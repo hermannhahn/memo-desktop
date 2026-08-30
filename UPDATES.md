@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.67
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+Fix YouTube playback: send correct Track shape (v2.5.67)
+
+Highlights:
+- FIXED the actual root cause of "no audio": the youtube-music-cli expects the PLAY command's track in the shape {videoId, title, artists:[{artistId,name}]}. Our search was normalizing results to {video_id, id, artists:[]string}; sending that raw track made the CLI crash with "undefined is not an object (evaluating 'value.replace')" — so the player was never invoked. Now youtubePlay converts the first search result via searchResultToCLITrack(), guaranteeing videoId + artists as objects, which actually starts playback.
+
+<!-- lang:pt -->
+Correção da reprodução do YouTube: formato Track correto (v2.5.67)
+
+Destaques:
+- CORRIGE a causa raiz real do "nenhum áudio": o youtube-music-cli espera no comando PLAY um track no formato {videoId, title, artists:[{artistId,name}]}. Nossa busca normalizava para {video_id, id, artists:[]string}; ao enviar esse track cru, o CLI quebrava com "undefined is not an object (evaluating 'value.replace')" — e o player nunca era chamado. Agora o youtubePlay converte o primeiro resultado via searchResultToCLITrack(), garantindo videoId + artists como objetos, o que de fato inicia a reprodução.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.67 (`1b2af9f`)
+
+#### 🐛 Correções
+- enviar track no formato Track correto do CLI (corrige 'value.replace') (`61a5977`)
+
+
+---
+
+
 ## Release - v2.5.66
 ### 📣 Apresentação da Atualização
 
