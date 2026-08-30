@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.65
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+Complete portable mpv self-heal fix (v2.5.65)
+
+Highlights:
+- Fixed audio still not playing: the integrity check now requires the actual mpv runtime library (mpv-1.dll / mpv-2.dll / libmpv*.dll), not just any DLL. A broken install that only had d3dcompiler_43.dll was wrongly treated as complete.
+- Auto-heal: if the official mpv library is missing, the app removes the broken install and downloads the complete portable package (shinchiro/mpv-winbuild-cmake) — works on any Windows 10/11.
+
+<!-- lang:pt -->
+Correção de auto-cura do mpv portátil completo (v2.5.65)
+
+Destaques:
+- Corrige o áudio que continuava sem tocar: a verificação de integridade agora exige a biblioteca de runtime real do mpv (mpv-1.dll / mpv-2.dll / libmpv*.dll), e não qualquer DLL. Uma instalação quebrada que só tinha d3dcompiler_43.dll era tratada como completa.
+- Auto-cura: se a biblioteca oficial do mpv estiver faltando, o app remove a instalação quebrada e baixa o pacote portátil completo (shinchiro/mpv-winbuild-cmake) — funciona em qualquer Windows 10/11.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.65 (`c05f704`)
+
+#### 🐛 Correções
+- mpvLooksComplete exige a lib oficial do mpv (auto-cura) (`cd099ff`)
+
+
+---
+
+
 ## Release - v2.5.64
 ### 📣 Apresentação da Atualização
 
