@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.66
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+Real mpv auto-heal + agent container labels fix (v2.5.66)
+
+Highlights:
+- FIXED the auto-heal not running: YouTubeToolsReady now requires a complete mpv (mpv.exe + official libmpv-*.dll). A broken mpv.exe (e.g. only d3dcompiler_43.dll) no longer counts as "ready", so the app ALWAYS runs ensurePortableMPV on the youtube tool start. If the mpv is broken/incomplete, it now deletes it and downloads the complete portable package (mpv.exe + all runtime DLLs + embedded ffmpeg).
+- Agent-created containers now ALWAYS get the managed_by/agent_project/agent_id labels, so the agent can use (exec) the container it created without restrictions, regardless of the Agent Container sandbox setting.
+
+<!-- lang:pt -->
+Auto-cura real do mpv + correção de labels em containers (v2.5.66)
+
+Destaques:
+- CORRIGE o auto-cura que não rodava: YouTubeToolsReady agora exige mpv íntegro (mpv.exe + lib oficial libmpv-*.dll). Um mpv.exe quebrado (ex.: só d3dcompiler_43.dll) não conta mais como pronto, então o app SEMPRE roda o ensurePortableMPV ao iniciar a ferramenta de YouTube. Se o mpv estiver quebrado/incompleto, agora ele o apaga e baixa o pacote portátil completo (mpv.exe + todas as DLLs + ffmpeg embutido).
+- Containers criados pelo agente agora recebem SEMPRE as labels managed_by/agent_project/agent_id, então o agente consegue usar (exec) o container que criou sem restrições, independente do modo sandbox no Agent Container.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.66 (`009c243`)
+
+#### 🐛 Correções
+- auto-heal do mpv de fato + labels sempre injetadas (`a4aeee9`)
+
+
+---
+
+
 ## Release - v2.5.65
 ### 📣 Apresentação da Atualização
 
