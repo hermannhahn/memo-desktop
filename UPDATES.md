@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.63
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+Audio playback fix (v2.5.63)
+
+Highlights:
+- Silent mode: all local MCP tools (youtube daemon, yt-dlp, winget, installers) now hide the console window via CREATE_NO_WINDOW — no more CMD popping up.
+- Self-contained audio: mpv is now portable and bundled into AppData tools (with a preset mpv.conf: wasapi output, volume 100, no-video, no-terminal). No dependency on a pre-installed mpv on the user's PC — the app installs everything it needs.
+
+<!-- lang:pt -->
+Correção de reprodução de áudio (v2.5.63)
+
+Destaques:
+- Modo silencioso: todas as ferramentas MCP locais (daemon do youtube, yt-dlp, winget, instaladores) agora ocultam a janela de console via CREATE_NO_WINDOW — nada de CMD surgindo na tela.
+- Áudio autocontido: o mpv agora é portátil e instalado dentro do AppData (com mpv.conf pré-configurado: saída wasapi, volume 100, no-video, no-terminal). Sem dependência de mpv pré-instalado no PC do usuário — o app instala tudo que precifica.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.63 (`6f04f50`)
+
+#### 🐛 Correções
+- audio playback portability and silent mode (`c37e759`)
+
+
+---
+
+
 ## Release - v2.5.62
 ### 📣 Apresentação da Atualização
 
