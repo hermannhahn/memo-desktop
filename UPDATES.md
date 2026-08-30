@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.64
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+Complete portable mpv audio fix (v2.5.64)
+
+Highlights:
+- Fixed audio not playing: the app now downloads the COMPLETE portable mpv package (shinchiro/mpv-winbuild-cmake), which includes mpv.exe + all runtime DLLs + embedded ffmpeg, instead of copying from a partial winget install.
+- Self-updatable: resolves the latest mpv release automatically (stays current).
+- Detects and repairs broken/missing mpv installs.
+- Silent mode kept: no CMD/console windows.
+
+<!-- lang:pt -->
+Correção do áudio com mpv portátil completo (v2.5.64)
+
+Destaques:
+- Corrige o áudio que não tocava: o app agora baixa o pacote portátil COMPLETO do mpv (shinchiro/mpv-winbuild-cmake), com mpv.exe + todas as DLLs de runtime + ffmpeg embutido, em vez de copiar de uma instalação winget incompleta.
+- Atualizável: resolve automaticamente a release mais recente do mpv (fica sempre atualizado).
+- Detecta e corrige instalações quebradas/incompletas do mpv.
+- Modo silencioso mantido: sem janelas CMD/console.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.64 (`96f5f98`)
+
+#### 🐛 Correções
+- download complete portable mpv package (full DLLs) (`380cfcc`)
+
+
+---
+
+
 ## Release - v2.5.63
 ### 📣 Apresentação da Atualização
 
