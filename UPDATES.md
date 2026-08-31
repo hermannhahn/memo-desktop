@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.71
+### 📣 Apresentação da Atualização
+
+v2.5.71 - Local Tools em Settings (modo lista) + Traccar com hora local <!-- lang:en --> **Summary:** Moves Local Tools into Settings as an accordion (list view) and makes the Traccar container use the host timezone. **Highlights:** - Local Tools removed from the left-side menu; now lives inside Settings as an accordion, rendered as a compact list grouped by category instead of cards - Traccar container now runs with TZ env pulled from the OS where the desktop app is installed (Windows Get-TimeZone / /etc/timezone fallback), so GPS event times show local hours instead of UTC <!-- lang:pt --> **Resumo:** Move Local Tools para dentro de Configurações como acordeon (modo lista) e faz o container Traccar usar o fuso horário do sistema. **Destaques:** - Local Tools saiu do menu lateral; agora vive em Configurações como acordeon, renderizado em lista compacta por grupo em vez de cards - Container Traccar agora roda com TZ detectado do SO onde o desktop está instalado (Windows Get-TimeZone / fallback /etc/timezone), exibindo as horas locais dos eventos GPS em vez de UTC
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.71 (`6b19d5b`)
+- mover Local Tools p/ accordion em Settings (modo lista) e usar TZ do SO no container Traccar (`b937fe4`)
+
+
+---
+
+
 ## Release - v2.5.70
 ### 📣 Apresentação da Atualização
 
