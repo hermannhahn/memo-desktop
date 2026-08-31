@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.69
+### 📣 Apresentação da Atualização
+
+v2.5.68 — mpv file-lock fix + UI/i18n polish
+<!-- lang:en -->
+**Summary:** Fixes the mpv auto-install file-lock error and improves UI translations across languages.
+**Highlights:**
+- Youtube: end mpv process before reinstalling (fixes "file already in use" on Windows)
+- i18n: setLanguage now falls back to English when a key is missing (fixes stale Portuguese text on language switch)
+- i18n: nav .nav-item left-aligned (no more centered labels on long translated text)
+- i18n: added Tracking Users translations for pt-PT, es, fr, de, zh, ru
+- i18n: translated Dashboard KPI cards (Consolidated, Sleep Cycles, RAG Auto-Hit Rate, Eliminated) for es/fr/de/zh/ru
+- UI: removed E2EE Protected badge from header
+- UI: mpv auto-install error messages now in English
+<!-- lang:pt -->
+**Resumo:** Corrige o erro de file-lock no auto-install do mpv e melhora as traduções da interface em todas as línguas.
+**Destaques:**
+- Youtube: encerra o processo do mpv antes de reinstalar (corrige "arquivo já está sendo usado por outro processo" no Windows)
+- i18n: setLanguage agora faz fallback para o inglês quando a chave não existe (corrige texto fantasma em português ao trocar de idioma)
+- i18n: nav .nav-item alinhado à esquerda (sem rótulos centralizados em textos longos traduzidos)
+- i18n: traduções de Tracking Users adicionadas em pt-PT, es, fr, de, zh, ru
+- i18n: cards do Dashboard (Consolidated, Sleep Cycles, RAG Auto-Hit Rate, Eliminated) traduzidos para es/fr/de/zh/ru
+- UI: badge E2EE Protected removido do header
+- UI: mensagens de erro do auto-install do mpv agora em inglês
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.69 (`6d6a156`)
+
+
+---
+
+
 ## Release - v2.5.68
 ### 📣 Apresentação da Atualização
 
