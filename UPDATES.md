@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.70
+### 📣 Apresentação da Atualização
+
+v2.5.70 - mpv auto-heal silencioso (sem janelas CMD)
+<!-- lang:en -->
+**Summary:** Makes the mpv auto-repair run fully silently on Windows (no more CMD windows popping up).
+**Highlights:**
+- Youtube: taskkill of mpv now runs with hideWindow()/CREATE_NO_WINDOW, matching the existing silent pattern used for the mpv package extraction
+- No CMD windows flash when auto-heal kicks in
+<!-- lang:pt -->
+**Resumo:** Torna a auto-cura do mpv 100% silenciosa no Windows (sem janelas CMD piscando).
+**Destaques:**
+- Youtube: taskkill do mpv agora roda com hideWindow()/CREATE_NO_WINDOW, mesmo padrão silencioso já usado na extração do mpv
+- Nenhuma janela CMD aparece quando a auto-cura é acionada
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.70 (`f873d8e`)
+
+#### 🐛 Correções
+- rodar taskkill do mpv de forma silenciosa (sem janela CMD) (`76daa84`)
+
+
+---
+
+
 ## Release - v2.5.69
 ### 📣 Apresentação da Atualização
 
