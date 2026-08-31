@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.73
+### 📣 Apresentação da Atualização
+
+v2.5.73 - Correção no cadastro de Skills (erro 42P08) <!-- lang:en --> **Summary:** Fixes a database type-inference error that prevented saving skills through the Skills tool. **Highlights:** - SkillSave now works: removed a redundant subquery that reused the $1 SQL parameter in two places, causing PostgreSQL to reject the INSERT with "inconsistent types deduced for parameter $1 (42P08)" - Skills registration (used to catalog project skills, e.g. ai-brain / ai-bridge and their AGENTS.md) is unblocked <!-- lang:pt --> **Resumo:** Corrige um erro de inferência de tipo no banco que impedia salvar skills pela ferramenta de Skills. **Destaques:** - SkillSave voltou a funcionar: removida uma subquery redundante que reutilizava o parâmetro SQL $1 em dois lugares, fazendo o Postgres rejeitar o INSERT com "inconsistent types deduced for parameter $1 (42P08)" - Cadastro de skills (usado para catalogar skills de projetos, ex: ai-brain / ai-bridge e seus AGENTS.md) desbloqueado
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.73 (`310cfc6`)
+
+#### 🐛 Correções
+- corrige erro de tipos inconsistentes no SkillSave (42P08) (`7cf2be8`)
+
+
+---
+
+
 ## Release - v2.5.72
 ### 📣 Apresentação da Atualização
 
