@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.72
+### 📣 Apresentação da Atualização
+
+v2.5.72 - Local Tools: accordion no meio das Configurações + bolinha on/off em tempo real <!-- lang:en --> **Summary:** Moves the Local Tools accordion to the middle of Settings and makes the on/off status dot update immediately on toggle. **Highlights:** - Local Tools accordion repositioned to the middle of the Settings tab (no longer at the top) - Toggling a tool now updates its green/gray status dot instantly, without needing to reload the tab <!-- lang:pt --> **Resumo:** Move o acordeon de Local Tools para o meio das Configurações e faz a bolinha de status ligado/desligado atualizar imediatamente. **Destaques:** - Acordeon de Local Tools reposicionado para o meio da aba Configurações (não fica mais no topo) - Alternar uma ferramenta agora atualiza a bolinha verde/cinza na hora, sem precisar recarregar a aba
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.72 (`d3b9d71`)
+- mover acc.Local Tools p/ meio de Settings e bolinha on/off atualiza imediatamente (`02e07e0`)
+
+
+---
+
+
 ## Release - v2.5.71
 ### 📣 Apresentação da Atualização
 
