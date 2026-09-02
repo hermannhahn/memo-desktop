@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.86
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
+
+**Highlights:**
+- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
+- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+
+<!-- lang:pt -->
+**Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
+
+**Destaques:**
+- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.86 (`36d5cc2`)
+- update development branch (`c9617e1`)
+
+
+---
+
+
 ## Release - v2.5.85
 ### 📣 Apresentação da Atualização
 
