@@ -4,21 +4,21 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.76`
+## 📥 Download da Última Versão: `v2.5.77`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.76.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/MEMO-Desktop-Setup-v2.5.76.exe)
-- 📦 **Instalador de Compatibilidade (AI-Brain)**: [Baixar AI-Brain-Setup-v2.5.76.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/AI-Brain-Setup-v2.5.76.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.77.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/MEMO-Desktop-Setup-v2.5.77.exe)
+- 📦 **Instalador de Compatibilidade (AI-Brain)**: [Baixar AI-Brain-Setup-v2.5.77.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/AI-Brain-Setup-v2.5.77.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -26,7 +26,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.76.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/MEMO-Desktop-Setup-v2.5.76.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.77.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/MEMO-Desktop-Setup-v2.5.77.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -35,7 +35,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.77/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -46,22 +46,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.76:
+### 🌟 Notas do Release v2.5.77:
 <!-- lang:en -->
-**Summary:** Configured dual-repository release publishing to memo-desktop and legacy fallback ai-brain-desktop.
+**Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Official downloads repository set to hermannhahn/memo-desktop
-- Legacy fallback downloads repository set to hermannhahn/ai-brain-desktop for backwards compatibility
-- Full release assets published to both repositories simultaneously
+- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
+- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
 
 <!-- lang:pt -->
-**Resumo:** Configuracao de publicacao simultanea em memo-desktop e no fallback legado ai-brain-desktop.
+**Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Repositorio oficial de downloads configurado para hermannhahn/memo-desktop
-- Repositorio legado de fallback configurado para hermannhahn/ai-brain-desktop para retrocompatibilidade
-- Todos os instaladores e binarios publicados em ambos os repositorios simultaneamente
+- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
 
 ---
 
