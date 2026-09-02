@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.5.74
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Official rebranding to MEMO Desktop and full migration to the MEMOROUTER ecosystem.
+
+**Highlights:**
+- Renamed desktop app to MEMO Desktop with official installer MEMO-Desktop-Setup
+- All backend and WebSocket tunnel endpoints migrated to api.memorouter.com
+- Startup performance optimized by removing background tool downloads
+
+<!-- lang:pt -->
+**Resumo:** Rebranding oficial para MEMO Desktop e migracao completa para o ecossistema MEMOROUTER.
+
+**Destaques:**
+- Aplicativo desktop renomeado para MEMO Desktop com instalador oficial MEMO-Desktop-Setup
+- Todos os endpoints e tunel WebSocket migrados para api.memorouter.com
+- Desempenho de inicializacao otimizado com remocao de downloads em background
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.74 (`4556a92`)
+- update development branch (`c4f9286`)
+- update development branch (`28e425a`)
+- updates in feature/memorouter-migration (`539aa56`)
+
+#### 📚 Documentação
+- atualiza referencias de memo.exe e MEMO Desktop no dev-cli e diretrizes (`db42974`)
+- atualiza referencias de arquitetura e fallback de download para memorouter e memo desktop (`1c2b796`)
+
+
+---
+
+
 ## Release - v2.5.73
 ### 📣 Apresentação da Atualização
 
