@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.75",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.75/MEMO-Desktop-Setup-v2.5.75.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Updated release and download repository URLs to memo-desktop.\n\n**Highlights:**\n- Updated download repository URLs from ai-brain-desktop to memo-desktop\n- Updated auto-update checker and installation scripts to use the new repository\n- Published full release assets to hermannhahn/memo-desktop\n\n<!-- lang:pt -->\n**Resumo:** Atualizacao dos links e repositorio de download para memo-desktop.\n\n**Destaques:**\n- Atualizados os links do repositorio de download de ai-brain-desktop para memo-desktop\n- Atualizados o verificador de atualizacoes e os scripts de instalacao para o novo repositorio\n- Publicados todos os artefatos de instalacao no hermannhahn/memo-desktop"
+    "version": "2.5.76",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.76/MEMO-Desktop-Setup-v2.5.76.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Configured dual-repository release publishing to memo-desktop and legacy fallback ai-brain-desktop.\n\n**Highlights:**\n- Official downloads repository set to hermannhahn/memo-desktop\n- Legacy fallback downloads repository set to hermannhahn/ai-brain-desktop for backwards compatibility\n- Full release assets published to both repositories simultaneously\n\n<!-- lang:pt -->\n**Resumo:** Configuracao de publicacao simultanea em memo-desktop e no fallback legado ai-brain-desktop.\n\n**Destaques:**\n- Repositorio oficial de downloads configurado para hermannhahn/memo-desktop\n- Repositorio legado de fallback configurado para hermannhahn/ai-brain-desktop para retrocompatibilidade\n- Todos os instaladores e binarios publicados em ambos os repositorios simultaneamente"
 }

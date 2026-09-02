@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.76
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Configured dual-repository release publishing to memo-desktop and legacy fallback ai-brain-desktop.
+
+**Highlights:**
+- Official downloads repository set to hermannhahn/memo-desktop
+- Legacy fallback downloads repository set to hermannhahn/ai-brain-desktop for backwards compatibility
+- Full release assets published to both repositories simultaneously
+
+<!-- lang:pt -->
+**Resumo:** Configuracao de publicacao simultanea em memo-desktop e no fallback legado ai-brain-desktop.
+
+**Destaques:**
+- Repositorio oficial de downloads configurado para hermannhahn/memo-desktop
+- Repositorio legado de fallback configurado para hermannhahn/ai-brain-desktop para retrocompatibilidade
+- Todos os instaladores e binarios publicados em ambos os repositorios simultaneamente
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.76 (`7f5cca3`)
+- update development branch (`3fa4f0c`)
+
+
+---
+
+
 ## Release - v2.5.75
 ### 📣 Apresentação da Atualização
 
