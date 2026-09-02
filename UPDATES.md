@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.75
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated release and download repository URLs to memo-desktop.
+
+**Highlights:**
+- Updated download repository URLs from ai-brain-desktop to memo-desktop
+- Updated auto-update checker and installation scripts to use the new repository
+- Published full release assets to hermannhahn/memo-desktop
+
+<!-- lang:pt -->
+**Resumo:** Atualizacao dos links e repositorio de download para memo-desktop.
+
+**Destaques:**
+- Atualizados os links do repositorio de download de ai-brain-desktop para memo-desktop
+- Atualizados o verificador de atualizacoes e os scripts de instalacao para o novo repositorio
+- Publicados todos os artefatos de instalacao no hermannhahn/memo-desktop
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.75 (`38ffbbe`)
+- update development branch (`d35a4ec`)
+
+#### 🔧 Manutenção / Refatoração
+- remove temporary patch_msg.txt (`ff2919f`)
+
+
+---
+
+
 ## Release - v2.5.74
 ### 📣 Apresentação da Atualização
 
