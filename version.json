@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.91",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.91/MEMO-Desktop-Setup-v2.5.91.exe",
+    "version": "2.5.92",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.92/MEMO-Desktop-Setup-v2.5.92.exe",
     "notes": "<!-- lang:en -->\r\n**Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.\r\n\r\n**Highlights:**\r\n- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com\r\n- Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization\r\n- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop\r\n\r\n<!-- lang:pt -->\r\n**Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.\r\n\r\n**Destaques:**\r\n- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com\r\n- Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket\r\n- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop"
 }
