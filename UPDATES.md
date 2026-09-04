@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.94
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added support for custom historical timestamps when recording chat messages in PostgreSQL LTM.
+
+**Highlights:**
+- Support custom timestamp/created_at field in add_chat_message WebSocket action and HTTP API
+- Enable replay of queued offline interactions with preserved original timestamps in LTM
+- Automatically delegate CLI build/publish to Dev API when executed from WSL
+
+<!-- lang:pt -->
+**Resumo:** Adicionado suporte a timestamps historicos personalizados na gravacao de mensagens de chat no LTM do PostgreSQL.
+
+**Destaques:**
+- Suporte a campo timestamp/created_at customizado na acao WebSocket add_chat_message e na API HTTP
+- Viabiliza reenvio de interacoes enfileiradas offline preservando os timestamps originais no LTM
+- Delegacao automatica do build/publish da CLI para a Dev API quando executada a partir do WSL
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.94 (`92d552b`)
+- support custom historical timestamp in add_chat_message for LTM queue replay (`367068d`)
+
+
+---
+
+
 ## Release - v2.5.93
 ### 📣 Apresentação da Atualização
 

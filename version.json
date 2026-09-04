@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.93",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.93/MEMO-Desktop-Setup-v2.5.93.exe",
+    "version": "2.5.94",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.94/MEMO-Desktop-Setup-v2.5.94.exe",
     "notes": "<!-- lang:en -->\n**Summary:** Added support for custom historical timestamps when recording chat messages in PostgreSQL LTM.\n\n**Highlights:**\n- Support custom timestamp/created_at field in add_chat_message WebSocket action and HTTP API\n- Enable replay of queued offline interactions with preserved original timestamps in LTM\n- Automatically delegate CLI build/publish to Dev API when executed from WSL\n\n<!-- lang:pt -->\n**Resumo:** Adicionado suporte a timestamps historicos personalizados na gravacao de mensagens de chat no LTM do PostgreSQL.\n\n**Destaques:**\n- Suporte a campo timestamp/created_at customizado na acao WebSocket add_chat_message e na API HTTP\n- Viabiliza reenvio de interacoes enfileiradas offline preservando os timestamps originais no LTM\n- Delegacao automatica do build/publish da CLI para a Dev API quando executada a partir do WSL"
 }
