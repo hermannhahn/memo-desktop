@@ -3,6 +3,48 @@
 ---
 
 
+## Release - v2.5.95
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added Knowledge Base MCP tool with text editing and PDF reading, new dashboard counter and guide modal, plus UI visual improvements.
+
+**Highlights:**
+- Unified Knowledge Base MCP tool allowing agents to create, edit, search and list text files and read PDF documents from the user folder
+- Knowledge Base button on Dashboard with dynamic file counter and quick access modal with Explorer launcher
+- Cleaned up legacy service action buttons and aligned square badge and tracking borders
+- Fixed settings accordion layout eliminating unwanted scrollbar
+
+<!-- lang:pt -->
+**Resumo:** Adicionada ferramenta MCP de Base de Conhecimento com suporte a edicao de textos e leitura de PDFs, novo botao com contador na dashboard e modal explicativo, alem de melhorias visuais na interface.
+
+**Destaques:**
+- Ferramenta MCP unificada de Base de Conhecimento permitindo criacao, edicao, busca e listagem de textos e leitura de documentos PDF na pasta do usuario
+- Botao de Base de Conhecimento na Dashboard com contador dinamico de arquivos e modal de acesso rapido com abertura no Explorer
+- Remocao de botoes legados de servicos e padronizacao de bordas quadradas no status do sistema e mapa de rastreamento
+- Correcao estrutural dos accordions em Configuracoes eliminando barra de rolagem desnecessaria
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.95 (`079fc3b`)
+- update development branch (`f0c825d`)
+- updates in fix/ui-cleanup-and-settings (`4a0e782`)
+- implement knowledge base mcp tool and dashboard integration (`64c0cb3`)
+- updates in development (`984af6a`)
+
+#### 🔧 Manutenção / Refatoração
+- remove release_msg.txt (`d0b7337`)
+
+#### 🐛 Correções
+- remove legacy service buttons, square borders, clean settings accordion and update settings title (`6d1854d`)
+
+
+---
+
+
 ## Release - v2.5.94
 ### 📣 Apresentação da Atualização
 
