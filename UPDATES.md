@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.99
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Eliminated startup console window flash and resolved initial splash screen delay.
+
+**Highlights:**
+- Instant splash screen appearance by making database ping and cache cleanup non-blocking
+- Suppressed all console/CMD windows during background legacy container stop and timezone discovery
+- Optimized AppData directory resolution to avoid synchronous disk walks on launch
+
+<!-- lang:pt -->
+**Resumo:** Eliminado piscar de janela de prompt no boot e resolvida lentidao para exibicao da splash screen.
+
+**Destaques:**
+- Abertura instantanea da tela de splash tornando o ping do banco e limpeza de cache nao-bloqueantes
+- Ocultacao total de janelas de prompt durante checagem de containers legados e fuso horario
+- Otimizacao no carregamento do diretorio AppData eliminando varreduras sincronas de disco no boot
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.99 (`e2f434b`)
+- update development branch (`fef250f`)
+
+
+---
+
+
 ## Release - v2.5.98
 ### 📣 Apresentação da Atualização
 
