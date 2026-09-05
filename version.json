@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.102",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.102/MEMO-Desktop-Setup-v2.5.102.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Transferred memory classification to long-term memory sessions and updated consolidation and RAG logic.\n\n**Highlights:**\n- Moved memory type attribute (procedural, episodic, semantic) from notes to long-term memory sessions\n- Integrated memory classification into realtime and nightly consolidation pipelines with RAG vector search updates\n- Updated desktop user interface with memory type filters on the Memories tab\n\n<!-- lang:pt -->\n**Resumo:** Transferencia da classificacao de memoria para as sessoes de memoria de longo prazo e atualizacao da consolidacao e do RAG.\n\n**Destaques:**\n- Migracao do atributo de tipo de memoria (procedural, episodica, semantica) das anotacoes para as sessoes de memoria\n- Integracao da classificacao de memoria nos pipelines de consolidacao em tempo real e noturna com busca vetorial RAG atualizada\n- Atualizacao da interface desktop com filtros de tipo de memoria na aba de Memorias"
+    "version": "2.5.103",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.103/MEMO-Desktop-Setup-v2.5.103.exe",
+    "notes": "<!-- lang:en --> **Summary:** RAG ranking calibration with refined similarity thresholds (chat 0.30, notes 0.40), consolidated boost 2.0, and MCP tool calls filtered from the RAG prompt injection.\n<!-- lang:pt --> **Resumo:** Calibracao do ranking RAG com thresholds de similaridade refinados (chat 0.30, notas 0.40), boost de consolidadas 2.0 e filtro de tool calls MCP no prompt RAG."
 }

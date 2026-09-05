@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.103
+### 📣 Apresentação da Atualização
+
+<!-- lang:en --> **Summary:** RAG ranking calibration with refined similarity thresholds (chat 0.30, notes 0.40), consolidated boost 2.0, and MCP tool calls filtered from the RAG prompt injection.
+<!-- lang:pt --> **Resumo:** Calibracao do ranking RAG com thresholds de similaridade refinados (chat 0.30, notas 0.40), boost de consolidadas 2.0 e filtro de tool calls MCP no prompt RAG.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.103 (`a9e48d5`)
+- calibra thresholds de similaridade (chat 0.30, notas 0.40), boost de consolidadas 2.0 e filtra tool calls MCP do prompt RAG (`a2ae566`)
+- update development branch (`e6a45e2`)
+
+
+---
+
+
 ## Release - v2.5.102
 ### 📣 Apresentação da Atualização
 
