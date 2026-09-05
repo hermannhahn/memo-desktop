@@ -4,21 +4,21 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.97`
+## 📥 Download da Última Versão: `v2.5.98`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.97.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/MEMO-Desktop-Setup-v2.5.97.exe)
-- 📦 **Instalador de Compatibilidade (AI-Brain)**: [Baixar AI-Brain-Setup-v2.5.97.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/AI-Brain-Setup-v2.5.97.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.98.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/MEMO-Desktop-Setup-v2.5.98.exe)
+- 📦 **Instalador de Compatibilidade (AI-Brain)**: [Baixar AI-Brain-Setup-v2.5.98.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/AI-Brain-Setup-v2.5.98.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -26,7 +26,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.97.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/MEMO-Desktop-Setup-v2.5.97.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.98.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/MEMO-Desktop-Setup-v2.5.98.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -35,7 +35,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -46,22 +46,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.97:
+### 🌟 Notas do Release v2.5.98:
 <!-- lang:en -->
-**Summary:** Enforced installation directly into the MEMO folder and removed all legacy binary packagings.
+**Summary:** Fixed Knowledge Base modal text rendering issue for formatted tags.
 
 **Highlights:**
-- Installer and updater now strictly install to and execute from 'C:\Program Files (x86)\MEMO'
-- Exclusively builds and packages 'memo.exe' and 'updater.exe', removing all legacy aliases
-- Automatically cleans up legacy files and shortcuts from previous installations
+- Corrected i18n system to render rich HTML formatting in modal descriptions
+- Formatted file extensions and permission tags now display cleanly without raw code markup
 
 <!-- lang:pt -->
-**Resumo:** Instalacao direta na pasta MEMO e remocao completa de empacotamento de binarios legados.
+**Resumo:** Correcao na formatacao de texto do modal de Base de Conhecimento.
 
 **Destaques:**
-- Instalador e atualizador agora instalam e executam estritamente a partir de 'C:\Program Files (x86)\MEMO'
-- Compila e empacota exclusivamente 'memo.exe' e 'updater.exe', eliminando nomes e copias legadas
-- Limpeza automatica de arquivos e atalhos antigos de instalacoes anteriores
+- Ajustado o sistema i18n para renderizar tags HTML formatadas nas descricoes do modal
+- Extensoes de arquivo e permissoes agora sao exibidas perfeitamente formatadas sem codigo visivel
 
 ---
 

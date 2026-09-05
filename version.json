@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.97",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.97/MEMO-Desktop-Setup-v2.5.97.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Enforced installation directly into the MEMO folder and removed all legacy binary packagings.\n\n**Highlights:**\n- Installer and updater now strictly install to and execute from 'C:\\Program Files (x86)\\MEMO'\n- Exclusively builds and packages 'memo.exe' and 'updater.exe', removing all legacy aliases\n- Automatically cleans up legacy files and shortcuts from previous installations\n\n<!-- lang:pt -->\n**Resumo:** Instalacao direta na pasta MEMO e remocao completa de empacotamento de binarios legados.\n\n**Destaques:**\n- Instalador e atualizador agora instalam e executam estritamente a partir de 'C:\\Program Files (x86)\\MEMO'\n- Compila e empacota exclusivamente 'memo.exe' e 'updater.exe', eliminando nomes e copias legadas\n- Limpeza automatica de arquivos e atalhos antigos de instalacoes anteriores"
+    "version": "2.5.98",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.98/MEMO-Desktop-Setup-v2.5.98.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Fixed Knowledge Base modal text rendering issue for formatted tags.\n\n**Highlights:**\n- Corrected i18n system to render rich HTML formatting in modal descriptions\n- Formatted file extensions and permission tags now display cleanly without raw code markup\n\n<!-- lang:pt -->\n**Resumo:** Correcao na formatacao de texto do modal de Base de Conhecimento.\n\n**Destaques:**\n- Ajustado o sistema i18n para renderizar tags HTML formatadas nas descricoes do modal\n- Extensoes de arquivo e permissoes agora sao exibidas perfeitamente formatadas sem codigo visivel"
 }

@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.98
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Knowledge Base modal text rendering issue for formatted tags.
+
+**Highlights:**
+- Corrected i18n system to render rich HTML formatting in modal descriptions
+- Formatted file extensions and permission tags now display cleanly without raw code markup
+
+<!-- lang:pt -->
+**Resumo:** Correcao na formatacao de texto do modal de Base de Conhecimento.
+
+**Destaques:**
+- Ajustado o sistema i18n para renderizar tags HTML formatadas nas descricoes do modal
+- Extensoes de arquivo e permissoes agora sao exibidas perfeitamente formatadas sem codigo visivel
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.98 (`b297b3a`)
+- update development branch (`9ab6321`)
+
+
+---
+
+
 ## Release - v2.5.97
 ### 📣 Apresentação da Atualização
 
