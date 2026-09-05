@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.102
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Transferred memory classification to long-term memory sessions and updated consolidation and RAG logic.
+
+**Highlights:**
+- Moved memory type attribute (procedural, episodic, semantic) from notes to long-term memory sessions
+- Integrated memory classification into realtime and nightly consolidation pipelines with RAG vector search updates
+- Updated desktop user interface with memory type filters on the Memories tab
+
+<!-- lang:pt -->
+**Resumo:** Transferencia da classificacao de memoria para as sessoes de memoria de longo prazo e atualizacao da consolidacao e do RAG.
+
+**Destaques:**
+- Migracao do atributo de tipo de memoria (procedural, episodica, semantica) das anotacoes para as sessoes de memoria
+- Integracao da classificacao de memoria nos pipelines de consolidacao em tempo real e noturna com busca vetorial RAG atualizada
+- Atualizacao da interface desktop com filtros de tipo de memoria na aba de Memorias
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.102 (`b37c575`)
+- move memory_type from notes to sessions table and adapt RAG and consolidation logic (`0a6317f`)
+- update development branch (`b542b46`)
+
+
+---
+
+
 ## Release - v2.5.101
 ### 📣 Apresentação da Atualização
 
