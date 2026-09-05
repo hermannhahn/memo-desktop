@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.100
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed updater window launch from the header update button.
+
+**Highlights:**
+- Restored proper GUI process attributes when launching the auto-updater module from the application header
+- Enabled explicit window centering and display on updater launch to prevent hidden window execution
+
+<!-- lang:pt -->
+**Resumo:** Correcao na abertura da janela do atualizador ao clicar no botao da header.
+
+**Destaques:**
+- Ajustados os atributos de criacao de processo GUI ao disparar o modulo auto-updater pela barra superior
+- Garantida a exibicao e centralizacao explicita da janela do atualizador para evitar execucao oculta
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.100 (`f65c8a3`)
+- update development branch (`2c0ceac`)
+
+
+---
+
+
 ## Release - v2.5.99
 ### 📣 Apresentação da Atualização
 

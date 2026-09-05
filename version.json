@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.99",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.99/MEMO-Desktop-Setup-v2.5.99.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Eliminated startup console window flash and resolved initial splash screen delay.\n\n**Highlights:**\n- Instant splash screen appearance by making database ping and cache cleanup non-blocking\n- Suppressed all console/CMD windows during background legacy container stop and timezone discovery\n- Optimized AppData directory resolution to avoid synchronous disk walks on launch\n\n<!-- lang:pt -->\n**Resumo:** Eliminado piscar de janela de prompt no boot e resolvida lentidao para exibicao da splash screen.\n\n**Destaques:**\n- Abertura instantanea da tela de splash tornando o ping do banco e limpeza de cache nao-bloqueantes\n- Ocultacao total de janelas de prompt durante checagem de containers legados e fuso horario\n- Otimizacao no carregamento do diretorio AppData eliminando varreduras sincronas de disco no boot"
+    "version": "2.5.100",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.100/MEMO-Desktop-Setup-v2.5.100.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Fixed updater window launch from the header update button.\n\n**Highlights:**\n- Restored proper GUI process attributes when launching the auto-updater module from the application header\n- Enabled explicit window centering and display on updater launch to prevent hidden window execution\n\n<!-- lang:pt -->\n**Resumo:** Correcao na abertura da janela do atualizador ao clicar no botao da header.\n\n**Destaques:**\n- Ajustados os atributos de criacao de processo GUI ao disparar o modulo auto-updater pela barra superior\n- Garantida a exibicao e centralizacao explicita da janela do atualizador para evitar execucao oculta"
 }
