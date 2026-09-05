@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.101
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automated real-time Dashboard refresh and true full system backup including PostgreSQL memory database.
+
+**Highlights:**
+- Memory dashboard now auto-updates seamlessly every 3 seconds without manual controls.
+- Full Backup now exports and includes complete PostgreSQL database dump with all long-term memories and notes.
+- Full Restore automatically restores both configuration files and the memory database.
+
+<!-- lang:pt -->
+**Resumo:** Atualiza??o autom?tica em tempo real do Dashboard e backup completo incluindo o banco de dados PostgreSQL de mem?rias.
+
+**Destaques:**
+- Dashboard de mem?rias agora atualiza automaticamente a cada 3 segundos sem controles manuais.
+- O Full Backup agora exporta e inclui o dump completo do banco PostgreSQL com todas as mem?rias e anota??es.
+- O Full Restore restaura automaticamente tanto os arquivos de configura??o quanto o banco de dados de mem?rias.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.101 (`ecaa012`)
+- update development branch (`28f740f`)
+
+
+---
+
+
 ## Release - v2.5.100
 ### 📣 Apresentação da Atualização
 

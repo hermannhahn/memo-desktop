@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.100",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.100/MEMO-Desktop-Setup-v2.5.100.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Fixed updater window launch from the header update button.\n\n**Highlights:**\n- Restored proper GUI process attributes when launching the auto-updater module from the application header\n- Enabled explicit window centering and display on updater launch to prevent hidden window execution\n\n<!-- lang:pt -->\n**Resumo:** Correcao na abertura da janela do atualizador ao clicar no botao da header.\n\n**Destaques:**\n- Ajustados os atributos de criacao de processo GUI ao disparar o modulo auto-updater pela barra superior\n- Garantida a exibicao e centralizacao explicita da janela do atualizador para evitar execucao oculta"
+    "version": "2.5.101",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.101/MEMO-Desktop-Setup-v2.5.101.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Automated real-time Dashboard refresh and true full system backup including PostgreSQL memory database.\n\n**Highlights:**\n- Memory dashboard now auto-updates seamlessly every 3 seconds without manual controls.\n- Full Backup now exports and includes complete PostgreSQL database dump with all long-term memories and notes.\n- Full Restore automatically restores both configuration files and the memory database.\n\n<!-- lang:pt -->\n**Resumo:** Atualiza??o autom?tica em tempo real do Dashboard e backup completo incluindo o banco de dados PostgreSQL de mem?rias.\n\n**Destaques:**\n- Dashboard de mem?rias agora atualiza automaticamente a cada 3 segundos sem controles manuais.\n- O Full Backup agora exporta e inclui o dump completo do banco PostgreSQL com todas as mem?rias e anota??es.\n- O Full Restore restaura automaticamente tanto os arquivos de configura??o quanto o banco de dados de mem?rias."
 }
