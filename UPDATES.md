@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.5.96
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed updater console flashes, animated step progress bar, and ensured legacy shortcuts launch the latest MEMO Desktop build.
+
+**Highlights:**
+- Completely suppressed CMD console window flashes during update launch, execution, and app reopening
+- Dynamic step-by-step progress bar tracking installer download, file extraction, and Docker container recreation
+- Fixed splash screen initialization and ensured all legacy executable shortcuts run the latest application version
+
+<!-- lang:pt -->
+**Resumo:** Correcao de janelas de prompt no atualizador, barra de progresso dinamica e garantia de execucao da versao mais recente em todos os atalhos.
+
+**Destaques:**
+- Eliminado qualquer piscar de janelas CMD no acionamento do atualizador, durante a instalacao e na reabertura do app
+- Barra de progresso dinamica acompanhando o download do instalador, extracao de binarios e recriacao dos containers Docker
+- Correcao na inicializacao da tela de splash e sincronizacao de todos os executaveis legados para rodar a versao mais recente
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.96 (`963e25f`)
+- update development branch (`f924004`)
+- updates in fix/updater-cmd-flashes-and-splash-freeze (`5bf7493`)
+- updates in development (`2e200ce`)
+
+#### 🐛 Correções
+- package ai-bridge.exe legacy fallback to ensure old shortcuts run latest build (`a514a8d`)
+- suppress console flashes, animate progress bar, and fix splash screen freeze (`3fa2617`)
+
+
+---
+
+
 ## Release - v2.5.95
 ### 📣 Apresentação da Atualização
 
