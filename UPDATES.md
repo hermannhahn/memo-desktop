@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.97
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforced installation directly into the MEMO folder and removed all legacy binary packagings.
+
+**Highlights:**
+- Installer and updater now strictly install to and execute from 'C:\Program Files (x86)\MEMO'
+- Exclusively builds and packages 'memo.exe' and 'updater.exe', removing all legacy aliases
+- Automatically cleans up legacy files and shortcuts from previous installations
+
+<!-- lang:pt -->
+**Resumo:** Instalacao direta na pasta MEMO e remocao completa de empacotamento de binarios legados.
+
+**Destaques:**
+- Instalador e atualizador agora instalam e executam estritamente a partir de 'C:\Program Files (x86)\MEMO'
+- Compila e empacota exclusivamente 'memo.exe' e 'updater.exe', eliminando nomes e copias legadas
+- Limpeza automatica de arquivos e atalhos antigos de instalacoes anteriores
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.97 (`70a71e4`)
+- update development branch (`9c92620`)
+
+
+---
+
+
 ## Release - v2.5.96
 ### 📣 Apresentação da Atualização
 
