@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.5.113
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release permanently removes legacy fallback distribution repositories and standardizes all system nomenclature to MEMOROUTER and MEMO-DESKTOP across the entire application, CLI, installer, and documentation.
+
+**Highlights:**
+- Removed legacy ai-brain-desktop fallback repository, centralizing all updates and releases exclusively in memo-desktop
+- Standardized ecosystem nomenclature: central server is now officially MEMOROUTER and desktop application is MEMO-DESKTOP
+- Updated background update checker and installer launcher scripts to download assets directly from the primary distribution channel
+- Cleaned up documentation, certificates, and status monitors to match current project branding
+
+<!-- lang:pt -->
+**Resumo:** Esta versao remove permanentemente os repositorios legados de distribuicao e padroniza toda a nomenclatura do sistema para MEMOROUTER e MEMO-DESKTOP em toda a aplicacao, CLI, instalador e documentacao.
+
+**Destaques:**
+- Removido o repositorio legado de fallback ai-brain-desktop, centralizando todas as releases exclusivamente em memo-desktop
+- Nomenclatura oficial padronizada: servidor central agora e MEMOROUTER e aplicacao desktop e MEMO-DESKTOP
+- Scripts do verificador de atualizacoes e instalador atualizados para baixar diretamente do canal de distribuicao primario
+- Documentacao, certificados e monitores de status atualizados de acordo com as diretrizes da marca atual
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.113 (`1ad0877`)
+
+#### 🔧 Manutenção / Refatoração
+- remover fallback ai-brain-desktop e atualizar nomenclatura para MEMOROUTER e MEMO-DESKTOP (`5f345c9`)
+
+#### 🐛 Correções
+- expandir busca de caminhos do .env no loadEnv (`491f380`)
+
+
+---
+
+
 ## Release - v2.5.112
 ### 📣 Apresentação da Atualização
 
