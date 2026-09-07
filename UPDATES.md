@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.116
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Corrected Model Sleep to recognize the active AI model and credentials from MEMOROUTER agents.
+
+**Highlights:**
+- Enhanced agent model normalization to read the active provider from user profiles
+- Eliminated credential mismatches during sleep consolidation runs
+
+<!-- lang:pt -->
+**Resumo:** Corrigido o Sono do Modelo para reconhecer o modelo de IA ativo e as credenciais dos agentes do MEMOROUTER.
+
+**Destaques:**
+- Melhoria na normaliza??o do modelo do agente para ler o provedor ativo do perfil do usu?rio
+- Elimina??o de falhas de autentica??o durante a execu??o da consolida??o do sono
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.116 (`9cc45e8`)
+- update development branch (`c3d5dd6`)
+
+
+---
+
+
 ## Release - v2.5.115
 ### 📣 Apresentação da Atualização
 

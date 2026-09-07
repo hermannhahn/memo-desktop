@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.115",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.115/MEMO-Desktop-Setup-v2.5.115.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** This release updates the desktop application to connect natively to the new /ws/memo-desktop WebSocket route with X-Memo-Desktop-Token headers.\n\n**Highlights:**\n- Native connection to the new /ws/memo-desktop WebSocket gateway\n- Added X-Memo-Desktop-Token header with legacy fallback for compatibility\n- Updated agent discovery headers for memory consolidation\n\n<!-- lang:pt -->\n**Resumo:** Esta versao atualiza o aplicativo desktop para conectar nativamente na nova rota WebSocket /ws/memo-desktop com cabecalhos X-Memo-Desktop-Token.\n\n**Destaques:**\n- Conexao nativa com a nova rota WebSocket /ws/memo-desktop\n- Adicao do cabecalho X-Memo-Desktop-Token mantendo fallback de compatibilidade\n- Atualizacao dos cabecalhos na sincronizacao de agentes da consolidacao"
+    "version": "2.5.116",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.116/MEMO-Desktop-Setup-v2.5.116.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Corrected Model Sleep to recognize the active AI model and credentials from MEMOROUTER agents.\n\n**Highlights:**\n- Enhanced agent model normalization to read the active provider from user profiles\n- Eliminated credential mismatches during sleep consolidation runs\n\n<!-- lang:pt -->\n**Resumo:** Corrigido o Sono do Modelo para reconhecer o modelo de IA ativo e as credenciais dos agentes do MEMOROUTER.\n\n**Destaques:**\n- Melhoria na normaliza??o do modelo do agente para ler o provedor ativo do perfil do usu?rio\n- Elimina??o de falhas de autentica??o durante a execu??o da consolida??o do sono"
 }
