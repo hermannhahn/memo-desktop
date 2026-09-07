@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.118",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.118/MEMO-Desktop-Setup-v2.5.118.exe",
-    "notes": "<!-- lang:en --> **Summary:** Patch release with UI/UX improvements and development branch updates.\n<!-- lang:pt --> **Resumo:** Lançamento de patch com melhorias de UI/UX e atualizações da branch de desenvolvimento.\n<!-- lang:en --> **Highlights:** - Restructured console and chat header/sidebar navigation - Moved user menu to sidebar footer - Added mobile-responsive sidebar overlays - Updated console and chat button labels\n<!-- lang:pt --> **Destaques:** - Reestruturação da navegação do header/sidebar do console e chat - Movido o menu do usuário para o rodapé da sidebar - Adicionado overlays responsivos para sidebar mobile - Atualizados rótulos dos botões do console e chat"
+    "version": "2.5.119",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.119/MEMO-Desktop-Setup-v2.5.119.exe",
+    "notes": "fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Windows em /root do container, sem bind /workspace"
 }

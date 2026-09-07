@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.119
+### 📣 Apresentação da Atualização
+
+fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Windows em /root do container, sem bind /workspace
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.119 (`e7cccb0`)
+
+#### 🐛 Correções
+- bind somente /root no container dos agentes via pasta root/ persistente no Windows (`6e55713`)
+
+
+---
+
+
 ## Release - v2.5.118
 ### 📣 Apresentação da Atualização
 
