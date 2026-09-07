@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.116",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.116/MEMO-Desktop-Setup-v2.5.116.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Corrected Model Sleep to recognize the active AI model and credentials from MEMOROUTER agents.\n\n**Highlights:**\n- Enhanced agent model normalization to read the active provider from user profiles\n- Eliminated credential mismatches during sleep consolidation runs\n\n<!-- lang:pt -->\n**Resumo:** Corrigido o Sono do Modelo para reconhecer o modelo de IA ativo e as credenciais dos agentes do MEMOROUTER.\n\n**Destaques:**\n- Melhoria na normaliza??o do modelo do agente para ler o provedor ativo do perfil do usu?rio\n- Elimina??o de falhas de autentica??o durante a execu??o da consolida??o do sono"
+    "version": "2.5.117",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.117/MEMO-Desktop-Setup-v2.5.117.exe",
+    "notes": "<!-- lang:en --> **Summary:** Patch release with UI/UX improvements and development branch updates.\n<!-- lang:pt --> **Resumo:** Lançamento de patch com melhorias de UI/UX e atualizações da branch de desenvolvimento.\n<!-- lang:en --> **Highlights:** - Restructured console and chat header/sidebar navigation - Moved user menu to sidebar footer - Added mobile-responsive sidebar overlays - Updated console and chat button labels\n<!-- lang:pt --> **Destaques:** - Reestruturação da navegação do header/sidebar do console e chat - Movido o menu do usuário para o rodapé da sidebar - Adicionado overlays responsivos para sidebar mobile - Atualizados rótulos dos botões do console e chat"
 }

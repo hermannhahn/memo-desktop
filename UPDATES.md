@@ -3,6 +3,25 @@
 ---
 
 
+## Release - v2.5.117
+### 📣 Apresentação da Atualização
+
+<!-- lang:en --> **Summary:** Patch release with UI/UX improvements and development branch updates.
+<!-- lang:pt --> **Resumo:** Lançamento de patch com melhorias de UI/UX e atualizações da branch de desenvolvimento.
+<!-- lang:en --> **Highlights:** - Restructured console and chat header/sidebar navigation - Moved user menu to sidebar footer - Added mobile-responsive sidebar overlays - Updated console and chat button labels
+<!-- lang:pt --> **Destaques:** - Reestruturação da navegação do header/sidebar do console e chat - Movido o menu do usuário para o rodapé da sidebar - Adicionado overlays responsivos para sidebar mobile - Atualizados rótulos dos botões do console e chat
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.117 (`4ae7aa4`)
+
+
+---
+
+
 ## Release - v2.5.116
 ### 📣 Apresentação da Atualização
 
