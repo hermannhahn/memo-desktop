@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.115
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release updates the desktop application to connect natively to the new /ws/memo-desktop WebSocket route with X-Memo-Desktop-Token headers.
+
+**Highlights:**
+- Native connection to the new /ws/memo-desktop WebSocket gateway
+- Added X-Memo-Desktop-Token header with legacy fallback for compatibility
+- Updated agent discovery headers for memory consolidation
+
+<!-- lang:pt -->
+**Resumo:** Esta versao atualiza o aplicativo desktop para conectar nativamente na nova rota WebSocket /ws/memo-desktop com cabecalhos X-Memo-Desktop-Token.
+
+**Destaques:**
+- Conexao nativa com a nova rota WebSocket /ws/memo-desktop
+- Adicao do cabecalho X-Memo-Desktop-Token mantendo fallback de compatibilidade
+- Atualizacao dos cabecalhos na sincronizacao de agentes da consolidacao
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.115 (`758e787`)
+- update development branch (`1b71f7a`)
+
+#### 🐛 Correções
+- adicionar header X-Memo-Desktop-Token ao buscar agentes (`18bf8aa`)
+- atualizar rota websocket para /ws/memo-desktop e adicionar header x-memo-desktop-token (`805fee1`)
+
+
+---
+
+
 ## Release - v2.5.114
 ### 📣 Apresentação da Atualização
 
