@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.114
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This update improves the AI memory retrieval system (RAG), making the agent recall more relevant memories based on what you actually asked -- reducing irrelevant emotional memories from surfacing in unrelated conversations.
+
+**Highlights:**
+- Agent memory suggestions are now more focused on the topic of your question
+- Emotional memories no longer override factual or technical memories in unrelated searches
+- Memory search queries are expanded before lookup, improving recall for short or vague questions
+- Minor reduction in false-positive text matches, making retrieval more precise
+
+<!-- lang:pt -->
+**Resumo:** Esta atualizacao melhora o sistema de recuperacao de memorias (RAG), fazendo o agente trazer lembrancas mais relevantes para o que foi perguntado -- reduzindo memorias afetivas irrelevantes em conversas sobre outros assuntos.
+
+**Destaques:**
+- Sugestoes de memoria agora focam melhor no tema da pergunta feita
+- Memorias emocionais deixam de sobrepor memorias factuais ou tecnicas em buscas nao relacionadas
+- Perguntas curtas passam por expansao antes da busca, melhorando o recall semantico
+- Reducao de falsos positivos no match textual, tornando a recuperacao mais precisa
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.114 (`a8068c8`)
+- update development branch (`dbceaf2`)
+- melhorias RAG - EmotionalWeight 0.05, rebuild incremental no Sono, query expansion HyDE, stem 6 chars (`d968f7e`)
+
+
+---
+
+
 ## Release - v2.5.113
 ### 📣 Apresentação da Atualização
 
