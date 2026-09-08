@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.120
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added local Kokoro TTS engine support with fast neural speech synthesis via Docker.
+
+**Highlights:**
+- Integrated local Kokoro TTS container (:28760) with automatic health management
+- Added WebSocket synthesis actions (tts_synthesize, tts_status) for multi-channel audio responses
+
+<!-- lang:pt -->
+**Resumo:** Adicionada s?ntese de voz local Kokoro TTS neural com baix?ssima lat?ncia via container Docker.
+
+**Destaques:**
+- Container Kokoro TTS (:28760) integrado com gerenciamento autom?tico de sa?de
+- A??es WebSocket (tts_synthesize, tts_status) prontas para respostas de voz no WhatsApp, Telegram e IoT
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.120 (`5aafc94`)
+- add local Kokoro TTS engine manager and WebSocket synthesis actions (`cc4e681`)
+
+
+---
+
+
 ## Release - v2.5.119
 ### 📣 Apresentação da Atualização
 

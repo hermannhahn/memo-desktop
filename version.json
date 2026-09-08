@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.119",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.119/MEMO-Desktop-Setup-v2.5.119.exe",
-    "notes": "fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Windows em /root do container, sem bind /workspace"
+    "version": "2.5.120",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.120/MEMO-Desktop-Setup-v2.5.120.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Added local Kokoro TTS engine support with fast neural speech synthesis via Docker.\n\n**Highlights:**\n- Integrated local Kokoro TTS container (:28760) with automatic health management\n- Added WebSocket synthesis actions (tts_synthesize, tts_status) for multi-channel audio responses\n\n<!-- lang:pt -->\n**Resumo:** Adicionada s?ntese de voz local Kokoro TTS neural com baix?ssima lat?ncia via container Docker.\n\n**Destaques:**\n- Container Kokoro TTS (:28760) integrado com gerenciamento autom?tico de sa?de\n- A??es WebSocket (tts_synthesize, tts_status) prontas para respostas de voz no WhatsApp, Telegram e IoT"
 }
