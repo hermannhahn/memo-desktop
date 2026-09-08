@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.121
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Integrated Kokoro TTS into MEMO Desktop service order with real-time header install progress and WebSocket status feedback.
+
+**Highlights:**
+- Added Kokoro TTS to MEMO Desktop service manager list and health status cards
+- Real-time header progress indicator for on-demand Kokoro container downloads
+- Included install_progress payload in tts_status WebSocket action for web console UI feedback
+
+<!-- lang:pt -->
+**Resumo:** Integrado o Kokoro TTS na lista de servi?os do MEMO Desktop com indicador de progresso na header e feedback no console web.
+
+**Destaques:**
+- Adicionado o Kokoro TTS ao gerenciador de servi?os do MEMO Desktop e nos cards de status
+- Indicador visual de progresso de download em tempo real na header da aplica??o
+- Payload install_progress inclu?do na a??o WebSocket tts_status para exibir o progresso no console web
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.121 (`5e22b07`)
+- add ServiceKokoro to ServiceOrder and include install_progress in tts_status WebSocket payload (`c865d68`)
+
+
+---
+
+
 ## Release - v2.5.120
 ### 📣 Apresentação da Atualização
 
