@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.132
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Dual-key E2EE protocol resilience and enhanced decryption diagnostics.
+
+**Highlights:**
+- Add automatic dual-key derivation (supporting both memo-desktop and ai-bridge protocol keys)
+- Implement bidirectional fallback in AES-GCM decryption for seamless server handshake compatibility
+- Add detailed logging for E2EE payload decryption errors to improve connection diagnostics
+
+<!-- lang:pt -->
+**Resumo:** Resiliência de chave dupla no protocolo E2EE e melhorias no diagnóstico de decifragem.
+
+**Destaques:**
+- Adicionada derivação de chave dupla automática (suporte transparente a chaves de protocolo memo-desktop e ai-bridge)
+- Implementado fallback bidirecional na decifragem AES-GCM para compatibilidade perfeita com handshakes do servidor
+- Adicionado log detalhado para falhas de decifragem em envelopes E2EE para diagnóstico avançado de conexões
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.132 (`a18064a`)
+
+#### 🐛 Correções
+- add dual-key resilience and explicit decryption error logging (`300f56c`)
+
+#### 📚 Documentação
+- document CLI publish modes and bilingual text file in AGENTS.md and GEMINI.md (`e9d54af`)
+
+
+---
+
+
 ## Release - v2.5.131
 ### 📣 Apresentação da Atualização
 
