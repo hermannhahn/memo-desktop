@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.122
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added on-demand installation action for Kokoro TTS via WebSocket.
+
+**Highlights:**
+- Supported background container installation via tts_install action
+- Real-time progress reporting to web console and desktop header
+
+<!-- lang:pt -->
+**Resumo:** Adicionada a??o de instala??o sob demanda para o Kokoro TTS via WebSocket.
+
+**Destaques:**
+- Suporte a instala??o em background do container via a??o tts_install
+- Relat?rio de progresso em tempo real para o console web e header do aplicativo
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.122 (`37adc5d`)
+- add tts_install action to support on-demand background installation (`4ff9d07`)
+
+
+---
+
+
 ## Release - v2.5.121
 ### 📣 Apresentação da Atualização
 

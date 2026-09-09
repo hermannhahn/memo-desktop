@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.121",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.121/MEMO-Desktop-Setup-v2.5.121.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Integrated Kokoro TTS into MEMO Desktop service order with real-time header install progress and WebSocket status feedback.\n\n**Highlights:**\n- Added Kokoro TTS to MEMO Desktop service manager list and health status cards\n- Real-time header progress indicator for on-demand Kokoro container downloads\n- Included install_progress payload in tts_status WebSocket action for web console UI feedback\n\n<!-- lang:pt -->\n**Resumo:** Integrado o Kokoro TTS na lista de servi?os do MEMO Desktop com indicador de progresso na header e feedback no console web.\n\n**Destaques:**\n- Adicionado o Kokoro TTS ao gerenciador de servi?os do MEMO Desktop e nos cards de status\n- Indicador visual de progresso de download em tempo real na header da aplica??o\n- Payload install_progress inclu?do na a??o WebSocket tts_status para exibir o progresso no console web"
+    "version": "2.5.122",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.122/MEMO-Desktop-Setup-v2.5.122.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Added on-demand installation action for Kokoro TTS via WebSocket.\n\n**Highlights:**\n- Supported background container installation via tts_install action\n- Real-time progress reporting to web console and desktop header\n\n<!-- lang:pt -->\n**Resumo:** Adicionada a??o de instala??o sob demanda para o Kokoro TTS via WebSocket.\n\n**Destaques:**\n- Suporte a instala??o em background do container via a??o tts_install\n- Relat?rio de progresso em tempo real para o console web e header do aplicativo"
 }
