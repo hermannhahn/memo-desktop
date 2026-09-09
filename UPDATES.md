@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.125
+### 📣 Apresentação da Atualização
+
+Fix Docker compose global flag ordering for Kokoro profile
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.125 (`c574b14`)
+- update development branch (`2ffef66`)
+
+
+---
+
+
 ## Release - v2.5.124
 ### 📣 Apresentação da Atualização
 

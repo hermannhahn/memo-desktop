@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.124",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.124/MEMO-Desktop-Setup-v2.5.124.exe",
-    "notes": "Fix Docker ComposeUpdate resilience and explicit service targeting"
+    "version": "2.5.125",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.125/MEMO-Desktop-Setup-v2.5.125.exe",
+    "notes": "Fix Docker compose global flag ordering for Kokoro profile"
 }
