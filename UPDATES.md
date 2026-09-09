@@ -3,6 +3,26 @@
 ---
 
 
+## Release - v2.5.127
+### 📣 Apresentação da Atualização
+
+- **Kokoro TTS Text Cleaning**: Implemented CleanTextForTTS to automatically strip markdown symbols (*, _, #, ~, `), URLs, code blocks, and spoken emojis, resulting in natural spoken output.
+- **WebSocket local_port Fix**: Fixed local_port report for Kokoro TTS (port 8880) in status messages so external consoles/UIs correctly recognize engine readiness and present installation actions.
+- **Kokoro Control & Status Buttons**: Added Install and Restart buttons with live progress feedback in Voice Settings.
+- **Hardware & GPU Latency Notice**: Updated Kokoro description across all 8 supported languages to clarify potential latency increases on systems with limited hardware or without a dedicated GPU.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.127 (`b7b8779`)
+- update development branch (`641a8bc`)
+
+
+---
+
+
 ## Release - v2.5.126
 ### 📣 Apresentação da Atualização
 

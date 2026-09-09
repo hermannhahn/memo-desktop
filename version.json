@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.126",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.126/MEMO-Desktop-Setup-v2.5.126.exe",
-    "notes": "Add Kokoro TTS service status card to Services Status tab"
+    "version": "2.5.127",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.127/MEMO-Desktop-Setup-v2.5.127.exe",
+    "notes": "- **Kokoro TTS Text Cleaning**: Implemented CleanTextForTTS to automatically strip markdown symbols (*, _, #, ~, `), URLs, code blocks, and spoken emojis, resulting in natural spoken output.\n- **WebSocket local_port Fix**: Fixed local_port report for Kokoro TTS (port 8880) in status messages so external consoles/UIs correctly recognize engine readiness and present installation actions.\n- **Kokoro Control & Status Buttons**: Added Install and Restart buttons with live progress feedback in Voice Settings.\n- **Hardware & GPU Latency Notice**: Updated Kokoro description across all 8 supported languages to clarify potential latency increases on systems with limited hardware or without a dedicated GPU."
 }
