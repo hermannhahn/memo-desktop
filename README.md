@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.130`
+## 📥 Download da Última Versão: `v2.5.131`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.130.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/MEMO-Desktop-Setup-v2.5.130.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.131.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/MEMO-Desktop-Setup-v2.5.131.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.130.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/MEMO-Desktop-Setup-v2.5.130.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.131.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/MEMO-Desktop-Setup-v2.5.131.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.131/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,9 +45,24 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.130:
-- **Kokoro Card Actions**: Removed Install and Restart buttons from Kokoro TTS card in Service Status.
-- **On-Demand Uninstall**: Added Uninstall button to Kokoro TTS card that displays dynamically when the service is installed and healthy.
+### 🌟 Notas do Release v2.5.131:
+<!-- lang:en -->
+**Summary:** This release refactors the RAG analytics metrics to reflect actual conversational interactions and precision memory tool usage. The dashboard now accurately tracks auto-coverage versus manual memory searches.
+
+**Highlights:**
+- RAG Auto-Hit Rate KPI now calculates the exact percentage of conversation interactions resolved autonomously within the selected period.
+- RAG Efficiency Trend chart redesigned with a unified scale showing autonomous RAG interactions in blue and manual searches in red.
+- Specific tracking isolated strictly to remember_last_talk and search_long_term_memory tools.
+- PostgreSQL query performance optimized with specialized partial indexes for instant analytics rendering.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão reformula as métricas analíticas de RAG para refletir com exatidão as interações reais de conversa e o uso de ferramentas de memória. O painel agora acompanha com precisão a cobertura autônoma versus buscas manuais.
+
+**Destaques:**
+- O KPI RAG Auto-Hit Rate agora calcula a porcentagem exata de interações de conversa atendidas de forma autônoma no período selecionado.
+- Gráfico Tendência de Eficiência do RAG redesenhado em escala unificada exibindo interações autônomas em azul e buscas manuais em vermelho.
+- Rastreamento isolado especificamente para as ferramentas remember_last_talk e search_long_term_memory.
+- Otimização de performance no PostgreSQL com índices parciais especializados para carregamento instantâneo dos gráficos.
 
 ---
 

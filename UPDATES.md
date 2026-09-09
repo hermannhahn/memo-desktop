@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.5.131
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release refactors the RAG analytics metrics to reflect actual conversational interactions and precision memory tool usage. The dashboard now accurately tracks auto-coverage versus manual memory searches.
+
+**Highlights:**
+- RAG Auto-Hit Rate KPI now calculates the exact percentage of conversation interactions resolved autonomously within the selected period.
+- RAG Efficiency Trend chart redesigned with a unified scale showing autonomous RAG interactions in blue and manual searches in red.
+- Specific tracking isolated strictly to remember_last_talk and search_long_term_memory tools.
+- PostgreSQL query performance optimized with specialized partial indexes for instant analytics rendering.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão reformula as métricas analíticas de RAG para refletir com exatidão as interações reais de conversa e o uso de ferramentas de memória. O painel agora acompanha com precisão a cobertura autônoma versus buscas manuais.
+
+**Destaques:**
+- O KPI RAG Auto-Hit Rate agora calcula a porcentagem exata de interações de conversa atendidas de forma autônoma no período selecionado.
+- Gráfico Tendência de Eficiência do RAG redesenhado em escala unificada exibindo interações autônomas em azul e buscas manuais em vermelho.
+- Rastreamento isolado especificamente para as ferramentas remember_last_talk e search_long_term_memory.
+- Otimização de performance no PostgreSQL com índices parciais especializados para carregamento instantâneo dos gráficos.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.131 (`58ff466`)
+- update development branch (`e4b0f72`)
+- align RAG auto-hit rate and efficiency trend with conversation interactions and manual memory tools (`fdb0bcd`)
+
+#### 📚 Documentação
+- update nightly-consolidation with RAG efficiency metrics (`6ebb958`)
+- update AGENTS.md and GEMINI.md with naming rules and Console deploy workflow (`4dc9786`)
+
+
+---
+
+
 ## Release - v2.5.130
 ### 📣 Apresentação da Atualização
 
