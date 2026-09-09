@@ -3,6 +3,24 @@
 ---
 
 
+## Release - v2.5.129
+### 📣 Apresentação da Atualização
+
+- **Phonetic Normalization & Acronym Expansion**: Added intelligent phonetic dictionary map in CleanTextForTTS for technical terms (WhatsApp, Docker, MEMO, API, AI, LLM, CPU, GPU, RAM, etc.) ensuring crystal-clear human speech.
+- **Voice Blending & Chunking Support**: Enhanced Kokoro TTS synthesis request handling for blended voice weights and fast low-latency audio delivery.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.129 (`8899d56`)
+- update development branch (`f44b03b`)
+
+
+---
+
+
 ## Release - v2.5.128
 ### 📣 Apresentação da Atualização
 
