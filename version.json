@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.125",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.125/MEMO-Desktop-Setup-v2.5.125.exe",
-    "notes": "Fix Docker compose global flag ordering for Kokoro profile"
+    "version": "2.5.126",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.126/MEMO-Desktop-Setup-v2.5.126.exe",
+    "notes": "Add Kokoro TTS service status card to Services Status tab"
 }

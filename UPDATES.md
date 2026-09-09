@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.126
+### 📣 Apresentação da Atualização
+
+Add Kokoro TTS service status card to Services Status tab
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.126 (`a7666e2`)
+- update development branch (`933b71d`)
+
+
+---
+
+
 ## Release - v2.5.125
 ### 📣 Apresentação da Atualização
 
