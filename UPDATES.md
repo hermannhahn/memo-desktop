@@ -3,6 +3,24 @@
 ---
 
 
+## Release - v2.5.128
+### 📣 Apresentação da Atualização
+
+- **Service Status HTML Structure**: Fixed unclosed HTML divs for Tracking and Kokoro cards, resolving nested layout overlap.
+- **Service Status List View**: Converted "Service Status" tab from multi-column grid cards into a clean, modern vertical list layout.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.128 (`c70253f`)
+- update development branch (`a788a98`)
+
+
+---
+
+
 ## Release - v2.5.127
 ### 📣 Apresentação da Atualização
 
