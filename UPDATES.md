@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.134
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Clarified MCP tool instructions to prevent accidental CMD execution for messaging, and configured automatic release posting to MEMOROUTER panel.
+
+**Highlights:**
+- Strict directive in system commands to prohibit using CMD/shell for messaging, enforcing dedicated MCP tools
+- Improved agent guidance for reliable multi-channel text and audio messaging
+- Automatic posting of new Desktop releases to the unified updates list in the Console
+
+<!-- lang:pt -->
+**Resumo:** Ajuste nas instruções de ferramentas MCP para prevenir o uso indevido do CMD no envio de mensagens e áudios, e integração automática de atualizações com o Console.
+
+**Destaques:**
+- Diretiva explícita no executor de comandos proibindo o uso de shell/CMD para mensagens e direcionando para os MCPs corretos
+- Maior confiabilidade nas ações de envio de texto e mensagens de voz do agente
+- Postagem automática de novas versões do MEMO Desktop no histórico unificado do painel Console
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.134 (`05adec7`)
+- update development branch (`295a94e`)
+
+#### 🐛 Correções
+- add critical anti-messaging directive to cmd tool (`2ae7aca`)
+
+
+---
+
+
 ## Release - v2.5.133
 ### 📣 Apresentação da Atualização
 

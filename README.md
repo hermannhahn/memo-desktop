@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.133`
+## 📥 Download da Última Versão: `v2.5.134`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.133.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/MEMO-Desktop-Setup-v2.5.133.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.134.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/MEMO-Desktop-Setup-v2.5.134.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.133.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/MEMO-Desktop-Setup-v2.5.133.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.134.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/MEMO-Desktop-Setup-v2.5.134.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.134/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.133:
+### 🌟 Notas do Release v2.5.134:
 <!-- lang:en -->
-**Summary:** Dynamic timeout scaling for local Kokoro speech synthesis to ensure reliable voice generation on long responses.
+**Summary:** Clarified MCP tool instructions to prevent accidental CMD execution for messaging, and configured automatic release posting to MEMOROUTER panel.
 
 **Highlights:**
-- Dynamic synthesis timeout based on text length, eliminating premature timeout errors
-- Smoother voice playback and stability during extended audio interactions
+- Strict directive in system commands to prohibit using CMD/shell for messaging, enforcing dedicated MCP tools
+- Improved agent guidance for reliable multi-channel text and audio messaging
+- Automatic posting of new Desktop releases to the unified updates list in the Console
 
 <!-- lang:pt -->
-**Resumo:** Ajuste dinâmico de timeout para síntese de voz local com Kokoro, garantindo estabilidade na geração de áudios longos.
+**Resumo:** Ajuste nas instruções de ferramentas MCP para prevenir o uso indevido do CMD no envio de mensagens e áudios, e integração automática de atualizações com o Console.
 
 **Destaques:**
-- Timeout dinâmico proporcional ao tamanho do texto gerado, eliminando falhas de expiração
-- Maior estabilidade e continuidade na reprodução de voz durante interações por áudio
+- Diretiva explícita no executor de comandos proibindo o uso de shell/CMD para mensagens e direcionando para os MCPs corretos
+- Maior confiabilidade nas ações de envio de texto e mensagens de voz do agente
+- Postagem automática de novas versões do MEMO Desktop no histórico unificado do painel Console
 
 ---
 
