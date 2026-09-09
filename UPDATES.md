@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.123
+### 📣 Apresentação da Atualização
+
+Fix updater i18n language support and Docker compose profile issue for Kokoro TTS.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.123 (`994f7d7`)
+- update development branch (`e1d3560`)
+
+
+---
+
+
 ## Release - v2.5.122
 ### 📣 Apresentação da Atualização
 

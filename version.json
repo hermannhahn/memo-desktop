@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.122",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.122/MEMO-Desktop-Setup-v2.5.122.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Added on-demand installation action for Kokoro TTS via WebSocket.\n\n**Highlights:**\n- Supported background container installation via tts_install action\n- Real-time progress reporting to web console and desktop header\n\n<!-- lang:pt -->\n**Resumo:** Adicionada a??o de instala??o sob demanda para o Kokoro TTS via WebSocket.\n\n**Destaques:**\n- Suporte a instala??o em background do container via a??o tts_install\n- Relat?rio de progresso em tempo real para o console web e header do aplicativo"
+    "version": "2.5.123",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.123/MEMO-Desktop-Setup-v2.5.123.exe",
+    "notes": "Fix updater i18n language support and Docker compose profile issue for Kokoro TTS."
 }
