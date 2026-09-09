@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.129",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.129/MEMO-Desktop-Setup-v2.5.129.exe",
-    "notes": "- **Phonetic Normalization & Acronym Expansion**: Added intelligent phonetic dictionary map in CleanTextForTTS for technical terms (WhatsApp, Docker, MEMO, API, AI, LLM, CPU, GPU, RAM, etc.) ensuring crystal-clear human speech.\n- **Voice Blending & Chunking Support**: Enhanced Kokoro TTS synthesis request handling for blended voice weights and fast low-latency audio delivery."
+    "version": "2.5.130",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.130/MEMO-Desktop-Setup-v2.5.130.exe",
+    "notes": "- **Kokoro Card Actions**: Removed Install and Restart buttons from Kokoro TTS card in Service Status.\n- **On-Demand Uninstall**: Added Uninstall button to Kokoro TTS card that displays dynamically when the service is installed and healthy."
 }

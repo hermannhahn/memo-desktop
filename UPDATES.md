@@ -3,6 +3,24 @@
 ---
 
 
+## Release - v2.5.130
+### 📣 Apresentação da Atualização
+
+- **Kokoro Card Actions**: Removed Install and Restart buttons from Kokoro TTS card in Service Status.
+- **On-Demand Uninstall**: Added Uninstall button to Kokoro TTS card that displays dynamically when the service is installed and healthy.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.130 (`4bc5da3`)
+- update development branch (`02122d1`)
+
+
+---
+
+
 ## Release - v2.5.129
 ### 📣 Apresentação da Atualização
 
