@@ -3,6 +3,23 @@
 ---
 
 
+## Release - v2.5.124
+### 📣 Apresentação da Atualização
+
+Fix Docker ComposeUpdate resilience and explicit service targeting
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.124 (`90cb51e`)
+- update development branch (`bee6c8d`)
+
+
+---
+
+
 ## Release - v2.5.123
 ### 📣 Apresentação da Atualização
 

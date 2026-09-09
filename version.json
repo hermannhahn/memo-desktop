@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.123",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.123/MEMO-Desktop-Setup-v2.5.123.exe",
-    "notes": "Fix updater i18n language support and Docker compose profile issue for Kokoro TTS."
+    "version": "2.5.124",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.124/MEMO-Desktop-Setup-v2.5.124.exe",
+    "notes": "Fix Docker ComposeUpdate resilience and explicit service targeting"
 }
