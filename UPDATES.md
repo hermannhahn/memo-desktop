@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.133
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Dynamic timeout scaling for local Kokoro speech synthesis to ensure reliable voice generation on long responses.
+
+**Highlights:**
+- Dynamic synthesis timeout based on text length, eliminating premature timeout errors
+- Smoother voice playback and stability during extended audio interactions
+
+<!-- lang:pt -->
+**Resumo:** Ajuste dinâmico de timeout para síntese de voz local com Kokoro, garantindo estabilidade na geração de áudios longos.
+
+**Destaques:**
+- Timeout dinâmico proporcional ao tamanho do texto gerado, eliminando falhas de expiração
+- Maior estabilidade e continuidade na reprodução de voz durante interações por áudio
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.133 (`1519b76`)
+- updates in feature/kokoro-dynamic-timeout (`f5b6276`)
+- updates in development (`138d2ed`)
+
+#### 🐛 Correções
+- increase dynamic timeout for speech synthesis to prevent premature context deadline exceeded (`e7f2660`)
+
+
+---
+
+
 ## Release - v2.5.132
 ### 📣 Apresentação da Atualização
 

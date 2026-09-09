@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.132`
+## 📥 Download da Última Versão: `v2.5.133`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.132.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/MEMO-Desktop-Setup-v2.5.132.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.133.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/MEMO-Desktop-Setup-v2.5.133.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.132.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/MEMO-Desktop-Setup-v2.5.132.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.133.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/MEMO-Desktop-Setup-v2.5.133.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.132/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.133/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.132:
+### 🌟 Notas do Release v2.5.133:
 <!-- lang:en -->
-**Summary:** Dual-key E2EE protocol resilience and enhanced decryption diagnostics.
+**Summary:** Dynamic timeout scaling for local Kokoro speech synthesis to ensure reliable voice generation on long responses.
 
 **Highlights:**
-- Add automatic dual-key derivation (supporting both memo-desktop and ai-bridge protocol keys)
-- Implement bidirectional fallback in AES-GCM decryption for seamless server handshake compatibility
-- Add detailed logging for E2EE payload decryption errors to improve connection diagnostics
+- Dynamic synthesis timeout based on text length, eliminating premature timeout errors
+- Smoother voice playback and stability during extended audio interactions
 
 <!-- lang:pt -->
-**Resumo:** Resiliência de chave dupla no protocolo E2EE e melhorias no diagnóstico de decifragem.
+**Resumo:** Ajuste dinâmico de timeout para síntese de voz local com Kokoro, garantindo estabilidade na geração de áudios longos.
 
 **Destaques:**
-- Adicionada derivação de chave dupla automática (suporte transparente a chaves de protocolo memo-desktop e ai-bridge)
-- Implementado fallback bidirecional na decifragem AES-GCM para compatibilidade perfeita com handshakes do servidor
-- Adicionado log detalhado para falhas de decifragem em envelopes E2EE para diagnóstico avançado de conexões
+- Timeout dinâmico proporcional ao tamanho do texto gerado, eliminando falhas de expiração
+- Maior estabilidade e continuidade na reprodução de voz durante interações por áudio
 
 ---
 
