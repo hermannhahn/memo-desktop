@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.135
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Increased Kokoro TTS synthesis context timeout to support long audio responses without premature cutoff.
+
+**Highlights:**
+- Raised Kokoro TTS synthesis handler timeout from 120s to 180s minimum, dynamically scaling up to 600s (10 minutes) for extended speeches.
+- Enhanced reliability when generating lengthy responses through the local voice engine.
+
+<!-- lang:pt -->
+**Resumo:** Aumento do timeout do contexto de síntese do Kokoro TTS para suportar respostas longas em áudio sem interrupções prematuras.
+
+**Destaques:**
+- Elevação do timeout da síntese Kokoro de 120s para 180s de base mínima, escalando até 600s (10 minutos) para textos extensos.
+- Maior confiabilidade na geração de áudios longos via motor local de voz.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.135 (`09a5fcd`)
+- update development branch (`13c4ebc`)
+- updates in fix/increase-kokoro-tts-timeout (`fc11310`)
+
+#### 🐛 Correções
+- use /api/memo-desktop/updates with auth headers when posting release notes (`ea2708d`)
+
+
+---
+
+
 ## Release - v2.5.134
 ### 📣 Apresentação da Atualização
 
