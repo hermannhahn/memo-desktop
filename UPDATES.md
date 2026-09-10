@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.137
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added real-time Docker download streaming and rich installer progress metrics to the Auto-Updater.
+
+**Highlights:**
+- Real-time streaming progress for Docker Compose image downloads and container recreation in updater modal.
+- Rich installer download metrics showing downloaded MB, total size, and file percentage.
+- Smart Ollama embedding model verification to skip redundant downloads when already present.
+- Improved updater UI layout with word wrapping for long layer and container names.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado streaming em tempo real do download de containers Docker e métricas ricas de progresso no Auto-Updater.
+
+**Destaques:**
+- Progresso em streaming e tempo real para download de imagens Docker e recriação de containers no modal do atualizador.
+- Métricas detalhadas no download do instalador exibindo MB baixados, tamanho total e percentual real do arquivo.
+- Verificação inteligente de modelos Ollama para evitar downloads redundantes quando o modelo já existe.
+- Layout aprimorado na interface do atualizador com quebra de linha para nomes longos de camadas e containers.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.137 (`23c028e`)
+- update development branch (`674e7db`)
+- stream docker download and recreation progress and enrich installer download metrics (`4bd912a`)
+
+
+---
+
+
 ## Release - v2.5.136
 ### 📣 Apresentação da Atualização
 
