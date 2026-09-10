@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.136
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added total_messages count to chat message listing responses for improved pagination compatibility.
+
+**Highlights:**
+- Included total_messages alongside total in list_chat_messages WebSocket responses.
+- Ensures seamless pagination and message counter synchronization with Console and frontend interfaces.
+
+<!-- lang:pt -->
+**Resumo:** Adição do campo total_messages na listagem de mensagens de chat para compatibilidade aprimorada de paginação.
+
+**Destaques:**
+- Inclusão de total_messages junto ao campo total nas respostas WebSocket da ação list_chat_messages.
+- Garante paginação fluida e contagem precisa de mensagens em sincronia com o Console e interfaces frontend.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.136 (`07d4a76`)
+- update development branch (`bfef158`)
+
+
+---
+
+
 ## Release - v2.5.135
 ### 📣 Apresentação da Atualização
 
