@@ -3,6 +3,54 @@
 ---
 
 
+## Release - v2.5.147
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced UI with database loading indicators, smart backup and restore selectors, updater progress notices, silent system virtualization configuration, and improved console connection management.
+
+**Highlights:**
+- Added floating database loading spinner in the bottom-right corner during database queries and actions
+- Introduced smart dynamic dropdown selectors for Memory and Configurations backups with date, time, and file size details
+- Added Open Backup Folder button to easily access backup files directly in Windows Explorer
+- Defaulted configuration backups to AppData/MEMO/backups with persistent path settings
+- Added dynamic explanatory notices in the Auto-Updater modal to guide users during long update steps
+- Automated silent Windows Virtualization and WSL configuration with post-install restart recommendations
+- Implemented automatic window bring-to-front on startup and automatic minimization of Docker Desktop to the system tray
+- Updated Settings with clickable console.memorouter.com link and tooltip guidance for copying API keys
+- Enforced 100% silent background execution for all internal PowerShell, DISM, and Docker commands
+
+<!-- lang:pt -->
+**Resumo:** Interface aprimorada com indicador de carregamento do banco de dados, seletores inteligentes de backup e restauração, avisos dinâmicos no auto-updater, configuração silenciosa de virtualização e melhorias na conexão com o console.
+
+**Destaques:**
+- Adicionado indicador flutuante com spinner no canto inferior direito durante operações e consultas ao banco de dados
+- Novos seletores suspensos inteligentes para restauração de Memória e Configurações exibindo data, hora e tamanho do arquivo
+- Novo botão Abrir Pasta de Backup para acessar a pasta de backups diretamente no Windows Explorer
+- Destino padrão de backups de configurações definido em AppData/MEMO/backups com persistência de preferências
+- Adicionadas mensagens explicativas dinâmicas no modal do Auto-Updater durante downloads e sincronização de containers
+- Configuração automática e silenciosa de Virtualização e WSL no Windows com aviso pós-instalação de reinicialização
+- Auto-restauração de foco da janela do MEMO Desktop na inicialização e envio automático da janela do Docker Desktop para a bandeja
+- Ajustes em Configurações com link direto para console.memorouter.com e instruções para cópia do token em API Keys
+- Garantida execução 100% silenciosa em segundo plano para todos os comandos internos do PowerShell, DISM e Docker
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.147 (`3b547dc`)
+- update development branch (`21c7017`)
+- enhance Settings console token link, tooltip and instructions (`c76b492`)
+- UI backup improvements, db loading spinner, updater notice and installer enhancements (`00685d9`)
+
+#### 🐛 Correções
+- ensure CREATE_NO_WINDOW for all internal commands and verify i18n translations (`7d8ab2c`)
+
+
+---
+
+
 ## Release - v2.5.146
 ### 📣 Apresentação da Atualização
 
