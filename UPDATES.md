@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.143
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated Dashboard default timeframe filter to 7d and removed the 1d filter option.
+
+**Highlights:**
+- Dashboard timeframe now defaults to 7d upon opening the application.
+- Streamlined timeframe selector to 7d, 30d, 90d, and All.
+
+<!-- lang:pt -->
+**Resumo:** Atualizado o filtro padrão de período da Dashboard para 7d e removida a opção 1d.
+
+**Destaques:**
+- A Dashboard agora inicia por padrão no período de 7d ao abrir o aplicativo.
+- Seletor de período simplificado para 7d, 30d, 90d e All.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.143 (`c0fc9dc`)
+- update development branch (`37d9d90`)
+
+#### 🐛 Correções
+- change default period to 7d and remove 1d filter button (`e13b1f3`)
+
+
+---
+
+
 ## Release - v2.5.142
 ### 📣 Apresentação da Atualização
 

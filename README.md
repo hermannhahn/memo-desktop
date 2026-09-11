@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.142`
+## 📥 Download da Última Versão: `v2.5.143`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.142.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/MEMO-Desktop-Setup-v2.5.142.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.143.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/MEMO-Desktop-Setup-v2.5.143.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.142.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/MEMO-Desktop-Setup-v2.5.142.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.143.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/MEMO-Desktop-Setup-v2.5.143.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.142/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,28 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.142:
+### 🌟 Notas do Release v2.5.143:
 <!-- lang:en -->
-**Summary:** New MCP tools defaults and categorization, GPS renaming, Dashboard timeframe filters, and Configurations Backup reorganization.
+**Summary:** Updated Dashboard default timeframe filter to 7d and removed the 1d filter option.
 
 **Highlights:**
-- Enhanced Dashboard with 1d and All timeframe filters, synchronizing metrics across all cards with 1d as default.
-- Renamed settings connection card to Token & Console Connection.
-- Unified Docker tools: merged docker_create into docker, added Allow Delete checkbox, and updated default limits.
-- Reorganized MCP tool groups: moved Knowledge Base to Knowledge & Skills and Chrome DevTools to Web Browser.
-- Renamed CMD tool to CMD - Command Prompt with native Windows icon, and renamed Traccar to GPS Tracking.
-- Renamed Full Backup to Configurations Backup, separating user settings and definitions from memory vector backups.
+- Dashboard timeframe now defaults to 7d upon opening the application.
+- Streamlined timeframe selector to 7d, 30d, 90d, and All.
 
 <!-- lang:pt -->
-**Resumo:** Novos padrões e categorização de ferramentas MCP, renomeação do GPS, filtros de período na Dashboard e reorganização do Backup de Configurações.
+**Resumo:** Atualizado o filtro padrão de período da Dashboard para 7d e removida a opção 1d.
 
 **Destaques:**
-- Dashboard aprimorada com filtros de 1d e All, sincronizando métricas em todos os cards com 1d como padrão.
-- Renomeado card de configurações para Token & Console Connection.
-- Unificação das ferramentas Docker: docker_create fundida na ferramenta docker, adição de checkbox Permitir Exclusão e novos limites padrões.
-- Reorganização dos grupos MCP: Knowledge Base movida para Knowledge & Skills e Chrome DevTools para Web Browser.
-- Ferramenta CMD renomeada para CMD - Command Prompt com ícone nativo do Windows, e Traccar renomeado para GPS Tracking.
-- Renomeado Full Backup para Backup de Configurações, separando definições do usuário e ajustes dos backups de memórias vetoriais.
+- A Dashboard agora inicia por padrão no período de 7d ao abrir o aplicativo.
+- Seletor de período simplificado para 7d, 30d, 90d e All.
 
 ---
 
