@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.5.142
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** New MCP tools defaults and categorization, GPS renaming, Dashboard timeframe filters, and Configurations Backup reorganization.
+
+**Highlights:**
+- Enhanced Dashboard with 1d and All timeframe filters, synchronizing metrics across all cards with 1d as default.
+- Renamed settings connection card to Token & Console Connection.
+- Unified Docker tools: merged docker_create into docker, added Allow Delete checkbox, and updated default limits.
+- Reorganized MCP tool groups: moved Knowledge Base to Knowledge & Skills and Chrome DevTools to Web Browser.
+- Renamed CMD tool to CMD - Command Prompt with native Windows icon, and renamed Traccar to GPS Tracking.
+- Renamed Full Backup to Configurations Backup, separating user settings and definitions from memory vector backups.
+
+<!-- lang:pt -->
+**Resumo:** Novos padrões e categorização de ferramentas MCP, renomeação do GPS, filtros de período na Dashboard e reorganização do Backup de Configurações.
+
+**Destaques:**
+- Dashboard aprimorada com filtros de 1d e All, sincronizando métricas em todos os cards com 1d como padrão.
+- Renomeado card de configurações para Token & Console Connection.
+- Unificação das ferramentas Docker: docker_create fundida na ferramenta docker, adição de checkbox Permitir Exclusão e novos limites padrões.
+- Reorganização dos grupos MCP: Knowledge Base movida para Knowledge & Skills e Chrome DevTools para Web Browser.
+- Ferramenta CMD renomeada para CMD - Command Prompt com ícone nativo do Windows, e Traccar renomeado para GPS Tracking.
+- Renomeado Full Backup para Backup de Configurações, separando definições do usuário e ajustes dos backups de memórias vetoriais.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.142 (`3216153`)
+- update development branch (`1ad2596`)
+- rename Full Backup to Configurations Backup and exclude memory database from backup/restore (`df615ac`)
+- configure default tool states, rename traccar to gps and tracking to GPS (`7c25ef8`)
+- rename credentials header, merge docker_create into docker, add allow-delete checkbox, organize tool groups and update cmd icon (`27b6b06`)
+- add 1d and All period filters and sync all KPI cards with selected period (`d11c42b`)
+
+
+---
+
+
 ## Release - v2.5.141
 ### 📣 Apresentação da Atualização
 
