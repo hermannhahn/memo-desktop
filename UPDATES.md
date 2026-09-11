@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.145
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Aligned memory consolidation with Console AI Model timeouts and fallbacks, and added full multi-language i18n translations for Docker limits and MEMOROUTER security tooltips.
+
+**Highlights:**
+- Memory Consolidation: Removed hardcoded 60s timeout and aligned consolidation execution with Console AI Model settings (llm_timeout, fallback_max_retries, provider-specific fallback keys, and NVIDIA request pacing).
+- Docker Configuration: Converted inline limits tooltips (Sandbox, Max, Total) to default English with full i18n multi-language support.
+- Service Status: Converted MEMOROUTER security status tooltip to default English with full i18n multi-language support.
+
+<!-- lang:pt -->
+**Resumo:** Alinhamento da consolidação de memórias com os timeouts e fallbacks configurados na aba AI Model do Console, e suporte completo a traduções multi-idioma (i18n) para tooltips do Docker e segurança do MEMOROUTER.
+
+**Destaques:**
+- Consolidação de Memórias: Remoção do timeout fixo de 60s e alinhamento com as configurações de AI Model do Console (llm_timeout, fallback_max_retries, credenciais específicas de fallback e pacing da NVIDIA).
+- Configurações do Docker: Conversão dos tooltips de limites inline (Sandbox, Max, Total) para o padrão em inglês com suporte multi-idioma i18n.
+- Status do Serviço: Conversão do tooltip de segurança do MEMOROUTER para o padrão em inglês com suporte multi-idioma i18n.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.145 (`90a1e6f`)
+- update development branch (`fb26733`)
+- translate and add i18n support for MEMOROUTER security status tooltip (`8d05f1c`)
+- translate and add i18n support for docker inline limits tooltips (`d73cca9`)
+
+#### 🐛 Correções
+- align agent LLM timeouts, retries and fallback logic with Console AI Model settings (`53e6159`)
+
+
+---
+
+
 ## Release - v2.5.144
 ### 📣 Apresentação da Atualização
 
