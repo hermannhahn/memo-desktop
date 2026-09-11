@@ -3,6 +3,49 @@
 ---
 
 
+## Release - v2.5.148
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release enhances backup and restore capabilities with smart selectors, folder quick-access buttons, short language codes, and installer improvements.
+
+**Highlights:**
+- Added smart backup dropdown selectors for Memory and Configurations restore with date, time, and file size details.
+- Added strict backup file filtering to isolate memory backups from configurations archives.
+- Added Open Backup Folder quick-access buttons with distinct purple styling for both Memory and Configurations backups.
+- Updated top bar language selector to show compact language codes (EN, ES, pt-BR, PT, FR, DE, ZH, RU).
+- Improved installer to detect and request system restart when Windows Virtualization or WSL features are enabled.
+- Added floating database loading indicator in the bottom right corner during background operations.
+
+<!-- lang:pt -->
+**Resumo:** Esta versao aprimora o backup e restauracao com seletores inteligentes, botoes de acesso rapido a pasta, siglas curtas de idiomas e melhorias no instalador.
+
+**Destaques:**
+- Adicionados seletores inteligentes de backup para restauracao de Memoria e Configuracoes com data, hora e tamanho do arquivo.
+- Adicionada filtragem estrita de arquivos de backup para separar backups de memoria e de configuracoes.
+- Adicionados botoes de acesso rapido Abrir Pasta de Backup com estilo roxo destacado para Memoria e Configuracoes.
+- Atualizado seletor de idiomas no topo para exibir siglas compactas (EN, ES, pt-BR, PT, FR, DE, ZH, RU).
+- Instalador aprimorado para solicitar reinicializacao do Windows quando recursos de Virtualizacao ou WSL forem ativados.
+- Adicionado icone flutuante de carregamento do banco de dados no canto inferior direito.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.148 (`6039981`)
+- update development branch (`449095a`)
+- prompt reboot when WSL or Windows Virtualization features are enabled during installation (`d1ccd89`)
+- display short 2-character language codes in top bar selector (`48ced32`)
+- adjust backup ui, purple folder buttons, and config backup explorer button (`7691fee`)
+
+#### 🐛 Correções
+- filter memory and configuration restore backup dropdowns (`3818b32`)
+
+
+---
+
+
 ## Release - v2.5.147
 ### 📣 Apresentação da Atualização
 
