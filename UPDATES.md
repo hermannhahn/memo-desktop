@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.5.140
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Increased Kokoro TTS synthesis timeout to 1 hour (3600s) for long audio generation.
+
+**Highlights:**
+- Extended Kokoro TTS WebSocket synthesis timeout to 3600s in brain_sync service, allowing generation of long audio files without premature timeout errors.
+
+<!-- lang:pt -->
+**Resumo:** Aumento do timeout de síntese do Kokoro TTS para 1 hora (3600s) para geração de áudios longos.
+
+**Destaques:**
+- Timeout de síntese via WebSocket do Kokoro TTS estendido para 3600s no serviço brain_sync, permitindo a geração de áudios longos sem falha prematura por timeout.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.140 (`bc44ada`)
+- update development branch (`91eb200`)
+
+#### 🐛 Correções
+- set 1-hour (3600s) timeout for Kokoro TTS WebSocket synthesis action in brain_sync.go (`c099763`)
+
+
+---
+
+
 ## Release - v2.5.139
 ### 📣 Apresentação da Atualização
 
