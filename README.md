@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.145`
+## 📥 Download da Última Versão: `v2.5.146`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.145.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/MEMO-Desktop-Setup-v2.5.145.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.146.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/MEMO-Desktop-Setup-v2.5.146.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.145.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/MEMO-Desktop-Setup-v2.5.145.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.146.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/MEMO-Desktop-Setup-v2.5.146.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.145/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.146/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.145:
+### 🌟 Notas do Release v2.5.146:
 <!-- lang:en -->
-**Summary:** Aligned memory consolidation with Console AI Model timeouts and fallbacks, and added full multi-language i18n translations for Docker limits and MEMOROUTER security tooltips.
+**Summary:** Fixed GPS tracking map loading and offline overlay detection, and enhanced memory analytics card descriptions to clearly present session-based metrics.
 
 **Highlights:**
-- Memory Consolidation: Removed hardcoded 60s timeout and aligned consolidation execution with Console AI Model settings (llm_timeout, fallback_max_retries, provider-specific fallback keys, and NVIDIA request pacing).
-- Docker Configuration: Converted inline limits tooltips (Sandbox, Max, Total) to default English with full i18n multi-language support.
-- Service Status: Converted MEMOROUTER security status tooltip to default English with full i18n multi-language support.
+- Corrected Traccar health check endpoint and proxy routing to prevent false-positive offline overlay on the Tracking tab.
+- Added automatic Liquibase database lock recovery for seamless Traccar service restarts.
+- Updated memory analytics card subtitles and labels across all supported languages to clarify session-level statistics.
 
 <!-- lang:pt -->
-**Resumo:** Alinhamento da consolidação de memórias com os timeouts e fallbacks configurados na aba AI Model do Console, e suporte completo a traduções multi-idioma (i18n) para tooltips do Docker e segurança do MEMOROUTER.
+**Resumo:** Correcao no carregamento do mapa de rastreamento GPS e deteccao de status offline, alem de aprimoramentos nas descricoes dos cards de metricas de memoria para indicar escopo por sessao.
 
 **Destaques:**
-- Consolidação de Memórias: Remoção do timeout fixo de 60s e alinhamento com as configurações de AI Model do Console (llm_timeout, fallback_max_retries, credenciais específicas de fallback e pacing da NVIDIA).
-- Configurações do Docker: Conversão dos tooltips de limites inline (Sandbox, Max, Total) para o padrão em inglês com suporte multi-idioma i18n.
-- Status do Serviço: Conversão do tooltip de segurança do MEMOROUTER para o padrão em inglês com suporte multi-idioma i18n.
+- Ajuste no endpoint de verificacao de status e roteamento de proxy do Traccar, eliminando o banner indevido de servico offline na aba Rastreamento.
+- Adicionada recuperacao automatica de lock do Liquibase no banco de dados para inicializacao continua do Traccar.
+- Atualizacao dos subtitulos e rotulos dos cards analiticos de memoria em todos os idiomas suportados para esclarecer estatisticas por sessao.
 
 ---
 

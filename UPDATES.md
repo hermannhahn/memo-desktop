@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.146
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed GPS tracking map loading and offline overlay detection, and enhanced memory analytics card descriptions to clearly present session-based metrics.
+
+**Highlights:**
+- Corrected Traccar health check endpoint and proxy routing to prevent false-positive offline overlay on the Tracking tab.
+- Added automatic Liquibase database lock recovery for seamless Traccar service restarts.
+- Updated memory analytics card subtitles and labels across all supported languages to clarify session-level statistics.
+
+<!-- lang:pt -->
+**Resumo:** Correcao no carregamento do mapa de rastreamento GPS e deteccao de status offline, alem de aprimoramentos nas descricoes dos cards de metricas de memoria para indicar escopo por sessao.
+
+**Destaques:**
+- Ajuste no endpoint de verificacao de status e roteamento de proxy do Traccar, eliminando o banner indevido de servico offline na aba Rastreamento.
+- Adicionada recuperacao automatica de lock do Liquibase no banco de dados para inicializacao continua do Traccar.
+- Atualizacao dos subtitulos e rotulos dos cards analiticos de memoria em todos os idiomas suportados para esclarecer estatisticas por sessao.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.146 (`97ee357`)
+- update development branch (`704e672`)
+- clarify session-based metrics in memory analytics card descriptions and labels (`8db9a2d`)
+
+#### 🐛 Correções
+- fix map offline overlay health check and liquibase lock recovery (`ae24ff4`)
+
+
+---
+
+
 ## Release - v2.5.145
 ### 📣 Apresentação da Atualização
 
