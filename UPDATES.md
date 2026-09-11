@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.138
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resolved dashboard memory lifecycle statistics, removed persistent loading indicator at the bottom of the dashboard, and decoupled memory and note table loading messages across all languages.
+
+**Highlights:**
+- Fixed Memory Lifecycle doughnut chart metrics to properly balance active messages, consolidated summaries, merged sessions, and eliminated runs.
+- Enhanced Lifecycle chart legend to display sub-percent values (<1%) and added detailed tooltips with counts and percentages.
+- Removed bottom loading spinner from the Memory Dashboard layout.
+- Decoupled loading state translations for Memory Content and Notes Content across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Correção das estatísticas do ciclo de vida das memórias na dashboard, remoção do indicador de carregamento fixo no rodapé e desacoplamento das mensagens de carregamento de tabelas de memórias e anotações.
+
+**Destaques:**
+- Ajuste das métricas do gráfico Ciclo de Vida da Memória para equilibrar mensagens ativas, resumos consolidados, sessões mescladas e eliminações de sono.
+- Aprimoramento da legenda do gráfico com suporte a valores menores que 1% (<1%) e tooltips detalhados com contagens e porcentagens.
+- Remoção do indicador de carregamento persistente que aparecia no rodapé da Dashboard de Memória.
+- Desacoplamento das traduções de carregamento do Conteúdo de Memórias e Conteúdo de Anotações em todos os 8 idiomas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.138 (`79067c9`)
+- update development branch (`fd97461`)
+
+#### 🐛 Correções
+- fix memory lifecycle statistics, remove bottom loading spinner, and decouple i18n keys (`feac2d6`)
+
+
+---
+
+
 ## Release - v2.5.137
 ### 📣 Apresentação da Atualização
 
