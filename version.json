@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.140",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.140/MEMO-Desktop-Setup-v2.5.140.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Increased Kokoro TTS synthesis timeout to 1 hour (3600s) for long audio generation.\n\n**Highlights:**\n- Extended Kokoro TTS WebSocket synthesis timeout to 3600s in brain_sync service, allowing generation of long audio files without premature timeout errors.\n\n<!-- lang:pt -->\n**Resumo:** Aumento do timeout de síntese do Kokoro TTS para 1 hora (3600s) para geração de áudios longos.\n\n**Destaques:**\n- Timeout de síntese via WebSocket do Kokoro TTS estendido para 3600s no serviço brain_sync, permitindo a geração de áudios longos sem falha prematura por timeout."
+    "version": "2.5.141",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.141/MEMO-Desktop-Setup-v2.5.141.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Increased KokoroManager http.Client timeout to 1 hour (3600s).\n\n**Highlights:**\n- Fixed hardcoded 60s timeout in KokoroManager `http.Client` that interrupted local Kokoro TTS audio generation for long responses on CPU.\n\n<!-- lang:pt -->\n**Resumo:** Ampliação do timeout do http.Client do KokoroManager para 1 hora (3600s).\n\n**Destaques:**\n- Corrigido timeout rígido de 60s no `http.Client` do KokoroManager que interrompia a geração de áudios extensos no Kokoro TTS via CPU local."
 }

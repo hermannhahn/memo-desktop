@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.141
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Increased KokoroManager http.Client timeout to 1 hour (3600s).
+
+**Highlights:**
+- Fixed hardcoded 60s timeout in KokoroManager `http.Client` that interrupted local Kokoro TTS audio generation for long responses on CPU.
+
+<!-- lang:pt -->
+**Resumo:** Ampliação do timeout do http.Client do KokoroManager para 1 hora (3600s).
+
+**Destaques:**
+- Corrigido timeout rígido de 60s no `http.Client` do KokoroManager que interrompia a geração de áudios extensos no Kokoro TTS via CPU local.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.141 (`5df2bda`)
+- update development branch (`02af143`)
+
+
+---
+
+## [Fix] Definição de Timeout de 1 Hora (3600s) no http.Client do KokoroManager
+
+### 📌 Resumo das Alterações:
+- **`internal/services/kokoro_manager.go`**:
+  - Ajustado o `http.Client{Timeout: 3600 * time.Second}` no `GetKokoroManager()`. Anteriormente, o cliente possuía um timeout rígido de 60 segundos (`60 * time.Second`), o que forçava a interrupção da requisição HTTP ao container do Kokoro TTS quando a geração de áudios extensos (> 3 minutos) via CPU levava mais de 60 segundos, desrespeitando o timeout de 1 hora do contexto.
+
+---
+
 ## Release - v2.5.140
 ### 📣 Apresentação da Atualização
 
