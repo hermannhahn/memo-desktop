@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.144
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed map rendering and route resolution on the GPS Tracking tab.
+
+**Highlights:**
+- Resolved URL fallback and IPv4 binding for the embedded GPS map iframe.
+- Added /gps/ routing support to internal proxy and asset server middleware.
+- Enhanced tab switching and container status detection for GPS services.
+
+<!-- lang:pt -->
+**Resumo:** Correção na abertura do mapa e roteamento na aba de rastreamento GPS.
+
+**Destaques:**
+- Resolução de URL e fallback IPv4 garantidos para o iframe do mapa GPS embutido.
+- Adicionado suporte a rotas /gps/ no middleware de assets e proxy reverso interno.
+- Aprimorada a alternância de abas e detecção de status dos containers de GPS.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.144 (`41b0e7b`)
+- update development branch (`9806fcb`)
+
+#### 🐛 Correções
+- ensure map loads in GPS tracking tab with robust URL resolution, routing and container detection (`c749f7f`)
+
+
+---
+
+
 ## Release - v2.5.143
 ### 📣 Apresentação da Atualização
 

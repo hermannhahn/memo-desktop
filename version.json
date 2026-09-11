@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.5.143",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/MEMO-Desktop-Setup-v2.5.143.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Updated Dashboard default timeframe filter to 7d and removed the 1d filter option.\n\n**Highlights:**\n- Dashboard timeframe now defaults to 7d upon opening the application.\n- Streamlined timeframe selector to 7d, 30d, 90d, and All.\n\n<!-- lang:pt -->\n**Resumo:** Atualizado o filtro padrão de período da Dashboard para 7d e removida a opção 1d.\n\n**Destaques:**\n- A Dashboard agora inicia por padrão no período de 7d ao abrir o aplicativo.\n- Seletor de período simplificado para 7d, 30d, 90d e All."
+    "version": "2.5.144",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/MEMO-Desktop-Setup-v2.5.144.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Fixed map rendering and route resolution on the GPS Tracking tab.\n\n**Highlights:**\n- Resolved URL fallback and IPv4 binding for the embedded GPS map iframe.\n- Added /gps/ routing support to internal proxy and asset server middleware.\n- Enhanced tab switching and container status detection for GPS services.\n\n<!-- lang:pt -->\n**Resumo:** Correção na abertura do mapa e roteamento na aba de rastreamento GPS.\n\n**Destaques:**\n- Resolução de URL e fallback IPv4 garantidos para o iframe do mapa GPS embutido.\n- Adicionado suporte a rotas /gps/ no middleware de assets e proxy reverso interno.\n- Aprimorada a alternância de abas e detecção de status dos containers de GPS."
 }

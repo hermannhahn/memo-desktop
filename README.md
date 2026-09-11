@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.143`
+## 📥 Download da Última Versão: `v2.5.144`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.143.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/MEMO-Desktop-Setup-v2.5.143.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.144.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/MEMO-Desktop-Setup-v2.5.144.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.143.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/MEMO-Desktop-Setup-v2.5.143.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.144.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/MEMO-Desktop-Setup-v2.5.144.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.143/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.144/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.143:
+### 🌟 Notas do Release v2.5.144:
 <!-- lang:en -->
-**Summary:** Updated Dashboard default timeframe filter to 7d and removed the 1d filter option.
+**Summary:** Fixed map rendering and route resolution on the GPS Tracking tab.
 
 **Highlights:**
-- Dashboard timeframe now defaults to 7d upon opening the application.
-- Streamlined timeframe selector to 7d, 30d, 90d, and All.
+- Resolved URL fallback and IPv4 binding for the embedded GPS map iframe.
+- Added /gps/ routing support to internal proxy and asset server middleware.
+- Enhanced tab switching and container status detection for GPS services.
 
 <!-- lang:pt -->
-**Resumo:** Atualizado o filtro padrão de período da Dashboard para 7d e removida a opção 1d.
+**Resumo:** Correção na abertura do mapa e roteamento na aba de rastreamento GPS.
 
 **Destaques:**
-- A Dashboard agora inicia por padrão no período de 7d ao abrir o aplicativo.
-- Seletor de período simplificado para 7d, 30d, 90d e All.
+- Resolução de URL e fallback IPv4 garantidos para o iframe do mapa GPS embutido.
+- Adicionado suporte a rotas /gps/ no middleware de assets e proxy reverso interno.
+- Aprimorada a alternância de abas e detecção de status dos containers de GPS.
 
 ---
 
