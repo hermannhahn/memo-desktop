@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.5.139
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Memory consolidation per agent, UI settings clean-up, hardcoded ranking & replay parameters, updater English translation, and E2EE card integration into MEMOROUTER.
+
+**Highlights:**
+- Memory consolidation runs sequentially per agent using each agent's configured API credentials from MEMOROUTER (with retries, timeouts, and fallback support).
+- Replaced Sleep Cycles card on Dashboard with Total Memory Records KPI card showing total database messages.
+- Cleaned up Settings UI: removed Memory Ranking & Replay and Tool Execution Delay cards, hardcoded ranking and replay defaults in binary.
+- Hardcoded Chrome DevTools MCP to always start maximized and removed visibility mode selector.
+- Renamed MEMOROUTER Link card to MEMOROUTER and integrated E2EE Encryption details directly within it.
+- Translated updater modal status and error messages to English.
+
+<!-- lang:pt -->
+**Resumo:** Consolidação de memórias por agente, limpeza das configurações na UI, hardcode dos parâmetros de ranking e replay, tradução do updater para inglês e integração do card E2EE no MEMOROUTER.
+
+**Destaques:**
+- Consolidação de memórias executada sequencialmente por agente utilizando as credenciais de API configuradas no MEMOROUTER (com retries, timeout e fallback).
+- Substituição do card Sleep Cycles na Dashboard pelo card de Total de Registros de Memória no banco de dados.
+- Limpeza na aba Settings: remoção dos cards de Ranking & Replay e Tool Execution Delay, fixando valores no binário.
+- Hardcode da ferramenta MCP Chrome DevTools para sempre iniciar maximizada e remoção do seletor de visibilidade.
+- Renomeação do card MEMOROUTER Link para MEMOROUTER e integração das informações de criptografia E2EE nele.
+- Tradução das mensagens e status do modal do updater para inglês.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.139 (`7c29a15`)
+- updates in fix/ui-settings-cleanup-and-e2ee-merge (`34fca33`)
+
+#### 🐛 Correções
+- cleanup settings cards, hardcode ranking/replay/chrome mode, and merge E2EE into MEMOROUTER card (`c73290a`)
+- updater english i18n, db total records card, and per-agent consolidation flow (`81e49e0`)
+
+
+---
+
+
 ## Release - v2.5.138
 ### 📣 Apresentação da Atualização
 
