@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.150
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Improved RAG long-term memory retrieval with exact phrase matching, non-stopword AND conjunction, Graph RAG relational infrastructure, and refined scoring multipliers.
+
+**Highlights:**
+- Enhanced stopword filtering with Portuguese and English pronouns and auxiliary verbs
+- Exact phrase matching priority and AND keyword conjunction to eliminate false positive retrieval
+- Rebalanced consolidated boost and importance weights for accurate semantic cosine ranking
+- Added Graph RAG relational expansion (memory_edges) and CLI search_ltm debugging tool
+
+<!-- lang:pt -->
+**Resumo:** Aprimoramento do RAG e da busca na memória de longo prazo com prioridade para frases exatas, conjunção AND para palavras-chave, infraestrutura de Grafo RAG e calibração de multiplicadores.
+
+**Destaques:**
+- Expansão do dicionário de stopwords com pronomes e verbos auxiliares em português e inglês
+- Prioridade para correspondência de frases exatas e conjunção AND entre palavras de conteúdo
+- Rebalanceamento dos pesos de consolidação e importância para ranking semântico fiel
+- Adição da infraestrutura relacional de Grafo RAG (memory_edges) e comando CLI search_ltm
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.150 (`43431c9`)
+- update development branch (`7b26364`)
+
+
+---
+
+
 ## Release - v2.5.149
 ### 📣 Apresentação da Atualização
 
