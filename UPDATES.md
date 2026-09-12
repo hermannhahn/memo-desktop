@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.153
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed floating database loading indicator to prevent it from rendering over the splash screen during application cold boot.
+
+**Highlights:**
+- Moved database loading indicator inside the main application container so it remains completely hidden until the splash screen sequence concludes
+- Added display state guards to `showDbLoading` and memory analytics auto-refresh to eliminate floating indicator overlap during splash screen
+- Adjusted indicator z-index layering to preserve proper visual hierarchy
+
+<!-- lang:pt -->
+**Resumo:** Correção no aviso flutuante de carregamento do banco de dados para evitar que seja renderizado sobre a splash screen durante a inicialização.
+
+**Destaques:**
+- Indicador flutuante de banco de dados movido para o container principal da aplicação, garantindo ocultação total durante a splash screen
+- Adicionadas verificações de visibilidade em `showDbLoading` e no auto-refresh de analytics para impedir sobreposição na tela de abertura
+- Ajuste na hierarquia de z-index do indicador para manter visual limpo e consistente
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.153 (`67d57a8`)
+
+#### 📚 Documentação
+- update patch_msg.txt for splash screen indicator fix (`04248a9`)
+
+#### 🐛 Correções
+- prevent database loading indicator from displaying during splash screen (`e0adb3e`)
+
+
+---
+
+
 ## Release - v2.5.152
 ### 📣 Apresentação da Atualização
 
