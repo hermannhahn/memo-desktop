@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.152
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced auto-updater modal layout, refined language selector options, and added container initialization loading state on dashboard startup.
+
+**Highlights:**
+- Language selector reordered alphabetically across all 8 languages with Brazilian Portuguese displayed as BR
+- Auto-updater modal layout improved with expanded window size (580x450) and non-overflowing action buttons
+- Distinct wait messages for lengthy steps during updates (download, binary installation, Docker container sync)
+- Startup container and database loading indicator on Dashboard to prevent temporary blank/zeroed statistics
+
+<!-- lang:pt -->
+**Resumo:** Melhorias no layout do atualizador, refinamento das opções do seletor de idiomas e indicador de inicialização de containers na abertura da Dashboard.
+
+**Destaques:**
+- Seletor de idiomas reordenado em ordem alfabética e exibição de pt-BR ajustada para BR
+- Layout do atualizador aprimorado com janela expandida (580x450) e botões que não sofrem corte de overflow
+- Mensagens de espera específicas para etapas lentas de atualização (download, instalação de binários e sincronização Docker)
+- Indicador de carregamento contínuo na Dashboard durante a inicialização do banco de dados e containers
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.152 (`ec5cbc8`)
+- update development branch (`e512cb7`)
+
+
+---
+
+
 ## Release - v2.5.151
 ### 📣 Apresentação da Atualização
 
