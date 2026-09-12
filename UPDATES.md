@@ -3,6 +3,52 @@
 ---
 
 
+## Release - v2.5.154
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented the complete Entity Graph and Environments System, integrating entity extraction into nightly consolidation, RAG retrieval, and the unified entity_lookup MCP tool.
+
+**Highlights:**
+- Added PostgreSQL schema, HNSW vector indexes, and persistence for entities, relations, and environments
+- Integrated LLM-based entity extraction and deduplication into the nightly memory consolidation pipeline
+- Enriched RAG semantic search with automatic retrieval of known entities and project environments
+- Introduced new unified entity_lookup MCP tool for active querying of people, organizations, systems, and roles
+
+<!-- lang:pt -->
+**Resumo:** Implementação completa do Sistema de Grafo de Entidades e Ambientes, integrando extração noturna de entidades, busca RAG e a ferramenta MCP unificada entity_lookup.
+
+**Destaques:**
+- Adicionado schema PostgreSQL, índices vetoriais HNSW e persistência para entidades, relações e ambientes
+- Integrada extração e deduplicação de entidades via LLM ao pipeline de consolidação noturna de memórias
+- Busca semântica RAG enriquecida com recuperação automática de entidades conhecidas e ambientes de projetos
+- Nova ferramenta MCP unificada entity_lookup para consulta ativa sobre pessoas, organizações, sistemas e papéis
+
+### 📋 Changelog da Versão
+
+**Total:** 11 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.154 (`f48dbd6`)
+- update development branch (`fe3960b`)
+- implement entity_lookup tool for knowledge graph (Fase E) (`f18c86d`)
+- add entity graph RAG integration (Fase C) (`1a676a0`)
+- implement entity graph persistence and extraction loop (Fase B & A3) (`98e3700`)
+- add entity graph postgres persistence and consolidation pipeline integration (`78df466`)
+- add entity graph extraction with LLM chunking (`715838d`)
+- add entity graph tables and indexes in postgres (`981a8db`)
+
+#### 📚 Documentação
+- document completion of Fase 20 Entity Graph & Environments System (`2504d3a`)
+
+#### 🐛 Correções
+- align ranking defaults and fix entity graph RAG injection return (`0b98760`)
+- use direct value mapping for Commitment structs (`67ddcde`)
+
+
+---
+
+
 ## Release - v2.5.153
 ### 📣 Apresentação da Atualização
 
