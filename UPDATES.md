@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.149
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Docker container lifecycle operations to properly resolve project directories and handle container name prefix variations.
+
+**Highlights:**
+- Fixed directory resolution when starting, stopping, restarting, or deleting containers.
+- Added automatic normalization for container name prefixes.
+- Added direct container engine fallback for robust lifecycle management.
+
+<!-- lang:pt -->
+**Resumo:** Correção nas operações de ciclo de vida de containers Docker para resolver corretamente diretórios de projetos e variações de prefixo de nome.
+
+**Destaques:**
+- Correção na resolução de diretórios ao iniciar, parar, reiniciar ou excluir containers.
+- Normalização automática para variações de prefixo no nome do container.
+- Fallback direto para o motor Docker garantindo inicialização resiliente.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.149 (`d661a62`)
+- update development branch (`e1e1020`)
+
+#### 🐛 Correções
+- make executable signing resilient with timestamp server fallbacks (`ae06d66`)
+- fix invalid directory error on container start and normalize agent- prefix (`9732607`)
+
+
+---
+
+
 ## Release - v2.5.148
 ### 📣 Apresentação da Atualização
 
