@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.5.151
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Refined header language selector styling with a compact width and smaller typography.
+
+**Highlights:**
+- Adjusted language selector width to 60px to fit language codes without excess horizontal space
+- Reduced font size to 0.72rem for a sleek, proportional aesthetic matching header controls
+- Centered language text alignment and synchronized frontend assets
+
+<!-- lang:pt -->
+**Resumo:** Ajuste no seletor de idioma do cabeçalho com largura compacta e tipografia reduzida.
+
+**Destaques:**
+- Ajuste da largura da caixa seletora para 60px, proporcional aos códigos de idioma
+- Redução da fonte para 0.72rem para um visual mais elegante e alinhado aos botões do cabeçalho
+- Alinhamento centralizado do texto de idioma e sincronização dos assets do frontend
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.151 (`a642d23`)
+- update development branch (`69e44a7`)
+
+
+---
+
+
 ## Release - v2.5.150
 ### 📣 Apresentação da Atualização
 

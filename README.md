@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.150`
+## 📥 Download da Última Versão: `v2.5.151`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.150.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/MEMO-Desktop-Setup-v2.5.150.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.151.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/MEMO-Desktop-Setup-v2.5.151.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.150.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/MEMO-Desktop-Setup-v2.5.150.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.151.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/MEMO-Desktop-Setup-v2.5.151.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.150/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.151/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,24 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.150:
+### 🌟 Notas do Release v2.5.151:
 <!-- lang:en -->
-**Summary:** Improved RAG long-term memory retrieval with exact phrase matching, non-stopword AND conjunction, Graph RAG relational infrastructure, and refined scoring multipliers.
+**Summary:** Refined header language selector styling with a compact width and smaller typography.
 
 **Highlights:**
-- Enhanced stopword filtering with Portuguese and English pronouns and auxiliary verbs
-- Exact phrase matching priority and AND keyword conjunction to eliminate false positive retrieval
-- Rebalanced consolidated boost and importance weights for accurate semantic cosine ranking
-- Added Graph RAG relational expansion (memory_edges) and CLI search_ltm debugging tool
+- Adjusted language selector width to 60px to fit language codes without excess horizontal space
+- Reduced font size to 0.72rem for a sleek, proportional aesthetic matching header controls
+- Centered language text alignment and synchronized frontend assets
 
 <!-- lang:pt -->
-**Resumo:** Aprimoramento do RAG e da busca na memória de longo prazo com prioridade para frases exatas, conjunção AND para palavras-chave, infraestrutura de Grafo RAG e calibração de multiplicadores.
+**Resumo:** Ajuste no seletor de idioma do cabeçalho com largura compacta e tipografia reduzida.
 
 **Destaques:**
-- Expansão do dicionário de stopwords com pronomes e verbos auxiliares em português e inglês
-- Prioridade para correspondência de frases exatas e conjunção AND entre palavras de conteúdo
-- Rebalanceamento dos pesos de consolidação e importância para ranking semântico fiel
-- Adição da infraestrutura relacional de Grafo RAG (memory_edges) e comando CLI search_ltm
+- Ajuste da largura da caixa seletora para 60px, proporcional aos códigos de idioma
+- Redução da fonte para 0.72rem para um visual mais elegante e alinhado aos botões do cabeçalho
+- Alinhamento centralizado do texto de idioma e sincronização dos assets do frontend
 
 ---
 
