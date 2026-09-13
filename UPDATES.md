@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.3-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Extended consolidation LLM safety timeout to 30 minutes to accommodate long-running inference and queue delays.
+
+**Highlights:**
+- Increased safety timeout from 25s to 30 minutes (1800s) for consolidation LLM requests
+- Allows slower or high-concurrency model endpoints (e.g. NVIDIA NIM) to complete processing without premature cutoffs
+- Retains full per-agent credentials and fallback handling
+
+<!-- lang:pt -->
+**Resumo:** Extensão do timeout de segurança da consolidação de LLM para 30 minutos para suportar inferências demoradas e filas de espera.
+
+**Destaques:**
+- Aumento do timeout de segurança de 25s para 30 minutos (1800s) nas requisições de consolidação de memórias
+- Permite que endpoints mais lentos ou com fila de processamento (ex: NVIDIA NIM) respondam sem interrupções prematuras
+- Mantém o isolamento estrito de credenciais e rotas de fallback por agente
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.3-alpha (`001b8e8`)
+- update development branch (`8fb9473`)
+
+#### 🐛 Correções
+- set safety timeout to 30 minutes for LLM calls (`90ee148`)
+
+
+---
+
+
 ## Release - v2.6.2-alpha
 ### 📣 Apresentação da Atualização
 
