@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.2-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforced strict per-agent route isolation in consolidation and removed all global and local Ollama fallbacks.
+
+**Highlights:**
+- Removed all global API keys and Ollama fallbacks from memory consolidation
+- Ensured consolidation strictly uses the agent's configured primary and fallback providers
+- Returns descriptive error diagnostics when an agent's configured routes fail
+
+<!-- lang:pt -->
+**Resumo:** Isolamento estrito de rotas por agente na consolidação e remoção completa de contingências globais ou Ollama local.
+
+**Destaques:**
+- Remoção de qualquer chave de API global e do Ollama local no processo de consolidação de memórias
+- Garantia de execução estritamente baseada nos provedores primário e de fallback configurados no próprio agente
+- Retorno de mensagens de erro claras e detalhadas caso ambas as rotas configuradas pelo usuário falhem
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.2-alpha (`fb9793a`)
+- update development branch (`07888c1`)
+
+#### 🐛 Correções
+- strictly use agent credentials and return explicit route errors without global or ollama fallback (`3d03c49`)
+
+
+---
+
+
 ## Release - v2.6.1-alpha
 ### 📣 Apresentação da Atualização
 
