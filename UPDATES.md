@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.160
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed App Hub integration installer JSON execution error by binding native Wails Go handlers for seamless desktop execution.
+
+**Highlights:**
+- Implemented native Wails App handlers (`GetIntegrationsList`, `InstallIntegration`, `UninstallIntegration`) to bypass Webview asset server limitations
+- Added robust error handling and fallback parsing in frontend App Hub UI
+- Verified zero unwanted file alterations and maintained surgical backup integrity
+
+<!-- lang:pt -->
+**Resumo:** Correção do erro de execução JSON no instalador do App Hub com a implementação de handlers nativos Wails no Go.
+
+**Destaques:**
+- Implementação dos handlers nativos Wails (`GetIntegrationsList`, `InstallIntegration`, `UninstallIntegration`) no backend Go, contornando limitações do asset server do Webview
+- Tratamento robusto de erros e parsing seguro no frontend do App Hub
+- Validação de integridade do ambiente com garantia de backup cirúrgico
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.160 (`8bd5cf5`)
+- updates in fix/app-hub-wails-handlers (`f11d396`)
+- updates in development (`ec9b8ec`)
+
+
+---
+
+
 ## Release - v2.5.159
 ### 📣 Apresentação da Atualização
 
