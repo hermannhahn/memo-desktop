@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.165
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforce agent-specific AI Model settings, timeouts, retries and automatic fallbacks during memory consolidation.
+
+**Highlights:**
+- Ensured memory consolidation strictly uses the dedicated AI provider, model and API keys of the agent owning the memories.
+- Enforced agent-configured LLM timeout, max retries and fallback execution with safety timeouts to prevent socket deadlocks on unstable providers.
+
+<!-- lang:pt -->
+**Resumo:** Execucao estrita das configuracoes de AI Model, timeouts, tentativas e fallback de cada agente na consolidacao de memorias.
+
+**Destaques:**
+- Garantido que a consolidacao de memorias utilize estritamente o provedor, modelo e chaves de API do agente dono das memorias.
+- Aplicados os parametros de timeout, limite de tentativas e contingencia/fallback do agente com timeout de seguranca contra travamento de sockets.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.165 (`5f3b07e`)
+- update development branch (`5a606a7`)
+
+#### 🐛 Correções
+- enforce agent-specific AI Model settings, timeouts, retries and fallbacks (`2f67908`)
+
+
+---
+
+
 ## Release - v2.5.164
 ### 📣 Apresentação da Atualização
 
