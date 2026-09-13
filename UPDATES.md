@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.5.157
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** App Hub v2: Complete uninstallation support, strict AGY detection, 2-section layout (Multi-Agent vs Primary LLM), and Hermes client integration.
+
+**Highlights:**
+- Added complete uninstallation support for the Antigravity CLI integration (removes MCP plugin, cleans `settings.json`, and strips Section 9 from `GEMINI.md`).
+- Added strict detection of AGY installation with a notice banner and disabled button when `%USERPROFILE%\.gemini` is not found.
+- Reorganized the Integrations tab into 2 sections: "Multi-Agent & Developer Tools" and "Primary LLM & Chat Clients".
+- Added integration card and quick endpoint copy for Hermes, Open WebUI, and OpenAI-compatible chat clients.
+- Updated translations in all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** App Hub v2: Suporte a desinstalação completa, detecção estrita de AGY, layout em 2 seções (Multi-Agentes vs Modelo Principal) e integração com Hermes.
+
+**Destaques:**
+- Adicionado suporte a desinstalação completa da integração com Antigravity CLI (remove plugin MCP, limpa `settings.json` e remove a Seção 9 do `GEMINI.md`).
+- Adicionada detecção estrita de instalação do AGY com banner de aviso e botão desabilitado caso `%USERPROFILE%\.gemini` não seja encontrado.
+- Reorganizada a aba de Integrações em 2 seções: "Multi-Agentes & Ferramentas de Desenvolvimento" e "Modelo Principal & Clientes de Chat".
+- Adicionado card de integração com botão de cópia rápida de endpoint para Hermes, Open WebUI e clientes compatíveis com OpenAI.
+- Atualizadas as traduções em todos os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.157 (`e65c1ce`)
+- app hub v2 with full uninstaller, agy detection, 2-section layout and hermes card (`0ff3874`)
+
+
+---
+
+
 ## Release - v2.5.156
 ### 📣 Apresentação da Atualização
 
