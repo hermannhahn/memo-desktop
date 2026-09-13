@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.158
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added 1-Click Hermes integration with automated client token provisioning, real client icons, and full US English codebase alignment with 8-language i18n support.
+
+**Highlights:**
+- 1-Click Hermes Agent installer and uninstaller configuring OpenAI endpoint and dedicated token in `%LOCALAPPDATA%\hermes`.
+- Automatic client-named API token provisioning on MEMOROUTER Console ("Hermes (MEMO Desktop)", "Antigravity CLI (MEMO Desktop)").
+- Real SVG logos for Google Antigravity CLI and Hermes.
+- Removed "By: MEMOROUTER" card labels and replaced example agent placeholders with generic labels.
+- Standardized base codebase, templates, comments, and strings to US English with complete 8-language i18n translations.
+
+<!-- lang:pt -->
+**Resumo:** Adicionada integração em 1-Clique para o Hermes com provisionamento automático de tokens nomeados por client, ícones reais e padronização da base em inglês com i18n em 8 idiomas.
+
+**Destaques:**
+- Instalador e desinstalador em 1-Clique para o Hermes Agent configurando endpoint OpenAI e token dedicado em `%LOCALAPPDATA%\hermes`.
+- Provisionamento automático de tokens nomeados por client no Console MEMOROUTER ("Hermes (MEMO Desktop)", "Antigravity CLI (MEMO Desktop)").
+- Ícones SVG reais para Google Antigravity CLI e Hermes.
+- Remoção do selo "By: MEMOROUTER" dos cards e substituição de nomes de exemplo por marcadores genéricos.
+- Padronização do código base, templates e comentários em inglês (US) com traduções i18n completas em 8 idiomas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.158 (`7d38814`)
+- update development branch (`6db43e3`)
+- add Hermes 1-click installer, client token provisioning, real client icons, and full US English base (`41dbe76`)
+
+
+---
+
+
 ## Release - v2.5.157
 ### 📣 Apresentação da Atualização
 
