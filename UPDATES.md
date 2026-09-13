@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.5.162
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix Hermes uninstaller backup restoration, update App Hub integration groups, rename Antigravity card, and refresh model placeholder.
+
+**Highlights:**
+- Hermes Uninstaller: Restore surgical backups and completely scrub memorouter custom providers, credentials, and env configurations.
+- App Hub Layout: Reorder categories to place Chat Clients & OpenAI Endpoints at the top and Coding Agents & CLI Orchestration below.
+- Antigravity Card: Renamed card to Antigravity (AGY) across all interface languages.
+- OpenAI Custom Endpoint: Updated example agent placeholder to avoid referencing Vetor Stark.
+
+<!-- lang:pt -->
+**Resumo:** Correção da desinstalação e restauração de backups do Hermes, reorganização das categorias do App Hub, renomeação do card Antigravity e novo exemplo no card OpenAI.
+
+**Destaques:**
+- Desinstalador do Hermes: Restauração cirúrgica de backups preventivos e limpeza completa de provedores customizados, credenciais e variáveis do memorouter.
+- Layout do App Hub: Reorganização das seções colocando Clientes de Chat & Endpoints OpenAI no topo e Agentes de Código & Orquestração CLI abaixo.
+- Card do Antigravity: Renomeado para Antigravity (AGY) em todos os idiomas da interface.
+- Endpoint OpenAI Customizado: Atualizado o placeholder de exemplo para não referenciar o Vetor Stark.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.162 (`0d183a7`)
+- updates in fix/hermes-uninstall-and-responses (`4779281`)
+
+#### 🐛 Correções
+- fix hermes uninstaller backup restore and reorder app hub categories (`8ded117`)
+
+
+---
+
+
 ## Release - v2.5.161
 ### 📣 Apresentação da Atualização
 
