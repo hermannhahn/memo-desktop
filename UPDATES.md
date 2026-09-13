@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.1-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resolved memory consolidation hanging/stalling issues with responsive timeouts, fast failover, and global emergency fallback.
+
+**Highlights:**
+- Reduced safety timeout from 60s to 25s for unresponsive or rate-limited API endpoints
+- Implemented instantaneous fallback switching without waiting for slow retry loops on hard timeouts
+- Added automatic emergency fallback to global DeepSeek or local Ollama when all agent routes fail, preventing consolidation abortions
+
+<!-- lang:pt -->
+**Resumo:** Correção dos travamentos e lentidão na consolidação de memórias com timeouts responsivos, failover rápido e contingência de emergência global.
+
+**Destaques:**
+- Redução do timeout de segurança padrão de 60s para 25s em endpoints lentos ou instáveis
+- Alternância imediata para rota de fallback sem desperdiçar ciclos de repetição em timeouts severos
+- Inclusão de contingência de emergência global automática via DeepSeek ou Ollama local caso todas as rotas do agente falhem, impedindo o cancelamento do sono
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.1-alpha (`aa45d5d`)
+- update development branch (`24605e8`)
+
+#### 🐛 Correções
+- add fast timeout failover and global emergency fallback for memory consolidation (`fd3d12c`)
+
+
+---
+
+
 ## Release - v2.6.0-alpha
 ### 📣 Apresentação da Atualização
 
