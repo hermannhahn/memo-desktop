@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.169
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Optimize memory consolidation entity extraction scope and standardize AGY integration rules with global .agents/AGENTS.md support.
+
+**Highlights:**
+- Memory Consolidation: Scope entity extraction strictly to consolidated and recent active memories, preventing long processing queues.
+- AGY Integration: Standardized markdown divider spacing and added support for global `~/.agents/AGENTS.md` and plugin `rules/AGENTS.md`.
+
+<!-- lang:pt -->
+**Resumo:** Otimiza o escopo de extração de entidades na consolidação de memórias e padroniza regras de integração AGY com suporte a .agents/AGENTS.md global.
+
+**Destaques:**
+- Consolidação de Memórias: Escopo de extração de entidades limitado estritamente a memórias consolidadas e ativas recentes, evitando filas longas.
+- Integração AGY: Espaçamento de divisória Markdown padronizado e suporte ao arquivo `~/.agents/AGENTS.md` global e regras do plugin `rules/AGENTS.md`.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.169 (`5b33960`)
+- update development branch (`9dcd7f8`)
+
+#### 🐛 Correções
+- standardize AGY rules divider and add support for ~/.agents/AGENTS.md (`a4b8729`)
+- optimize entity extraction memory query scope and chunking (`3578e15`)
+- update sidebar disconnected status to connecting, fix splash screen glitch, and widen pagination select (`5dfdbaa`)
+
+
+---
+
+
 ## Release - v2.5.168
 ### 📣 Apresentação da Atualização
 
