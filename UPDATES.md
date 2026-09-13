@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.5.161
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated Hermes Agent installer to configure standard custom provider format with dual credential pool support.
+
+**Highlights:**
+- Configured Hermes `config.yaml` with standard `custom:https://api.memorouter.com/v1` provider routing
+- Injected YAML list structure for `custom_providers` and populated credential pools in `auth.json`
+- Ensured seamless interoperability between Hermes and MEMOROUTER agent endpoints
+
+<!-- lang:pt -->
+**Resumo:** Atualizacao do instalador do Hermes Agent para configurar o formato padrao de custom provider com suporte duplo a pools de credenciais.
+
+**Destaques:**
+- Configuracao do `config.yaml` do Hermes com roteamento de provider `custom:https://api.memorouter.com/v1`
+- Injecao de estrutura de lista YAML para `custom_providers` e pools de credenciais correspondentes no `auth.json`
+- Garantia de interoperabilidade transparente entre o Hermes e os endpoints dos agentes MEMOROUTER
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.161 (`5a03f4a`)
+- updates in fix/hermes-custom-provider-format (`5018f20`)
+- updates in development (`5fea33a`)
+
+
+---
+
+
 ## Release - v2.5.160
 ### 📣 Apresentação da Atualização
 
