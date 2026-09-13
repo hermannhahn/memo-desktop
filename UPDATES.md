@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.5.166
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Generic dynamic multi-agent orchestration instructions for AGY, compact redesigned Integrations layout, and sanitized agent placeholders.
+
+**Highlights:**
+- Dynamic discovery of agents via MCP tools in AGY without hardcoded names or credentials.
+- Redesigned Integrations cards with compact, modern, and sleek layout.
+- Sanitized OpenAI client model placeholder to standard agent naming convention.
+
+<!-- lang:pt -->
+**Resumo:** Instrucoes genericas e dinamicas de orquestracao multi-agente para AGY, layout compacto redesenhado em Integracoes e marcadores higienizados.
+
+**Destaques:**
+- Descoberta dinamica de agentes via ferramentas MCP no AGY sem dados ou credenciais fixadas no codigo.
+- Redesenho dos cards de Integracoes com visual compacto, moderno e otimizado.
+- Ajuste no marcador de exemplo do modelo de clientes OpenAI para convencoes padronizadas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.166 (`464dfc8`)
+- generic multi-agent instructions in english, compact integrations UI and sanitized placeholders (`009ec1c`)
+- per-agent sleep consolidation processes and redesigned status card (`bce01e4`)
+
+
+---
+
+
+### Desenvolvimento Contínuo (Branch development)
+
+- **Consolidação Noturna Isolada por Agente**: Processos de consolidação agora rodam de forma independente e isolada para cada agente com base no seu próprio tempo de inatividade configurado em "AI Model".
+- **Execução Contínua 24/7**: Janela e modo fixos 24 horas por dia (`00:00`-`23:59`), eliminando campos redundantes da aba Settings.
+- **Redesenho do Card Model Sleep**: Grid dinâmico com ícone emoji, nome e badge de status em tempo real (`😴 Sleeping` / `😃 Waked`) para cada agente cadastrado no sistema.
+
+---
+
+
 ## Release - v2.5.165
 ### 📣 Apresentação da Atualização
 
