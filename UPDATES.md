@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.5.164
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix entity extraction query in nightly consolidation and sanitize AGY integration auto-installer.
+
+**Highlights:**
+- Fixed SQL query in GetMemoriesForEntityExtraction by replacing non-existent physical similarity column with computed alias.
+- Sanitized AGY integration auto-installer to be 100% generic for any user without hardcoded tokens or user IDs.
+- Removed client-side timeouts in dispatch runner to allow long-running upstream agent operations.
+
+<!-- lang:pt -->
+**Resumo:** Correcao da query de extracao de entidades na consolidacao noturna e higienizacao do auto-instalador da integracao AGY.
+
+**Destaques:**
+- Corrigida a consulta SQL em GetMemoriesForEntityExtraction substituindo a coluna fisica inexistente similarity por alias computado.
+- Higienizado o auto-instalador de integracao AGY para ser 100% generico para qualquer usuario sem tokens ou IDs hardcoded.
+- Removidos timeouts artificiais de cliente no runner dispatch para permitir operacoes assincronas de longa duracao.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.164 (`734e3c4`)
+- update development branch (`0de4b1a`)
+
+#### 🐛 Correções
+- remove invalid similarity column from entity extraction query (`53e3851`)
+- make AGY integration installer fully generic and remove hardcoded user data (`1e8a18c`)
+
+#### 📚 Documentação
+- add task plan for entity extraction query fix (`dfedd25`)
+
+
+---
+
+
 ## Release - v2.5.163
 ### 📣 Apresentação da Atualização
 
