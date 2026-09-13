@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.159
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added surgical backup and restore for Antigravity user configurations, install confirmation warnings, and enhanced token-saving multi-agent delegation directives.
+
+**Highlights:**
+- Surgical backups created automatically for `GEMINI.md` and `settings.json` before installing integrations.
+- Complete restoration of user configuration files upon uninstalling the AGY integration.
+- Confirmation popup before installation warning the user about configuration changes and backup creation.
+- Strict token-saving delegation mandate instructing the AGY LLM to prioritize MEMOROUTER autonomous agents.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado backup cirúrgico e restauração para configurações do usuário no Antigravity, avisos prévios de confirmação e diretrizes aprimoradas de economia de tokens com delegação multi-agente.
+
+**Destaques:**
+- Backups cirúrgicos criados automaticamente para `GEMINI.md` e `settings.json` antes de aplicar modificações.
+- Restauração completa dos arquivos de configuração do usuário ao desinstalar a integração do AGY.
+- Popup de confirmação prévia antes da instalação avisando sobre as alterações de configuração e criação de backup.
+- Mandato estrito de economia de tokens orientando o LLM do AGY a priorizar os agentes autônomos do MEMOROUTER.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.159 (`dd24936`)
+- update development branch (`138cc77`)
+- add surgical configuration backup/restore for AGY and confirmation popup before install (`8940e33`)
+
+
+---
+
+
 ## Release - v2.5.158
 ### 📣 Apresentação da Atualização
 
