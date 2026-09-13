@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.5.163
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforce official dispatch runner rules in AGY installer and ensure entity graph extraction runs continuously during consolidation.
+
+**Highlights:**
+- Enhanced Antigravity (AGY) integration generator with strict rules prohibiting ad-hoc terminal scripts and mandating the official `dispatch.js` task runner.
+- Fixed entity graph recognition in the consolidation service to execute for all active agents even when no new raw chat messages are pending merge.
+
+<!-- lang:pt -->
+**Resumo:** Aplicação de regras estritas do executor de despacho oficial no instalador do AGY e garantia da execução contínua de extração de entidades na consolidação.
+
+**Destaques:**
+- Aprimorado o gerador de integração do Antigravity (AGY) com regras estritas proibindo scripts ad-hoc no terminal e tornando obrigatório o uso do executor oficial `dispatch.js`.
+- Corrigido o reconhecimento do grafo de entidades no serviço de consolidação para ser executado para todos os agentes ativos mesmo quando não houver novas mensagens brutas pendentes de fusão.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.163 (`34d8f38`)
+- updates in fix/agy-instructions-and-entity-consolidation (`5e02b0e`)
+
+
+---
+
+
 ## Release - v2.5.162
 ### 📣 Apresentação da Atualização
 
