@@ -3,6 +3,48 @@
 ---
 
 
+## Release - v2.5.168
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This patch converts service statuses to English with full i18n support, introduces a real-time console connection badge in the sidebar, and streamlines the Antigravity integration.
+
+**Highlights:**
+- WhatsApp status indicators converted to English by default with multi-language i18n translations across all 8 supported languages.
+- Sidebar footer status now shows Connected (green) or Disconnected (red) based on real-time console connection.
+- Antigravity integration now prepends clean MEMOROUTER DEFINITIONS to the top of GEMINI.md and AGENTS.md with concurrency and reactive wakeup documentation.
+- Removed legacy Telegram components from the AGY installer.
+
+<!-- lang:pt -->
+**Resumo:** Este patch converte os status dos serviços para inglês com suporte i18n, introduz um badge em tempo real de conexão com o console na barra lateral e aprimora a integração com o Antigravity.
+
+**Destaques:**
+- Indicadores de status do WhatsApp padronizados em inglês e traduzidos para todos os 8 idiomas suportados.
+- Rodapé da barra lateral agora exibe Conectado (verde) ou Desconectado (vermelho) baseado na conexão em tempo real com o console.
+- Integração com o Antigravity agora insere MEMOROUTER DEFINITIONS no topo do GEMINI.md e AGENTS.md com documentação de concorrência e reativação.
+- Removidos componentes legados do Telegram do instalador do AGY.
+
+### 📋 Changelog da Versão
+
+**Total:** 9 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.168 (`785b218`)
+- update development branch (`c7befa8`)
+- document reactive wakeup, single concurrency and cancellation semantics in MEMOROUTER DEFINITIONS (`e9cb7ca`)
+- prepend MEMOROUTER DEFINITIONS to top of GEMINI.md and remove telegram components (`01fa06c`)
+- show Connected/Disconnected status based on console connection with i18n support (`b828af4`)
+- place status indicator emoji on left of agent name in Model Sleep card (`bc6053c`)
+- replace global sleep emoji with SLP acronym and Online status badge in Model Sleep card (`4e78f99`)
+- implement hierarchical chunked consolidation and resilient entity extraction (`7810d72`)
+
+#### 🐛 Correções
+- convert WhatsApp status mapping to English and add i18n translations (`27c8406`)
+
+
+---
+
+
 ## Release - v2.5.167
 ### 📣 Apresentação da Atualização
 

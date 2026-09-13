@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.167`
+## 📥 Download da Última Versão: `v2.5.168`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.167.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/MEMO-Desktop-Setup-v2.5.167.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.168.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/MEMO-Desktop-Setup-v2.5.168.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.167.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/MEMO-Desktop-Setup-v2.5.167.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.168.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/MEMO-Desktop-Setup-v2.5.168.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.167/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.168/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,24 +45,24 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.167:
+### 🌟 Notas do Release v2.5.168:
 <!-- lang:en -->
-**Summary:** Visual improvements in the Integrations tab, dynamic tab header icons, dynamic multi-agent consolidation logic with per-agent AI model/idle configuration, and generic Antigravity integration setup.
+**Summary:** This patch converts service statuses to English with full i18n support, introduces a real-time console connection badge in the sidebar, and streamlines the Antigravity integration.
 
 **Highlights:**
-- **Integrations Tab & UI Enhancements**: Added real brand vector SVG logos (Hermes Agent, OpenAI / Open WebUI, Antigravity), unified top gradient borders across all integration cards, and added dynamic SVG icon badges to the top header across all 10 application tabs.
-- **Dynamic Multi-Agent Consolidation**: Refactored Model Sleep consolidation to run isolated per-agent processes using each agent's individual AI model, fallback API, retry limits, and custom idle timeout.
-- **Always-On Sleep Routine**: Simplified sleep module settings by locking 24/7 active window and real-time emotional load tracking.
-- **Generic AGY Auto-Installer**: Ensured zero hardcoded agent names or credentials in global instructions, dynamically querying available agents via MCP.
+- WhatsApp status indicators converted to English by default with multi-language i18n translations across all 8 supported languages.
+- Sidebar footer status now shows Connected (green) or Disconnected (red) based on real-time console connection.
+- Antigravity integration now prepends clean MEMOROUTER DEFINITIONS to the top of GEMINI.md and AGENTS.md with concurrency and reactive wakeup documentation.
+- Removed legacy Telegram components from the AGY installer.
 
 <!-- lang:pt -->
-**Resumo:** Melhorias visuais na aba de Integrações, ícones dinâmicos no cabeçalho das abas, consolidação multi-agente dinâmica com modelos e idle timeouts individuais por agente, e instalador de integração do Antigravity 100% genérico.
+**Resumo:** Este patch converte os status dos serviços para inglês com suporte i18n, introduz um badge em tempo real de conexão com o console na barra lateral e aprimora a integração com o Antigravity.
 
 **Destaques:**
-- **Aba de Integrações e Visual da Interface**: Adicionados logotipos vetoriais oficiais em SVG (Hermes Agent, OpenAI / Open WebUI, Antigravity), bordas superiores com gradiente unificadas em todos os cards e ícone dinâmico em badge no cabeçalho para todas as 10 abas do sistema.
-- **Consolidação Multi-Agente Dinâmica**: Reestruturação do módulo Sono do Modelo para executar processos isolados por agente, respeitando o modelo de IA, API fallback, limites de tentativas e tempo de inatividade (idle timeout) de cada agente.
-- **Rotina de Sono Sempre Ativa**: Simplificação das configurações do sono com janela fixa de 24 horas e carga emocional em tempo real ativada por padrão.
-- **Auto-Instalador do AGY Totalmente Dinâmico**: Remoção de qualquer hardcode de agentes ou credenciais nas instruções globais, com descoberta dinâmica de agentes via MCP.
+- Indicadores de status do WhatsApp padronizados em inglês e traduzidos para todos os 8 idiomas suportados.
+- Rodapé da barra lateral agora exibe Conectado (verde) ou Desconectado (vermelho) baseado na conexão em tempo real com o console.
+- Integração com o Antigravity agora insere MEMOROUTER DEFINITIONS no topo do GEMINI.md e AGENTS.md com documentação de concorrência e reativação.
+- Removidos componentes legados do Telegram do instalador do AGY.
 
 ---
 
