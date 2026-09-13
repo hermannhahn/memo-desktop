@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.5.167
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Visual improvements in the Integrations tab, dynamic tab header icons, dynamic multi-agent consolidation logic with per-agent AI model/idle configuration, and generic Antigravity integration setup.
+
+**Highlights:**
+- **Integrations Tab & UI Enhancements**: Added real brand vector SVG logos (Hermes Agent, OpenAI / Open WebUI, Antigravity), unified top gradient borders across all integration cards, and added dynamic SVG icon badges to the top header across all 10 application tabs.
+- **Dynamic Multi-Agent Consolidation**: Refactored Model Sleep consolidation to run isolated per-agent processes using each agent's individual AI model, fallback API, retry limits, and custom idle timeout.
+- **Always-On Sleep Routine**: Simplified sleep module settings by locking 24/7 active window and real-time emotional load tracking.
+- **Generic AGY Auto-Installer**: Ensured zero hardcoded agent names or credentials in global instructions, dynamically querying available agents via MCP.
+
+<!-- lang:pt -->
+**Resumo:** Melhorias visuais na aba de Integrações, ícones dinâmicos no cabeçalho das abas, consolidação multi-agente dinâmica com modelos e idle timeouts individuais por agente, e instalador de integração do Antigravity 100% genérico.
+
+**Destaques:**
+- **Aba de Integrações e Visual da Interface**: Adicionados logotipos vetoriais oficiais em SVG (Hermes Agent, OpenAI / Open WebUI, Antigravity), bordas superiores com gradiente unificadas em todos os cards e ícone dinâmico em badge no cabeçalho para todas as 10 abas do sistema.
+- **Consolidação Multi-Agente Dinâmica**: Reestruturação do módulo Sono do Modelo para executar processos isolados por agente, respeitando o modelo de IA, API fallback, limites de tentativas e tempo de inatividade (idle timeout) de cada agente.
+- **Rotina de Sono Sempre Ativa**: Simplificação das configurações do sono com janela fixa de 24 horas e carga emocional em tempo real ativada por padrão.
+- **Auto-Instalador do AGY Totalmente Dinâmico**: Remoção de qualquer hardcode de agentes ou credenciais nas instruções globais, com descoberta dinâmica de agentes via MCP.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.167 (`1b4b463`)
+- update development branch (`d008472`)
+- add header icon to all tabs, add real brand logos, and unify card top border (`f3ba4cd`)
+
+#### 🐛 Correções
+- fix sleep status detection, remove settings sleep panel, and persist idle timeouts (`27ae35b`)
+
+
+---
+
+
 ## Release - v2.5.166
 ### 📣 Apresentação da Atualização
 
