@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.5.155
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed PostgreSQL schema migration for the Entity Knowledge Graph tables and corrected array bindings.
+
+**Highlights:**
+- Corrected fts_vector column definition in entities table to ensure automatic migrations succeed on startup
+- Fixed lib/pq array bindings for aliases, source_memory_ids, and tech stack columns across entity queries
+- Added on-demand schema verification to entity lookups and consolidation routines
+
+<!-- lang:pt -->
+**Resumo:** Correção na migração de schema PostgreSQL para as tabelas do Grafo de Entidades e ajuste no mapeamento de arrays.
+
+**Destaques:**
+- Definição da coluna fts_vector na tabela entities corrigida para garantir execução perfeita das migrações na inicialização
+- Mapeamento de arrays lib/pq corrigido para aliases, source_memory_ids e tech stack nas consultas de entidades
+- Verificação e garantia de schema sob demanda adicionada às buscas de entidades e rotinas de consolidação
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.155 (`1102b1c`)
+- update development branch (`261e3f8`)
+
+#### 🐛 Correções
+- correct entities DDL immutable fts_vector, array bindings and EnsureSchema (`8be6e39`)
+
+
+---
+
+
 ## Release - v2.5.154
 ### 📣 Apresentação da Atualização
 
