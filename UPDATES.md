@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.0-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** MEMO Desktop minor release v2.6.0-alpha with updated AGY integration rules architecture, automated alpha release channel support, and streamlined global guidelines.
+
+**Highlights:**
+- Cleaned global user rules architecture, delegating definitions strictly through AGENTS.md and dedicated plugins.
+- Added official -alpha version tagging support across executables, installers, and release channels.
+- Enhanced updater version parsing and verification engine.
+
+<!-- lang:pt -->
+**Resumo:** Lancamento minor do MEMO Desktop v2.6.0-alpha com arquitetura aprimorada de regras do integrador AGY, suporte ao canal de release alpha e diretrizes globais unificadas.
+
+**Destaques:**
+- Arquitetura limpa de regras globais do usuario, delegando definicoes estritamente via AGENTS.md e plugins dedicados.
+- Suporte oficial a identificacao -alpha nas versoes de executaveis, instaladores e canal de release.
+- Aprimoramento do motor de parsing e verificacao de versoes do auto-updater.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.0-alpha (`6ef4ea2`)
+- update development branch (`9ebabf8`)
+- add -alpha suffix to version bump and update parseVersion (`aed0ce1`)
+
+#### 🐛 Correções
+- preserve GEMINI.md and keep MEMOROUTER definitions strictly in AGENTS.md (`92fe176`)
+
+
+---
+
+
 ## Release - v2.5.169
 ### 📣 Apresentação da Atualização
 
