@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.5.156
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added the Integrations (App Hub) tab to MEMO Desktop with 1-click installer for Antigravity CLI (AGY).
+
+**Highlights:**
+- Added new "Integrations" section in the sidebar to connect external developer tools and CLIs.
+- Added 1-Click Installer for Antigravity CLI (AGY) that automatically configures the MCP server, task runner scripts, and orchestration instructions in GEMINI.md.
+- Added backend integration manager with status detection and REST endpoints (`/api/v1/integrations`).
+- Full i18n support across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Adicionada a aba de Integrações (App Hub) no MEMO Desktop com instalador em 1-clique para o Antigravity CLI (AGY).
+
+**Destaques:**
+- Adicionada nova seção "Integrações" no menu lateral para conexão de ferramentas externas e CLIs de desenvolvimento.
+- Adicionado instalador 1-Clique do Antigravity CLI (AGY) que configura automaticamente o servidor MCP, scripts de despacho e diretrizes de orquestração no GEMINI.md.
+- Adicionado gerenciador de integrações no backend Go com detecção de status e rotas REST (`/api/v1/integrations`).
+- Suporte completo a internacionalização (i18n) em todos os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.5.156 (`56f53b0`)
+- add Integrations App Hub and 1-Click AGY Installer (`4d60650`)
+
+
+---
+
+
 ## Release - v2.5.155
 ### 📣 Apresentação da Atualização
 

@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.5.155`
+## 📥 Download da Última Versão: `v2.5.156`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.155.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/MEMO-Desktop-Setup-v2.5.155.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.5.156.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/MEMO-Desktop-Setup-v2.5.156.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.155.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/MEMO-Desktop-Setup-v2.5.155.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.5.156.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/MEMO-Desktop-Setup-v2.5.156.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.155/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.5.156/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,24 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.5.155:
+### 🌟 Notas do Release v2.5.156:
 <!-- lang:en -->
-**Summary:** Fixed PostgreSQL schema migration for the Entity Knowledge Graph tables and corrected array bindings.
+**Summary:** Added the Integrations (App Hub) tab to MEMO Desktop with 1-click installer for Antigravity CLI (AGY).
 
 **Highlights:**
-- Corrected fts_vector column definition in entities table to ensure automatic migrations succeed on startup
-- Fixed lib/pq array bindings for aliases, source_memory_ids, and tech stack columns across entity queries
-- Added on-demand schema verification to entity lookups and consolidation routines
+- Added new "Integrations" section in the sidebar to connect external developer tools and CLIs.
+- Added 1-Click Installer for Antigravity CLI (AGY) that automatically configures the MCP server, task runner scripts, and orchestration instructions in GEMINI.md.
+- Added backend integration manager with status detection and REST endpoints (`/api/v1/integrations`).
+- Full i18n support across all 8 supported languages.
 
 <!-- lang:pt -->
-**Resumo:** Correção na migração de schema PostgreSQL para as tabelas do Grafo de Entidades e ajuste no mapeamento de arrays.
+**Resumo:** Adicionada a aba de Integrações (App Hub) no MEMO Desktop com instalador em 1-clique para o Antigravity CLI (AGY).
 
 **Destaques:**
-- Definição da coluna fts_vector na tabela entities corrigida para garantir execução perfeita das migrações na inicialização
-- Mapeamento de arrays lib/pq corrigido para aliases, source_memory_ids e tech stack nas consultas de entidades
-- Verificação e garantia de schema sob demanda adicionada às buscas de entidades e rotinas de consolidação
+- Adicionada nova seção "Integrações" no menu lateral para conexão de ferramentas externas e CLIs de desenvolvimento.
+- Adicionado instalador 1-Clique do Antigravity CLI (AGY) que configura automaticamente o servidor MCP, scripts de despacho e diretrizes de orquestração no GEMINI.md.
+- Adicionado gerenciador de integrações no backend Go com detecção de status e rotas REST (`/api/v1/integrations`).
+- Suporte completo a internacionalização (i18n) em todos os 8 idiomas suportados.
 
 ---
 
