@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.6-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.6-alpha/MEMO-Desktop-Setup-v2.6.6-alpha.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Fixed Kokoro TTS voice blending format compatibility with Kokoro FastAPI.\n\n**Highlights:**\n- Added automatic normalization for voice blending syntax to native Kokoro format `voice1(weight)+voice2(weight)`.\n- Added unit tests for voice blend string normalization.\n\n<!-- lang:pt -->\n**Resumo:** Correção da compatibilidade do formato de mistura de vozes do Kokoro TTS com o Kokoro FastAPI.\n\n**Destaques:**\n- Adicionada normalização automática da sintaxe de mistura de vozes para o formato nativo do Kokoro `voz1(peso)+voz2(peso)`.\n- Adicionados testes unitários para a normalização de strings de mistura de vozes."
+    "version": "2.6.7-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.7-alpha/MEMO-Desktop-Setup-v2.6.7-alpha.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Enabled Entity Knowledge Graph parameters in WebSocket RAG searches.\n\n**Highlights:**\n- Ensured Entity Knowledge Graph ranking parameters (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) are passed in `rag_search` and `list_long_term_memories` actions.\n\n<!-- lang:pt -->\n**Resumo:** Habilitação dos parâmetros do Entity Knowledge Graph nas buscas RAG via WebSocket.\n\n**Destaques:**\n- Garantido o repasse dos parâmetros de ranking de entidades (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) nas ações `rag_search` e `list_long_term_memories`."
 }

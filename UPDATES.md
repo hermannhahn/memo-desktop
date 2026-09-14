@@ -3,6 +3,34 @@
 ---
 
 
+## Release - v2.6.7-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enabled Entity Knowledge Graph parameters in WebSocket RAG searches.
+
+**Highlights:**
+- Ensured Entity Knowledge Graph ranking parameters (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) are passed in `rag_search` and `list_long_term_memories` actions.
+
+<!-- lang:pt -->
+**Resumo:** Habilitação dos parâmetros do Entity Knowledge Graph nas buscas RAG via WebSocket.
+
+**Destaques:**
+- Garantido o repasse dos parâmetros de ranking de entidades (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) nas ações `rag_search` e `list_long_term_memories`.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.7-alpha (`eb82686`)
+- update development branch (`4fcd9dc`)
+- ensure entity ranking parameters are passed to SearchChatMessagesVector (`6b42d2a`)
+
+
+---
+
+
 ## Release - v2.6.6-alpha
 ### 📣 Apresentação da Atualização
 
