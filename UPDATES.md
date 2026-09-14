@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.5-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed entity knowledge graph lookup and hybrid search in PostgreSQL.
+
+**Highlights:**
+- Fixed `SearchEntities` query which was excluding entities when embedding vector was null.
+- Corrected alias matching to search across all aliases array elements.
+- Fixed `agent_id` filtering and entity relation/environment retrieval for agent queries.
+- Ensured semantic embedding distance is used for scoring without dropping non-embedded entities.
+
+<!-- lang:pt -->
+**Resumo:** Correção na busca híbrida e consulta ao grafo de conhecimento de entidades no PostgreSQL.
+
+**Destaques:**
+- Correção na consulta `SearchEntities` que excluía entidades quando o vetor de embedding era nulo.
+- Correção na busca de aliases em elementos do array de apelidos.
+- Correção na filtragem de `agent_id` e na recuperação de relações e ambientes de entidades.
+- Ranqueamento por similaridade semântica sem descartar entidades sem embedding.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.5-alpha (`97f9167`)
+- update development branch (`5674804`)
+
+#### 🐛 Correções
+- correct hybrid search filters, null embedding handling and alias matching in SearchEntities (`d2bf325`)
+
+
+---
+
+
 ## Release - v2.6.4-alpha
 ### 📣 Apresentação da Atualização
 
