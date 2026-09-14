@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.4-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented fault-tolerant JSON unmarshaling for LLM entity, relation, and environment graph extraction.
+
+**Highlights:**
+- Added tolerant decoding for dynamic LLM formats in `known_attributes`, `known_tech_stack`, `aliases`, and `commitments`
+- Successfully tested and extracted 9 entities, 9 relations, and 5 environments for Vetor Stark
+- Ensured entity graph persistence never fails on minor schema variances from various LLM providers
+
+<!-- lang:pt -->
+**Resumo:** Implementação de decodificadores JSON tolerantes a variações de formato da LLM na extração de entidades, relações e ambientes.
+
+**Destaques:**
+- Decodificação resiliente para campos dinâmicos como `known_attributes`, `known_tech_stack`, `aliases` e `commitments`
+- Validação e extração ao vivo bem-sucedida de 9 entidades, 9 relações e 5 ambientes para o Vetor Stark
+- Garantia de que a persistência do grafo de conhecimento não seja descartada por divergências sutis de tipagem da LLM
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.4-alpha (`a7fe579`)
+- update development branch (`e2e1b51`)
+- updates in development (`be413b2`)
+
+#### 🐛 Correções
+- add resilient and tolerant JSON decoding for LLM entity extraction formats (`52ec5ab`)
+
+
+---
+
+
 ## Release - v2.6.3-alpha
 ### 📣 Apresentação da Atualização
 
