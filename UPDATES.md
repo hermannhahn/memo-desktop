@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.6-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Kokoro TTS voice blending format compatibility with Kokoro FastAPI.
+
+**Highlights:**
+- Added automatic normalization for voice blending syntax to native Kokoro format `voice1(weight)+voice2(weight)`.
+- Added unit tests for voice blend string normalization.
+
+<!-- lang:pt -->
+**Resumo:** Correção da compatibilidade do formato de mistura de vozes do Kokoro TTS com o Kokoro FastAPI.
+
+**Destaques:**
+- Adicionada normalização automática da sintaxe de mistura de vozes para o formato nativo do Kokoro `voz1(peso)+voz2(peso)`.
+- Adicionados testes unitários para a normalização de strings de mistura de vozes.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.6-alpha (`482d5f5`)
+- update development branch (`dfe2bba`)
+
+#### 🐛 Correções
+- normalize voice blending format in kokoro manager (`1747689`)
+
+
+---
+
+
 ## Release - v2.6.5-alpha
 ### 📣 Apresentação da Atualização
 
