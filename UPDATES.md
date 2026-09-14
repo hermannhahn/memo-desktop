@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.9-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Security hardening — enforce strict agent isolation across all Long-Term Memory queries.
+
+**Highlights:**
+- Removed all permissive SQL fallbacks (agent_id = '' OR agent_id = 'global') from postgres.go
+- Enforced strict agent_id = $N in: ListNotesWithoutEmbedding, ListChatSessions, ListChatMessages, SearchChatSessions, SearchChatSessionsByField, SearchRawMessages, SearchChatMessagesVector (vector + textual), ListMessagesForRebuild, DeleteChatSession, GetDynamicNotesPaged, GetDynamicNotesList, memory_consolidation_runs stats
+- Removed legacy 'global' agent_id boost from ORDER BY clauses in note and message search functions
+- Zero cross-agent data leakage: each agent exclusively accesses its own memories
+
+<!-- lang:pt -->
+**Resumo:** Hardening de segurança — isolamento estrito por agente em todas as queries de Memória de Longo Prazo.
+
+**Destaques:**
+- Removidos todos os fallbacks SQL permissivos (agent_id = '' OR agent_id = 'global') do postgres.go
+- Isolamento estrito agent_id = $N aplicado em: ListNotesWithoutEmbedding, ListChatSessions, ListChatMessages, SearchChatSessions, SearchChatSessionsByField, SearchRawMessages, SearchChatMessagesVector (vetorial + textual), ListMessagesForRebuild, DeleteChatSession, GetDynamicNotesPaged, GetDynamicNotesList e stats de memory_consolidation_runs
+- Removido boost de agent_id 'global' nas clausulas ORDER BY de busca de notas e mensagens
+- Zero vazamento de dados entre agentes: cada agente acessa exclusivamente suas proprias memorias
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.9-alpha (`4fa4b45`)
+- updates in fix/strict-agent-isolation (`6baff64`)
+
+#### 🐛 Correções
+- enforce strict agent isolation across all LTM queries in postgres.go (`e42079a`)
+
+
+---
+
+
 ## Release - v2.6.8-alpha
 ### 📣 Apresentação da Atualização
 
