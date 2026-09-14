@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.10-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Security hardening — reject API requests with missing agent_id instead of silently falling back to 'global'.
+
+**Highlights:**
+- handleCreateNote, handleSearchNotes, handleSaveChatMessage, handleRAGSearch, handleSearchSessions, handleSearchSessionsByField: all now return HTTP 400 when agent_id is empty
+- Zero cross-agent data access: no request without a valid agent_id can query or write to any memory store
+- Eliminates the last fallback path from API layer to legacy 'global' agent scope
+
+<!-- lang:pt -->
+**Resumo:** Hardening de segurança — rejeitar requisicoes da API sem agent_id em vez de usar fallback silencioso para 'global'.
+
+**Destaques:**
+- handleCreateNote, handleSearchNotes, handleSaveChatMessage, handleRAGSearch, handleSearchSessions, handleSearchSessionsByField: todos retornam HTTP 400 quando agent_id esta vazio
+- Zero acesso cross-agent: nenhuma requisicao sem agent_id valido pode consultar ou escrever em qualquer store de memoria
+- Elimina o ultimo caminho de fallback da camada de API para o escopo legado do agente 'global'
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.10-alpha (`3e68db0`)
+- updates in fix/reject-empty-agent-id (`ae722d0`)
+
+#### 🐛 Correções
+- reject requests with empty agent_id instead of falling back to 'global' in API handlers (`df99fd2`)
+
+
+---
+
+
 ## Release - v2.6.9-alpha
 ### 📣 Apresentação da Atualização
 
