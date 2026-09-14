@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.7-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.7-alpha/MEMO-Desktop-Setup-v2.6.7-alpha.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Enabled Entity Knowledge Graph parameters in WebSocket RAG searches.\n\n**Highlights:**\n- Ensured Entity Knowledge Graph ranking parameters (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) are passed in `rag_search` and `list_long_term_memories` actions.\n\n<!-- lang:pt -->\n**Resumo:** Habilitação dos parâmetros do Entity Knowledge Graph nas buscas RAG via WebSocket.\n\n**Destaques:**\n- Garantido o repasse dos parâmetros de ranking de entidades (`IncludeEntities`, `EntitySearchLimit`, `EntityBoost`) nas ações `rag_search` e `list_long_term_memories`."
+    "version": "2.6.8-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.8-alpha/MEMO-Desktop-Setup-v2.6.8-alpha.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Improved entity search matching in RAG, fixed post-filter entity preservation and ranking parameters.\n\n**Highlights:**\n- Hybrid entity matching with token keywords and OR full-text search.\n- Corrected Similarity score assignment for entity knowledge in RAG.\n- Preserved entities and added sender_name checking in RAG post-filtering.\n\n<!-- lang:pt -->\n**Resumo:** Melhoria no matching de busca de entidades no RAG, correcao na preservacao de entidades no pos-filtro e parametros de ranking.\n\n**Destaques:**\n- Busca hibrida de entidades com keywords por token e busca textual completa com operador OR.\n- Atribuicao correta do score de similaridade para entidades no RAG.\n- Preservacao de entidades e verificacao de sender_name no pos-filtro RAG."
 }

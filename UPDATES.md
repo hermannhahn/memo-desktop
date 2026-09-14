@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.8-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Improved entity search matching in RAG, fixed post-filter entity preservation and ranking parameters.
+
+**Highlights:**
+- Hybrid entity matching with token keywords and OR full-text search.
+- Corrected Similarity score assignment for entity knowledge in RAG.
+- Preserved entities and added sender_name checking in RAG post-filtering.
+
+<!-- lang:pt -->
+**Resumo:** Melhoria no matching de busca de entidades no RAG, correcao na preservacao de entidades no pos-filtro e parametros de ranking.
+
+**Destaques:**
+- Busca hibrida de entidades com keywords por token e busca textual completa com operador OR.
+- Atribuicao correta do score de similaridade para entidades no RAG.
+- Preservacao de entidades e verificacao de sender_name no pos-filtro RAG.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.8-alpha (`25431ec`)
+- update development branch (`2c82434`)
+
+#### 🐛 Correções
+- improve entity search matching and preserve entities in post-filtering (`88ceec3`)
+
+
+---
+
+
 ## Release - v2.6.7-alpha
 ### 📣 Apresentação da Atualização
 
