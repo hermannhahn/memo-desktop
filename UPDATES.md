@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.14-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added an adaptive 2-tier hardware performance profiling system with automatic CPU/RAM detection, and Settings controls for optimized local AI and high-speed voice synthesis.
+
+**Highlights:**
+- Added adaptive hardware performance profiling (Auto, Economy/Low, High Performance) in Settings.
+- Auto mode automatically detects logical CPU cores and physical RAM to balance system responsiveness and generation speed.
+- Unlocked unthrottled multi-core CPU access for Kokoro TTS and Ollama in High Performance mode, generating long speech in seconds without timeouts.
+- Real-time hardware specifications badge displaying detected CPU cores and RAM in the Settings panel.
+- Bilingual support across all 8 supported languages for performance settings and badges.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado sistema adaptativo de 2 niveis de performance com deteccao automatica de hardware (CPU/RAM) e controles em Settings para sintese de voz ultrarrapida e IA local otimizada.
+
+**Destaques:**
+- Adicionado seletor de perfil de performance (Automatico, Economico/Baixo, Alto Desempenho) na aba Settings.
+- Modo Automatico detecta nucleos de processador e memoria RAM fisica para balancear fluidez do sistema e velocidade de geracao.
+- Liberado acesso multi-core irrestrito para Kokoro TTS e Ollama no modo Alto Desempenho, sintetizando audios longos em segundos sem risco de timeout.
+- Badge em tempo real exibindo nucleos de CPU e memoria RAM detectados no painel de configuracoes.
+- Suporte completo e revisado em todos os 8 idiomas para as novas opcoes de performance.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.14-alpha (`58d2639`)
+- updates in feature/adaptive-hardware-profiles (`a9f3169`)
+- add adaptive 2-tier hardware profiling and UI controls (`0155e64`)
+
+
+---
+
+
 ## Release - v2.6.13-alpha
 ### 📣 Apresentação da Atualização
 
