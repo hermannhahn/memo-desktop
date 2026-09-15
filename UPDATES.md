@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.11-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This update fixes a performance issue that was causing severe PC slowdown and antivirus alerts while MEMO Desktop was open.
+
+**Highlights:**
+- Removed the Docker Desktop auto-minimizer that was silently running PowerShell every 3 seconds in the background
+- Eliminated up to 60 hidden PowerShell processes being spawned in the first 3 minutes of use
+- Antivirus tools will no longer flag MEMO Desktop during startup
+- General performance improvement for all users, especially those with active antivirus software
+
+<!-- lang:pt -->
+**Resumo:** Esta atualização corrige um problema de desempenho que causava lentidao severa no PC e alertas de antivirus enquanto o MEMO Desktop estava aberto.
+
+**Destaques:**
+- Removido o auto-minimizador do Docker Desktop que executava PowerShell a cada 3 segundos em segundo plano
+- Eliminados ate 60 processos ocultos do PowerShell gerados nos primeiros 3 minutos de uso
+- Antivirus nao ira mais alertar sobre o MEMO Desktop durante a inicializacao
+- Melhora geral de desempenho para todos os usuarios, especialmente quem usa antivirus ativo
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.11-alpha (`c5de4b9`)
+- update development branch (`b77775e`)
+- translate messages to english and return diff and write content (`6eb41a1`)
+
+#### 🐛 Correções
+- remove MinimizeDockerDesktopToTray to fix high CPU and antivirus triggers (`6bcf178`)
+- atualiza referencias do repositorio privado para hermannhahn/memo na CLI e User-Agent (`abfd539`)
+
+#### 📚 Documentação
+- atualiza documentacoes e instrucoes markdown para os novos nomes MEMOROUTER e MEMO (`bf126f8`)
+
+
+---
+
+
 ## Release - v2.6.10-alpha
 ### 📣 Apresentação da Atualização
 
@@ -1694,7 +1735,7 @@
 **Summary:** Dual-key E2EE protocol resilience and enhanced decryption diagnostics.
 
 **Highlights:**
-- Add automatic dual-key derivation (supporting both memo-desktop and ai-bridge protocol keys)
+- Add automatic dual-key derivation (supporting both memo-desktop and memo protocol keys)
 - Implement bidirectional fallback in AES-GCM decryption for seamless server handshake compatibility
 - Add detailed logging for E2EE payload decryption errors to improve connection diagnostics
 
@@ -1702,7 +1743,7 @@
 **Resumo:** Resiliência de chave dupla no protocolo E2EE e melhorias no diagnóstico de decifragem.
 
 **Destaques:**
-- Adicionada derivação de chave dupla automática (suporte transparente a chaves de protocolo memo-desktop e ai-bridge)
+- Adicionada derivação de chave dupla automática (suporte transparente a chaves de protocolo memo-desktop e memo)
 - Implementado fallback bidirecional na decifragem AES-GCM para compatibilidade perfeita com handshakes do servidor
 - Adicionado log detalhado para falhas de decifragem em envelopes E2EE para diagnóstico avançado de conexões
 
@@ -2154,7 +2195,7 @@ fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Wind
 **Summary:** This release permanently removes legacy fallback distribution repositories and standardizes all system nomenclature to MEMOROUTER and MEMO-DESKTOP across the entire application, CLI, installer, and documentation.
 
 **Highlights:**
-- Removed legacy ai-brain-desktop fallback repository, centralizing all updates and releases exclusively in memo-desktop
+- Removed legacy memo-desktop fallback repository, centralizing all updates and releases exclusively in memo-desktop
 - Standardized ecosystem nomenclature: central server is now officially MEMOROUTER and desktop application is MEMO-DESKTOP
 - Updated background update checker and installer launcher scripts to download assets directly from the primary distribution channel
 - Cleaned up documentation, certificates, and status monitors to match current project branding
@@ -2163,7 +2204,7 @@ fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Wind
 **Resumo:** Esta versao remove permanentemente os repositorios legados de distribuicao e padroniza toda a nomenclatura do sistema para MEMOROUTER e MEMO-DESKTOP em toda a aplicacao, CLI, instalador e documentacao.
 
 **Destaques:**
-- Removido o repositorio legado de fallback ai-brain-desktop, centralizando todas as releases exclusivamente em memo-desktop
+- Removido o repositorio legado de fallback memo-desktop, centralizando todas as releases exclusivamente em memo-desktop
 - Nomenclatura oficial padronizada: servidor central agora e MEMOROUTER e aplicacao desktop e MEMO-DESKTOP
 - Scripts do verificador de atualizacoes e instalador atualizados para baixar diretamente do canal de distribuicao primario
 - Documentacao, certificados e monitores de status atualizados de acordo com as diretrizes da marca atual
@@ -2176,7 +2217,7 @@ fix: bind somente /root nos containers dos agentes - monta pasta 'root/' do Wind
 - updates for release v2.5.113 (`1ad0877`)
 
 #### 🔧 Manutenção / Refatoração
-- remover fallback ai-brain-desktop e atualizar nomenclatura para MEMOROUTER e MEMO-DESKTOP (`5f345c9`)
+- remover fallback memo-desktop e atualizar nomenclatura para MEMOROUTER e MEMO-DESKTOP (`5f345c9`)
 
 #### 🐛 Correções
 - expandir busca de caminhos do .env no loadEnv (`491f380`)
@@ -2711,7 +2752,7 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 - updates in development (`2e200ce`)
 
 #### 🐛 Correções
-- package ai-bridge.exe legacy fallback to ensure old shortcuts run latest build (`a514a8d`)
+- package memo.exe legacy fallback to ensure old shortcuts run latest build (`a514a8d`)
 - suppress console flashes, animate progress bar, and fix splash screen freeze (`3fa2617`)
 
 
@@ -2830,17 +2871,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -2864,17 +2905,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -2895,17 +2936,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -2926,17 +2967,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -2958,17 +2999,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -2989,17 +3030,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3020,17 +3061,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3051,17 +3092,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3082,17 +3123,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3113,17 +3154,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3144,17 +3185,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3175,17 +3216,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3206,17 +3247,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3237,17 +3278,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3271,17 +3312,17 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Fixed WebSocket connection by automatically migrating legacy server URLs to api.memorouter.com.
 
 **Highlights:**
-- Added automatic migration of legacy domains (ai-brain.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
+- Added automatic migration of legacy domains (memorouter.ddns.net / hahnd.duckdns.org) to https://api.memorouter.com
 - Fixed HTTP 301 bad handshake error during WebSocket tunnel initialization
-- Synchronized multi-repository publishing to memo-desktop and ai-brain-desktop
+- Synchronized multi-repository publishing to memo-desktop and memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Correcao na conexao WebSocket com migracao automatica de dominios legados para api.memorouter.com.
 
 **Destaques:**
-- Adicionada migracao automatica de dominios antigos (ai-brain.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
+- Adicionada migracao automatica de dominios antigos (memorouter.ddns.net / hahnd.duckdns.org) para https://api.memorouter.com
 - Corrigido o erro HTTP 301 bad handshake durante a inicializacao do tunel WebSocket
-- Sincronizada a publicacao em ambos os repositorios memo-desktop e ai-brain-desktop
+- Sincronizada a publicacao em ambos os repositorios memo-desktop e memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3299,19 +3340,19 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Configured dual-repository release publishing to memo-desktop and legacy fallback ai-brain-desktop.
+**Summary:** Configured dual-repository release publishing to memo-desktop and legacy fallback memo-desktop.
 
 **Highlights:**
 - Official downloads repository set to hermannhahn/memo-desktop
-- Legacy fallback downloads repository set to hermannhahn/ai-brain-desktop for backwards compatibility
+- Legacy fallback downloads repository set to hermannhahn/memo-desktop for backwards compatibility
 - Full release assets published to both repositories simultaneously
 
 <!-- lang:pt -->
-**Resumo:** Configuracao de publicacao simultanea em memo-desktop e no fallback legado ai-brain-desktop.
+**Resumo:** Configuracao de publicacao simultanea em memo-desktop e no fallback legado memo-desktop.
 
 **Destaques:**
 - Repositorio oficial de downloads configurado para hermannhahn/memo-desktop
-- Repositorio legado de fallback configurado para hermannhahn/ai-brain-desktop para retrocompatibilidade
+- Repositorio legado de fallback configurado para hermannhahn/memo-desktop para retrocompatibilidade
 - Todos os instaladores e binarios publicados em ambos os repositorios simultaneamente
 
 ### 📋 Changelog da Versão
@@ -3333,7 +3374,7 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Summary:** Updated release and download repository URLs to memo-desktop.
 
 **Highlights:**
-- Updated download repository URLs from ai-brain-desktop to memo-desktop
+- Updated download repository URLs from memo-desktop to memo-desktop
 - Updated auto-update checker and installation scripts to use the new repository
 - Published full release assets to hermannhahn/memo-desktop
 
@@ -3341,7 +3382,7 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 **Resumo:** Atualizacao dos links e repositorio de download para memo-desktop.
 
 **Destaques:**
-- Atualizados os links do repositorio de download de ai-brain-desktop para memo-desktop
+- Atualizados os links do repositorio de download de memo-desktop para memo-desktop
 - Atualizados o verificador de atualizacoes e os scripts de instalacao para o novo repositorio
 - Publicados todos os artefatos de instalacao no hermannhahn/memo-desktop
 
@@ -3400,7 +3441,7 @@ feat: ranking RAG fixado no codigo via JSON embutido (emotional 0.15, consolidat
 ## Release - v2.5.73
 ### 📣 Apresentação da Atualização
 
-v2.5.73 - Correção no cadastro de Skills (erro 42P08) <!-- lang:en --> **Summary:** Fixes a database type-inference error that prevented saving skills through the Skills tool. **Highlights:** - SkillSave now works: removed a redundant subquery that reused the $1 SQL parameter in two places, causing PostgreSQL to reject the INSERT with "inconsistent types deduced for parameter $1 (42P08)" - Skills registration (used to catalog project skills, e.g. ai-brain / ai-bridge and their AGENTS.md) is unblocked <!-- lang:pt --> **Resumo:** Corrige um erro de inferência de tipo no banco que impedia salvar skills pela ferramenta de Skills. **Destaques:** - SkillSave voltou a funcionar: removida uma subquery redundante que reutilizava o parâmetro SQL $1 em dois lugares, fazendo o Postgres rejeitar o INSERT com "inconsistent types deduced for parameter $1 (42P08)" - Cadastro de skills (usado para catalogar skills de projetos, ex: ai-brain / ai-bridge e seus AGENTS.md) desbloqueado
+v2.5.73 - Correção no cadastro de Skills (erro 42P08) <!-- lang:en --> **Summary:** Fixes a database type-inference error that prevented saving skills through the Skills tool. **Highlights:** - SkillSave now works: removed a redundant subquery that reused the $1 SQL parameter in two places, causing PostgreSQL to reject the INSERT with "inconsistent types deduced for parameter $1 (42P08)" - Skills registration (used to catalog project skills, e.g. memorouter / memo and their AGENTS.md) is unblocked <!-- lang:pt --> **Resumo:** Corrige um erro de inferência de tipo no banco que impedia salvar skills pela ferramenta de Skills. **Destaques:** - SkillSave voltou a funcionar: removida uma subquery redundante que reutilizava o parâmetro SQL $1 em dois lugares, fazendo o Postgres rejeitar o INSERT com "inconsistent types deduced for parameter $1 (42P08)" - Cadastro de skills (usado para catalogar skills de projetos, ex: memorouter / memo e seus AGENTS.md) desbloqueado
 
 ### 📋 Changelog da Versão
 
@@ -3748,14 +3789,14 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Fixed the 'Verify Security' button in Settings so the E2EE verification window opens correctly and you can compare the Safety Number with the AI-Brain panel.
+**Summary:** Fixed the 'Verify Security' button in Settings so the E2EE verification window opens correctly and you can compare the Safety Number with the MEMOROUTER panel.
 
 **Highlights:**
 - The E2EE Security button now opens the verification modal with the Safety Number, encryption status and counters.
 - Small internal layout fix so the security window is shown above other dialogs.
 
 <!-- lang:pt -->
-**Resumo:** Corrigido o botão 'Verify Security' nas Configurações para que a janela de verificação E2EE abra corretamente e você possa comparar o Safety Number com o painel AI-Brain.
+**Resumo:** Corrigido o botão 'Verify Security' nas Configurações para que a janela de verificação E2EE abra corretamente e você possa comparar o Safety Number com o painel MEMOROUTER.
 
 **Destaques:**
 - O botão de segurança E2EE agora abre o modal de verificação com o Safety Number, status da criptografia e contadores.
@@ -3932,7 +3973,7 @@ Destaques:
 
 #### 📚 Documentação
 - added closed-source freeware and commercial EULA license (`53611db`)
-- updated README.md with AI-Brain Desktop branding, features and instructions (`61a25bb`)
+- updated README.md with MEMOROUTER Desktop branding, features and instructions (`61a25bb`)
 
 
 ---
@@ -3946,7 +3987,7 @@ Destaques:
 
 **Highlights:**
 - New Agents tab integrated below Dashboard opening the web console
-- Removed header AI-BRAIN button for a cleaner layout
+- Removed header MEMOROUTER button for a cleaner layout
 - Full i18n support in 8 languages for the new tab
 
 <!-- lang:pt -->
@@ -3954,7 +3995,7 @@ Destaques:
 
 **Destaques:**
 - Nova aba Agentes integrada abaixo de Dashboard abrindo o console web
-- Remo??o do bot?o AI-BRAIN do topo para um visual mais limpo
+- Remo??o do bot?o MEMOROUTER do topo para um visual mais limpo
 - Suporte i18n completo nos 8 idiomas para a nova aba
 
 ### 📋 Changelog da Versão
@@ -3963,7 +4004,7 @@ Destaques:
 
 #### ✨ Novidades
 - updates for release v2.5.55 (`3ed41c5`)
-- removed AI-BRAIN header button and added Agents console tab below Dashboard (`a7c7351`)
+- removed MEMOROUTER header button and added Agents console tab below Dashboard (`a7c7351`)
 
 
 ---
@@ -3978,7 +4019,7 @@ Destaques:
 **Highlights:**
 - Updated logo branding to Desktop App vX.X.X
 - Standardized UI and translation keys
-- Configured distribution to hermannhahn/ai-brain-desktop
+- Configured distribution to hermannhahn/memo-desktop
 
 <!-- lang:pt -->
 **Resumo:** Texto abaixo da logo atualizado para Desktop App vX.X.X, padroniza??o visual e novo reposit?rio de distribui??o configurado.
@@ -3986,7 +4027,7 @@ Destaques:
 **Destaques:**
 - Texto abaixo da logo atualizado para Desktop App vX.X.X
 - Padroniza??o da interface e chaves de tradu??o
-- Configura??o do reposit?rio de distribui??o hermannhahn/ai-brain-desktop
+- Configura??o do reposit?rio de distribui??o hermannhahn/memo-desktop
 
 ### 📋 Changelog da Versão
 
@@ -3994,8 +4035,8 @@ Destaques:
 
 #### ✨ Novidades
 - updates for release v2.5.54 (`c73ff7a`)
-- standardized user-facing nomenclature to AI-BRAIN Desktop App across UI, i18n, installer and skills (`a60ae9d`)
-- updated download and releases repository references from ai-bridge-download to ai-brain-desktop (`cfcc945`)
+- standardized user-facing nomenclature to MEMO Desktop App across UI, i18n, installer and skills (`a60ae9d`)
+- updated download and releases repository references from memo-download to memo-desktop (`cfcc945`)
 
 
 ---
@@ -4026,7 +4067,7 @@ Destaques:
 
 #### ✨ Novidades
 - updates for release v2.5.53 (`37c5713`)
-- enhanced E2EE visual proof with sub-card, Safety Number and real-time counters on AI-BRAIN card + i18n for 8 languages (`7b7d80c`)
+- enhanced E2EE visual proof with sub-card, Safety Number and real-time counters on MEMOROUTER card + i18n for 8 languages (`7b7d80c`)
 
 #### 🐛 Correções
 - robust E2EE property mappings and fallback payload parsing for Safety Number display in desktop app (`f5773cb`)
@@ -4039,7 +4080,7 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** End-to-end encryption (E2EE) with X25519 and AES-256-GCM for the WebSocket bridge between AI-Bridge and AI-Brain.
+**Summary:** End-to-end encryption (E2EE) with X25519 and AES-256-GCM for the WebSocket bridge between MEMO Desktop and MEMOROUTER.
 
 **Highlights:**
 - Full Zero-Knowledge WebSocket encryption
@@ -4047,7 +4088,7 @@ Destaques:
 - i18n support in 8 languages
 
 <!-- lang:pt -->
-**Resumo:** Criptografia de ponta a ponta (E2EE) com X25519 e AES-256-GCM para o canal WebSocket entre AI-Bridge e AI-Brain.
+**Resumo:** Criptografia de ponta a ponta (E2EE) com X25519 e AES-256-GCM para o canal WebSocket entre MEMO Desktop e MEMOROUTER.
 
 **Destaques:**
 - Blindagem Zero-Knowledge no canal WebSocket
@@ -4075,19 +4116,19 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Updated all UI labels and service cards to AI-BRAIN and ensured Windows installer updates both ai-brain.exe and existing ai-bridge.exe shortcuts.
+**Summary:** Updated all UI labels and service cards to MEMOROUTER and ensured Windows installer updates both memorouter.exe and existing memo.exe shortcuts.
 
 **Highlights:**
-- Renamed central service card and connection modals to AI-BRAIN in all 8 languages
-- Fixed Windows installer to update both ai-brain.exe and existing ai-bridge.exe binaries in Program Files
+- Renamed central service card and connection modals to MEMOROUTER in all 8 languages
+- Fixed Windows installer to update both memorouter.exe and existing memo.exe binaries in Program Files
 - Automatically cleaned up legacy desktop shortcuts
 
 <!-- lang:pt -->
-**Resumo:** Atualizados todos os r?tulos de interface e cards de servi?o para AI-BRAIN e garantida a atualiza??o pelo instalador tanto do ai-brain.exe quanto de atalhos existentes do ai-bridge.exe.
+**Resumo:** Atualizados todos os r?tulos de interface e cards de servi?o para MEMOROUTER e garantida a atualiza??o pelo instalador tanto do memorouter.exe quanto de atalhos existentes do memo.exe.
 
 **Destaques:**
-- Card central de servi?os e modais de conex?o renomeados para AI-BRAIN em todos os 8 idiomas
-- Instalador do Windows ajustado para atualizar tanto ai-brain.exe quanto ai-bridge.exe na pasta de instala??o
+- Card central de servi?os e modais de conex?o renomeados para MEMOROUTER em todos os 8 idiomas
+- Instalador do Windows ajustado para atualizar tanto memorouter.exe quanto memo.exe na pasta de instala??o
 - Limpeza autom?tica de atalhos antigos na ?rea de trabalho
 
 ### 📋 Changelog da Versão
@@ -4106,22 +4147,22 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Full rebranding to AI-Brain Desktop with unified visual identity and complete support for NVIDIA API (build.nvidia.com), TokenRa and multi-provider LLMs in the Model Sleep module.
+**Summary:** Full rebranding to MEMOROUTER Desktop with unified visual identity and complete support for NVIDIA API (build.nvidia.com), TokenRa and multi-provider LLMs in the Model Sleep module.
 
 **Highlights:**
-- Official rebranding to AI-Brain Desktop with updated branding, versioning and canonical installers
+- Official rebranding to MEMOROUTER Desktop with updated branding, versioning and canonical installers
 - NVIDIA API integration with 19 high-performance and free models for model sleep and emotional indexing
 - Multi-provider support including TokenRa, OpenAI, Gemini, Claude, Grok and DeepSeek
-- Canonical AI-Brain-Setup.exe binary for persistent Windows Defender and SmartScreen reputation
+- Canonical MEMOROUTER-Setup.exe binary for persistent Windows Defender and SmartScreen reputation
 
 <!-- lang:pt -->
-**Resumo:** Rebranding completo para AI-Brain Desktop com identidade visual unificada e suporte total ? API da NVIDIA (build.nvidia.com), TokenRa e m?ltiplos provedores LLM no m?dulo do Sono do Modelo.
+**Resumo:** Rebranding completo para MEMOROUTER Desktop com identidade visual unificada e suporte total ? API da NVIDIA (build.nvidia.com), TokenRa e m?ltiplos provedores LLM no m?dulo do Sono do Modelo.
 
 **Destaques:**
-- Rebranding oficial para AI-Brain Desktop com logo atualizada, nova tag de vers?o e instaladores can?nicos
+- Rebranding oficial para MEMOROUTER Desktop com logo atualizada, nova tag de vers?o e instaladores can?nicos
 - Integra??o com a API da NVIDIA com 19 modelos gratuitos e de alto desempenho para o sono e indexa??o emocional
 - Suporte a m?ltiplos provedores incluindo TokenRa, OpenAI, Gemini, Claude, Grok e DeepSeek
-- Bin?rio can?nico AI-Brain-Setup.exe para ac?mulo cont?nuo de reputa??o no Windows Defender e SmartScreen
+- Bin?rio can?nico MEMOROUTER-Setup.exe para ac?mulo cont?nuo de reputa??o no Windows Defender e SmartScreen
 
 ### 📋 Changelog da Versão
 
@@ -4129,7 +4170,7 @@ Destaques:
 
 #### ✨ Novidades
 - updates for release v2.5.50 (`8ff9770`)
-- updates in feature/nvidia-and-rebrand-ai-brain-desktop (`44755d4`)
+- updates in feature/nvidia-and-rebrand-memo-desktop (`44755d4`)
 
 
 ---
@@ -4510,14 +4551,14 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Reactive loading of AI-Brain agents in Model Sleep processing dropdown with fallback API indicators.
+**Summary:** Reactive loading of MEMOROUTER agents in Model Sleep processing dropdown with fallback API indicators.
 
 **Highlights:**
 - Enabled reactive on-demand fetching of owner agents in Settings whenever navigating to the tab, expanding the Model Sleep accordion, or focusing the model selector.
 - Added visual indicators for active fallback LLM providers in agent labels and reinforced query authentication when retrieving agent profiles from the server.
 
 <!-- lang:pt -->
-**Resumo:** Carregamento reativo dos agentes do AI-Brain no seletor do Sono do Modelo com indicador de APIs de fallback.
+**Resumo:** Carregamento reativo dos agentes do MEMOROUTER no seletor do Sono do Modelo com indicador de APIs de fallback.
 
 **Destaques:**
 - Habilitado o carregamento reativo sob demanda dos agentes do usu??rio nas Configura????es ao abrir a aba, expandir o accordion do Sono do Modelo ou focar no seletor de modelos.
@@ -4573,14 +4614,14 @@ Destaques:
 **Summary:** Complete uninstaller cleanup for all persistent services data and redirection of updater temporary folders to Windows Temp directory.
 
 **Highlights:**
-- Enhanced uninstaller to recursively wipe all files in AppData AI Bridge (including ai-bridge-services, .env, docker-compose.yml, and init.sql) when full data removal is confirmed.
+- Enhanced uninstaller to recursively wipe all files in AppData AI Bridge (including memo-services, .env, docker-compose.yml, and init.sql) when full data removal is confirmed.
 - Redirected updater WebView2 user data to Windows Temp directory, eliminating residual update.exe folders in AppData Roaming and adding automated cleanup for legacy updater artifacts.
 
 <!-- lang:pt -->
 **Resumo:** Limpeza completa de todos os dados residuais na desinstala????o e redirecionamento de pastas tempor??rias do atualizador para a pasta Temp do Windows.
 
 **Destaques:**
-- Aprimorado o desinstalador para remover recursivamente todos os arquivos em AppData AI Bridge (incluindo ai-bridge-services, .env, docker-compose.yml e init.sql) quando confirmada a remo????o total de dados.
+- Aprimorado o desinstalador para remover recursivamente todos os arquivos em AppData AI Bridge (incluindo memo-services, .env, docker-compose.yml e init.sql) quando confirmada a remo????o total de dados.
 - Redirecionados os dados de navega????o do atualizador para o diret??rio Temp do Windows, eliminando a cria????o de pastas residuais update.exe no AppData Roaming e incluindo limpeza autom??tica de res??duos antigos.
 
 ### 📋 Changelog da Versão
@@ -4761,20 +4802,20 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** This release synchronizes the automatic installation with the main window startup and adds an authentication setup modal for your AI-Bridge token.
+**Summary:** This release synchronizes the automatic installation with the main window startup and adds an authentication setup modal for your MEMO Desktop token.
 
 **Highlights:**
 - Smart provisioning startup that waits for the main application window to be fully visible before starting Docker or container downloads
-- First-launch setup modal with step-by-step guidance to connect your AI-Brain account
+- First-launch setup modal with step-by-step guidance to connect your MEMOROUTER account
 - Elevated administrator execution for Docker Desktop installer on Windows
 - Live real-time progress display across the global banner and services tab
 
 <!-- lang:pt -->
-**Resumo:** Esta versao sincroniza o inicio da auto-instalacao com a abertura da janela principal e adiciona o modal de configuracao e autenticacao do seu token AI-Bridge.
+**Resumo:** Esta versao sincroniza o inicio da auto-instalacao com a abertura da janela principal e adiciona o modal de configuracao e autenticacao do seu token MEMO Desktop.
 
 **Destaques:**
 - Inicializacao inteligente do provisionamento que aguarda a janela principal estar 100% visivel antes de iniciar downloads do Docker ou containers
-- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta AI-Brain
+- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta MEMOROUTER
 - Execucao com privilegios de administrador para o instalador do Docker Desktop no Windows
 - Exibicao do progresso em tempo real no banner global e na aba de servicos
 
@@ -4794,23 +4835,23 @@ Destaques:
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** This update introduces an automatic setup and authentication modal for your AI-Bridge token, enhances Docker Desktop provisioning with administrator privileges on Windows, and optimizes the initial application startup.
+**Summary:** This update introduces an automatic setup and authentication modal for your MEMO Desktop token, enhances Docker Desktop provisioning with administrator privileges on Windows, and optimizes the initial application startup.
 
 **Highlights:**
-- First-launch setup modal with step-by-step guidance to connect your AI-Brain account
+- First-launch setup modal with step-by-step guidance to connect your MEMOROUTER account
 - Seamless Docker Desktop background provisioning with native UAC elevation
 - Instant main window display with non-blocking splash screen
-- Added AI-Brain agents directly into the Sleep & Consolidation model selector
+- Added MEMOROUTER agents directly into the Sleep & Consolidation model selector
 - Real-time connection feedback with categorized error handling and full 8-language i18n support
 
 <!-- lang:pt -->
-**Resumo:** Esta atualizacao introduz um modal automatico de configuracao e autenticacao do seu token AI-Bridge, aprimora o provisionamento do Docker Desktop com privilegios de administrador no Windows e otimiza a inicializacao da aplicacao.
+**Resumo:** Esta atualizacao introduz um modal automatico de configuracao e autenticacao do seu token MEMO Desktop, aprimora o provisionamento do Docker Desktop com privilegios de administrador no Windows e otimiza a inicializacao da aplicacao.
 
 **Destaques:**
-- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta AI-Brain
+- Modal de primeiro acesso com instrucoes passo a passo para conectar sua conta MEMOROUTER
 - Provisionamento suave do Docker Desktop com elevacao UAC nativa
 - Abertura instantanea da janela principal com splash screen nao bloqueante
-- Adicao dos agentes do AI-Brain diretamente no seletor de modelos do Sono e Consolidacao
+- Adicao dos agentes do MEMOROUTER diretamente no seletor de modelos do Sono e Consolidacao
 - Verificacao de conexao em tempo real com tratamento de erros por categoria e suporte a 8 idiomas
 
 ### 📋 Changelog da Versão
@@ -4821,7 +4862,7 @@ Destaques:
 - updates for release v2.5.26 (`06a0e23`)
 - updates in feature/token-setup-modal (`f85bc8f`)
 - updates in development (`1966027`)
-- add AI-Brain agents in sleep model selector with API and fallback inheritance (`7c6128f`)
+- add MEMOROUTER agents in sleep model selector with API and fallback inheritance (`7c6128f`)
 
 
 ---
@@ -5042,7 +5083,7 @@ Destaques:
 
 #### ✨ Novidades
 - updates for release v2.5.19 (`1e4ce7d`)
-- update setup.iss and install-ai-bridge.bat for automated onboarding (`d7a5e1c`)
+- update setup.iss and install-memo.bat for automated onboarding (`d7a5e1c`)
 - add real installation progress tracking by steps and dynamic splash screen (`a253fff`)
 - add direct download fallback, extended engine wait and resilient InstallAll with retries (`eb3775c`)
 - bridge tools expoem campo icon no catalogo mcp_list_tools — painel passa a usar o mesmo padrao de icones das ferramentas nativas (`6847f71`)
@@ -5051,7 +5092,7 @@ Destaques:
 - finalize TODO.md for auto-install-services feature (`aae9ff2`)
 
 #### 📝 Geral
-- remove campo Icon do MCPTool e literais de icone (icones agora sao responsabilidade do painel ai-brain) (`7daee9c`)
+- remove campo Icon do MCPTool e literais de icone (icones agora sao responsabilidade do painel memorouter) (`7daee9c`)
 
 
 ---
@@ -5522,7 +5563,7 @@ feat(tracking-users): nova aba de gestão de usuários do Traccar no painel (lis
 ## Release - v2.3.302
 ### 📣 Apresentação da Atualização
 
-fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
+fix(kv-cache): v2.3.301 — ListTools() do MEMO agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
 
 ### 📋 Changelog da Versão
 
@@ -5538,7 +5579,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 ## Release - v2.3.301
 ### 📣 Apresentação da Atualização
 
-fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
+fix(kv-cache): v2.3.301 — ListTools() do MEMO agora ordena as tools MCP por ID (map iteration em Go era aleatoria e quebrava o prefix cache entre turnos). Conversa simples deve sair de 2% para 90%+ de hit rate.
 
 ### 📋 Changelog da Versão
 
@@ -5558,19 +5599,19 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Fixed the "Update permissions" button messages (now fully translated via i18n in all 8 languages) and the root cause of the empty agent dropdown: the AI-BRAIN global auth middleware was blocking the new /api/bridge/agents endpoint (it required a panel session before the endpoint could validate the bridge token).
+**Summary:** Fixed the "Update permissions" button messages (now fully translated via i18n in all 8 languages) and the root cause of the empty agent dropdown: the MEMOROUTER global auth middleware was blocking the new /api/bridge/agents endpoint (it required a panel session before the endpoint could validate the bridge token).
 
 **Highlights:**
 - Button feedback now uses i18n keys (traccarPermsUpdating/Ok/Error) with English fallback
-- AI-BRAIN middleware exception for /api/bridge/* (commit 0319f4b)
+- MEMOROUTER middleware exception for /api/bridge/* (commit 0319f4b)
 - Dropdown now lists the owner agents once both sides are updated
 
 <!-- lang:pt -->
-**Resumo:** Corrigidas as mensagens do botão "Atualizar permissões" (agora totalmente traduzidas via i18n nos 8 idiomas) e a causa raiz da caixa seletora vazia: o middleware global de autenticação do AI-BRAIN barrava o endpoint /api/bridge/agents (exigia sessão do painel antes do endpoint validar o token do bridge).
+**Resumo:** Corrigidas as mensagens do botão "Atualizar permissões" (agora totalmente traduzidas via i18n nos 8 idiomas) e a causa raiz da caixa seletora vazia: o middleware global de autenticação do MEMOROUTER barrava o endpoint /api/bridge/agents (exigia sessão do painel antes do endpoint validar o token do bridge).
 
 **Destaques:**
 - Feedback do botão usa chaves i18n (traccarPermsUpdating/Ok/Error) com fallback em inglês
-- Exceção no middleware do AI-BRAIN para /api/bridge/* (commit 0319f4b)
+- Exceção no middleware do MEMOROUTER para /api/bridge/* (commit 0319f4b)
 - Caixa seletora lista os agentes do dono após atualizar os dois lados
 
 ### 📋 Changelog da Versão
@@ -5591,7 +5632,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** The "target bot/agent ID" field in the Smart Alerts tab is now a dropdown listing the user's agents (loaded from AI-BRAIN) — the user picks the agent by name, no ID needed.
+**Summary:** The "target bot/agent ID" field in the Smart Alerts tab is now a dropdown listing the user's agents (loaded from MEMOROUTER) — the user picks the agent by name, no ID needed.
 
 **Highlights:**
 - Dropdown with the owner's agents (GET /api/bridge/agents, authenticated with the bridge token)
@@ -5599,7 +5640,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Labels/hints updated in all 8 languages
 
 <!-- lang:pt -->
-**Resumo:** O campo "bot alvo / agent ID" da aba Smart Alerts agora é uma caixa seletora com os agentes do usuário (carregados do AI-BRAIN) — o usuário escolhe o agente pelo nome, sem precisar saber o ID.
+**Resumo:** O campo "bot alvo / agent ID" da aba Smart Alerts agora é uma caixa seletora com os agentes do usuário (carregados do MEMOROUTER) — o usuário escolhe o agente pelo nome, sem precisar saber o ID.
 
 **Destaques:**
 - Caixa seletora com os agentes do dono (GET /api/bridge/agents, autenticado com o token do bridge)
@@ -5785,7 +5826,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 
 **Highlights:**
 - Tracking tab: map no longer disappears; Smart Alerts panel is height-limited and scrollable
-- Enabling Smart Alerts automatically creates the Traccar webhook notification (idempotent) pointing to the local AI-Bridge receiver — works on any machine/installation
+- Enabling Smart Alerts automatically creates the Traccar webhook notification (idempotent) pointing to the local MEMO Desktop receiver — works on any machine/installation
 - Self-provisioning: Traccar service, technical user and Access Token are auto-created on first boot; the event pipeline (webhook) is now auto-wired too
 
 <!-- lang:pt -->
@@ -5793,7 +5834,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 
 **Destaques:**
 - Aba Rastreamento: o mapa não some mais; painel de alertas com altura limitada e rolagem interna
-- Ativar alertas cria automaticamente a notificação webhook do Traccar (idempotente) apontando para o receptor local do AI-Bridge — funciona em qualquer máquina/instalação
+- Ativar alertas cria automaticamente a notificação webhook do Traccar (idempotente) apontando para o receptor local do MEMO Desktop — funciona em qualquer máquina/instalação
 - Auto-provisionamento: serviço Traccar, usuário técnico e Access Token já eram criados no 1º boot; agora o elo de eventos (webhook) também é automático
 
 ### 📋 Changelog da Versão
@@ -5821,7 +5862,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -5831,7 +5872,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -5840,7 +5881,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 #### ✨ Novidades
 - updates for release v2.3.292 (`2a53fa7`)
 - update development branch (`5f0f2c8`)
-- alertas inteligentes na aba Tracking + sync de config com o AI-Brain (Fase 4) (`40e7564`)
+- alertas inteligentes na aba Tracking + sync de config com o MEMOROUTER (Fase 4) (`40e7564`)
 - webhook local do Traccar + repasse via WebSocket (Fase 2) (`1c8060b`)
 - tool traccar com gestao de notificacoes webhook (Fase 1) (`86d4658`)
 
@@ -5862,7 +5903,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -5872,7 +5913,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -5899,7 +5940,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -5909,7 +5950,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -5933,7 +5974,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -5943,7 +5984,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -5970,7 +6011,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -5980,7 +6021,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6007,7 +6048,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6017,7 +6058,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6044,7 +6085,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6054,7 +6095,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6078,7 +6119,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6088,7 +6129,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6115,7 +6156,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6125,7 +6166,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6135,7 +6176,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - updates for release v2.3.284 (`4d75732`)
 
 #### 🐛 Correções
-- sincroniza CSS do build do app — o fix do iframe 100%/top:0 (c949caf) so existia em frontend/, mas o build Wails usa cmd/ai-bridge/frontend/ (go:embed); sem isso o binario continuava com top:-64px cortando topo/lateral do mapa no app (`0284b10`)
+- sincroniza CSS do build do app — o fix do iframe 100%/top:0 (c949caf) so existia em frontend/, mas o build Wails usa cmd/memo/frontend/ (go:embed); sem isso o binario continuava com top:-64px cortando topo/lateral do mapa no app (`0284b10`)
 - mapa 100% da area sem corte — traccar-web (MapLibre full-viewport) se enquadra no modal com controles do topo visiveis; area do mapa encostada no topo da aba (remove sub-header invisivel) (`c5acdfb`)
 
 
@@ -6153,7 +6194,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6163,7 +6204,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6187,7 +6228,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6197,7 +6238,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6221,7 +6262,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6231,7 +6272,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6258,7 +6299,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6268,7 +6309,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6293,7 +6334,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6303,7 +6344,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6333,7 +6374,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6343,7 +6384,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6371,7 +6412,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6381,7 +6422,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6405,7 +6446,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6415,7 +6456,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6442,7 +6483,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6452,7 +6493,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6476,7 +6517,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6486,7 +6527,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6513,7 +6554,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6523,7 +6564,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6550,7 +6591,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - New local MCP tool "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - New "Tracking" tab embedding the Traccar dashboard inside the app (internal reverse proxy), with reload button and offline notice.
 - Settings accordion to change the Traccar port (validated, persists to .env/config.json and recreates the container).
-- CLI: `node cli/cli.js build` compiles the closed-source executables (ai-bridge.exe, updater.exe, install-ai-bridge.exe) with signing, cross-compiling from Linux or running on Windows.
+- CLI: `node cli/cli.js build` compiles the closed-source executables (memo.exe, updater.exe, install-memo.exe) with signing, cross-compiling from Linux or running on Windows.
 
 <!-- lang:pt -->
 **Resumo:** Nova integração gerenciada de rastreamento GPS Traccar (serviço, tool MCP, dashboard embutido) e comando de build fechado na CLI.
@@ -6560,7 +6601,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 - Nova tool MCP local "traccar": health_check, get_devices, get_last_position, get_position_history, get_events, get_geofences, get_report_summary (Bearer token).
 - Nova aba "Rastreamento" com o dashboard do Traccar embutido dentro do app (reverse proxy interno), botão recarregar e aviso de offline.
 - Accordion em Configurações para alterar a porta do Traccar (validada, persiste no .env/config.json e recria o container).
-- CLI: `node cli/cli.js build` compila os executáveis fechados (ai-bridge.exe, updater.exe, install-ai-bridge.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
+- CLI: `node cli/cli.js build` compila os executáveis fechados (memo.exe, updater.exe, install-memo.exe) com assinatura, compilando cruzado do Linux ou rodando no Windows.
 
 ### 📋 Changelog da Versão
 
@@ -6802,7 +6843,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 **Summary:** Single-line header logo protection and UI refinements for IoT devices actions.
 
 **Highlights:**
-- Ensured the AI-BRAIN header logo badge never wraps across multiple lines across all window sizes.
+- Ensured the MEMOROUTER header logo badge never wraps across multiple lines across all window sizes.
 - Clean dark translucent action buttons in the Saved IoT Devices table without wrapping.
 - Eliminated duplicate plus sign in the Add Device button and automatically hidden Add button for already saved IoT devices.
 
@@ -6810,7 +6851,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 **Resumo:** Protecao de linha unica na logo do cabecalho e refinamentos visuais nas acoes de dispositivos IoT.
 
 **Destaques:**
-- Garantido que a logo do AI-BRAIN no cabecalho nunca quebre em multiplas linhas em qualquer resolucao.
+- Garantido que a logo do MEMOROUTER no cabecalho nunca quebre em multiplas linhas em qualquer resolucao.
 - Botoes de acao da tabela de dispositivos IoT salvos em linha unica com fundo translucido escuro e sem quebra.
 - Eliminado o sinal de mais duplicado no botao de adicao e ocultacao automatica do botao para dispositivos ja salvos.
 
@@ -6821,7 +6862,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 #### ✨ Novidades
 - updates for release v2.3.264 (`667122a`)
 - updates in feature/iot-ui-branding-fixes (`9dc84fd`)
-- refinamentos de UI em IoT devices e logo AI-BRAIN em linha unica (`7829402`)
+- refinamentos de UI em IoT devices e logo MEMOROUTER em linha unica (`7829402`)
 
 
 ---
@@ -6831,17 +6872,17 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 ### 📣 Apresentação da Atualização
 
 <!-- lang:en -->
-**Summary:** Moved the AI-BRAIN logo from the floating footer to the top header.
+**Summary:** Moved the MEMOROUTER logo from the floating footer to the top header.
 
 **Highlights:**
-- Relocated the AI-BRAIN branding badge to the top header next to the language selector.
+- Relocated the MEMOROUTER branding badge to the top header next to the language selector.
 - Removed the fixed bottom-right floating badge to prevent overlapping table pagination controls.
 
 <!-- lang:pt -->
-**Resumo:** Movida a logo do AI-BRAIN do rodape flutuante para o cabecalho superior.
+**Resumo:** Movida a logo do MEMOROUTER do rodape flutuante para o cabecalho superior.
 
 **Destaques:**
-- Relocalizado o badge com logo do AI-BRAIN para o cabecalho superior ao lado do seletor de idiomas.
+- Relocalizado o badge com logo do MEMOROUTER para o cabecalho superior ao lado do seletor de idiomas.
 - Removido o badge flutuante fixo no canto inferior direito para desobstruir os botoes de paginacao das tabelas.
 
 ### 📋 Changelog da Versão
@@ -6851,7 +6892,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 #### ✨ Novidades
 - updates for release v2.3.263 (`50ddb78`)
 - updates in feature/header-partner-branding (`b1b04cd`)
-- reposicionar logo flutuante AI-BRAIN do rodape para o cabecalho (`ba29fd2`)
+- reposicionar logo flutuante MEMOROUTER do rodape para o cabecalho (`ba29fd2`)
 
 
 ---
@@ -7180,7 +7221,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 
 #### ✨ Novidades
 - updates for release v2.3.253 (`306fcab`)
-- dynamically inject agent LLM credentials from AI-Brain via WebSocket into browser_use (`7f91376`)
+- dynamically inject agent LLM credentials from MEMOROUTER via WebSocket into browser_use (`7f91376`)
 
 
 ---
@@ -7295,7 +7336,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 **Highlights:**
 - Interactive release prompts in both English (en) and Portuguese (pt-br).
 - Direct UTF-8 release notes file reading ensuring character encoding preservation.
-- Full compatibility with the AI-Brain panel bilingual update renderer.
+- Full compatibility with the MEMOROUTER panel bilingual update renderer.
 
 <!-- lang:pt -->
 **Resumo:** Atualização da CLI com suporte mandatório a apresentações bilíngues para releases.
@@ -7303,7 +7344,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 **Destaques:**
 - Prompts interativos de release em inglês (en) e português (pt-br).
 - Leitura direta de notas de release em UTF-8 garantindo a preservação da acentuação.
-- Compatibilidade total com a renderização bilíngue do painel AI-Brain.
+- Compatibilidade total com a renderização bilíngue do painel MEMOROUTER.
 
 ### 📋 Changelog da Versão
 
@@ -7411,7 +7452,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 #### 📚 Documentação
 - marca itens #1 e #3 do TODO como concluidos (`14e52ef`)
 - adiciona TODO_MEMORY_DECAY.md com as etapas das implementacoes do plano v5 (`ec78a80`)
-- adiciona plano operacional v5 - relogio biologico por requisicao e config por agente no ai-brain (`d181439`)
+- adiciona plano operacional v5 - relogio biologico por requisicao e config por agente no memorouter (`d181439`)
 
 
 ---
@@ -7705,7 +7746,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 
 **Destaques:**
 - Acompanhamento hist?rico do Sono do Modelo, ciclos de consolida??o e limpeza do ru?do mental.
-- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do AI-Bridge.
+- An?lise de tend?ncias da autonomia do RAG e da distribui??o da carga emocional do MEMO Desktop.
 - Adi??o das estat?sticas e an?lises em 8 idiomas diferentes nativamente no front-end.
 - Layout aprimorado utilizando a est?tica Glassmorphism Dark com novos KPIs quantitativos.
 
@@ -7791,7 +7832,7 @@ fix(kv-cache): v2.3.301 — ListTools() do AI-BRIDGE agora ordena as tools MCP p
 ## Release - v2.3.228
 ### 📣 Apresentação da Atualização
 
-**Resumo:** Uma grande atualiza??o na interface do AI-Bridge, trazendo um novo painel de estat?sticas de mem?ria, al?m de refinamentos na localiza??o da interface.
+**Resumo:** Uma grande atualiza??o na interface do MEMO Desktop, trazendo um novo painel de estat?sticas de mem?ria, al?m de refinamentos na localiza??o da interface.
 
 **Destaques:**
 - Nova **Dashboard de Mem?ria**: Acompanhe o uso e a sa?de das mem?rias din?micas, sem?nticas e os ciclos de sono em tempo real na aba Memory.
@@ -8061,7 +8102,7 @@ fix(labels): rotulagem real de tool calls MCP (source mcp_tool + operation_conte
 ## Release - v2.3.215
 ### 📣 Apresentação da Atualização
 
-**Resumo:** Melhoramos a forma como o AI-Bridge grava e usa a memória de longo prazo: agora todo registro pertence a um agente, e o uso das ferramentas fica registrado com mais detalhes, servindo de contexto real para o agente e para a consolidação noturna.
+**Resumo:** Melhoramos a forma como o MEMO Desktop grava e usa a memória de longo prazo: agora todo registro pertence a um agente, e o uso das ferramentas fica registrado com mais detalhes, servindo de contexto real para o agente e para a consolidação noturna.
 
 **Destaques:**
 - A memória de longo prazo agora guarda apenas registros ligados a um agente, sem entradas soltas de sistema
@@ -8159,7 +8200,7 @@ Bump
 ## Release - v2.3.210
 ### 📣 Apresentação da Atualização
 
-- *Content:* linha que gerava "A??o MCP: Ferramenta %s executada com sucesso." ? agora inclui o JSON completo dos par?metros: "A??o MCP: Ferramenta docker executada com sucesso. Par?metros: {...}"`n- *SenderName:* estava fixo "AI-Bridge MCP Engine" ? agora usa o campo sender_name enviado pelo ai-brain, com fallback pro antigo`n- *SessionID:* estava fixo mcp_session_<agent>_<data> ? agora aceita o session_id da conversa atual (fallback pro antigo se vier vazio)
+- *Content:* linha que gerava "A??o MCP: Ferramenta %s executada com sucesso." ? agora inclui o JSON completo dos par?metros: "A??o MCP: Ferramenta docker executada com sucesso. Par?metros: {...}"`n- *SenderName:* estava fixo "MEMO Desktop MCP Engine" ? agora usa o campo sender_name enviado pelo memorouter, com fallback pro antigo`n- *SessionID:* estava fixo mcp_session_<agent>_<data> ? agora aceita o session_id da conversa atual (fallback pro antigo se vier vazio)
 
 ### 📋 Changelog da Versão
 
@@ -8346,7 +8387,7 @@ Atualizacao de versao.
 **Resumo:** Implementacao das 3 ideias extraidas do m/memory (Moltbook): o RAG agora mede influencia real (nao apenas hit rate), o top_k foi calibrado com corte por similaridade e a arquitetura two-tier (raw imutavel + camada derivada rebuildable) foi formalizada.
 
 **Destaques:**
-- **Contador de influencia real (`influence_count`/`last_influenced_at` em `notes` e `system_chat_messages`):** nova acao WebSocket `rag_influence` permite ao ai-brain registrar quais memorias o agente REALMENTE usou na resposta final (retrieval hit rate != influencia - licao do m/memory). Os resultados de `search_memories` agora expoem os contadores.
+- **Contador de influencia real (`influence_count`/`last_influenced_at` em `notes` e `system_chat_messages`):** nova acao WebSocket `rag_influence` permite ao memorouter registrar quais memorias o agente REALMENTE usou na resposta final (retrieval hit rate != influencia - licao do m/memory). Os resultados de `search_memories` agora expoem os contadores.
 - **Poda por nao-influencia (Sono - Etapa 6.5):** memorias ativas com 30+ dias, `influence_count=0` E `access_count=0`, sem saliencia (importancia/emocao < 0.7) e fora do ruido operacional saem do RAG via soft-delete (`status='pruned_influence'`) - criterio "se sumisse, eu decidiria diferente em 7 dias?".
 - **Top_k calibrado:** `rag_top_k` (default 3) e `rag_notes_top_k` (default 2) substituem os defaults fixos (5/3); `rag_min_similarity` (default 0.10) agora e aplicado no SQL (threshold parametrizado via `RankingParams.MinSimilarity`) E no pos-processamento (defesa dupla). Filtro por `category` na busca de notas quando informada.
 - **Two-tier (raw imutavel + camada derivada):** documentado e habilital via `rebuild_derived_on_sleep` - o sono regenera os embeddings de TODAS as mensagens ativas a partir do raw (content/embedding_text), sem nunca editar o raw. Novas funcoes `ListMessagesForRebuild`, `MarkInfluencedMessages`, `MarkInfluencedNotes`, `ListNoInfluenceCandidates`, `MarkInfluencePruned`.
@@ -8801,9 +8842,9 @@ emoção), com teto por run.
 - `internal/config/config.go`
 - `internal/db/postgres.go`
 - `internal/consolidation/service.go`
-- `cmd/ai-bridge/main.go`
+- `cmd/memo/main.go`
 - `frontend/index.html`, `frontend/js/app.js`, `frontend/js/i18n.js`
-- `cmd/ai-bridge/frontend/*` (cópia sincronizada)
+- `cmd/memo/frontend/*` (cópia sincronizada)
 - `docs/NIGHTLY_MEMORY_CONSOLIDATION.md`, `.agents/skills/nightly-consolidation/SKILL.md`, `UPDATES.md`
 
 
@@ -8945,13 +8986,13 @@ emoção), com teto por run.
 ## Release - v2.3.178
 ### 📣 Apresentação da Atualização
 
-**Resumo:** Transfer?ncia da configura??o da rede social Moltbook para o AI-Brain.
+**Resumo:** Transfer?ncia da configura??o da rede social Moltbook para o MEMOROUTER.
 
 **Destaques:**
 - A configura??o da integra??o com o Moltbook agora ? feita exclusivamente de forma remota no painel do servidor, separada por agente.
 - A interface gr?fica do aplicativo foi simplificada com a remo??o da aba de configura??o de redes sociais, centralizando o gerenciamento no servidor.
 
-**Observa??es:** Seus agentes continuar?o tendo acesso ? rede caso a chave seja preenchida nas configura??es de agente no AI-Brain.
+**Observa??es:** Seus agentes continuar?o tendo acesso ? rede caso a chave seja preenchida nas configura??es de agente no MEMOROUTER.
 
 ### 📋 Changelog da Versão
 
@@ -9016,10 +9057,10 @@ emoção), com teto por run.
 ## Release - v2.3.175
 ### 📣 Apresentação da Atualização
 
-**Resumo:** Corre??o no fluxo de publica??o da CLI do AI-Bridge.
+**Resumo:** Corre??o no fluxo de publica??o da CLI do MEMO Desktop.
 
 **Destaques:**
-- Sincronizada a l?gica de leitura de input via pipe (stdin) na CLI do ai-bridge para alinhar com o comportamento da CLI do ai-brain.
+- Sincronizada a l?gica de leitura de input via pipe (stdin) na CLI do memo para alinhar com o comportamento da CLI do memorouter.
 
 ### 📋 Changelog da Versão
 
@@ -10034,7 +10075,7 @@ emoção), com teto por run.
 ## Release - v2.3.116
 ### 📣 Apresentação da Atualização
 
-**Resumo:** Correcao na exibicao do status do servico RAG no painel central AI-Brain.
+**Resumo:** Correcao na exibicao do status do servico RAG no painel central MEMOROUTER.
 
 ### 📋 Changelog da Versão
 
@@ -10430,7 +10471,7 @@ emoção), com teto por run.
 - ícone do card do Sono do Modelo agora reflete o estado — dormindo 😴 quando o pipeline está rodando (Sleeping) e acordado 🧠 quando parado (Waked) (`59075d6`)
 
 #### 🐛 Correções
-- diagnóstico do emocional — o runEmotional agora registra o primeiro erro (chamada LLM ou resposta inválida) no relatório do run, e AGENTS.md ganha a regra de que o Ollama é SEMPRE o do container (ai-bridge-rag), nunca um instalado no PC (`f7d4f0d`)
+- diagnóstico do emocional — o runEmotional agora registra o primeiro erro (chamada LLM ou resposta inválida) no relatório do run, e AGENTS.md ganha a regra de que o Ollama é SEMPRE o do container (memo-rag), nunca um instalado no PC (`f7d4f0d`)
 - re-embedding das consolidadas — o erro do GenerateEmbedding era ignorado (emb, _ = ...) e gravava vetor nil; agora trata o erro e re-tenta no próximo run (`ff40ef3`)
 - truncamento de embedding por RUNAS (não bytes) — mensagens Telegram com emojis tinham o UTF-8 quebrado no corte de 500 bytes, causando HTTP 500 no Ollama e deixando 23 mensagens sem indexação (`c713e6b`)
 
@@ -10595,7 +10636,7 @@ emoção), com teto por run.
 
 #### 🐛 Correções
 - cli.js localiza signtool automaticamente (Windows SDK) e aborta build/publish se a assinatura falhar — evita publicar binários sem assinatura silenciosamente (`642fa6a`)
-- assina digitalmente os binários do release v2.3.86 (signtool + certificado AI-BRAIN Solutions) (`2c7a350`)
+- assina digitalmente os binários do release v2.3.86 (signtool + certificado MEMOROUTER Solutions) (`2c7a350`)
 
 
 ---
@@ -10614,7 +10655,7 @@ emoção), com teto por run.
 - updates for release v2.3.86 (`e5b4848`)
 
 #### 🔧 Manutenção / Refatoração
-- regenera certificado de desenvolvimento com O=AI-BRAIN Solutions — UAC exibe editor confiável quando o .crt é instalado (Trusted Root + Trusted Publishers) (`6eece61`)
+- regenera certificado de desenvolvimento com O=MEMOROUTER Solutions — UAC exibe editor confiável quando o .crt é instalado (Trusted Root + Trusted Publishers) (`6eece61`)
 
 #### 🐛 Correções
 - updater não abre mais janelas de console durante a atualização — HideWindow em taskkill, tasklist, cmd /c start e instalador (`f0d117b`)
@@ -10700,7 +10741,7 @@ emoção), com teto por run.
 - updates for release v2.3.82 (`cf4e655`)
 
 #### 🐛 Correções
-- updater aguarda processo ai-bridge terminar antes de instalar + ReopenApp em modo GUI + remove Run entry do setup.iss (`189b286`)
+- updater aguarda processo memo terminar antes de instalar + ReopenApp em modo GUI + remove Run entry do setup.iss (`189b286`)
 
 
 ---
@@ -11078,14 +11119,14 @@ Correcoes na tela Services Status e na instalacao dos containers: o PostgreSQL a
 ## Release - v2.3.58
 ### 📣 Apresentação da Atualização
 
-Correcoes no ciclo de atualizacao e desinstalacao: o desinstalador agora para, remove os containers dos servicos e limpa as imagens no Docker do usuario; ao fechar o aplicativo, os containers sao parados antes de sair com um aviso ao usuario; corrigida a geracao do changelog nas CLIs (ai-bridge e ai-brain) — as alteracoes agora sao comitadas antes de listar os commits acumulados, entao o changelog da publicacao passa a ser exibido corretamente no painel.
+Correcoes no ciclo de atualizacao e desinstalacao: o desinstalador agora para, remove os containers dos servicos e limpa as imagens no Docker do usuario; ao fechar o aplicativo, os containers sao parados antes de sair com um aviso ao usuario; corrigida a geracao do changelog nas CLIs (memo e memorouter) — as alteracoes agora sao comitadas antes de listar os commits acumulados, entao o changelog da publicacao passa a ser exibido corretamente no painel.
 
 ### 📋 Changelog da Versão
 
 **Total:** 1 alteração(ões) acumulada(s) desde a última release.
 
 #### ✨ Novidades
-- Correcoes no ciclo de atualizacao e desinstalacao: o desinstalador agora para, remove os containers dos servicos e limpa as imagens no Docker do usuario; ao fechar o aplicativo, os containers sao parados antes de sair com um aviso ao usuario; corrigida a geracao do changelog nas CLIs (ai-bridge e ai-brain) — as alteracoes agora sao comitadas antes de listar os commits acumulados, entao o changelog da publicacao passa a ser exibido corretamente no painel. (`11273c0`)
+- Correcoes no ciclo de atualizacao e desinstalacao: o desinstalador agora para, remove os containers dos servicos e limpa as imagens no Docker do usuario; ao fechar o aplicativo, os containers sao parados antes de sair com um aviso ao usuario; corrigida a geracao do changelog nas CLIs (memo e memorouter) — as alteracoes agora sao comitadas antes de listar os commits acumulados, entao o changelog da publicacao passa a ser exibido corretamente no painel. (`11273c0`)
 
 
 ---
@@ -11094,7 +11135,7 @@ Correcoes no ciclo de atualizacao e desinstalacao: o desinstalador agora para, r
 ## Release - v2.3.57
 ### 📣 Apresentação da Atualização
 
-Correcao do auto-updater: o instalador (Inno Setup 6) fechava por padrao (CloseApplications) o updater.exe em execucao durante a instalacao, encerrando o atualizador antes de exibir o aviso de conclusao e reabrir o aplicativo — agora o instalador fecha apenas o ai-bridge.exe (CloseApplicationsFilter) e o updater sobrevive para concluir o fluxo. O aplicativo tambem passou a atualizar os containers dos servicos na inicializacao (docker compose pull + up -d em background) quando os servicos ja estao instalados, garantindo que os containers do usuario recebam novas imagens e configuracoes mesmo quando a atualizacao veio de um updater antigo sem essa logica.
+Correcao do auto-updater: o instalador (Inno Setup 6) fechava por padrao (CloseApplications) o updater.exe em execucao durante a instalacao, encerrando o atualizador antes de exibir o aviso de conclusao e reabrir o aplicativo — agora o instalador fecha apenas o memo.exe (CloseApplicationsFilter) e o updater sobrevive para concluir o fluxo. O aplicativo tambem passou a atualizar os containers dos servicos na inicializacao (docker compose pull + up -d em background) quando os servicos ja estao instalados, garantindo que os containers do usuario recebam novas imagens e configuracoes mesmo quando a atualizacao veio de um updater antigo sem essa logica.
 
 ### 📋 Changelog da Versão
 
@@ -11107,7 +11148,7 @@ Nenhum commit acumulado desde a última release (alterações descritas na apres
 ## Release - v2.3.56
 ### 📣 Apresentação da Atualização
 
-Correcao do QR Code no painel do ai-brain: o WAHA v3 mudou a API (rota GET /api/{session}/auth/qr devolvendo os bytes do PNG com Accept image/png) e o ai-bridge agora usa a rota correta, fazendo o QR de pareamento aparecer no painel. O atualizador agora tambem atualiza os containers dos servicos apos a atualizacao do aplicativo (docker compose pull + up -d), garantindo que os containers do usuario recebam novas imagens e configuracoes (dados preservados nos bind mounts do AppData).
+Correcao do QR Code no painel do memorouter: o WAHA v3 mudou a API (rota GET /api/{session}/auth/qr devolvendo os bytes do PNG com Accept image/png) e o memo agora usa a rota correta, fazendo o QR de pareamento aparecer no painel. O atualizador agora tambem atualiza os containers dos servicos apos a atualizacao do aplicativo (docker compose pull + up -d), garantindo que os containers do usuario recebam novas imagens e configuracoes (dados preservados nos bind mounts do AppData).
 
 ### 📋 Changelog da Versão
 
@@ -11120,7 +11161,7 @@ Nenhum commit acumulado desde a última release (alterações descritas na apres
 ## Release - v2.3.55
 ### 📣 Apresentação da Atualização
 
-Fix QR Code no painel do servidor ai-brain: o ai-bridge agora responde a acao whatsapp_qr via WebSocket, buscando a imagem do QR no WAHA (GET /api/sessions/{session}/qr), e o whatsapp_status retorna o estado real da sessao (WORKING/CONNECTED) em vez do mock; o endpoint qr-image do ai-brain passou a decodificar o base64 e devolver a imagem PNG, corrigindo o QR code quebrado no painel.
+Fix QR Code no painel do servidor memorouter: o memo agora responde a acao whatsapp_qr via WebSocket, buscando a imagem do QR no WAHA (GET /api/sessions/{session}/qr), e o whatsapp_status retorna o estado real da sessao (WORKING/CONNECTED) em vez do mock; o endpoint qr-image do memorouter passou a decodificar o base64 e devolver a imagem PNG, corrigindo o QR code quebrado no painel.
 
 ### 📋 Changelog da Versão
 
@@ -11146,7 +11187,7 @@ Nenhum commit acumulado desde a última release (alterações descritas na apres
 ## Release - v2.3.53
 ### 📣 Apresentação da Atualização
 
-**Resumo:** O painel ganhou a secao Atualizacoes do AI-Bridge na aba AI-Bridge, recebendo as notas de atualizacao publicadas pela CLI do projeto ai-bridge, e o changelog do AI-BRAIN agora apresenta a mensagem da versao seguida do changelog de commits.
+**Resumo:** O painel ganhou a secao Atualizacoes do MEMO Desktop na aba MEMO Desktop, recebendo as notas de atualizacao publicadas pela CLI do projeto memo, e o changelog do MEMOROUTER agora apresenta a mensagem da versao seguida do changelog de commits.
 
 ### 📋 Changelog da Versão
 
