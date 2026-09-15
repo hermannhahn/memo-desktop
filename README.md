@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.12-alpha`
+## 📥 Download da Última Versão: `v2.6.13-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.12-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/MEMO-Desktop-Setup-v2.6.12-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.13-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/MEMO-Desktop-Setup-v2.6.13-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.12-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/MEMO-Desktop-Setup-v2.6.12-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.13-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/MEMO-Desktop-Setup-v2.6.13-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.13-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,28 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.12-alpha:
+### 🌟 Notas do Release v2.6.13-alpha:
 <!-- lang:en -->
-**Summary:** Made WhatsApp, GPS (Traccar), and Kokoro TTS containers strictly optional with GUI switch controls, added container CPU and memory resource limits, and enabled on-demand installation with state persistence.
+**Summary:** Updated frontend assets in release build to display service toggle switches for WhatsApp, GPS (Traccar), and Kokoro TTS.
 
 **Highlights:**
-- WhatsApp (WAHA), Traccar, and Kokoro TTS are now optional services controlled by toggle switches on their service cards.
-- Default installations only run PostgreSQL and Ollama, eliminating CPU and RAM overhead on machines without WhatsApp or GPS.
-- Deactivating any service switch uninstalls the container and frees system resources immediately.
-- Real-time installation and uninstallation progress displayed in the global header banner.
-- Kokoro TTS and WhatsApp support automatic on-demand installation with persistent configuration.
-- Resource limits configured for all containers to ensure smooth operation on lower-spec hardware.
+- Synchronized frontend source assets so switches appear on WhatsApp, Traccar, and Kokoro service cards.
+- Live progress feedback on header banner for container installation and removal.
+- Real-time status badge reflecting Disabled, Installing, Active, or Stopped.
 
 <!-- lang:pt -->
-**Resumo:** Containers de WhatsApp, GPS (Traccar) e Kokoro TTS agora sao estritamente opcionais com switches na interface grafica, limites de CPU/memoria em todos os containers e suporte a instalacao on-demand com persistencia.
+**Resumo:** Atualizados os arquivos de frontend na compilação do release para exibir os switches de ativação/desativação nos cards de WhatsApp, GPS (Traccar) e Kokoro TTS.
 
 **Destaques:**
-- WhatsApp (WAHA), Traccar e Kokoro TTS agora sao servicos opcionais controlados por switches nos cards de status.
-- Instalacoes padrao iniciam apenas PostgreSQL e Ollama, eliminando consumo de CPU e RAM em PCs sem WhatsApp ou GPS.
-- Desativar o switch desinstala o container e libera recursos do sistema imediatamente.
-- Progresso de instalacao e desinstalacao exibido em tempo real no banner do cabecalho global.
-- Kokoro TTS e WhatsApp suportam instalacao sob demanda automatica com persistencia nas configuracoes.
-- Limites de recursos aplicados a todos os containers para garantir fluidez em computadores modestos.
+- Sincronizados os arquivos de frontend garantindo a exibição dos switches nos cards de WhatsApp, Traccar e Kokoro.
+- Feedback de progresso em tempo real no cabeçalho global durante instalação e remoção de containers.
+- Status badge dinâmico refletindo Desativado, Instalando, Ativo ou Parado.
 
 ---
 

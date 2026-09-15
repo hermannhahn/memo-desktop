@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.13-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated frontend assets in release build to display service toggle switches for WhatsApp, GPS (Traccar), and Kokoro TTS.
+
+**Highlights:**
+- Synchronized frontend source assets so switches appear on WhatsApp, Traccar, and Kokoro service cards.
+- Live progress feedback on header banner for container installation and removal.
+- Real-time status badge reflecting Disabled, Installing, Active, or Stopped.
+
+<!-- lang:pt -->
+**Resumo:** Atualizados os arquivos de frontend na compilação do release para exibir os switches de ativação/desativação nos cards de WhatsApp, GPS (Traccar) e Kokoro TTS.
+
+**Destaques:**
+- Sincronizados os arquivos de frontend garantindo a exibição dos switches nos cards de WhatsApp, Traccar e Kokoro.
+- Feedback de progresso em tempo real no cabeçalho global durante instalação e remoção de containers.
+- Status badge dinâmico refletindo Desativado, Instalando, Ativo ou Parado.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.13-alpha (`5c34b38`)
+- update development branch (`8b15216`)
+
+
+---
+
+
 ## Release - v2.6.12-alpha
 ### 📣 Apresentação da Atualização
 
