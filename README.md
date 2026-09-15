@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.11-alpha`
+## 📥 Download da Última Versão: `v2.6.12-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.11-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/MEMO-Desktop-Setup-v2.6.11-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.12-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/MEMO-Desktop-Setup-v2.6.12-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.11-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/MEMO-Desktop-Setup-v2.6.11-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.12-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/MEMO-Desktop-Setup-v2.6.12-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.11-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.12-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,24 +45,28 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.11-alpha:
+### 🌟 Notas do Release v2.6.12-alpha:
 <!-- lang:en -->
-**Summary:** This update fixes a performance issue that was causing severe PC slowdown and antivirus alerts while MEMO Desktop was open.
+**Summary:** Made WhatsApp, GPS (Traccar), and Kokoro TTS containers strictly optional with GUI switch controls, added container CPU and memory resource limits, and enabled on-demand installation with state persistence.
 
 **Highlights:**
-- Removed the Docker Desktop auto-minimizer that was silently running PowerShell every 3 seconds in the background
-- Eliminated up to 60 hidden PowerShell processes being spawned in the first 3 minutes of use
-- Antivirus tools will no longer flag MEMO Desktop during startup
-- General performance improvement for all users, especially those with active antivirus software
+- WhatsApp (WAHA), Traccar, and Kokoro TTS are now optional services controlled by toggle switches on their service cards.
+- Default installations only run PostgreSQL and Ollama, eliminating CPU and RAM overhead on machines without WhatsApp or GPS.
+- Deactivating any service switch uninstalls the container and frees system resources immediately.
+- Real-time installation and uninstallation progress displayed in the global header banner.
+- Kokoro TTS and WhatsApp support automatic on-demand installation with persistent configuration.
+- Resource limits configured for all containers to ensure smooth operation on lower-spec hardware.
 
 <!-- lang:pt -->
-**Resumo:** Esta atualização corrige um problema de desempenho que causava lentidao severa no PC e alertas de antivirus enquanto o MEMO Desktop estava aberto.
+**Resumo:** Containers de WhatsApp, GPS (Traccar) e Kokoro TTS agora sao estritamente opcionais com switches na interface grafica, limites de CPU/memoria em todos os containers e suporte a instalacao on-demand com persistencia.
 
 **Destaques:**
-- Removido o auto-minimizador do Docker Desktop que executava PowerShell a cada 3 segundos em segundo plano
-- Eliminados ate 60 processos ocultos do PowerShell gerados nos primeiros 3 minutos de uso
-- Antivirus nao ira mais alertar sobre o MEMO Desktop durante a inicializacao
-- Melhora geral de desempenho para todos os usuarios, especialmente quem usa antivirus ativo
+- WhatsApp (WAHA), Traccar e Kokoro TTS agora sao servicos opcionais controlados por switches nos cards de status.
+- Instalacoes padrao iniciam apenas PostgreSQL e Ollama, eliminando consumo de CPU e RAM em PCs sem WhatsApp ou GPS.
+- Desativar o switch desinstala o container e libera recursos do sistema imediatamente.
+- Progresso de instalacao e desinstalacao exibido em tempo real no banner do cabecalho global.
+- Kokoro TTS e WhatsApp suportam instalacao sob demanda automatica com persistencia nas configuracoes.
+- Limites de recursos aplicados a todos os containers para garantir fluidez em computadores modestos.
 
 ---
 

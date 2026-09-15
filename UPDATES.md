@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.12-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Made WhatsApp, GPS (Traccar), and Kokoro TTS containers strictly optional with GUI switch controls, added container CPU and memory resource limits, and enabled on-demand installation with state persistence.
+
+**Highlights:**
+- WhatsApp (WAHA), Traccar, and Kokoro TTS are now optional services controlled by toggle switches on their service cards.
+- Default installations only run PostgreSQL and Ollama, eliminating CPU and RAM overhead on machines without WhatsApp or GPS.
+- Deactivating any service switch uninstalls the container and frees system resources immediately.
+- Real-time installation and uninstallation progress displayed in the global header banner.
+- Kokoro TTS and WhatsApp support automatic on-demand installation with persistent configuration.
+- Resource limits configured for all containers to ensure smooth operation on lower-spec hardware.
+
+<!-- lang:pt -->
+**Resumo:** Containers de WhatsApp, GPS (Traccar) e Kokoro TTS agora sao estritamente opcionais com switches na interface grafica, limites de CPU/memoria em todos os containers e suporte a instalacao on-demand com persistencia.
+
+**Destaques:**
+- WhatsApp (WAHA), Traccar e Kokoro TTS agora sao servicos opcionais controlados por switches nos cards de status.
+- Instalacoes padrao iniciam apenas PostgreSQL e Ollama, eliminando consumo de CPU e RAM em PCs sem WhatsApp ou GPS.
+- Desativar o switch desinstala o container e libera recursos do sistema imediatamente.
+- Progresso de instalacao e desinstalacao exibido em tempo real no banner do cabecalho global.
+- Kokoro TTS e WhatsApp suportam instalacao sob demanda automatica com persistencia nas configuracoes.
+- Limites de recursos aplicados a todos os containers para garantir fluidez em computadores modestos.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.12-alpha (`0c38001`)
+- update development branch (`dfcf173`)
+- make WhatsApp, Traccar, and Kokoro optional with UI switches, resource limits, and header progress tracking (`887f5c0`)
+
+
+---
+
+
 ## Release - v2.6.11-alpha
 ### 📣 Apresentação da Atualização
 
