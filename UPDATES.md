@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.22-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Cockpit Telemetry HUD visual redesign across IoT, Backup, and GPS Settings tabs, coupled with extensive performance optimizations and background tray lifecycle throttling.
+
+**Highlights:**
+- Spaceship Cockpit Telemetry HUD Redesign: Complete obsidian visual modernization for the IoT scanner, Disaster Recovery Backup vaults, and Settings GPS panel with tactical telemetry headers and status badges.
+- Full Multi-Language i18n Sync: Added 12 new telemetry translation keys across all 8 supported languages.
+- Heavy Effects & Blur Removal: Eliminated backdrop-filter blurs and continuous GPU animations across all views to ensure fluid rendering on low-end hardware.
+- Chromium WebView2 Throttling: Configured low-end device mode, background timer throttling, and 30 FPS cap to minimize CPU and GPU overhead.
+- Background Tray Lifecycle Controller: Automatically pauses all polling loops when minimized to the system tray and performs an instant single refresh upon restoration.
+
+<!-- lang:pt -->
+**Resumo:** Redesign visual no estilo Cockpit Telemetry HUD para as abas IoT, Backup e painel GPS em Settings, acompanhado de otimizacoes profundas de desempenho e controle de ciclo de vida em segundo plano na bandeja do sistema.
+
+**Destaques:**
+- Redesign Cockpit Telemetry HUD: Modernizacao visual obsidian para o scanner IoT, cofres de Disaster Recovery em Backup e painel GPS em Settings com cabecalhos taticos de telemetria e badges de status.
+- Sincronizacao i18n em 8 Idiomas: Integracao de 12 novas chaves de traducao em todos os idiomas suportados.
+- Remocao de Efeitos Pesados e Blurs: Eliminacao de backdrop-filter blurs e animacoes continuas de GPU em todas as telas para garantir fluidez total em computadores modestos.
+- Throttling do Chromium WebView2: Ativacao do modo de baixo consumo, controle de taxa maxima a 30 FPS e throttling agressivo de segundo plano.
+- Controle de Ciclo de Vida na Bandeja: Pausa automatica de todos os loops de polling ao ocultar para a bandeja (tray) com auto-wakeup e atualizacao instantanea ao restaurar a janela.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.22-alpha (`f995b3b`)
+- update development branch (`7336436`)
+- strip heavy blurs/animations, throttle WebView2 and pause background loops on tray minimize (`6d4ff74`)
+- redesign IoT, Backup, and Settings GPS panels with spaceship cockpit HUD theme (`1e48e55`)
+
+
+---
+
+
 ## Release - v2.6.21-alpha
 ### 📣 Apresentação da Atualização
 
