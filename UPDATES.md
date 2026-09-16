@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.19-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Calibrated weekly consolidation threshold to 7 days, added automated tier backfill migration, and expanded agent eligibility discovery for hierarchical tiers.
+
+**Highlights:**
+- Weekly consolidation now targets closed weeks (>7 days), preserving the most recent 7 days as active daily memories.
+- Automated startup schema migration backfilling legacy consolidated memories to Tier 1 with ISO date keys.
+- Expanded agent discovery to detect agents with eligible historical consolidated memories waiting for pyramid synthesis.
+
+<!-- lang:pt -->
+**Resumo:** Calibrado limiar da consolidacao semanal para 7 dias, adicionada migracao automatica de backfill de tiers e expandida a descoberta de agentes elegiveis para a piramide.
+
+**Destaques:**
+- Consolidacao semanal agora processa semanas fechadas (>7 dias), preservando os ultimos 7 dias vivos como memorias diarias.
+- Migracao automatica de schema no startup preenchendo Tier 1 e chaves ISO em consolidadas legadas.
+- Descoberta de agentes expandida para detectar agentes com memorias consolidadas historicas aguardando sintese na piramide.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.19-alpha (`c90cc61`)
+- calibrate weekly min age to 7 days and expand agent discovery for hierarchical pyramid (`401afdf`)
+
+
+---
+
+
 ## Release - v2.6.18-alpha
 ### 📣 Apresentação da Atualização
 
