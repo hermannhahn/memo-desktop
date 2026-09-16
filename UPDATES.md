@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.20-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Calibrated biological memory decay grace periods to 60 days, enabled owner memory decay alongside accelerated third-party decay, correctly attributed merged consolidated memories to the decay trend chart, and enforced strict RAG hierarchical search ranking.
+
+**Highlights:**
+- Reduced consolidated memory decay grace period from 180 to 60 days for owner interactions and 30 days for third-party interactions.
+- Removed unconditional immunity on owner memories, allowing all memories to naturally undergo biological decay and retention cycles.
+- Fixed decay attribution so merged consolidated memories increment the consolidated decay counter and properly render the Consolidated in Decay metric.
+- Enforced strict search and retrieval ranking prioritizing Hierarchical Consolidated memories (Tiers 1-7), Active memories, Merged Consolidated, and Merged Raw while strongly penalizing operational MCP tool logs.
+
+<!-- lang:pt -->
+**Resumo:** Calibração da carência do decaimento biológico de memórias para 60 dias, inclusão das memórias do dono no fluxo de decaimento com decaimento acelerado para terceiros, atribuição correta de consolidadas merged no gráfico de decaimento e reforço da hierarquia de ranking RAG.
+
+**Destaques:**
+- Redução do período de carência de decaimento de memórias consolidadas de 180 para 60 dias para o dono e 30 dias para terceiros.
+- Remoção da imunidade incondicional em memórias do dono, permitindo que todas as interações passem pelo ciclo biológico natural de decaimento e retenção.
+- Correção na atribuição de decaimento de consolidadas merged para alimentar a métrica e a linha roxa do gráfico Consolidated in Decay.
+- Reforço do ranking hierárquico nas ferramentas de busca e RAG priorizando Consolidadas por Tier (1 a 7), Ativas, Merged Consolidated e Merged Raw, aplicando penalidade máxima a logs operacionais de ferramentas MCP.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.20-alpha (`3427226`)
+- update development branch (`43765e6`)
+
+#### 🐛 Correções
+- reduce decay grace to 60d, enable owner decay and accelerated third-party decay (`2a51929`)
+- attribute merged consolidated decay to consolidated chart and enforce RAG priority (`9cc7f9a`)
+
+
+---
+
+
 ## Release - v2.6.19-alpha
 ### 📣 Apresentação da Atualização
 
