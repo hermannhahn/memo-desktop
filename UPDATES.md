@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.18-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented the progressive hierarchical memory consolidation pyramid (Tiers 2 to 7), smart tool result head/tail truncation, RAG tier-based vector boost hierarchy, and differentiated Merged Consolidated memory lifecycle.
+
+**Highlights:**
+- Multi-tier progressive memory pyramid: Weekly (>15d), Monthly (>4w), Quarterly (>3m), Semiannual (>6m), Annual (>1y), and Decennial (>10y).
+- Differentiated Merged Consolidated memories in RAG ranking (0.75x) and biological decay grace (180 days).
+- Smart tool result truncation preserving 4 head lines and 4 tail lines to minimize storage and token usage.
+- Intelligent LLM invocation guarding: skips consolidation LLM calls when an agent has zero active waking memories.
+- Damped MCP tool logs in vector search (0.05x) and added tooltip descriptions to all top dashboard cards across 8 languages.
+
+<!-- lang:pt -->
+**Resumo:** Implementada a piramide de consolidacao progressiva hierarquica de memorias (Tiers 2 a 7), truncamento inteligente de retorno de ferramentas, hierarquia de boosting vetorial no RAG e diferenciacao de memorias Merged Consolidated.
+
+**Destaques:**
+- Piramide progressiva de consolidacao em 7 niveis: Semanal (>15d), Mensal (>4 sem), Trimestral (>3m), Semestral (>6m), Anual (>1a) e Decenal (>10a).
+- Diferenciacao de memorias Merged Consolidated no ranking RAG (0.75x) e carencia biologica de 180 dias.
+- Truncamento inteligente de logs de ferramentas preservando 4 primeiras e 4 ultimas linhas para economia de tokens e armazenamento.
+- Bloqueio inteligente de chamadas LLM: evita consumo de API quando o agente nao possui memorias ativas pendentes.
+- Damping de logs MCP no RAG (0.05x) e adicao de tooltips descritivos em todos os cards da dashboard nos 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.18-alpha (`de72bda`)
+- update development branch (`358a26c`)
+- differentiate Merged Consolidated from Merged Raw in RAG ranking and biological decay (`b852643`)
+- implement hierarchical progressive consolidation pyramid, MCP logs damping and tool result truncation (`58fc3a3`)
+- updates in fix/support-ping-action (`5baf677`)
+
+#### 🐛 Correções
+- add hover tooltips to all KPI cards and set MCP tool log retention to 3 days (`67d624a`)
+
+
+---
+
+
 ## Release - v2.6.17-alpha
 ### 📣 Apresentação da Atualização
 
