@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.15-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Calibrated biological memory decay with differentiated grace periods, enabled automated pruning for operational MCP tool logs, smoothed RAG recency decay, and added lifetime processed memory metrics and pruning breakdown cards to the Dashboard.
+
+**Highlights:**
+- Differentiated memory decay grace periods: 3 days for operational MCP tool logs, 7 days for casual chat, 14-45 days for standard memories, and 180 days or immunity for vital decisions.
+- Automated cleanup of aged tool logs and noise with 3-day purge quarantine in PostgreSQL.
+- Continuous exponential recency decay in RAG with smooth 0.05 minimum floor.
+- New Lifetime Processed Memories KPI card tracking all historical memories and interactions.
+- New Pruning Breakdown sub-row detailing tools pruned, casual chat pruned, organic decay, and noise eliminated across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Calibrado o decaimento biologico de memorias com periodos de carencia diferenciados, ativada a poda automatica de logs operacionais de ferramentas MCP, suavizado o decaimento temporal do RAG e adicionados cards de total historico e categorias de poda na Dashboard.
+
+**Destaques:**
+- Carencias diferenciadas no decaimento: 3 dias para logs operacionais de MCP, 7 dias para conversas casuais, 14 a 45 dias para memorias padrao e 180 dias ou imunidade para decisoes vitais.
+- Poda automatica de logs de ferramentas e ruidos antigos com purgatorio de eliminacao fisica de 3 dias no PostgreSQL.
+- Decaimento exponencial continuo suave no RAG com piso minimo de 0.05.
+- Novo card de Total Historico Processado contabilizando todas as memorias e interacoes que ja passaram pela LTM.
+- Nova linha de Decomposicao de Podas detalhando ferramentas, conversas casuais, decaimento organico e ruidos nos 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.15-alpha (`cefae3e`)
+- update development branch (`7a7589c`)
+- differentiated memory decay, MCP log pruning, and lifetime dashboard metrics (`eef7708`)
+
+
+---
+
+
 ## Release - v2.6.14-alpha
 ### 📣 Apresentação da Atualização
 
