@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.23-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Sidebar layout refinements, Spaceship Cockpit HUD redesign for Settings accordions, and dynamic AUTO/MANUAL mode badges in the Backup tab.
+
+**Highlights:**
+- Sidebar Layout Fixes: Fixed full-width hover selection across navigation items, refined item spacing, and anchored the connection status pill to the bottom footer.
+- Settings Panels HUD Redesign: Extended the Cockpit Telemetry HUD obsidian theme to Credentials, Performance, and Local Tools accordions with tactical node tags and subcards.
+- Dynamic Backup Badges: Replaced online/recovery badges with MANUAL on recovery nodes and added dynamic AUTO/MANUAL switching on the Memory Backup card tied to the automatic backups checkbox.
+
+<!-- lang:pt -->
+**Resumo:** Refinamentos de layout na barra lateral, redesign no estilo Cockpit HUD para os paineis de Settings e badges dinamicos AUTO/MANUAL na aba de Backup.
+
+**Destaques:**
+- Ajustes no Menu Lateral: Correcao da largura de selecao no hover dos itens de navegacao, melhoria do espacamento e fixacao do status de conexao no rodape.
+- Redesign dos Paineis de Settings: Aplicacao do tema Cockpit Telemetry HUD obsidian nos accordions de Credenciais, Performance e Ferramentas Locais com tags taticas e subcards.
+- Badges Dinamicos de Backup: Substituicao de badges estaticos por MANUAL nos nos de recuperacao e alternancia automatica AUTO/MANUAL no card de Memory Backup conforme o checkbox de rotina automatica.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.23-alpha (`abd3b26`)
+- update development branch (`b5a6731`)
+
+#### 🐛 Correções
+- fix sidebar hover/footer layout, redesign Settings accordions with HUD theme, and update Backup tab badges (`5376109`)
+
+
+---
+
+
 ## Release - v2.6.22-alpha
 ### 📣 Apresentação da Atualização
 
