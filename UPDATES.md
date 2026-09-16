@@ -3,6 +3,45 @@
 ---
 
 
+## Release - v2.6.21-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Redesigned the Service Status tab into a futuristic spaceship telemetry HUD, redirected API latency monitoring to the remote server, and fixed file dialogs to open in the foreground.
+
+**Highlights:**
+- Transformed Service Status into a Spaceship Onboard Telemetry HUD with live radar beacon and tactical sector diagnostics.
+- Renamed card to memorouter.com and updated latency monitoring to measure true cloud network RTT.
+- Fixed file and directory selection dialogs to open centered in the foreground.
+- Added full multi-language i18n support across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Redesenho da aba Service Status em um visor de telemetria de bordo de nave espacial, medicao de latencia real com a nuvem e correcao do seletor de arquivos em primeiro plano.
+
+**Destaques:**
+- Transformacao da tela de Service Status em um Cockpit HUD de telemetria com radar ao vivo e setores operacionais taticos.
+- Renomeacao do card para memorouter.com e medicao de latencia direta com a API remota.
+- Correcao nos dialogos de selecao de arquivos para abertura modal sempre em primeiro plano.
+- Suporte completo a internacionalizacao nos 8 idiomas do sistema.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.21-alpha (`d297132`)
+- update development branch (`ddae556`)
+- redesign Service Status tab into spaceship cockpit telemetry HUD (`720ba27`)
+
+#### 🐛 Correções
+- ensure file and directory open/save dialogs appear in foreground (`d117aed`)
+- measure real latency to memorouter.com API endpoint (`edfc3e9`)
+- rename service status card to memorouter.com across all languages (`59924d7`)
+
+
+---
+
+
 ## Release - v2.6.20-alpha
 ### 📣 Apresentação da Atualização
 
