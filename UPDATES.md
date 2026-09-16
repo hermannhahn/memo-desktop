@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.17-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced real-time service status reporting to include WhatsApp, GPS, and Kokoro TTS, and introduced granular per-agent sleep consolidation state tracking.
+
+**Highlights:**
+- Added real-time health checks and status reporting for WhatsApp session, GPS Traccar integration, and Kokoro TTS engine.
+- Implemented granular per-agent sleep state tracking and aggregation in the Brain Sync WebSocket service.
+- Fixed Kokoro Manager health check validation during system status synchronization.
+
+<!-- lang:pt -->
+**Resumo:** Aprimorado o status de servicos em tempo real para incluir WhatsApp, GPS e Kokoro TTS, e introduzido o rastreamento granular do sono da consolidacao por agente.
+
+**Destaques:**
+- Adicionados health checks e relato de status em tempo real para sessao do WhatsApp, integracao GPS Traccar e motor Kokoro TTS.
+- Implementado rastreamento granular e agregacao do estado de sono por agente no servico WebSocket do Brain Sync.
+- Corrigida a validacao de saude do Kokoro Manager durante a sincronizacao de status do sistema.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.17-alpha (`3c644e7`)
+- update development branch (`7af6cf6`)
+
+
+---
+
+
 ## Release - v2.6.16-alpha
 ### 📣 Apresentação da Atualização
 
