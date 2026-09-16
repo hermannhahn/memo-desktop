@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.16-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Redesigned the Memory Dashboard KPI layout with a compact, responsive grid eliminating horizontal scrolling, renamed the general cleanup card to Total Pruned & Purged, and added a dedicated section header for the Pruning Breakdown.
+
+**Highlights:**
+- Responsive 6-column compact grid layout for top KPI cards, preventing horizontal scrollbars across all screen sizes.
+- Renamed general eliminated metric to Total Pruned & Purged to clarify distinction from specific noise categories.
+- Added a dedicated section header and description for the Memory Pruning & LTM Cleanup Breakdown.
+- Full bilingual translations updated across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Redesenhado o layout dos cards da Dashboard de Memoria com uma grade compacta e responsiva sem rolagem horizontal, renomeado o card de limpezas gerais para Total Limpezas / Podas e adicionado cabecalho explicativo para a Decomposicao de Podas.
+
+**Destaques:**
+- Grade compacta e responsiva de 6 colunas para os cards de KPI superiores, eliminando a barra de rolagem horizontal em qualquer resolucao.
+- Renomeado o card de eliminacoes gerais para Total Limpezas / Podas para diferenciar claramente da categoria especifica de ruidos.
+- Adicionado cabecalho de secao dedicado com titulo e subtitulo explicativo para a Decomposicao de Podas & Limpeza da LTM.
+- Traducoes completas e revisadas em todos os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.16-alpha (`afe995e`)
+- update development branch (`243175f`)
+- polish memory dashboard KPI cards layout and add pruning section header (`c503adc`)
+
+#### 🐛 Correções
+- prevent pipe deadlock in docker compose streaming and add bracketed progress details (`e676135`)
+
+
+---
+
+
 ## Release - v2.6.15-alpha
 ### 📣 Apresentação da Atualização
 
