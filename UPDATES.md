@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.28-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced WhatsApp service stability by implementing a robust getter guard in whatsapp-web.js for reliable voice message delivery.
+
+**Highlights:**
+- Added robust getter wrapping across WhatsApp WebJS getter modules to prevent missing ID runtime exceptions
+- Ensured consistent and reliable voice note delivery (sendVoice) during WhatsApp sessions
+
+<!-- lang:pt -->
+**Resumo:** Estabilidade aprimorada no serviço do WhatsApp com guardas seguras de getters no whatsapp-web.js para envio confiável de mensagens de voz.
+
+**Destaques:**
+- Adicionada proteção e encapsulamento seguro nos módulos de getters do WhatsApp WebJS para evitar exceções de ID ausente
+- Garantido o envio consistente e confiável de notas de voz (sendVoice) nas sessões do WhatsApp
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.28-alpha (`db22968`)
+- update development branch (`1df4ff7`)
+
+#### 🐛 Correções
+- clean and robust WebJS getter guard for reliable sendVoice delivery (`500ef78`)
+
+
+---
+
+
 ## Release - v2.6.27-alpha
 ### 📣 Apresentação da Atualização
 
