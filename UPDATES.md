@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.27-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed automated WAHA WebJS patch execution via Stdin and enabled reliable WhatsApp voice notes (PTT) delivery.
+
+**Highlights:**
+- Fixed Node.js Stdin execution of WebJS getter and WAM telemetry guards inside WAHA container.
+- Restored message ID retention and prevented unmemoized getter exceptions in whatsapp-web.js.
+- Verified end-to-end PTT voice delivery to WhatsApp @c.us and @lid contacts.
+
+<!-- lang:pt -->
+**Resumo:** Correção na execução via Stdin do auto-patching do WAHA WebJS e garantia da entrega confiável de notas de voz (PTT) no WhatsApp.
+
+**Destaques:**
+- Corrigida a execução via Stdin no Node.js para os patches de getters e telemetria WAM no container WAHA.
+- Restaurada a preservação de ID da mensagem e eliminadas exceções de getters não memoizados no whatsapp-web.js.
+- Verificada e validada a entrega de áudio PTT nativo no WhatsApp para contatos @c.us e @lid.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.27-alpha (`a170969`)
+- update development branch (`0f3cf01`)
+- updates in development (`f9dc305`)
+
+
+---
+
+
 ## Release - v2.6.26-alpha
 ### 📣 Apresentação da Atualização
 
