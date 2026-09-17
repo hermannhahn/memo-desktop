@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.6.25-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added robust WhatsApp voice delivery fallbacks and secondary sendFile retry in WAHA client.
+
+**Highlights:**
+- Added automatic text fallback in Brain Sync service if WhatsApp voice sending fails on WAHA.
+- Added secondary sendFile attachment retry in WAHA client when sendVoice encounters WebJS getter errors.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado fallback robusto para envio de voz no WhatsApp e tentativa secundária via sendFile no cliente WAHA.
+
+**Destaques:**
+- Adicionado fallback automático para envio em texto no Brain Sync caso o envio de voz falhe no WAHA.
+- Adicionada tentativa secundária via sendFile como anexo de áudio caso sendVoice encontre erro no motor WebJS.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.25-alpha (`3f2dd0e`)
+- updates in fix/whatsapp-voice-error-fallback (`27f19fe`)
+
+
+---
+
+
 ## Release - v2.6.24-alpha
 ### 📣 Apresentação da Atualização
 
