@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.29-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Dynamically guarded all WhatsApp WebJS getters and factories in WAHA to prevent memoize ID errors during message and voice processing.
+
+**Highlights:**
+- Dynamically patched WAWebGetters factory creators and getter modules from debug module map
+- Automatically injected synthetic identifiers for objects lacking an ID property to eliminate memoize crashes
+
+<!-- lang:pt -->
+**Resumo:** Proteção dinâmica de todos os getters e fábricas do WhatsApp WebJS no WAHA para prevenir erros de ID em memoize durante envio de mensagens e áudio.
+
+**Destaques:**
+- Interceptação dinâmica das fábricas de getters do WAWebGetters e módulos do mapa de depuração
+- Injeção automática de identificadores sintéticos para objetos sem propriedade ID, eliminando falhas de memoize
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.29-alpha (`4d12d93`)
+- update development branch (`78fc66c`)
+
+#### 🐛 Correções
+- guard all getters dynamically in WAHA webjs to prevent memoize id error (`2aa6b47`)
+
+
+---
+
+
 ## Release - v2.6.28-alpha
 ### 📣 Apresentação da Atualização
 
