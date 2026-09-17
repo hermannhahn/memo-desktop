@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.24-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** UI refinements including standardized Settings accordions, softened dark obsidian color palette, removal of hover movement animations, real-time count of processed memories in Dynamic Memory RAG card, and repositioning of Dashboard memory pruning breakdown.
+
+**Highlights:**
+- Standardized Settings dropdowns (Credentials, Performance, Local Tools) to match GPS cockpit accordion layout.
+- Removed card hover translate animations and heavy shadow flares on Integrations and Services Status tabs.
+- Dynamic Memory (RAG) card now displays Total Memories Processed with real backend count of consolidated active memories.
+- Repositioned Memory Pruning & LTM Cleanup Breakdown below Sleep & Consolidation History on Dashboard.
+- Softened color saturation and harmonized dark obsidian glassmorphism palette across all tabs.
+
+<!-- lang:pt -->
+**Resumo:** Refinamentos de interface incluindo padronização dos dropdowns de Configurações, suavização da paleta de cores dark obsidian, remoção de animações de movimento em hover, contagem em tempo real de memórias processadas no card de Dynamic Memory RAG e reposicionamento da seção de podas na Dashboard.
+
+**Destaques:**
+- Padronização dos dropdowns de Configurações (Credenciais, Performance, Ferramentas Locais) no mesmo layout do accordion GPS.
+- Remoção de animações de translação e flares pesados no hover dos cards nas abas Integrações e Status dos Serviços.
+- Card Dynamic Memory (RAG) agora exibe o Total de Memórias Processadas com contagem real no backend de memórias ativas trabalhadas pela consolidação.
+- Reposicionamento da seção Memory Pruning & LTM Cleanup Breakdown para abaixo do gráfico de Histórico de Sono e Consolidação na Dashboard.
+- Suavização da saturação de cores e harmonização da paleta dark obsidian em todas as abas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.24-alpha (`a7c5235`)
+- update development branch (`8d4caa4`)
+- refine settings accordions, soften color palette, remove card hover movement, update RAG processed count and move dashboard pruning breakdown (`1d4d9a3`)
+
+
+---
+
+
 ## Release - v2.6.23-alpha
 ### 📣 Apresentação da Atualização
 
