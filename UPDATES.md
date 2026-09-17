@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.26-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automated WebJS getter guards and message ID restoration in WAHA container for reliable WhatsApp voice note (PTT) delivery.
+
+**Highlights:**
+- Fixed whatsapp-web.js message ID overwrite and unhandled getter/WAM telemetry exceptions in WAHA WebJS engine for /api/sendVoice.
+- Added automated idempotent patching routine (PatchWAHAWebJS) on service startup and dynamic on-demand retry in the WAHA client.
+- Ensured reliable WhatsApp voice note responses directly delivered to @c.us and @lid contacts.
+
+<!-- lang:pt -->
+**Resumo:** Automatização das correções de getters e identificador de mensagem no container WAHA para entrega confiável de notas de voz (PTT) no WhatsApp.
+
+**Destaques:**
+- Correção de sobrescrita de ID de mensagem e exceções em getters/telemetria WAM no motor WebJS do WAHA para o endpoint /api/sendVoice.
+- Adicionada rotina idempotente de auto-patching (PatchWAHAWebJS) na inicialização do serviço e retry dinâmico no cliente WAHA.
+- Garantida a entrega contínua e confiável de respostas em áudio nativo para contatos @c.us e @lid no WhatsApp.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.26-alpha (`3dcac9b`)
+- update development branch (`3c2e3d3`)
+
+#### 🐛 Correções
+- automate WAHA WebJS getter and WAM telemetry patches for voice note delivery (`5b84693`)
+
+
+---
+
+
 ## Release - v2.6.25-alpha
 ### 📣 Apresentação da Atualização
 
