@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.30-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Improved WhatsApp WebJS message key construction, LID addressing mode resolution, and media payload sanitization in WAHA.
+
+**Highlights:**
+- Resolved user sender matching addressing mode for LID and phone number chats
+- Added robust message ID generation with deprecated and crypto fallback mechanisms
+- Sanitized raw media JSON properties to protect core message key and routing attributes
+
+<!-- lang:pt -->
+**Resumo:** Aprimoramento na construção de chaves de mensagem do WhatsApp WebJS, resolução de modo LID e sanitização de mídia no WAHA.
+
+**Destaques:**
+- Resolução adequada do remetente considerando modo de endereçamento LID ou número de telefone
+- Geração robusta de ID de mensagem com suporte a métodos legados e fallback criptográfico
+- Sanitização de propriedades em JSON de mídia para proteger atributos essenciais da mensagem
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.30-alpha (`6176910`)
+- update development branch (`1ec0930`)
+
+#### 🐛 Correções
+- resolve LID addressing mode and msgKey construction in WAHA webjs (`3603d69`)
+
+
+---
+
+
 ## Release - v2.6.29-alpha
 ### 📣 Apresentação da Atualização
 
