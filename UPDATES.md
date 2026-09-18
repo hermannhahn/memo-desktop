@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.31-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Applied WAHA WebJS patch prior to session startup and enabled automatic session restarting upon patch application.
+
+**Highlights:**
+- Patched WhatsApp WebJS before initial default session creation and start
+- Triggered automated session restart whenever patches are applied to reload runtime modules
+
+<!-- lang:pt -->
+**Resumo:** Aplicação do patch WebJS no WAHA antes da inicialização da sessão e reinício automático da sessão ao aplicar o patch.
+
+**Destaques:**
+- Execução do patch no WhatsApp WebJS antes da criação e inicialização da sessão padrão
+- Reinício automático da sessão quando o patch for aplicado para recarregar módulos em execução
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.31-alpha (`008d443`)
+- update development branch (`6907472`)
+
+#### 🐛 Correções
+- run PatchWAHAWebJS before default session start and auto-restart session on patch (`86c6155`)
+
+
+---
+
+
 ## Release - v2.6.30-alpha
 ### 📣 Apresentação da Atualização
 
