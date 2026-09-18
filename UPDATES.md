@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.33-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Ensured WAWebCollections availability and patched event listener attachment in WAHA.
+
+**Highlights:**
+- Guaranteed WAWebCollections is fully populated with Msg, Chat, Contact, Label, Status, and GroupMetadata collections
+- Added resilient fallbacks for collections requirement in Client.js attachEventListeners
+
+<!-- lang:pt -->
+**Resumo:** Garantida a disponibilidade de WAWebCollections e corrigida a vinculação de ouvintes de eventos no WAHA.
+
+**Destaques:**
+- Garantido que WAWebCollections seja populado com coleções de Msg, Chat, Contact, Label, Status e GroupMetadata
+- Adicionados fallbacks resilientes para importação de Collections em attachEventListeners no Client.js
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.33-alpha (`7584586`)
+- update development branch (`55761eb`)
+
+#### 🐛 Correções
+- adicionar patch de WAWebCollections e attachEventListeners no WAHA (`62ccdde`)
+
+
+---
+
+
 ## Release - v2.6.32-alpha
 ### 📣 Apresentação da Atualização
 

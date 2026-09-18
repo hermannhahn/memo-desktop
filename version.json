@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.32-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.32-alpha/MEMO-Desktop-Setup-v2.6.32-alpha.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Implemented Wid prototype ID accessor hook and container-level restart for WhatsApp voice note reliability.\n\n**Highlights:**\n- Injected native ID getter on Wid prototype to cleanly satisfy WhatsApp WebJS getter prerequisites\n- Configured automated container restart upon patch application to ensure fresh runtime environment\n\n<!-- lang:pt -->\n**Resumo:** Implementado hook de propriedade ID no protótipo Wid e reinício a nível de container para envio confiável de áudios no WhatsApp.\n\n**Destaques:**\n- Injeção de getter nativo de ID no protótipo Wid para atender aos pré-requisitos dos getters do WhatsApp WebJS\n- Reinício automatizado do container ao aplicar o patch garantindo ambiente de execução limpo"
+    "version": "2.6.33-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/MEMO-Desktop-Setup-v2.6.33-alpha.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Ensured WAWebCollections availability and patched event listener attachment in WAHA.\n\n**Highlights:**\n- Guaranteed WAWebCollections is fully populated with Msg, Chat, Contact, Label, Status, and GroupMetadata collections\n- Added resilient fallbacks for collections requirement in Client.js attachEventListeners\n\n<!-- lang:pt -->\n**Resumo:** Garantida a disponibilidade de WAWebCollections e corrigida a vinculação de ouvintes de eventos no WAHA.\n\n**Destaques:**\n- Garantido que WAWebCollections seja populado com coleções de Msg, Chat, Contact, Label, Status e GroupMetadata\n- Adicionados fallbacks resilientes para importação de Collections em attachEventListeners no Client.js"
 }
