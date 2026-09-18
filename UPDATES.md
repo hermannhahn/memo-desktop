@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.34-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixes hierarchical memory consolidation retention windows and automatically restores active daily and weekly agent memories.
+
+**Highlights:**
+- Calibrated sliding retention windows to preserve daily memories for the last 15 days and weekly memories for the last 4 weeks
+- Fixed startup deduplication logic to prevent weekly and monthly summaries from marking daily memories as merged
+- Added automatic startup migration to restore any prematurely merged agent memories
+
+<!-- lang:pt -->
+**Resumo:** Corrige as janelas de retencao da consolidacao hierarquica e restaura automaticamente as memorias ativas diarias e semanais dos agentes.
+
+**Destaques:**
+- Calibracao das janelas deslizantes para preservar memorias diarias dos ultimos 15 dias e semanais das ultimas 4 semanas
+- Correcao na deduplicacao do startup para evitar que sinteses semanais ou mensais marquem memorias diarias como mescladas
+- Migracao automatica no startup que restaura todas as memorias de agentes indevidamente mescladas
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.34-alpha (`05b0eb1`)
+- update development branch (`d50a2ff`)
+
+#### 🐛 Correções
+- calibrate retention windows and restore hierarchical memories (`89bef9f`)
+
+
+---
+
+
 ## Release - v2.6.33-alpha
 ### 📣 Apresentação da Atualização
 

@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.33-alpha`
+## 📥 Download da Última Versão: `v2.6.34-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.33-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/MEMO-Desktop-Setup-v2.6.33-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.34-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/MEMO-Desktop-Setup-v2.6.34-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.33-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/MEMO-Desktop-Setup-v2.6.33-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.34-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/MEMO-Desktop-Setup-v2.6.34-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.33-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.34-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.33-alpha:
+### 🌟 Notas do Release v2.6.34-alpha:
 <!-- lang:en -->
-**Summary:** Ensured WAWebCollections availability and patched event listener attachment in WAHA.
+**Summary:** Fixes hierarchical memory consolidation retention windows and automatically restores active daily and weekly agent memories.
 
 **Highlights:**
-- Guaranteed WAWebCollections is fully populated with Msg, Chat, Contact, Label, Status, and GroupMetadata collections
-- Added resilient fallbacks for collections requirement in Client.js attachEventListeners
+- Calibrated sliding retention windows to preserve daily memories for the last 15 days and weekly memories for the last 4 weeks
+- Fixed startup deduplication logic to prevent weekly and monthly summaries from marking daily memories as merged
+- Added automatic startup migration to restore any prematurely merged agent memories
 
 <!-- lang:pt -->
-**Resumo:** Garantida a disponibilidade de WAWebCollections e corrigida a vinculação de ouvintes de eventos no WAHA.
+**Resumo:** Corrige as janelas de retencao da consolidacao hierarquica e restaura automaticamente as memorias ativas diarias e semanais dos agentes.
 
 **Destaques:**
-- Garantido que WAWebCollections seja populado com coleções de Msg, Chat, Contact, Label, Status e GroupMetadata
-- Adicionados fallbacks resilientes para importação de Collections em attachEventListeners no Client.js
+- Calibracao das janelas deslizantes para preservar memorias diarias dos ultimos 15 dias e semanais das ultimas 4 semanas
+- Correcao na deduplicacao do startup para evitar que sinteses semanais ou mensais marquem memorias diarias como mescladas
+- Migracao automatica no startup que restaura todas as memorias de agentes indevidamente mescladas
 
 ---
 
