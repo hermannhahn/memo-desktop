@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.40-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix SQL column ambiguity error during hierarchical sleep consolidation tier querying.
+
+**Highlights:**
+- Fix ambiguous id column in PostgreSQL query for tier-eligible consolidated memories
+- Prevent query failure when synthesizing weekly and higher-tier hierarchical summaries
+- Unit test coverage for nil database resilience
+
+<!-- lang:pt -->
+**Resumo:** Correção do erro de ambiguidade de coluna SQL durante a consulta de elegibilidade para síntese hierárquica do sono.
+
+**Destaques:**
+- Correção da coluna ambígua id no PostgreSQL na busca de consolidações elegíveis
+- Eliminação da falha que impedia a síntese dos resumos semanais e tiers superiores
+- Cobertura de teste unitário preventivo para resiliência a conexões nulas
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.40-alpha (`ea3fdad`)
+- update development branch (`464135e`)
+
+#### 🐛 Correções
+- eliminate ambiguous id column in ListEligibleConsolidatedForTier (`8cadc54`)
+
+
+---
+
+
 ## Release - v2.6.39-alpha
 ### 📣 Apresentação da Atualização
 
