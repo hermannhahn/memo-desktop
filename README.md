@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.40-alpha`
+## 📥 Download da Última Versão: `v2.6.41-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.40-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/MEMO-Desktop-Setup-v2.6.40-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.41-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/MEMO-Desktop-Setup-v2.6.41-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.40-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/MEMO-Desktop-Setup-v2.6.40-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.41-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/MEMO-Desktop-Setup-v2.6.41-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.40-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.41-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.40-alpha:
+### 🌟 Notas do Release v2.6.41-alpha:
 <!-- lang:en -->
-**Summary:** Fix SQL column ambiguity error during hierarchical sleep consolidation tier querying.
+**Summary:** Automatic schema synchronization and migration execution following database backup restoration.
 
 **Highlights:**
-- Fix ambiguous id column in PostgreSQL query for tier-eligible consolidated memories
-- Prevent query failure when synthesizing weekly and higher-tier hierarchical summaries
-- Unit test coverage for nil database resilience
+- Auto-sync database schema immediately after restoring backup archives
+- Drop stale migration records prior to restore so legacy backups receive proper data migration
+- Ensure new consolidation columns and daily memory statuses are preserved seamlessly
 
 <!-- lang:pt -->
-**Resumo:** Correção do erro de ambiguidade de coluna SQL durante a consulta de elegibilidade para síntese hierárquica do sono.
+**Resumo:** Sincronização automática do schema do banco e execução de migrações após restauração de backup.
 
 **Destaques:**
-- Correção da coluna ambígua id no PostgreSQL na busca de consolidações elegíveis
-- Eliminação da falha que impedia a síntese dos resumos semanais e tiers superiores
-- Cobertura de teste unitário preventivo para resiliência a conexões nulas
+- Sincronização automática do schema do banco logo após a restauração de arquivos de backup
+- Limpeza de registros obsoletos de migração antes do restore para garantir atualização em backups legados
+- Garantia de que novas colunas de consolidação e status de memórias diárias sejam preservados corretamente
 
 ---
 
