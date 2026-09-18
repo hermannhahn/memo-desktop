@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.31-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.31-alpha/MEMO-Desktop-Setup-v2.6.31-alpha.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Applied WAHA WebJS patch prior to session startup and enabled automatic session restarting upon patch application.\n\n**Highlights:**\n- Patched WhatsApp WebJS before initial default session creation and start\n- Triggered automated session restart whenever patches are applied to reload runtime modules\n\n<!-- lang:pt -->\n**Resumo:** Aplicação do patch WebJS no WAHA antes da inicialização da sessão e reinício automático da sessão ao aplicar o patch.\n\n**Destaques:**\n- Execução do patch no WhatsApp WebJS antes da criação e inicialização da sessão padrão\n- Reinício automático da sessão quando o patch for aplicado para recarregar módulos em execução"
+    "version": "2.6.32-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.32-alpha/MEMO-Desktop-Setup-v2.6.32-alpha.exe",
+    "notes": "<!-- lang:en -->\n**Summary:** Implemented Wid prototype ID accessor hook and container-level restart for WhatsApp voice note reliability.\n\n**Highlights:**\n- Injected native ID getter on Wid prototype to cleanly satisfy WhatsApp WebJS getter prerequisites\n- Configured automated container restart upon patch application to ensure fresh runtime environment\n\n<!-- lang:pt -->\n**Resumo:** Implementado hook de propriedade ID no protótipo Wid e reinício a nível de container para envio confiável de áudios no WhatsApp.\n\n**Destaques:**\n- Injeção de getter nativo de ID no protótipo Wid para atender aos pré-requisitos dos getters do WhatsApp WebJS\n- Reinício automatizado do container ao aplicar o patch garantindo ambiente de execução limpo"
 }

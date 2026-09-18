@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.32-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented Wid prototype ID accessor hook and container-level restart for WhatsApp voice note reliability.
+
+**Highlights:**
+- Injected native ID getter on Wid prototype to cleanly satisfy WhatsApp WebJS getter prerequisites
+- Configured automated container restart upon patch application to ensure fresh runtime environment
+
+<!-- lang:pt -->
+**Resumo:** Implementado hook de propriedade ID no protótipo Wid e reinício a nível de container para envio confiável de áudios no WhatsApp.
+
+**Destaques:**
+- Injeção de getter nativo de ID no protótipo Wid para atender aos pré-requisitos dos getters do WhatsApp WebJS
+- Reinício automatizado do container ao aplicar o patch garantindo ambiente de execução limpo
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.32-alpha (`1af56f8`)
+- update development branch (`11355b1`)
+
+#### 🐛 Correções
+- ajustar patch de getters e reinicio de container WAHA para notas de voz (`0eb08b3`)
+
+
+---
+
+
 ## Release - v2.6.31-alpha
 ### 📣 Apresentação da Atualização
 
