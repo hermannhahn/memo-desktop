@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.36-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced WhatsApp voice note delivery stability and improved service restart readiness checks.
+
+**Highlights:**
+- Added active HTTP readiness polling after WAHA container restart
+- Improved audio voice note format compatibility with opus codec specification
+- Added response logging and refined retry and fallback delivery flow
+
+<!-- lang:pt -->
+**Resumo:** Aprimoramento da estabilidade no envio de notas de voz do WhatsApp e verificacao de prontidao no reinicio do servico.
+
+**Destaques:**
+- Adicao de espera ativa por HTTP apos o reinicio do container WAHA
+- Melhoria da compatibilidade de formato de notas de voz com codec opus
+- Adicao de logs de resposta e refinamento do fluxo de reenvio e fallback
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.36-alpha (`e6fb34c`)
+- update development branch (`751b379`)
+
+#### 📚 Documentação
+- documentar melhorias de estabilidade de envio de voz do whatsapp (`fa933ee`)
+
+#### 🐛 Correções
+- aprimorar estabilidade de envio de notas de voz e espera por reinicio do WAHA (`7523285`)
+
+
+---
+
+
 ## Release - v2.6.35-alpha
 ### 📣 Apresentação da Atualização
 
