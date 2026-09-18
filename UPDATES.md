@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.35-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implements full 7-tier hierarchical retention pyramid and adds tier badges and filters in the desktop UI.
+
+**Highlights:**
+- Calibrated 7-tier sliding retention pyramid (15 daily, 4 weekly, 3 monthly, 2 quarterly, 2 semiannual, 1 annual, and decennial)
+- Daily memories older than 15 days and closed weeks older than 4 weeks are cleanly merged into upper tiers
+- Added visual consolidation tier badges and dedicated pyramid filter to the memory management interface
+- Enriched memory query APIs to expose consolidation tier and period range metadata
+
+<!-- lang:pt -->
+**Resumo:** Implementa a piramide de retencao hierarquica completa em 7 niveis e adiciona badges e filtros de nivel na interface desktop.
+
+**Destaques:**
+- Calibracao da piramide deslizante em 7 niveis (15 diarias, 4 semanais, 3 mensais, 2 trimestrais, 2 semestrais, 1 anual e decenal)
+- Memorias diarias anteriores a 15 dias e semanas fechadas anteriores a 4 semanas sao limpas e absorvidas nos niveis superiores
+- Adicao de badges visuais de nivel de consolidacao e filtro dedicado da piramide na interface de memorias
+- Enriquecimento das consultas de memoria para retornar metadados de nivel e periodo de consolidacao
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.35-alpha (`eb1be7f`)
+- update development branch (`d347cc6`)
+
+#### 🐛 Correções
+- enforce sliding retention pyramid and tier visibility in UI (`d78ee56`)
+
+
+---
+
+
 ## Release - v2.6.34-alpha
 ### 📣 Apresentação da Atualização
 
