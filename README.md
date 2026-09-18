@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.37-alpha`
+## 📥 Download da Última Versão: `v2.6.38-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.37-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/MEMO-Desktop-Setup-v2.6.37-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.38-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/MEMO-Desktop-Setup-v2.6.38-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.37-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/MEMO-Desktop-Setup-v2.6.37-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.38-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/MEMO-Desktop-Setup-v2.6.38-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.38-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,24 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.37-alpha:
+### 🌟 Notas do Release v2.6.38-alpha:
 <!-- lang:en -->
-**Summary:** Enhanced WhatsApp voice note delivery stability and improved service restart readiness checks.
+**Summary:** Implemented progressive sliding window retention pyramid for memory consolidation and added one-time migration runner.
 
 **Highlights:**
-- Added active HTTP readiness polling after WAHA container restart
-- Improved audio voice note format compatibility with opus codec specification
-- Added response logging and refined retry and fallback delivery flow
+- Enforced sliding window protection keeping 15 daily, 4 weekly, 3 monthly, 2 quarterly, 2 semester, and 2 annual summaries intact as consolidated
+- Implemented atomic merge marking strictly synthesized source memories beyond the protected window
+- Added app_schema_migrations tracking to execute data repair migrations strictly once on update
+- Cleaned startup schema initialization by removing recurring memory status manipulations
 
 <!-- lang:pt -->
-**Resumo:** Aprimoramento da estabilidade no envio de notas de voz do WhatsApp e verificacao de prontidao no reinicio do servico.
+**Resumo:** Implementacao da piramide hierarquica deslizante para retencao de memorias consolidadas e executor de migracoes unicas.
 
 **Destaques:**
-- Adicao de espera ativa por HTTP apos o reinicio do container WAHA
-- Melhoria da compatibilidade de formato de notas de voz com codec opus
-- Adicao de logs de resposta e refinamento do fluxo de reenvio e fallback
+- Blindagem da janela deslizante mantendo intactos como consolidados os 15 resumos diarios, 4 semanais, 3 mensais, 2 trimestrais, 2 semestrais e 2 anuais mais recentes
+- Implementacao de merge atomico marcando estritamente as memorias de origem sintetizadas alem da janela protegida
+- Criacao da tabela app_schema_migrations para execucao de reparos de dados estritamente uma vez na atualizacao
+- Limpeza da inicializacao do schema removendo alteracoes recorrentes de status de memoria no boot do app
 
 ---
 

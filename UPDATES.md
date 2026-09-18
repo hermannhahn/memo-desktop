@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.38-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented progressive sliding window retention pyramid for memory consolidation and added one-time migration runner.
+
+**Highlights:**
+- Enforced sliding window protection keeping 15 daily, 4 weekly, 3 monthly, 2 quarterly, 2 semester, and 2 annual summaries intact as consolidated
+- Implemented atomic merge marking strictly synthesized source memories beyond the protected window
+- Added app_schema_migrations tracking to execute data repair migrations strictly once on update
+- Cleaned startup schema initialization by removing recurring memory status manipulations
+
+<!-- lang:pt -->
+**Resumo:** Implementacao da piramide hierarquica deslizante para retencao de memorias consolidadas e executor de migracoes unicas.
+
+**Destaques:**
+- Blindagem da janela deslizante mantendo intactos como consolidados os 15 resumos diarios, 4 semanais, 3 mensais, 2 trimestrais, 2 semestrais e 2 anuais mais recentes
+- Implementacao de merge atomico marcando estritamente as memorias de origem sintetizadas alem da janela protegida
+- Criacao da tabela app_schema_migrations para execucao de reparos de dados estritamente uma vez na atualizacao
+- Limpeza da inicializacao do schema removendo alteracoes recorrentes de status de memoria no boot do app
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.38-alpha (`87d111a`)
+- update development branch (`b32a499`)
+- implement sliding window retention tiers with atomic merge for synthesized memories (`89e8e51`)
+
+#### 🐛 Correções
+- implement one-time migration runner and restore daily consolidated memories on update (`cb2d75c`)
+- preserve consolidated status across all tiers and safeguard self-review (`b9f11bf`)
+
+
+---
+
+
 ## Release - v2.6.37-alpha
 ### 📣 Apresentação da Atualização
 
