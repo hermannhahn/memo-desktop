@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.36-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.36-alpha/MEMO-Desktop-Setup-v2.6.36-alpha.exe",
-    "notes": "<!-- lang:en -->\n**Summary:** Enhanced WhatsApp voice note delivery stability and improved service restart readiness checks.\n\n**Highlights:**\n- Added active HTTP readiness polling after WAHA container restart\n- Improved audio voice note format compatibility with opus codec specification\n- Added response logging and refined retry and fallback delivery flow\n\n<!-- lang:pt -->\n**Resumo:** Aprimoramento da estabilidade no envio de notas de voz do WhatsApp e verificacao de prontidao no reinicio do servico.\n\n**Destaques:**\n- Adicao de espera ativa por HTTP apos o reinicio do container WAHA\n- Melhoria da compatibilidade de formato de notas de voz com codec opus\n- Adicao de logs de resposta e refinamento do fluxo de reenvio e fallback"
+    "version": "2.6.37-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.37-alpha/MEMO-Desktop-Setup-v2.6.37-alpha.exe",
+    "notes": "<!-- lang:en -->\r\n**Summary:** Enhanced WhatsApp voice note delivery stability and improved service restart readiness checks.\r\n\r\n**Highlights:**\r\n- Added active HTTP readiness polling after WAHA container restart\r\n- Improved audio voice note format compatibility with opus codec specification\r\n- Added response logging and refined retry and fallback delivery flow\r\n\r\n<!-- lang:pt -->\r\n**Resumo:** Aprimoramento da estabilidade no envio de notas de voz do WhatsApp e verificacao de prontidao no reinicio do servico.\r\n\r\n**Destaques:**\r\n- Adicao de espera ativa por HTTP apos o reinicio do container WAHA\r\n- Melhoria da compatibilidade de formato de notas de voz com codec opus\r\n- Adicao de logs de resposta e refinamento do fluxo de reenvio e fallback"
 }
