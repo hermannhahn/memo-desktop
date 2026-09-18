@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.39-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed application crash when clicking Select Folder or Browse Other File in backup and restore.
+
+**Highlights:**
+- Eliminated Wails runtime file and folder dialog calls that caused unexpected desktop application termination on Windows 11
+- Implemented robust isolated Windows Forms dialog execution with TopMost focus
+- Restored smooth folder selection and backup zip browsing functionality
+
+<!-- lang:pt -->
+**Resumo:** Correcao do fechamento inesperado do aplicativo ao clicar em Select Folder ou Browse Other File em backup e restauracao.
+
+**Destaques:**
+- Eliminacao das chamadas de dialogo do Wails runtime que causavam queda inesperada do aplicativo no Windows 11
+- Implementacao de execucao isolada e estavel de dialogos nativos com foco em primeiro plano
+- Restauracao do funcionamento de selecao de pasta e arquivo zip de backup sem interrupcoes
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.39-alpha (`4fba927`)
+- update development branch (`3530986`)
+
+#### 🐛 Correções
+- eliminate wails file dialog crashes and use isolated powershell dialogs (`f4214fd`)
+
+
+---
+
+
 ## Release - v2.6.38-alpha
 ### 📣 Apresentação da Atualização
 
