@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.52-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Isolate global user rules strictly to ~/.agents/AGENTS.md and decouple AGY installer injection.
+
+**Highlights:**
+- Removed legacy fallback to ~/Agents/AGENTS.md, injecting exclusively the user's ~/.agents/AGENTS.md
+- Decoupled Antigravity CLI installer from ~/.agents/AGENTS.md, preserving it strictly for user directives
+- Retained MEMOROUTER DEFINITIONS strictly in ~/.gemini/AGENTS.md and dedicated plugin rules
+
+<!-- lang:pt -->
+**Resumo:** Isolamento estrito de regras globais do usuário em ~/.agents/AGENTS.md e desacoplamento da injeção do AGY.
+
+**Destaques:**
+- Removido fallback para ~/Agents/AGENTS.md, injetando exclusivamente o arquivo ~/.agents/AGENTS.md do usuário
+- Desacoplado o instalador da CLI do Antigravity de ~/.agents/AGENTS.md, preservando-o puramente para diretrizes do usuário
+- Mantidas as MEMOROUTER DEFINITIONS estritamente em ~/.gemini/AGENTS.md e nas regras do plugin dedicado
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.52-alpha (`efc823a`)
+- updates in fix/agent-rules-isolation (`87b0fae`)
+- remove dev-cli delegation, enforce direct execution and add environment lock for releases (`947b1ab`)
+
+#### 🐛 Correções
+- strictly isolate ~/.agents/AGENTS.md and decouple AGY installer injection (`555468a`)
+
+#### 📚 Documentação
+- streamline AGENTS.md and GEMINI.md keeping essential warnings and technical pointers (`c6d9c32`)
+
+#### 🔧 Manutenção / Refatoração
+- sanitize root directory moving non-essential files to temp (`b94faa0`)
+
+
+---
+
+
 ## Release - v2.6.51-alpha
 ### 📣 Apresentação da Atualização
 
