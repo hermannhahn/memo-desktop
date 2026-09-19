@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.47-alpha`
+## 📥 Download da Última Versão: `v2.6.48-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.47-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/MEMO-Desktop-Setup-v2.6.47-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.48-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/MEMO-Desktop-Setup-v2.6.48-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.47-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/MEMO-Desktop-Setup-v2.6.47-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.48-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/MEMO-Desktop-Setup-v2.6.48-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.47-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.48-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.47-alpha:
+### 🌟 Notas do Release v2.6.48-alpha:
 <!-- lang:en -->
-**Summary:** Fix WhatsApp Web voice message delivery by preventing mediaOptions.toJSON from overwriting message keys.
+**Summary:** Automate WAHA WebJS patch on service startup and add self-healing retry on voice note delivery.
 
 **Highlights:**
-- Idempotent WebJS patch preserving message key and addressing properties during voice note serialization
-- Automated patch application during service install and runtime readiness checks
-- Fully restored WhatsApp PTT audio delivery (HTTP 201)
+- Auto-apply WAHA WebJS patch on service boot to prevent message ID erasure
+- Self-healing retry in SendVoiceMessage automatically re-applies patch and retries delivery
+- Fully tested and verified PTT voice note delivery (HTTP 201)
 
 <!-- lang:pt -->
-**Resumo:** Correção no envio de notas de voz do WhatsApp impedindo a sobreposição da chave da mensagem por mediaOptions.toJSON.
+**Resumo:** Automação da aplicação do patch no WAHA WebJS no boot do serviço e auto-recuperação no envio de voz.
 
 **Destaques:**
-- Patch idempotente no WebJS preservando chave e propriedades de endereçamento na serialização de voz
-- Aplicação automatizada do patch na instalação do serviço e verificação de integridade em runtime
-- Envio de áudios PTT no WhatsApp restabelecido com sucesso (HTTP 201)
+- Aplicação automática do patch no WAHA WebJS na inicialização do serviço prevenindo perda do ID da mensagem
+- Mecanismo de auto-recuperação no SendVoiceMessage que reaplica o patch e tenta novamente
+- Envio de áudios PTT no WhatsApp 100% testado e validado com entrega (HTTP 201)
 
 ---
 

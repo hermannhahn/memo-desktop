@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.48-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automate WAHA WebJS patch on service startup and add self-healing retry on voice note delivery.
+
+**Highlights:**
+- Auto-apply WAHA WebJS patch on service boot to prevent message ID erasure
+- Self-healing retry in SendVoiceMessage automatically re-applies patch and retries delivery
+- Fully tested and verified PTT voice note delivery (HTTP 201)
+
+<!-- lang:pt -->
+**Resumo:** Automação da aplicação do patch no WAHA WebJS no boot do serviço e auto-recuperação no envio de voz.
+
+**Destaques:**
+- Aplicação automática do patch no WAHA WebJS na inicialização do serviço prevenindo perda do ID da mensagem
+- Mecanismo de auto-recuperação no SendVoiceMessage que reaplica o patch e tenta novamente
+- Envio de áudios PTT no WhatsApp 100% testado e validado com entrega (HTTP 201)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.48-alpha (`4452d50`)
+
+#### 🐛 Correções
+- auto-apply WAHA WebJS patch on startup and add self-healing retry (`4ea47d7`)
+
+
+---
+
+
 ## Release - v2.6.47-alpha
 ### 📣 Apresentação da Atualização
 
