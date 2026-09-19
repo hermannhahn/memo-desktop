@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.47-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix WhatsApp Web voice message delivery by preventing mediaOptions.toJSON from overwriting message keys.
+
+**Highlights:**
+- Idempotent WebJS patch preserving message key and addressing properties during voice note serialization
+- Automated patch application during service install and runtime readiness checks
+- Fully restored WhatsApp PTT audio delivery (HTTP 201)
+
+<!-- lang:pt -->
+**Resumo:** Correção no envio de notas de voz do WhatsApp impedindo a sobreposição da chave da mensagem por mediaOptions.toJSON.
+
+**Destaques:**
+- Patch idempotente no WebJS preservando chave e propriedades de endereçamento na serialização de voz
+- Aplicação automatizada do patch na instalação do serviço e verificação de integridade em runtime
+- Envio de áudios PTT no WhatsApp restabelecido com sucesso (HTTP 201)
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.47-alpha (`d0871ff`)
+
+#### 🐛 Correções
+- preserve message key in WebJS mediaOptions serialization for voice notes (`d3b2d65`)
+
+
+---
+
+
 ## Release - v2.6.46-alpha
 ### 📣 Apresentação da Atualização
 
