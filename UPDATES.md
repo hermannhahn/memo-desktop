@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.50-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Robust WebJS message structure patch ensuring voice note delivery without key collision.
+
+**Highlights:**
+- WebJS Patch (PatchWAHAWebJS): regex-based replacement that strips undefined collision keys (id, from, to, ack) from rawMedia and anchors newMsgKey at the base of the message object.
+- Fully prevents WhatsApp Web memoization error Data passed to getter must include an id property after container recreation.
+- Tested and verified voice note delivery returning HTTP 201 Created.
+
+<!-- lang:pt -->
+**Resumo:** Patch robusto na estrutura de mensagem do WebJS garantindo entrega de notas de voz sem colisao de chaves.
+
+**Destaques:**
+- Patch WebJS (PatchWAHAWebJS): substituicao baseada em regex que remove chaves de colisao indefinidas (id, from, to, ack) de rawMedia e ancora newMsgKey na base do objeto de mensagem.
+- Previne em definitivo o erro de memoizacao do WhatsApp Web Data passed to getter must include an id property apos a recriacao do container.
+- Envio de notas de voz testado e validado com retorno HTTP 201 Created.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.50-alpha (`30e02ef`)
+
+#### 🐛 Correções
+- robust WebJS rawMedia patch ensuring message key anchoring (`80072bc`)
+
+
+---
+
+
 ## Release - v2.6.49-alpha
 ### 📣 Apresentação da Atualização
 
