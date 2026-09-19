@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.51-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Dynamic agent skills discovery, container workspace auto-resolution, and physical synchronization within Docker container environments.
+
+**Highlights:**
+- Dynamic Workspace Resolution: MCP skills automatically resolves active project workspaces and container repositories for agent_id without requiring workdir from LLM.
+- Clean Scope Isolation: strictly restricted to .agents ecosystem (project repositories, agent-specific skills, and shared agent skills), expunging external CLI plugins.
+- Container Physical Sync: automatically synchronizes agent and shared skills into /root/.agents/skills within container persistent volumes on workspace initialization, saving, and websocket sync events.
+- Architecture Documentation: complete technical specifications added in docs/SKILLS_AND_WORKSPACES.md and updated in docs/MCP_TOOLS_ARCHITECTURE.md.
+
+<!-- lang:pt -->
+**Resumo:** Auto-descoberta dinamica de skills de agentes, resolucao automatica de workspaces de containers e sincronizacao fisica nos ambientes de containers Docker.
+
+**Destaques:**
+- Resolucao Dinamica de Workspaces: a ferramenta MCP skills descobre automaticamente os workspaces de projetos ativos e repositorios nos containers do agent_id sem exigir workdir do LLM.
+- Isolamento Estrito de Escopo: restrita estritamente ao ecossistema .agents (repositorios de projetos, skills exclusivas do agente e skills compartilhadas), expurgando plugins de CLIs externas.
+- Sincronizacao Fisica no Container: sincroniza automaticamente as skills do agente e compartilhadas para /root/.agents/skills nos volumes persistentes dos containers no boot, salvamento e eventos de push websocket.
+- Documentacao de Arquitetura: especificacoes tecnicas completas adicionadas em docs/SKILLS_AND_WORKSPACES.md e atualizadas em docs/MCP_TOOLS_ARCHITECTURE.md.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.51-alpha (`446b1cf`)
+- update development branch (`9ea9cf7`)
+- dynamic agent skills discovery, workspace resolution and container sync (`11144d6`)
+
+
+---
+
+
 ## Release - v2.6.50-alpha
 ### 📣 Apresentação da Atualização
 
