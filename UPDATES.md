@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.46-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized agent workspaces to ~/.agents/ with dynamic container bindings and isolated global rules.
+
+**Highlights:**
+- Migrated agent containers and workspaces to ~/.agents/<agent_id>/<container>/root with automatic legacy migration fallback
+- Isolated global agent directives to strictly inject ~/.agents/AGENTS.md and ignore external CLI configurations
+- Optimized token usage by moving container workspace instructions directly into Docker tool return footers
+
+<!-- lang:pt -->
+**Resumo:** Padronização dos workspaces de agentes em ~/.agents/ com binds dinâmicos e isolamento de regras globais.
+
+**Destaques:**
+- Migração de containers e workspaces de agentes para ~/.agents/<agent_id>/<container>/root com fallback retrocompatível
+- Isolamento de diretrizes globais para injetar estritamente ~/.agents/AGENTS.md, ignorando configurações de outras CLIs
+- Otimização de tokens movendo instruções de workspace dos containers para o rodapé das respostas das ferramentas Docker
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.46-alpha (`9eebe88`)
+- update development branch (`38c19f0`)
+- inject exclusively user ~/.agents/AGENTS.md and move workspace notice to docker tool footers (`816a2de`)
+- migrate workspace to ~/.agents and implement lean project rules directives (`ab7f49b`)
+
+
+---
+
+
 ## Release - v2.6.45-alpha
 ### 📣 Apresentação da Atualização
 
