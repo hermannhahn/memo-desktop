@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.49-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automatically register Microsoft Defender Antivirus exclusions during installation and updates to prevent heuristic false positives on binaries.
+
+**Highlights:**
+- Inno Setup (setup.iss): added automatic Defender exclusion configuration for the installation directory ({app}) and binaries (memo.exe, updater.exe) in both ssInstall and ssPostInstall stages.
+- Installer Scripts (install-cert.bat, install-memo.ps1, install-memo.bat): added proactive Defender exclusion commands (Add-MpPreference) for Program Files MEMO directories and processes.
+- Prevents machine learning heuristic false positive Trojan:Win32/Bearfoos.A!ml from quarantining newly built executables.
+
+<!-- lang:pt -->
+**Resumo:** Registro automatico de exclusoes no Microsoft Defender Antivirus durante a instalacao e atualizacoes para evitar falsos positivos nos binarios.
+
+**Destaques:**
+- Inno Setup (setup.iss): adicionada configuracao automatica de exclusoes no Defender para a pasta de instalacao ({app}) e executaveis (memo.exe, updater.exe) nas etapas ssInstall e ssPostInstall.
+- Scripts de Instalacao (install-cert.bat, install-memo.ps1, install-memo.bat): adicionado registro proativo de exclusoes (Add-MpPreference) para as pastas do MEMO em Program Files e processos.
+- Previne que falsos positivos de heuristica de machine learning (Trojan:Win32/Bearfoos.A!ml) coloquem executaveis recem-compilados em quarentena.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.49-alpha (`502c10b`)
+
+#### 🐛 Correções
+- auto-register Microsoft Defender exclusions on install and update (`aae3283`)
+
+
+---
+
+
 ## Release - v2.6.48-alpha
 ### 📣 Apresentação da Atualização
 
