@@ -3,6 +3,70 @@
 ---
 
 
+## Release - v2.6.43-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automatic schema synchronization and migration execution following database backup restoration.
+
+**Highlights:**
+- Auto-sync database schema immediately after restoring backup archives
+- Drop stale migration records prior to restore so legacy backups receive proper data migration
+- Ensure new consolidation columns and daily memory statuses are preserved seamlessly
+
+<!-- lang:pt -->
+**Resumo:** Sincronização automática do schema do banco e execução de migrações após restauração de backup.
+
+**Destaques:**
+- Sincronização automática do schema do banco logo após a restauração de arquivos de backup
+- Limpeza de registros obsoletos de migração antes do restore para garantir atualização em backups legados
+- Garantia de que novas colunas de consolidação e status de memórias diárias sejam preservados corretamente
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.43-alpha (`751db52`)
+
+
+---
+
+
+## Release - v2.6.42-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automatic schema synchronization and migration execution following database backup restoration.
+
+**Highlights:**
+- Auto-sync database schema immediately after restoring backup archives
+- Drop stale migration records prior to restore so legacy backups receive proper data migration
+- Ensure new consolidation columns and daily memory statuses are preserved seamlessly
+
+<!-- lang:pt -->
+**Resumo:** Sincronização automática do schema do banco e execução de migrações após restauração de backup.
+
+**Destaques:**
+- Sincronização automática do schema do banco logo após a restauração de arquivos de backup
+- Limpeza de registros obsoletos de migração antes do restore para garantir atualização em backups legados
+- Garantia de que novas colunas de consolidação e status de memórias diárias sejam preservados corretamente
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.42-alpha (`415cb0e`)
+- update development branch (`8d7e13b`)
+
+#### 🐛 Correções
+- rollback WAHA image to stable tag latest-2026.7.1 (v2026.8 broke audio/browser connection) (`b390f0c`)
+
+
+---
+
+
 ## Release - v2.6.41-alpha
 ### 📣 Apresentação da Atualização
 
