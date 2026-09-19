@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.45-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Restored WhatsApp gateway client and audio delivery to stable pre-WAHA 0.8 architecture.
+
+**Highlights:**
+- Reverted WAHA WebJS monkey patches and eliminated dynamic runtime container script injection
+- Restored standard sendVoice payload and canonical HTTP status handling for reliable audio note delivery
+- Cleaned sync gateway media handlers and pinned WhatsApp service container to stable image release
+
+<!-- lang:pt -->
+**Resumo:** Restauração do cliente de WhatsApp e envio de notas de voz à arquitetura estável pré-WAHA 0.8.
+
+**Destaques:**
+- Reversão dos patches no motor WAHA WebJS e eliminação de injeção dinâmica de scripts no container
+- Restauração do payload padrão de sendVoice e tratamento canônico de status HTTP para envio de notas de voz
+- Limpeza dos handlers de mídia no gateway sync e fixação do container WhatsApp na imagem estável
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.45-alpha (`2e6a107`)
+- update development branch (`0ed1591`)
+
+#### 🐛 Correções
+- revert whatsapp code to stable pre-WAHA 0.8 state for WAHA latest-2026.7.1 (`3aaeb3f`)
+
+
+---
+
+
 ## Release - v2.6.44-alpha
 ### 📣 Apresentação da Atualização
 
