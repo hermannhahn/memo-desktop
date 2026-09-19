@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.6.44-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Automatic schema synchronization and migration execution following database backup restoration.
+
+**Highlights:**
+- Auto-sync database schema immediately after restoring backup archives
+- Drop stale migration records prior to restore so legacy backups receive proper data migration
+- Ensure new consolidation columns and daily memory statuses are preserved seamlessly
+
+<!-- lang:pt -->
+**Resumo:** Sincronização automática do schema do banco e execução de migrações após restauração de backup.
+
+**Destaques:**
+- Sincronização automática do schema do banco logo após a restauração de arquivos de backup
+- Limpeza de registros obsoletos de migração antes do restore para garantir atualização em backups legados
+- Garantia de que novas colunas de consolidação e status de memórias diárias sejam preservados corretamente
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.44-alpha (`19f45ed`)
+
+
+---
+
+
 ## Release - v2.6.43-alpha
 ### 📣 Apresentação da Atualização
 
