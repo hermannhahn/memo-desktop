@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.54-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### Professional Documentation Overhaul, True Hybrid RAG & Deep Research Alignment
+
+- **Documentation Architecture**: Migrated legacy documents to `temp/docs/` and structured clean, modular documentation in `docs/` (`01-architecture` to `09-reference`, `docs/README.md`).
+- **Cognitive & Developer Governance**: Enforced anti-monolith guidelines and mandatory documentation rules in `GEMINI.md` and `AGENTS.md`.
+- **Hybrid RAG & Research Alignment**: Formalized True Hybrid RRF (pgvector + Trigram FTS), Deep Research async jobs, and 2-Hop Entity Knowledge Graph schemas.
+
+<!-- lang:pt -->
+### Reestruturação Profissional da Documentação, RAG Híbrido Real & Alinhamento com Deep Research
+
+- **Arquitetura de Documentação**: Migração dos documentos legados para `temp/docs/` e criação de estrutura modular profissional em `docs/` (`01-architecture` a `09-reference`, `docs/README.md`).
+- **Governança Cognitiva & Anti-Monólito**: Diretrizes estritas no `GEMINI.md` e `AGENTS.md` contra arquivos gigantes (>500-800 linhas) e exigência de documentação técnica padronizada.
+- **Alinhamento do RAG Híbrido & Research**: Formalização do RAG Híbrido RRF (pgvector + FTS Trigram), Deep Research assíncrono e Grafo de Entidades de 2 saltos.
+
+### 📋 Changelog da Versão
+
+**Total:** 11 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.54-alpha (`167714c`)
+- update development branch (`e3007fa`)
+- updates in feature/knowledge-base-and-deep-research (`b272eb0`)
+- updates in feature/concurrency-context-isolation-audit (`b5ca7fe`)
+- updates in feature/universal-structured-evidence-format (`c1946a4`)
+- updates in feature/session-working-memory-checkpointing (`75c29f6`)
+- implement 2-hop relational graph traversal and MCP max_hops support (`413131f`)
+- implement semantic sleep clustering and graph edge linking (`e1d7d1a`)
+- implement multilingual FTS (EN/PT/ES/simple) and 2nd-stage reranker (`6e44c18`)
+- implement hybrid RRF search, semantic disambiguation, and auto-embeddings (`de21948`)
+- implement hybrid search with rrf, fts index and cli benchmark suite (`e4adbf9`)
+
+
+---
+
+
 ## Release - v2.6.53-alpha
 ### 📣 Apresentação da Atualização
 
