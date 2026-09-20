@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.6.60-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed a bug where agents were being unnecessarily woken up after every Docker command, even when the result was already returned directly. Now agents are only notified when a command truly runs in the background.
+
+**Highlights:**
+- Agents no longer receive a redundant wake-up notification after fast Docker commands that already returned their results
+- Background notifications are now sent only for commands that genuinely exceed the wait window or were explicitly requested to run asynchronously
+
+<!-- lang:pt -->
+**Resumo:** Corrigido um bug onde os agentes eram acordados desnecessariamente após todo comando Docker, mesmo quando o resultado já havia sido retornado diretamente. Agora os agentes só são notificados quando um comando realmente roda em background.
+
+**Destaques:**
+- Agentes não recebem mais uma notificação de acordar redundante após comandos Docker rápidos que já retornaram seus resultados
+- Notificações em background agora são enviadas apenas para comandos que genuinamente ultrapassam a janela de espera ou foram explicitamente solicitados para rodar de forma assíncrona
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.60-alpha (`9426d41`)
+- update development branch (`b9b1f32`)
+- updates in fix/docker-notify-only-async-tasks (`1215c35`)
+
+
+---
+
+
 ## Release - v2.6.59-alpha
 ### 📣 Apresentação da Atualização
 
