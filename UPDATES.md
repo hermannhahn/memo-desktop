@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.53-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Improved skills discovery and management by strictly scoping filesystem search to the project skills directory and integrating local SQLite database synchronization for skills.
+
+**Highlights:**
+- Restricts skill discovery strictly to .agents/skills in active workspaces, preventing legacy path pollution.
+- Integrates local SQLite database synchronization for skills, enabling seamless access and execution across both file and database sources.
+
+<!-- lang:pt -->
+**Resumo:** Aprimoramento na descoberta e gerenciamento de skills, restringindo a busca ao diretório de skills do projeto e integrando sincronização direta com o banco SQLite local.
+
+**Destaques:**
+- Restringe a descoberta de skills estritamente a .agents/skills no workspace ativo, eliminando caminhos legados.
+- Integra sincronização com o banco de dados SQLite local, permitindo acesso transparente e execução de skills armazenadas em arquivos ou banco.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.53-alpha (`38a5acb`)
+- updates in fix/skills-discovery-paths (`436672c`)
+- integrate sqlite database skills discovery and sync in mcp tool (`c326e37`)
+
+#### 🐛 Correções
+- restrict discovery strictly to .agents/skills and remove ~/Agents paths (`2dbbbe6`)
+
+
+---
+
+
 ## Release - v2.6.52-alpha
 ### 📣 Apresentação da Atualização
 
