@@ -3,6 +3,73 @@
 ---
 
 
+## Release - v2.6.56-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release brings asynchronous Docker task execution, an expanded MCP toolset, professional documentation overhaul, and a true Hybrid RAG system with multilingual search and semantic memory consolidation.
+
+**Highlights:**
+- Docker tasks now run asynchronously with reactive completion notifications, keeping your AI agents responsive
+- New MCP tools added for richer agent capabilities and more powerful integrations
+- Hybrid RAG search now supports multilingual full-text search (EN/PT/ES) with a 2-stage reranker
+- Knowledge base and deep research tools improved with structured evidence and session memory checkpointing
+- Memory consolidation upgraded with semantic sleep clustering and entity graph auto-embeddings
+- Documentation fully restructured and updated for easier navigation and maintenance
+
+<!-- lang:pt -->
+**Resumo:** Esta versão traz execução assíncrona de tarefas Docker, expansão das ferramentas MCP, documentação profissional reestruturada e um sistema RAG Híbrido real com busca multilíngue e consolidação semântica de memórias.
+
+**Destaques:**
+- Tarefas Docker agora rodam de forma assíncrona com notificações reativas de conclusão, mantendo os agentes mais responsivos
+- Novas ferramentas MCP adicionadas para capacidades ampliadas e integrações mais poderosas
+- Busca RAG híbrida agora suporta busca multilíngue (EN/PT/ES) com reranker de segundo estágio
+- Base de conhecimento e pesquisa profunda melhoradas com formato de evidências estruturadas e checkpoint de memória de sessão
+- Consolidação de memória aprimorada com agrupamento semântico durante o sono e auto-embeddings do grafo de entidades
+- Documentação completamente reestruturada e atualizada para navegação e manutenção mais fáceis
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.56-alpha (`d450c64`)
+- update development branch (`3fec423`)
+
+
+---
+
+
+## Release - v2.6.55-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### 🚀 Asynchronous Docker Tasks & MCP Toolset Expansion
+
+- **Asynchronous Docker Tasks**: Added background task execution manager (`DockerTaskManager`) with UUID tracking (`task_<hex>`), log streaming to `%AppData%/AI Bridge/agent-tasks/`, paginated inspection (`offset`, `limit`, `tail`), and task cancellation (`kill`).
+- **History & Execution Registry**: Added `last_commands` / `tasks` actions to inspect recent command runs and their status with multi-agent isolation.
+- **Reactive WebSocket Notification**: Dispatches `docker_task_completed` event to Memorouter upon task completion for automatic reactive agent wakeup.
+
+<!-- lang:pt -->
+### 🚀 Tarefas Docker em Segundo Plano e Expansão de Ferramentas MCP
+
+- **Tarefas Docker Assíncronas**: Implementado gerenciador de tarefas em segundo plano (`DockerTaskManager`) com rastreamento por UUID (`task_<hex>`), streaming de logs para `%AppData%/AI Bridge/agent-tasks/`, inspeção paginada (`offset`, `limit`, `tail`) e cancelamento de tarefas (`kill`).
+- **Histórico e Registro de Execuções**: Adicionadas ações `last_commands` / `tasks` no MCP docker para consulta das últimas execuções e resultados com isolamento por agente.
+- **Notificação Reativa via WebSocket**: Emite evento `docker_task_completed` para o Memorouter após a finalização de tarefas em segundo plano, viabilizando o despertar reativo do agente.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.55-alpha (`91d3968`)
+- update development branch (`fa44679`)
+- implement async task execution, history buffer and reactive completion notifications (`4debf09`)
+
+
+---
+
+
 ## Release - v2.6.54-alpha
 ### 📣 Apresentação da Atualização
 
