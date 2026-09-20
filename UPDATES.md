@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.57-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Internal naming has been updated throughout the application, replacing all legacy "AI Bridge" references with the official "MEMO Desktop" brand name.
+
+**Highlights:**
+- All skills, MCP tool descriptions, hints, and Docker labels now correctly display "MEMO Desktop" instead of "AI Bridge"
+- Improved consistency and clarity across the application interface and agent toolset
+
+<!-- lang:pt -->
+**Resumo:** A nomenclatura interna foi atualizada em toda a aplicação, substituindo todas as referências legadas de "AI Bridge" pelo nome oficial "MEMO Desktop".
+
+**Destaques:**
+- Todas as skills, descrições de ferramentas MCP, dicas e labels Docker agora exibem corretamente "MEMO Desktop" em vez de "AI Bridge"
+- Maior consistência e clareza na interface da aplicação e no conjunto de ferramentas dos agentes
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.57-alpha (`986a4ec`)
+- update development branch (`55afd56`)
+
+#### 🔧 Manutenção / Refatoração
+- update all skills, MCP descriptions, hints and docker labels from legacy AI Bridge to MEMO Desktop (`40722f0`)
+
+
+---
+
+
 ## Release - v2.6.56-alpha
 ### 📣 Apresentação da Atualização
 
