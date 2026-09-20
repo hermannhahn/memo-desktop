@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.59-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed a timing issue where Docker commands were being sent to background mode too quickly, before they had a chance to complete and return results directly.
+
+**Highlights:**
+- Docker commands now wait up to 5 seconds (previously 3 seconds) before switching to background mode
+- The wait timer now starts only after the command actually begins running inside the container, not before — meaning API response delays no longer reduce the available wait window
+- Short and fast commands reliably return their results directly without requiring an extra background task lookup
+
+<!-- lang:pt -->
+**Resumo:** Corrigido um problema de temporização onde comandos Docker eram enviados para modo background muito rapidamente, antes de ter chance de completar e retornar os resultados diretamente.
+
+**Destaques:**
+- Comandos Docker agora aguardam até 5 segundos (antes eram 3 segundos) antes de mudar para modo background
+- O timer de espera agora começa somente após o comando realmente iniciar dentro do container, não antes — ou seja, atrasos de resposta da API não reduzem mais a janela de espera disponível
+- Comandos curtos e rápidos retornam seus resultados diretamente de forma confiável, sem necessitar de uma consulta adicional de tarefa em background
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.59-alpha (`32f6e2b`)
+- update development branch (`ebd228e`)
+- updates in fix/docker-exec-sync-timer-from-cmd-start (`88a4533`)
+
+
+---
+
+
 ## Release - v2.6.58-alpha
 ### 📣 Apresentação da Atualização
 
