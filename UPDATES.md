@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.61-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added token-saving pagination to Docker file and directory tools, returning a concise 10 lines or items by default instead of dumping entire contents.
+
+**Highlights:**
+- `read_file` in Docker tool now defaults to returning 10 lines at a time with pagination parameters (`start_line`, `end_line`, `offset`, `limit`), preventing massive token consumption
+- `list_dir` in Docker tool now paginates directory listings with a default of 10 items (`offset`, `limit`, `has_more`)
+- Clarified MCP schema documentation and updated test suite
+
+<!-- lang:pt -->
+**Resumo:** Adicionada paginação para economia de tokens nas ferramentas Docker de arquivos e diretórios, retornando por padrão 10 linhas ou itens concisos em vez de despejar arquivos inteiros.
+
+**Destaques:**
+- `read_file` na ferramenta Docker agora retorna por padrão 10 linhas por vez com parâmetros de paginação (`start_line`, `end_line`, `offset`, `limit`), evitando consumo excessivo de tokens
+- `list_dir` na ferramenta Docker agora pagina listagens de diretório com padrão de 10 itens (`offset`, `limit`, `has_more`)
+- Documentação do schema MCP atualizada e suite de testes ajustada
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.61-alpha (`b51bf2e`)
+- update development branch (`4043ab3`)
+- updates in fix/docker-pagination-read-file-list-dir (`3e381f4`)
+
+
+---
+
+
 ## Release - v2.6.60-alpha
 ### 📣 Apresentação da Atualização
 
