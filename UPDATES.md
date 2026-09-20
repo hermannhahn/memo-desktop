@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.6.58-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed a bug where agents could no longer see their own Docker containers after an internal naming update. All existing containers are now recognized correctly again.
+
+**Highlights:**
+- Agents with containers created before the last update can now see and manage them again
+- No containers need to be recreated — existing ones continue working as before
+
+<!-- lang:pt -->
+**Resumo:** Corrigido um bug onde os agentes não conseguiam mais enxergar seus próprios containers Docker após uma atualização interna de nomenclatura. Todos os containers existentes voltam a ser reconhecidos corretamente.
+
+**Destaques:**
+- Agentes com containers criados antes da última atualização voltam a visualizá-los e gerenciá-los normalmente
+- Nenhum container precisa ser recriado — os existentes continuam funcionando como antes
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.58-alpha (`b4f3630`)
+- update development branch (`461b90f`)
+- updates in fix/docker-legacy-label-backward-compat (`e815507`)
+
+
+---
+
+
 ## Release - v2.6.57-alpha
 ### 📣 Apresentação da Atualização
 
