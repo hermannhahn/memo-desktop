@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.64-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Removed redundant Docker write/replace payloads, enhanced WebSocket read deadline renewal on every incoming message, and increased connection timeouts.
+
+**Highlights:**
+- Eliminated redundant full content echoing in `write_file` and `replace_content` Docker actions, returning concise metadata to save LLM context tokens and prevent rate limit exhaustion
+- Enhanced Gorilla WebSocket stability with dynamic read deadline renewal (90s) on every successfully received message and ping frame
+- Configured 20s heartbeat ping interval and 30s write deadline for maximum resilience against network fluctuations and heavy payloads
+- Removed artificial 3-second delay from local Go Docker executors to ensure instant local responsiveness
+
+<!-- lang:pt -->
+**Resumo:** Removido echo redundante de conteúdo nas ferramentas Docker, implementada renovação dinâmica de deadline no WebSocket a cada mensagem recebida e ampliados os timeouts de conexão.
+
+**Destaques:**
+- Eliminado o retorno duplicado de conteúdo em `write_file` e `replace_content` da ferramenta Docker, retornando apenas metadados concisos para economizar tokens de contexto na LLM e mitigar estouros de rate limit
+- Aprimorada a estabilidade do Gorilla WebSocket com renovação dinâmica de deadline de leitura (90s) a cada mensagem recebida e resposta a frames de ping
+- Configurado heartbeat de 20s e deadline de escrita de 30s para máxima resiliência contra oscilações de rede e transmissões pesadas
+- Removido delay artificial de 3s nos executores Go locais do Docker para garantir agilidade e resposta instantânea
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.64-alpha (`7cc072d`)
+- update development branch (`b8919ba`)
+
+#### 🐛 Correções
+- remove redundant write payload, enhance websocket deadline and sliding window (`0344fea`)
+
+
+---
+
+
 ## Release - v2.6.63-alpha
 ### 📣 Apresentação da Atualização
 
