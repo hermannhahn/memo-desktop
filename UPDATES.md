@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.65-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Compressed MCP Docker tool JSON schema parameter descriptions to minimize token overhead per LLM inference turn.
+
+**Highlights:**
+- Compressed verbose parameter descriptions across all ~25 actions/properties in the unified Docker tool schema into concise single-line strings
+- Significantly reduced base schema token footprint (~1,000 to 1,500 tokens saved per LLM call/tool iteration)
+- Critical optimization for rate-limited inference providers (such as NVIDIA NIM free tier) and multi-step Docker operations
+
+<!-- lang:pt -->
+**Resumo:** Compressão concisa das descrições dos parâmetros do schema da ferramenta MCP Docker para mitigar overhead de tokens em cada turno de inferência LLM.
+
+**Destaques:**
+- Compressão de descrições detalhadas e tutoriais multi-linha em todas as ~25 propriedades/ações do schema unificado do Docker para frases enxutas de uma linha
+- Redução expressiva no consumo estático de tokens do schema (~1.000 a 1.500 tokens economizados a cada chamada/iteração de ferramentas pela LLM)
+- Otimização crítica para provedores com restrições estritas de rate limit (ex: NVIDIA NIM) e fluxos intensivos com containers Docker
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.65-alpha (`0ae56b5`)
+
+#### 🐛 Correções
+- compact docker tool schema descriptions to reduce token overhead (`dc75ea6`)
+
+
+---
+
+
 ## Release - v2.6.64-alpha
 ### 📣 Apresentação da Atualização
 
