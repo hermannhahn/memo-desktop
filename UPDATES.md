@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.69-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Configured Deep Research as an opt-in MCP tool (disabled by default) and enhanced test suite integration for deep multi-source research tasks.
+
+**Highlights:**
+- Configured MCP tool `deep_research` as opt-in disabled by default (`Enabled: false`) to align with security boundaries (Docker, Moltbook)
+- Verified multi-angle query decomposition, parallel evidence gathering across Knowledge Base, Long-Term Memory, Notes, and Entity Graph
+- Verified full lifecycle actions: `start`, `status`, `report`, `list`, `cancel`
+- Updated test suite with `ToggleTool` validation passing 100% of unit tests
+
+<!-- lang:pt -->
+**Resumo:** Configuração do Deep Research como ferramenta MCP opt-in (desativada por padrão) e aprimoramento da integração de testes para pesquisas profundas multi-fonte.
+
+**Destaques:**
+- Configurada a ferramenta MCP `deep_research` como opt-in desativada por padrão (`Enabled: false`) alinhada às fronteiras de segurança (Docker, Moltbook)
+- Verificada decomposição de queries em múltiplos ângulos e busca paralela de evidências na Base de Conhecimento, Memória de Longo Prazo, Notas e Grafo de Entidades
+- Verificadas as ações de ciclo completo: `start`, `status`, `report`, `list` e `cancel`
+- Atualizada a suíte de testes unitários com validação via `ToggleTool` alcançando 100% de aprovação
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.69-alpha (`af60d0c`)
+- update development branch (`b9f70bf`)
+- updates in feature/deep-research (`cc02ed4`)
+
+#### 📚 Documentação
+- document FASE 78 in tasks/TODO.md (`cacc394`)
+- document skills entity graph, two-tier prompt injection and biological decay in architecture and sleep docs (`370d989`)
+
+
+---
+
+
 ## Release - v2.6.68-alpha
 ### 📣 Apresentação da Atualização
 
