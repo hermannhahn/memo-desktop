@@ -3,6 +3,48 @@
 ---
 
 
+## Release - v2.6.67-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Restored 7d as the default Dashboard filter, standardized the Notes Content badge and refresh layout, right-aligned all Backup action buttons, renamed execution buttons to "Backup Now", updated WhatsApp badge to "IM-2", and simplified the GPS service card label to "Endpoint and Maps".
+
+**Highlights:**
+- Restored `7d` as the default active filter in Dashboard memory analytics and removed the `1d` option
+- Compacted and vertically stacked the notes count badge above the Refresh button in the Notes Content tab, aligning with Memory Content styling
+- Aligned all action buttons in the Backup tab to the right side of cards
+- Renamed backup trigger buttons from `Run Backup Now` to `Backup Now` across all 8 supported languages
+- Updated WhatsApp service card badge from `COM-2` to `IM-2` on the Services Status tab
+- Shortened the external access label in the GPS (Traccar) card to `Endpoint and Maps` across static HTML and all 8 i18n dictionaries
+
+<!-- lang:pt -->
+**Resumo:** Restauração do filtro 7d como padrão no Dashboard, padronização do layout de badge e botão refresh em Notes Content, alinhamento dos botões de Backup à direita, simplificação para "Backup Now" / "Backup Agora", atualização do badge do WhatsApp para "IM-2" e encurtamento do rótulo do card de GPS para "Endpoint e Mapas".
+
+**Destaques:**
+- Restaurado `7d` como filtro ativo padrão nas análises de memória do Dashboard e removida a opção `1d`
+- Badge de contagem de anotações reduzido e reposicionado verticalmente acima do botão Refresh na aba Notes Content, padronizado com Memory Content
+- Alinhados todos os botões de ação à direita em todos os cards da aba Backup
+- Renomeados os botões de execução de backup de `Run Backup Now` para `Backup Now` ("Backup Agora" em PT-BR) em todos os 8 idiomas suportados
+- Alterado o badge do card do WhatsApp de `COM-2` para `IM-2` na aba Services Status
+- Encurtado o rótulo de acesso externo do card GPS (Traccar) para `Endpoint and Maps` ("Endpoint e Mapas" em português) no HTML e dicionários i18n
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.67-alpha (`09670b3`)
+- update development branch (`aa23ae5`)
+
+#### 🐛 Correções
+- update whatsapp badge to IM-2 and shorten traccar endpoint label (`dbe4305`)
+- align card action buttons to the right and rename Run Backup Now to Backup Now (`fef3434`)
+- restore 7d default dashboard filter and standardize notes content badge layout (`bdf8cbd`)
+
+
+---
+
+
 ## Release - v2.6.66-alpha
 ### 📣 Apresentação da Atualização
 
