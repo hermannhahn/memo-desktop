@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.62-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Increased default synchronous Docker execution threshold to 30 seconds to ensure seamless command execution without premature background interruptions.
+
+**Highlights:**
+- Extended default `wait_ms` for Docker `exec` action from 5s to 30s (30000ms), keeping grep, compilation, and file inspection commands in the active turn
+- Updated Docker MCP input schema and agent container skill documentation
+
+<!-- lang:pt -->
+**Resumo:** Aumentado o tempo padrão de espera síncrona do Docker para 30 segundos, garantindo execução contínua de comandos sem interrupções prematuras de background.
+
+**Destaques:**
+- `wait_ms` padrão da ação `exec` do Docker ampliado de 5s para 30s (30000ms), mantendo comandos de busca grep, compilação e leitura no turno ativo
+- Atualização do schema MCP do Docker e da documentação da skill de containers
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.62-alpha (`c959b4f`)
+- update development branch (`879d8e4`)
+- updates in fix/docker-wait-ms-30s (`99ab845`)
+- updates in development (`fb6fbc5`)
+
+
+---
+
+
 ## Release - v2.6.61-alpha
 ### 📣 Apresentação da Atualização
 
