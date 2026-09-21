@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.68-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Integrated Entity Knowledge Graph with the Agent Skills system, featuring two-tier system prompt injection, hybrid semantic-graph ranking in MCP skills tool, biological Hebbian reinforcement of skill usage, and extended YAML frontmatter support.
+
+**Highlights:**
+- Integrated skills as first-class entity nodes (`entity_type = "skill"`) in the Entity Knowledge Graph with bidirectional symmetric relations and 2-hop traversal with depth decay
+- Extended skill YAML frontmatter parser to support entities, environments, companion dependencies (`requires_skills`), and tags
+- Implemented hybrid ranking in `skills(action="list")` combining semantic similarity, entity graph proximity, and workspace matching
+- Introduced Two-Tier system prompt injection (Tier 1: Context-Aware Recommended skills, Tier 2: Compact Index) to save context tokens and eliminate blind truncation
+- Implemented biologically-inspired Hebbian reinforcement on skill invocation and prerequisite companion hints
+
+<!-- lang:pt -->
+**Resumo:** Integração do Grafo de Conhecimento de Entidades com o sistema de Skills de agentes, trazendo injeção em dois níveis no System Prompt, ranqueamento híbrido semântico-grafo na ferramenta MCP skills, reforço biológico Hebbiano de uso de skills e parser estendido de frontmatter YAML.
+
+**Destaques:**
+- Integradas skills como nós de primeira classe (`entity_type = "skill"`) no Grafo de Entidades, com relações simétricas bidirecionais e travessia 2-hop com decaimento de profundidade
+- Expandido o parser de frontmatter YAML de skills para suportar entidades, ambientes, dependências complementares (`requires_skills`) e tags
+- Implementado ranqueamento híbrido em `skills(action="list")` combinando similaridade semântica, proximidade no grafo de entidades e correspondência de workspace
+- Introduzida injeção em dois níveis (Two-Tier) no System Prompt (Tier 1: Skills Recomendadas e Contextuais; Tier 2: Índice Compacto), poupando tokens e evitando truncamento cego
+- Implementado reforço biológico Hebbiano na invocação de skills e avisos de skills complementares e pré-requisitos
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.68-alpha (`c038f45`)
+- update development branch (`dc758e1`)
+- integrate entity graph with skills system, two-tier prompt injection and biological reinforcement (`2fd643c`)
+- add pagination and truncation for large skills in MCP tool and trigger brain refresh on DB sync (`0b37aae`)
+
+
+---
+
+
 ## Release - v2.6.67-alpha
 ### 📣 Apresentação da Atualização
 
