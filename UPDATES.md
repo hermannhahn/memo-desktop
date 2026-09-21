@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.63-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added a 3-second post-execution delay to Docker tools for rate pacing and strict 2,500-character output truncation on docker exec.
+
+**Highlights:**
+- Added a 3-second post-execution delay to all Docker MCP tool operations (`docker`, `docker_create`, `docker_delete`) to prevent burst requests and enforce stable rate pacing
+- Enhanced `docker exec` output truncation with a hard 2,500-character cap and intelligent head/tail preservation for large logs and build outputs
+- Added unit tests covering short outputs, multi-line error/success truncation, and large single-line outputs
+
+<!-- lang:pt -->
+**Resumo:** Adicionado delay de 3 segundos pós-ferramenta Docker para rate pacing e truncamento estrito de 2.500 caracteres no docker exec.
+
+**Destaques:**
+- Injetado delay de 3 segundos pós-execução em todas as operações da ferramenta MCP Docker (`docker`, `docker_create`, `docker_delete`) para prevenir rajadas e garantir espaçamento estável
+- Truncamento inteligente e teto estrito de 2.500 caracteres no retorno de `docker exec`, preservando início e fim com aviso de linhas omitidas para logs e compilações extensas
+- Adicionados testes unitários cobrindo saídas curtas, truncamento multi-linhas em sucesso/erro e saídas massivas de linha única
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.63-alpha (`26241b1`)
+- update development branch (`d94af27`)
+- add 3s post-execution delay and strict 2500-char output truncation (`9f924e4`)
+
+
+---
+
+
 ## Release - v2.6.62-alpha
 ### 📣 Apresentação da Atualização
 

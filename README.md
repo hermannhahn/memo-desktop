@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.62-alpha`
+## 📥 Download da Última Versão: `v2.6.63-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.62-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/MEMO-Desktop-Setup-v2.6.62-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.63-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/MEMO-Desktop-Setup-v2.6.63-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.62-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/MEMO-Desktop-Setup-v2.6.62-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.63-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/MEMO-Desktop-Setup-v2.6.63-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.62-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.63-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.62-alpha:
+### 🌟 Notas do Release v2.6.63-alpha:
 <!-- lang:en -->
-**Summary:** Increased default synchronous Docker execution threshold to 30 seconds to ensure seamless command execution without premature background interruptions.
+**Summary:** Added a 3-second post-execution delay to Docker tools for rate pacing and strict 2,500-character output truncation on docker exec.
 
 **Highlights:**
-- Extended default `wait_ms` for Docker `exec` action from 5s to 30s (30000ms), keeping grep, compilation, and file inspection commands in the active turn
-- Updated Docker MCP input schema and agent container skill documentation
+- Added a 3-second post-execution delay to all Docker MCP tool operations (`docker`, `docker_create`, `docker_delete`) to prevent burst requests and enforce stable rate pacing
+- Enhanced `docker exec` output truncation with a hard 2,500-character cap and intelligent head/tail preservation for large logs and build outputs
+- Added unit tests covering short outputs, multi-line error/success truncation, and large single-line outputs
 
 <!-- lang:pt -->
-**Resumo:** Aumentado o tempo padrão de espera síncrona do Docker para 30 segundos, garantindo execução contínua de comandos sem interrupções prematuras de background.
+**Resumo:** Adicionado delay de 3 segundos pós-ferramenta Docker para rate pacing e truncamento estrito de 2.500 caracteres no docker exec.
 
 **Destaques:**
-- `wait_ms` padrão da ação `exec` do Docker ampliado de 5s para 30s (30000ms), mantendo comandos de busca grep, compilação e leitura no turno ativo
-- Atualização do schema MCP do Docker e da documentação da skill de containers
+- Injetado delay de 3 segundos pós-execução em todas as operações da ferramenta MCP Docker (`docker`, `docker_create`, `docker_delete`) para prevenir rajadas e garantir espaçamento estável
+- Truncamento inteligente e teto estrito de 2.500 caracteres no retorno de `docker exec`, preservando início e fim com aviso de linhas omitidas para logs e compilações extensas
+- Adicionados testes unitários cobrindo saídas curtas, truncamento multi-linhas em sucesso/erro e saídas massivas de linha única
 
 ---
 
