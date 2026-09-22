@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.74-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Expanded Deep Research & Knowledge Base with multi-format document parsing (.docx, .doc, .xlsx, .csv), domain constraints, and comprehensive filter options in the MCP tool.
+
+**Highlights:**
+- Added native parser and extraction support for Microsoft Word (`.docx`, `.doc`), Excel spreadsheets (`.xlsx`), and CSV tables (`.csv`) in Knowledge Base and Deep Research pipelines
+- Enhanced `deep_research` MCP tool schema and engine with extended filters: `scope`, `domains`, `file_types`, `max_sub_queries`, `limit`, `time_range`, and `language`
+- Implemented polymorphic argument parsing supporting comma-separated strings and JSON arrays for AI agent invocations
+- Updated technical architecture documentation in `docs/` and verified complete test suite with 100% pass rate
+
+<!-- lang:pt -->
+**Resumo:** Expandido o Deep Research e a Base de Conhecimento com suporte a múltiplos formatos (.docx, .doc, .xlsx, .csv), restrições de domínio e filtros completos na ferramenta MCP.
+
+**Destaques:**
+- Adicionado suporte nativo a leitura e extração de documentos Word (`.docx`, `.doc`), planilhas Excel (`.xlsx`) e tabelas CSV (`.csv`) na Base de Conhecimento e no motor Deep Research
+- Aprimorado o schema e motor da ferramenta MCP `deep_research` com filtros estendidos: `scope`, `domains`, `file_types`, `max_sub_queries`, `limit`, `time_range` e `language`
+- Implementado parser polimórfico de parâmetros aceitando tanto listas JSON quanto strings separadas por vírgula em chamadas de agentes
+- Atualizada a documentação técnica de arquitetura em `docs/` com 100% de aprovação nos testes automatizados em Go
+
+### 📋 Changelog da Versão
+
+**Total:** 1 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.74-alpha (`4718941`)
+
+
+---
+
+
 ## Release - v2.6.73-alpha
 ### 📣 Apresentação da Atualização
 
