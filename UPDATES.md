@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.6.78-alpha
+### 📣 Apresentação da Atualização
+
+# Liberação de Resolução DNS e Conexões Estabelecidas no Sandbox Docker
+
+### 📌 Destaques da Atualização:
+- **Resolução DNS Desbloqueada em Containers de Agentes (`internal/mcp/docker_tool.go`)**: Inseridas regras explícitas de `ACCEPT` para tráfego DNS (porta 53 UDP e TCP), loopback (`lo`) e conexões estabelecidas (`ESTABLISHED,RELATED`) antes do bloqueio de faixas de IP privadas no `entrypoint.sh`.
+- **Eliminação do Erro de Resolução de Host**: Comandos como `git pull`, `git fetch`, `curl` e chamadas de rede externas agora resolvem nomes de domínio (`github.com`, etc.) normalmente dentro do container isolado do Docker.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.78-alpha (`89e4f17`)
+- update development branch (`e748504`)
+
+
+---
+
+
 ## Release - v2.6.77-alpha
 ### 📣 Apresentação da Atualização
 
