@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.76-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resolved "MEMO Desktop offline" false timeout error on LTM searches with concurrent multi-tier search execution, expanded query parameter decoding, and increased WebSocket timeout.
+
+**Highlights:**
+- Parallelized 4-tier memory search pipeline (Vector Hybrid/Graph, Sessions, FTS Raw Messages, Notes) using concurrent goroutines and sync.WaitGroup, reducing search latency from >12s to ~2-3s
+- Added polymorphic search parameter decoding (`tags`, `query`, `q`, `search`) across WebSocket and REST endpoints
+- Increased Python MCP memory tools WebSocket timeout from 10.0s to 25.0s to avoid premature timeout exceptions on complex graph traversals
+- Added explicit IDs, session IDs, and current timestamps to Entity Graph nodes returned in LTM search for accurate evidence time formatting
+
+<!-- lang:pt -->
+**Resumo:** Correção do falso erro de "MEMO Desktop offline" nas buscas LTM através de execução concorrente multi-camada, decodificação de parâmetros polimórficos e ampliação do timeout WebSocket.
+
+**Destaques:**
+- Paralelizadas as 4 camadas de busca de memória (Vetorial Híbrida/Grafo, Sessões, Mensagens FTS e Anotações) com goroutines e sync.WaitGroup, reduzindo a latência de >12s para ~2-3s
+- Adicionado suporte a parâmetros polimórficos de busca (`tags`, `query`, `q`, `search`) no WebSocket e REST API
+- Aumentado o timeout das ferramentas MCP de memória no Python de 10.0s para 25.0s, eliminando falsos erros de timeout em consultas complexas com expansão de grafo
+- Adicionados IDs, session_ids e timestamps válidos aos nós do Grafo de Conhecimento retornados na LTM para formatação correta de tempo nas evidências
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.76-alpha (`6013e0c`)
+- update development branch (`b46ec2d`)
+
+#### 🐛 Correções
+- add concurrent search execution, expand query parameters, and fix entity metadata (`b1c8ae3`)
+
+
+---
+
+
 ## Release - v2.6.75-alpha
 ### 📣 Apresentação da Atualização
 
