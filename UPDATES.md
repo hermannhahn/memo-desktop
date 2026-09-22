@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.6.79-alpha
+### 📣 Apresentação da Atualização
+
+# Auto-Healing e Atualização Automática de DNS em Sandboxes e Containers Existentes
+
+### 📌 Destaques da Atualização:
+- **Auto-Healing de Containers e Sandboxes (`EnsureAgentContainersEntrypointUpdated`)**: O MEMO Desktop agora varre automaticamente no boot e na inicialização de ferramentas todos os sandboxes existentes em disco (`%AppData%\Roaming\MEMO\agent-containers\*`) e containers ativos, migrando e injetando as regras de liberação DNS (UDP/TCP 53) sem exigir recriação manual de containers pelos usuários.
+- **Prevenção Global para Novos e Antigos Containers**: Garante que todos os usuários do MEMO Desktop e seus agentes tenham conectividade externa e resolução de nomes 100% funcionais, independentemente de quando o container foi criado.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.79-alpha (`42688b8`)
+- update development branch (`b417427`)
+
+
+---
+
+
 ## Release - v2.6.78-alpha
 ### 📣 Apresentação da Atualização
 

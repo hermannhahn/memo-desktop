@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.78-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.78-alpha/MEMO-Desktop-Setup-v2.6.78-alpha.exe",
-    "notes": "# Liberação de Resolução DNS e Conexões Estabelecidas no Sandbox Docker\n\n### 📌 Destaques da Atualização:\n- **Resolução DNS Desbloqueada em Containers de Agentes (`internal/mcp/docker_tool.go`)**: Inseridas regras explícitas de `ACCEPT` para tráfego DNS (porta 53 UDP e TCP), loopback (`lo`) e conexões estabelecidas (`ESTABLISHED,RELATED`) antes do bloqueio de faixas de IP privadas no `entrypoint.sh`.\n- **Eliminação do Erro de Resolução de Host**: Comandos como `git pull`, `git fetch`, `curl` e chamadas de rede externas agora resolvem nomes de domínio (`github.com`, etc.) normalmente dentro do container isolado do Docker."
+    "version": "2.6.79-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.79-alpha/MEMO-Desktop-Setup-v2.6.79-alpha.exe",
+    "notes": "# Auto-Healing e Atualização Automática de DNS em Sandboxes e Containers Existentes\n\n### 📌 Destaques da Atualização:\n- **Auto-Healing de Containers e Sandboxes (`EnsureAgentContainersEntrypointUpdated`)**: O MEMO Desktop agora varre automaticamente no boot e na inicialização de ferramentas todos os sandboxes existentes em disco (`%AppData%\\Roaming\\MEMO\\agent-containers\\*`) e containers ativos, migrando e injetando as regras de liberação DNS (UDP/TCP 53) sem exigir recriação manual de containers pelos usuários.\n- **Prevenção Global para Novos e Antigos Containers**: Garante que todos os usuários do MEMO Desktop e seus agentes tenham conectividade externa e resolução de nomes 100% funcionais, independentemente de quando o container foi criado."
 }
