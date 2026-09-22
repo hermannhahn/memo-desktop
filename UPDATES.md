@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.80-alpha
+### 📣 Apresentação da Atualização
+
+# Auto-Healing de Rede/DNS Persistente, Auto-Start Transparente e Prevenção de Crashloop em Containers
+
+### 📌 Destaques da Atualização (PT-BR):
+- **Auto-Healing de DNS Persistente em Tempo de Execução (`ensureContainerNetworkAndDNS`)**: As regras `iptables` de liberação de DNS (`UDP/TCP port 53`) agora são validadas e aplicadas dinamicamente antes de qualquer operação ou comando no container (`start`, `restart`, `exec`, `read_file`, `write_file`, `replace_content`, `grep`, `find_files`, `list_dir`). Containers e imagens antigas nunca mais perdem resolução DNS ao reiniciar.
+- **Auto-Start Transparente de Containers Parados (`ensureContainerRunning`)**: Inicialização e despausa automáticas quando o container estiver em estado `exited`, `created` ou `paused`, aguardando a prontidão operacional e eliminando erros de container parado para os agentes.
+- **Prevenção de Crashloop e Pacotes Essenciais**: Criação de containers a partir de imagens base agora inclui instalação automática de ferramentas essenciais (`git`, `curl`, `ca-certificates`, `procps`) e processo keep-alive (`tail -f /dev/null` + `stdin_open`/`tty`) prevenindo loops de reinicialização (`Restarting (0)`).
+
+---
+
+### 📌 Release Highlights (EN-US):
+- **Persistent Runtime DNS Auto-Healing (`ensureContainerNetworkAndDNS`)**: DNS accept rules (`UDP/TCP port 53`) are now dynamically verified and injected before any container action or execution (`start`, `restart`, `exec`, `read_file`, `write_file`, `replace_content`, `grep`, `find_files`, `list_dir`), guaranteeing older containers and images never lose DNS resolution upon restart.
+- **Transparent Auto-Start for Stopped Containers (`ensureContainerRunning`)**: Containers in `exited`, `created`, or `paused` states are automatically started/unpaused before command execution without throwing hard offline errors to agents.
+- **Crashloop Prevention & Base Dev Tooling**: Creating containers from base images now automatically installs essential tools (`git`, `curl`, `ca-certificates`, `procps`) and enforces keep-alive (`tail -f /dev/null` + `stdin_open`/`tty`) preventing premature exit crashloops (`Restarting (0)`).
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.80-alpha (`6cec578`)
+- update development branch (`925ca25`)
+
+#### 🐛 Correções
+- implement persistent DNS auto-healing, transparent auto-start, and crashloop prevention (`ecc67ee`)
+
+
+---
+
+
 ## Release - v2.6.79-alpha
 ### 📣 Apresentação da Atualização
 
