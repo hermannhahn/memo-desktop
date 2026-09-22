@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.72-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented dynamic source scope parameter (`knowledge_web` and `knowledge`) in the MCP Deep Research tool and internal research engine.
+
+**Highlights:**
+- Enhanced `deep_research` MCP tool schema and executor with the `scope` parameter for strict source isolation
+- Implemented Knowledge Base-only deep research execution mode bypassing external web calls
+- Verified complete job lifecycle, multi-source collation, and cancellation with 100% test pass rate across all Go packages
+
+<!-- lang:pt -->
+**Resumo:** Implementado parâmetro de escopo de fontes (`knowledge_web` e `knowledge`) na ferramenta MCP Deep Research e no motor de pesquisa interno.
+
+**Destaques:**
+- Aprimorado o schema e executor da ferramenta MCP `deep_research` com o parâmetro `scope` para isolamento estrito de fontes
+- Implementado modo de pesquisa profunda exclusivo para a Base de Conhecimento, sem requisições à web
+- Verificado ciclo de vida completo de jobs, coleta multi-fonte e cancelamento com 100% de aprovação na suíte de testes em Go
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.72-alpha (`8a1a99b`)
+- update development branch (`0e89f3d`)
+- updates in feature/deep-research-sources-scope (`b94db0b`)
+
+
+---
+
+
 ## Release - v2.6.71-alpha
 ### 📣 Apresentação da Atualização
 
