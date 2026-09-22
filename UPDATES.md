@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.71-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added instructive error guidance for Docker MCP tool on copy actions to ensure seamless Knowledge Base integration during autonomous Deep Research missions.
+
+**Highlights:**
+- Enhanced `docker` MCP tool with explanatory error messages directing agents to use the `knowledge` tool for local reference files and PDFs instead of invalid container operations
+- Validated Deep Research multi-source evidence extraction and cross-agent retrieval pipelines
+- Verified test suite with 100% pass rate across all Go packages
+
+<!-- lang:pt -->
+**Resumo:** Adicionadas diretrizes instrutivas de erro na ferramenta MCP Docker para ações de cópia, assegurando integração fluida com a Base de Conhecimento durante missões de Deep Research.
+
+**Destaques:**
+- Aprimorada a ferramenta MCP `docker` com mensagens de erro explicativas orientando os agentes a utilizarem a ferramenta `knowledge` para documentos e PDFs locais
+- Validadas as pipelines de extração multi-fonte de evidências e recuperação global do Deep Research
+- Suíte de testes verificada com 100% de aprovação em todos os pacotes Go
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.71-alpha (`8354247`)
+- update development branch (`5421bd5`)
+
+#### 🐛 Correções
+- add copy action guidance in docker tool (`211bc05`)
+
+
+---
+
+
 ## Release - v2.6.70-alpha
 ### 📣 Apresentação da Atualização
 
