@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.75-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enhanced Long-Term Memory (LTM) and RAG hybrid search with PostgreSQL `unaccent` extension, weighted multi-term Full-Text Search (FTS), dense candidate filtering, and semantic vector embeddings for Notes across Desktop UI, CLI, MCP tools, and RAG prompt injection.
+
+**Highlights:**
+- Integrated PostgreSQL `unaccent` extension across all vector, sparse FTS, and textual queries in notes, chat messages, and entities
+- Implemented weighted multi-term FTS query builder (`buildOrTsQuery`) supporting phrase boost (2.5x), AND boost (1.8x), and OR multi-term disjunction (1.0x) with term coverage scoring
+- Enabled semantic vector embedding lookup for Notes across MCP tools, REST endpoints, and WebSocket handlers
+- Calibrated dense candidate limits (expanded to 60) and filtered ultra-short test noise and MCP operational logs
+- Enhanced desktop UI search filters under "Memory Content" and "Notes Content" with unaccent and multi-term disjunction
+
+<!-- lang:pt -->
+**Resumo:** Otimização da busca híbrida na Long-Term Memory (LTM) e RAG com suporte a `unaccent`, FTS multi-termo ponderado, filtro de ruídos densos e embeddings semânticos em Anotações em todas as interfaces (Desktop UI, CLI, MCP e injeções RAG).
+
+**Destaques:**
+- Ativada extensão `unaccent` no PostgreSQL para buscas insensíveis a acentuação em notas, mensagens e entidades
+- Implementado construtor de FTS multi-termo (`buildOrTsQuery`) com boosts calibrados para frase exata (2.5x), AND (1.8x), OR (1.0x) e cálculo de cobertura léxica
+- Habilitada busca semântica por embeddings em Anotações (Notes) nas ferramentas MCP, REST API e WebSocket
+- Calibrado pool de candidatos densos (expandido para 60) com filtragem de logs operacionais MCP e ruídos curtos
+- Aprimorados os filtros de busca do MEMO Desktop nas abas "Memory Content" e "Notes Content" com suporte a múltiplos termos e unaccent
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.75-alpha (`059e631`)
+- update development branch (`65cae30`)
+- updates in feature/ltm-rag-search-enhancement (`2f61c03`)
+
+
+---
+
+
 ## Release - v2.6.74-alpha
 ### 📣 Apresentação da Atualização
 
