@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.77-alpha
+### 📣 Apresentação da Atualização
+
+## [PT-BR]
+- TPM-Aware Pacing inteligente por provedor LLM (NVIDIA NIM 38k TPM / 2.5s pacing, DeepSeek 80k TPM, OpenRouter/TokenRa 100k TPM, OpenAI/Claude/Grok 200k TPM), eliminando erros HTTP 429 e quedas desnecessarias para fallback.
+- Token Budget no Historico Conversacional (orcamento configuravel de 4.000 tokens com compactacao automatica de blocos extensos passados).
+- Janela deslizante adaptativa de ferramentas ativas (keep_full=1 sob alta carga de tokens ou rotas restritas), preservando retorno mais recente integro.
+- Rastreamento acumulado e preciso de tokens de prompt e conclusao na aba Usage do painel.
+- Auditoria de Prompts e Injecao Just-In-Time (JIT) de Regras de Projeto: AGENTS.md e GEMINI.md removidos da injecao estatica do System Prompt e injetados sob demanda 1x por turno na execucao de ferramentas de desenvolvimento.
+- Compactacao do catalogo de Skills para Two-Tier compacto (< 500 chars) e checagem unificada de ferramentas ativas no Console e Desktop.
+- Travas rigidas de tamanho para campos configuraveis do painel (character 2.5k chars, instrucoes 2.5k chars, notas de tools 200 chars).
+- Concorrencia em 4 camadas e elevacao de timeouts na busca de memoria LTM/RAG eliminando instabilidades no WebSocket.
+
+## [EN]
+- Smart TPM-Aware Pacing per LLM provider (NVIDIA NIM 38k TPM, DeepSeek 80k TPM, OpenRouter/TokenRa 100k TPM, OpenAI/Claude/Grok 200k TPM) eliminating 429 rate limit errors and premature fallback transitions.
+- Session History Token Budgeting (4,000 token budget with automatic compaction of older past messages).
+- Adaptive active tool sliding window (keep_full=1 on high prompt token volume or restricted routes), keeping the latest tool output intact.
+- Accurate accumulated prompt and completion token tracking displayed in the Console Usage tab.
+- Prompt Audit and Just-In-Time (JIT) Project Rules: AGENTS.md and GEMINI.md removed from static System Prompt and injected on-demand 1x per turn during developer tool execution.
+- Two-Tier compact Skills catalog (< 500 chars) and unified tool activation checks across Console and Desktop.
+- Strict size limits for user-configurable fields (character 2.5k chars, instructions 2.5k chars, custom tool notes 200 chars).
+- 4-layer concurrent search and increased timeouts for LTM/RAG hybrid search eliminating WebSocket disconnection issues.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.77-alpha (`62f44e9`)
+- update development branch (`3b5c188`)
+- update development branch (`0cfed7d`)
+- update development branch (`d585772`)
+- updates in feature/tpm-pacing-and-token-budget (`da417ae`)
+
+#### 📚 Documentação
+- add auto-learning rules, PostgreSQL LTM diagnostics, table map, and ltm-rag-memory skill (`8d0a952`)
+
+
+---
+
+
 ## Release - v2.6.76-alpha
 ### 📣 Apresentação da Atualização
 
