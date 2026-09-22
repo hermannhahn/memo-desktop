@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.70-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Integrated Web Search intelligence and global cross-agent multi-source evidence into Deep Research, and cleaned up legacy retrocompatibility subdomains.
+
+**Highlights:**
+- Integrated live Web Search (DuckDuckGo HTTP) as a 5th evidence retrieval channel in Deep Research Engine with clickable citations and snippets
+- Added provenance URL tracking (`MemoryProvenance`) and global cross-agent search support (`agent_id = 'global'`) across dense/sparse vectors and notes
+- Removed legacy subdomains (`hahnd.duckdns.org`, `ai-brain.ddns.net`, `memorouter.ddns.net`) and retrocompatibility migration checks
+- Verified test suite with 100% pass rate across config, research, mcp, and services
+
+<!-- lang:pt -->
+**Resumo:** Integração de inteligência de busca web e evidências multi-fonte globais entre agentes no Deep Research, e remoção de subdomínios legados de retrocompatibilidade.
+
+**Destaques:**
+- Integrada busca na Web ao vivo (DuckDuckGo HTTP) como 5º canal de evidências no motor de Deep Research com citações clicáveis e snippets
+- Adicionado rastreamento de URLs de proveniência (`MemoryProvenance`) e suporte a busca global cross-agent (`agent_id = 'global'`) em memórias e notas
+- Removidos subdomínios legados (`hahnd.duckdns.org`, `ai-brain.ddns.net`, `memorouter.ddns.net`) e verificações de migração antigas
+- Suíte de testes verificada com 100% de aprovação em config, research, mcp e services
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.70-alpha (`20a46dd`)
+- update development branch (`28225ce`)
+- integrate web search and global cross-agent multi-source evidence into deep research engine (FASE 79) (`168a80c`)
+- enable deep_research tool by default while preserving user toggle state (`46b7fd9`)
+
+#### 🐛 Correções
+- remove legacy subdomains and retrocompatibility rules (FASE 80) (`b98f4b7`)
+
+
+---
+
+
 ## Release - v2.6.69-alpha
 ### 📣 Apresentação da Atualização
 
