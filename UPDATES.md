@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.86-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resolved Long-Term Memory (LTM) chronological confusion and multi-day session continuity, adding human-readable day-of-week timestamps and session boundary indicators.
+
+**Highlights:**
+- Enhanced memory timestamps with explicit day of the week and relative recency labels to prevent AI model date misattributions.
+- Fixed ISO date comparison in memory tools ensuring all messages on query boundaries are accurately retrieved.
+- Added session boundary markers and multi-day session matching in PostgreSQL for conversations crossing midnight.
+
+<!-- lang:pt -->
+**Resumo:** Correção da confusão cronológica e de datas na Memória de Longo Prazo (LTM), garantindo continuidade em sessões que cruzam a meia-noite e timestamps enriquecidos com dia da semana.
+
+**Destaques:**
+- Enriquecidos os timestamps das memórias com o dia da semana explícito e recência relativa, eliminando erros de cálculo de data pela IA.
+- Corrigida a comparação de intervalos de datas nas ferramentas de memória para retornar com precisão todas as mensagens do período.
+- Adicionados marcadores de fronteira de sessão e suporte a sessões conversacionais que cruzam a meia-noite.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.86-alpha (`3a4f7f9`)
+- update development branch (`52a58fc`)
+
+#### 🐛 Correções
+- harden memory chronology, multi-day session matching, and formatted timestamps (`2336e42`)
+
+
+---
+
+
 ## Release - v2.6.85-alpha
 ### 📣 Apresentação da Atualização
 
