@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.86-alpha`
+## 📥 Download da Última Versão: `v2.6.87-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.86-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/MEMO-Desktop-Setup-v2.6.86-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.87-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/MEMO-Desktop-Setup-v2.6.87-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.86-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/MEMO-Desktop-Setup-v2.6.86-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.87-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/MEMO-Desktop-Setup-v2.6.87-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.86-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.87-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.86-alpha:
+### 🌟 Notas do Release v2.6.87-alpha:
 <!-- lang:en -->
-**Summary:** Resolved Long-Term Memory (LTM) chronological confusion and multi-day session continuity, adding human-readable day-of-week timestamps and session boundary indicators.
+**Summary:** Enforced strict per-agent LLM credential isolation during Model Sleep memory consolidation, preventing cross-agent key and model leakage.
 
 **Highlights:**
-- Enhanced memory timestamps with explicit day of the week and relative recency labels to prevent AI model date misattributions.
-- Fixed ISO date comparison in memory tools ensuring all messages on query boundaries are accurately retrieved.
-- Added session boundary markers and multi-day session matching in PostgreSQL for conversations crossing midnight.
+- Memory consolidation cluster merging now strictly uses the LLM credentials and model configured on the memory owner agent.
+- Eliminated global DeepSeek key fallbacks from local desktop configuration during memory processing.
+- Completed full test suite verification and repository cleanups.
 
 <!-- lang:pt -->
-**Resumo:** Correção da confusão cronológica e de datas na Memória de Longo Prazo (LTM), garantindo continuidade em sessões que cruzam a meia-noite e timestamps enriquecidos com dia da semana.
+**Resumo:** Isolamento estrito de credenciais e modelos de LLM por agente durante o Sono do Modelo (consolidação de memórias), eliminando vazamentos entre agentes.
 
 **Destaques:**
-- Enriquecidos os timestamps das memórias com o dia da semana explícito e recência relativa, eliminando erros de cálculo de data pela IA.
-- Corrigida a comparação de intervalos de datas nas ferramentas de memória para retornar com precisão todas as mensagens do período.
-- Adicionados marcadores de fronteira de sessão e suporte a sessões conversacionais que cruzam a meia-noite.
+- A fusão de memórias no Sono do Modelo agora utiliza estritamente o modelo e a chave de API configurados no agente proprietário da memória.
+- Eliminado o fallback para a chave global da DeepSeek do arquivo de configuração local durante a consolidação.
+- Validação completa com 100% de aprovação na suíte de testes e limpeza de arquivos legados.
 
 ---
 
