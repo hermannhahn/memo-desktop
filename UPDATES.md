@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.88-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforced strict per-agent LLM credential isolation during Model Sleep memory consolidation, preventing cross-agent key and model leakage.
+
+**Highlights:**
+- Memory consolidation cluster merging now strictly uses the LLM credentials and model configured on the memory owner agent.
+- Eliminated global DeepSeek key fallbacks from local desktop configuration during memory processing.
+- Completed full test suite verification and repository cleanups.
+
+<!-- lang:pt -->
+**Resumo:** Isolamento estrito de credenciais e modelos de LLM por agente durante o Sono do Modelo (consolidação de memórias), eliminando vazamentos entre agentes.
+
+**Destaques:**
+- A fusão de memórias no Sono do Modelo agora utiliza estritamente o modelo e a chave de API configurados no agente proprietário da memória.
+- Eliminado o fallback para a chave global da DeepSeek do arquivo de configuração local durante a consolidação.
+- Validação completa com 100% de aprovação na suíte de testes e limpeza de arquivos legados.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.88-alpha (`3e70117`)
+
+#### 🐛 Correções
+- add structured transcript error diagnostic, self-healing and CMD guidance (`f44c260`)
+
+
+---
+
+
 ## Release - v2.6.87-alpha
 ### 📣 Apresentação da Atualização
 
