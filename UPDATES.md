@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.84-alpha
+### 📣 Apresentação da Atualização
+
+# Extração Mandatória de Relações no Grafo, Atributos Flexíveis e Auto-Criação de Nós
+
+### 📌 Destaques da Atualização (PT-BR):
+- **Diretiva Mandatória de Relacionamentos na Consolidação Noturna (`buildEntityExtractionPrompt`)**: O prompt de extração de conhecimento do Sono do Modelo foi fortalecido com diretivas explícitas e exemplosestruturados (*few-shot*), garantindo que qualquer vínculo citado (parentesco, desenvolvimento, autoria, uso de sistemas) gere obrigatoriamente arestas na tabela `entity_relations` para conectar os nós do Grafo de Conhecimento.
+- **Tipagem Flexível de Atributos de Entidades (`KnownAttributes`)**: O schema e parsers Go migraram de `map[string]string` para `map[string]interface{}`, permitindo armazenar e recuperar com fidelidade atributos ricos contendo listas/arrays (ex: filhas, tecnologias, aliases), números e booleanos sem falhas silenciosas de deserialização.
+- **Auto-Criação Resiliente de Entidades Referenciadas (`PersistEntityExtractionResult`)**: Quando uma relação ou ambiente aponta para uma entidade que ainda não existe no banco de dados, o sistema auto-cria o nó base correspondente e conecta a aresta de imediato, eliminando o descarte indevido de conexões.
+- **Diretriz Sistêmica no GEMINI.md e AGENTS.md**: Formalizada a regra arquitetural de que o agente Vetor Stark é o laboratório de testes em produção e toda correção deve ocorrer sistemicamente no código, com zero intervenção manual em dados.
+
+---
+
+### 📌 Release Highlights (EN-US):
+- **Mandatory Relationship Extraction in Sleep Consolidation (`buildEntityExtractionPrompt`)**: Nightly knowledge extraction prompt upgraded with explicit directives and few-shot examples, ensuring every mentioned relationship (family, authorship, project roles, system dependencies) generates graph edges in `entity_relations`.
+- **Flexible Entity Attribute Typing (`KnownAttributes`)**: Migrated Go schema and parsers from `map[string]string` to `map[string]interface{}`, enabling faithful serialization and retrieval of rich attributes containing lists/arrays (e.g. daughters, tech stacks), numbers, and booleans without silent deserialization drops.
+- **Resilient Auto-Creation of Referenced Entities (`PersistEntityExtractionResult`)**: When a relation or environment references an entity that has not yet been saved, the engine automatically initializes the baseline entity node and connects the edge immediately, preventing dropped relationships.
+- **Systemic Rule in GEMINI.md & AGENTS.md**: Formalized the architectural standard establishing agent Vetor Stark as the live testing environment where all bug fixes must be structural code enhancements with zero manual data alterations.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.84-alpha (`298b996`)
+- mandatory relation extraction, flexible attributes, and auto-creation of referenced entities (`1ddb4a6`)
+
+#### 📚 Documentação
+- update patch_msg.txt with Phase 93 release notes (`a5f4b19`)
+
+
+---
+
+
 ## Release - v2.6.83-alpha
 ### 📣 Apresentação da Atualização
 
