@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.94-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Granular source switches for Deep Research (Knowledge Base, Web, YouTube, Agent Memory), automatic YouTube video transcript extraction, and resilient Knowledge Base hybrid search.
+
+**Highlights:**
+- Added granular `sources` parameter (`knowledge`, `web`, `youtube`, `memory`) in Deep Research engine and FastMCP tool, defaulting strictly to the user's Knowledge Base.
+- Implemented strict source isolation: agent chat memories, notes, and entity knowledge graph are only queried when `memory` is explicitly requested.
+- Integrated YouTube video search and full subtitle transcript extraction via `yt-dlp` into Deep Research evidence synthesis.
+- Upgraded Knowledge Base hybrid search with `websearch_to_tsquery`, OR prefix expansion, and resilient ILIKE fallbacks for multi-term queries across PDFs and documents.
+- Updated Web Console with 3 independent switches for Knowledge Base, Internet (Browser), and YouTube sources.
+
+<!-- lang:pt -->
+**Resumo:** Switches granulares de fontes no Deep Research (Base de Conhecimento, Web, YouTube, Memória do Agente), extração automática de transcrições do YouTube e busca híbrida resiliente na Base de Conhecimento.
+
+**Destaques:**
+- Adicionado parâmetro granular `sources` (`knowledge`, `web`, `youtube`, `memory`) no motor Deep Research e na ferramenta FastMCP, com padrão restrito à Base de Conhecimento.
+- Implementado isolamento estrito de fontes: memórias de chat, anotações e nós do grafo de entidades só são consultados se `memory` for explicitamente solicitado.
+- Integrada busca de vídeos e extração de transcrições completas do YouTube via `yt-dlp` no relatório e ledger de citações do Deep Research.
+- Aprimorada a busca híbrida da Base de Conhecimento com `websearch_to_tsquery`, expansão disjuntiva de termos e fallbacks resilientes em ILIKE para PDFs e documentos.
+- Atualizada a interface do Console Web com 3 switches independentes para Base de Conhecimento, Internet (Navegador) e YouTube.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.94-alpha (`aedca8d`)
+- add granular source switches, youtube transcripts, and resilient knowledge base search (`5195d0b`)
+
+
+---
+
+
 ## Release - v2.6.93-alpha
 ### 📣 Apresentação da Atualização
 
