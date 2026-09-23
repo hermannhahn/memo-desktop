@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.92-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Inno Setup runtime initialization exception (`{app}` constant expansion in `InitializeSetup`), ensuring seamless automatic updates without installation crashes.
+
+**Highlights:**
+- Decoupled early process termination (`KillEarlyProcesses()`) from `{app}` constant resolution in Inno Setup (`setup.iss`).
+- Guaranteed safe execution of folder-specific cleanup in `PrepareToInstall` and `CurStepChanged(ssInstall)`.
+- Verified installer compilation and code signing.
+
+<!-- lang:pt -->
+**Resumo:** Correção de exceção fatal de inicialização no Inno Setup (expansão da constante `{app}` em `InitializeSetup`), garantindo atualizações automáticas suaves e sem erros.
+
+**Destaques:**
+- Desacoplamento da finalização precoce de processos (`KillEarlyProcesses()`) da resolução da constante `{app}` no Inno Setup (`setup.iss`).
+- Execução segura da limpeza específica de pasta em `PrepareToInstall` e `CurStepChanged(ssInstall)`.
+- Verificação completa de compilação e assinatura do instalador.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.92-alpha (`4b4c991`)
+
+#### 🐛 Correções
+- separate early process kill from {app} expansion in InitializeSetup (`c970a12`)
+
+
+---
+
+
 ## Release - v2.6.91-alpha
 ### 📣 Apresentação da Atualização
 
