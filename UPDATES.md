@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.6.89-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed YouTube audio playback stability, added autonomous yt-dlp self-healing updates, and bundled a dedicated portable Node.js runtime.
+
+**Highlights:**
+- Fixed premature playback interruptions and silence on subsequent track changes in the YouTube tool daemon.
+- Added automatic yt-dlp updates with transparent retry on YouTube rate-limit (429) or outdated extractor errors, plus new MCP action `update_ytdlp`.
+- Bundled dedicated portable Node.js runtime directly in the application folder (`bin\node.exe`) for reliable JavaScript challenge solving.
+- Full test suite verification across all YouTube MCP and runtime discovery modules.
+
+<!-- lang:pt -->
+**Resumo:** Correção da estabilidade de reprodução do YouTube, auto-atualização autônoma do yt-dlp e inclusão de runtime portátil dedicado do Node.js.
+
+**Destaques:**
+- Correção do encerramento prematuro (3-5s) e silêncio em trocas de música no daemon da ferramenta YouTube.
+- Auto-atualização autônoma do yt-dlp com retentativa transparente em erros de rate-limit (429) ou extrator desatualizado, e nova ação MCP `update_ytdlp`.
+- Runtime Node.js portátil embutido diretamente na pasta do aplicativo (`bin\node.exe`) para resolução confiável de desafios JS do YouTube.
+- Validação completa com 100% de aprovação nos testes automatizados dos módulos de YouTube e runtime.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.89-alpha (`8cb3338`)
+- update development branch (`12059d1`)
+- bundle dedicated portable node runtime and prioritize app bin node.exe (`2925693`)
+
+#### 🐛 Correções
+- sanitize youtube-music-cli double trigger, add yt-dlp auto-update and js runtime injection (`89cdacb`)
+
+
+---
+
+
 ## Release - v2.6.88-alpha
 ### 📣 Apresentação da Atualização
 
