@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.93-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Native multi-format subtitle parser (JSON3, WebVTT, SRT, TTML) and resilient partial-download handling for YouTube transcript extraction without rate-limiting blocks.
+
+**Highlights:**
+- Implemented native Go parsers for YouTube JSON3, WebVTT (with inline timing tag stripping and line deduplication), SRT, and TTML.
+- Enforced non-blocking download flags (`--ignore-errors`) and graceful partial-download recovery when secondary translated subtitles encounter HTTP 429.
+- Added smart language ranking prioritizing requested language variations (`pt-orig`, `pt`, `pt-BR`) and original audio tracks (`en-orig`, `es-orig`).
+- Added comprehensive automated unit test suite verifying transcript extraction for multiple languages.
+
+<!-- lang:pt -->
+**Resumo:** Parser nativo multi-formato de legendas (JSON3, WebVTT, SRT, TTML) e recuperação resiliente de downloads parciais na transcrição do YouTube sem bloqueios por rate-limit.
+
+**Destaques:**
+- Implementados parsers nativos em Go para JSON3 do YouTube, WebVTT (com remoção de tags de temporização inline e deduplicação de linhas rolantes), SRT e TTML.
+- Adicionadas flags de execução não-bloqueante (`--ignore-errors`) e recuperação automática de legendas quando faixas traduzidas secundárias sofrem rate-limit HTTP 429.
+- Implementado ranqueamento inteligente de idiomas priorizando variações solicitadas (`pt-orig`, `pt`, `pt-BR`) e faixas de áudio nativo (`en-orig`, `es-orig`).
+- Adicionada suíte abrangente de testes unitários automatizados cobrindo transcrições em múltiplos idiomas.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.93-alpha (`16facef`)
+
+#### 🐛 Correções
+- implement native multi-format subtitle parser and resilient transcript extraction (`f6dcf24`)
+
+
+---
+
+
 ## Release - v2.6.92-alpha
 ### 📣 Apresentação da Atualização
 
