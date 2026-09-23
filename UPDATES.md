@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.91-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed updater exit status 5 (Access Denied) on locked binary files, enforced recursive process tree termination, and added pre-install process cleanup in the Windows installer.
+
+**Highlights:**
+- Enhanced `updater.exe` with process tree termination (`taskkill /F /T`) and PowerShell cleanup for any background processes running from `{app}`.
+- Added `KillAppFolderProcesses()` in Inno Setup (`setup.iss`) to automatically terminate locked processes before file installation.
+- Added `restartreplace uninsrestartdelete` flags in Inno Setup to guarantee clean replacement of binaries.
+- Added graceful shutdown hook (`StopYouTubeDaemon()`) in MEMO Desktop main application lifecycle.
+
+<!-- lang:pt -->
+**Resumo:** Correção do erro de atualização com status 5 (Acesso Negado) em arquivos binários em uso, terminação recursiva de árvore de processos e limpeza pré-instalação no instalador Windows.
+
+**Destaques:**
+- Aprimoramento do `updater.exe` com finalização de árvore de processos (`taskkill /F /T`) e limpeza via PowerShell de processos rodando na pasta `{app}`.
+- Adição de `KillAppFolderProcesses()` no Inno Setup (`setup.iss`) para finalizar processos em background antes da cópia de arquivos.
+- Adição das flags `restartreplace uninsrestartdelete` no Inno Setup para garantir a substituição segura dos binários.
+- Adicionado hook de encerramento gracioso (`StopYouTubeDaemon()`) no ciclo de vida do aplicativo principal.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.91-alpha (`1a844e2`)
+
+#### 🐛 Correções
+- kill process trees and all app folder processes before setup, add restartreplace flags to Inno Setup (`bc129f3`)
+
+
+---
+
+
 ## Release - v2.6.90-alpha
 ### 📣 Apresentação da Atualização
 
