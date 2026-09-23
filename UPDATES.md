@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.81-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Adds background task execution and reactive wakeup to the Windows CMD tool, along with native PostgreSQL tool message filtering to preserve dialogue context.
+
+**Highlights:**
+- Asynchronous and background task execution support in CMD tool (wait_ms_before_async and task IDs).
+- Background task completion events now isolated from user instructions with goal anchoring directives.
+- Native SQL filtering for MCP tool messages in chat sessions to preserve human conversation offset and history.
+
+<!-- lang:pt -->
+**Resumo:** Adiciona suporte a tarefas em segundo plano e wakeup reativo na ferramenta CMD do Windows, alem de filtragem SQL nativa de ferramentas para preservacao de contexto de dialogo.
+
+**Destaques:**
+- Suporte a execucao assincrona e em segundo plano na ferramenta CMD (wait_ms_before_async e identificadores de tarefas).
+- Eventos de conclusao de tarefas em segundo plano agora isolados das instrucoes do usuario com diretiva de ancoragem de objetivo.
+- Filtragem SQL nativa de mensagens de ferramentas MCP nas sessoes de chat, preservando o historico de conversas humanas.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.81-alpha (`2db1412`)
+- update development branch (`3fa2659`)
+- support async background execution and reactive wakeup in cmd tool (`4d77b7a`)
+
+#### 🐛 Correções
+- support exclude_tools in chat pagination and isolate dialogue from tool executions (`7406759`)
+
+
+---
+
+
 ## Release - v2.6.80-alpha
 ### 📣 Apresentação da Atualização
 
