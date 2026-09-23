@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.6.85-alpha
+### 📣 Apresentação da Atualização
+
+**Resumo:** Aprimoramento da gestão de tarefas em segundo plano na ferramenta Docker com suporte a filtragem de status, instruções de paginação de logs e padronização integral de mensagens em inglês.
+
+**Highlights / Destaques:**
+- **Docker Background Tasks Filter**: Added `task_status` parameter (`running`, `completed`, `failed`, `killed`, `all`) in the `docker` tool to easily filter and inspect active background jobs.
+- **Log Guidance & Host Isolation**: Updated task status output and execution completion directives to use paginated `docker(action="logs", task_id="...", offset=1, limit=100)`, preventing agents in sandbox containers from attempting host file access.
+- **English Standardization**: Translated remaining error messages and runtime execution notifications to canonical English across Docker and CMD tools.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.85-alpha (`dcdd69d`)
+- update development branch (`674de54`)
+- add task_status filter, enhance tasks inspection and log guidance (`083f40d`)
+
+#### 🔧 Manutenção / Refatoração
+- translate remaining tool errors and runtime messages to English (`c45fd84`)
+
+#### 🐛 Correções
+- clarify async background command instructions in message outputs (`c05c8e1`)
+
+
+---
+
+
 ## Release - v2.6.84-alpha
 ### 📣 Apresentação da Atualização
 
