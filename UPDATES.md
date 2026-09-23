@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.83-alpha
+### 📣 Apresentação da Atualização
+
+# Índice Leve e Paginação em Entity Lookup, Calibração RRF e Consulta Otimizada de Memórias
+
+### 📌 Destaques da Atualização (PT-BR):
+- **Índice Leve e Paginação Granular no Grafo de Conhecimento (`entity_lookup`)**: A ferramenta de entidades foi completamente reformulada. A busca (`action: "search"`) agora retorna cards de índice ultraleves (< 600 caracteres) com contagens de relações e ambientes, eliminando o dump massivo de grafos recursivos no contexto do modelo. A consulta detalhada (`action: "get"`) traz paginação independente para relações e ambientes com controle de limite, offset e navegação.
+- **Calibração do RRF e Boost Exato para Entidades (`SearchEntities`)**: O cálculo de fusão RRF foi enriquecido com boost prioritário de até 5.0x para correspondências exatas e parciais em nomes e aliases (`canonical_name`, `aliases`, `display_name`), impedindo que entidades registradas sejam sobrepostas por vetores genéricos.
+- **Blindagem do RAG contra Diluição Léxica e Penalidade Indevida**: A normalização de consultas do RAG remove termos de preenchimento conversacional sem perder substantivos próprios. Memórias fundidas (`merged`) não sofrem penalização quando há match léxico direto.
+- **Consulta Nativa e Ágil de Diálogos (`remember_last_talk`)**: Recuperação direta via PostgreSQL (`GetLatestDialogueMessages`) das últimas interações conversacionais reais com identificadores únicos para consulta pontual completa.
+
+---
+
+### 📌 Release Highlights (EN-US):
+- **Lightweight Index & Granular Pagination in Knowledge Graph (`entity_lookup`)**: Entity MCP tool refactored to two-tier Index vs Deep-Fetch architecture. The search action returns compact cards (< 600 chars) with relation/environment counts, eliminating context overflow from recursive graph dumps. The get action provides granular pagination for relations and environments with limit/offset control.
+- **RRF Recalibration & Exact Name Boost (`SearchEntities`)**: RRF fusion score reinforced with up to 5.0x multiplier for exact and partial text matches on names and aliases, ensuring recognized entities take precedence over generic dense candidates.
+- **RAG Query Lexical Shielding & Penalty Removal**: Query normalization cleanly extracts key nouns and proper names while preserving exact matches. Merged memories no longer suffer reduction penalties when matching query keywords.
+- **High-Speed Native Dialogue Querying (`remember_last_talk`)**: Direct PostgreSQL retrieval (`GetLatestDialogueMessages`) for recent human-agent conversation turns with unique IDs for full memory inspection.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.83-alpha (`03a35e5`)
+- entity_lookup lightweight index search and paginated entity relations (`39f9071`)
+
+#### 📚 Documentação
+- update patch_msg.txt with Phase 92 release notes (`7c2d8da`)
+
+
+---
+
+
 ## Release - v2.6.82-alpha
 ### 📣 Apresentação da Atualização
 
