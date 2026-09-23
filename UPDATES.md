@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.90-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Resilient yt-dlp path resolution in user-writable directories, direct GitHub Releases auto-download fallback, and installer bundling for YouTube playback reliability.
+
+**Highlights:**
+- Prioritized user-writable directories (`%LOCALAPPDATA%\MEMO\bin` and `%APPDATA%\MEMO\bin`) for `yt-dlp` discovery to avoid read-only permission errors on system paths.
+- Implemented direct GitHub Releases auto-download fallback in `AutoUpdateYtDlp` to recover from GoogleVideo HTTP 403 Forbidden streaming errors.
+- Bundled `yt-dlp.exe` in the Windows Inno Setup installer (`{app}\bin`) alongside `node.exe`.
+- Injected local bin directories into process `PATH` priority for seamless MPV audio streaming.
+
+<!-- lang:pt -->
+**Resumo:** Resolução resiliente de caminhos do yt-dlp em diretórios graváveis do usuário, auto-download de fallback direto do GitHub Releases e empacotamento no instalador para confiabilidade da reprodução do YouTube.
+
+**Destaques:**
+- Priorização de diretórios com permissão de escrita do usuário (`%LOCALAPPDATA%\MEMO\bin` e `%APPDATA%\MEMO\bin`) para o `yt-dlp`, evitando falhas de permissão em caminhos de sistema.
+- Auto-download direto de releases oficiais do GitHub como fallback em `AutoUpdateYtDlp` para solucionar erros HTTP 403 Forbidden em streams do YouTube.
+- Empacotamento automático de `yt-dlp.exe` no instalador Inno Setup (`{app}\bin`) junto ao `node.exe`.
+- Injeção prioritária dos diretórios bin do usuário no `PATH` do subprocesso MPV para streaming contínuo de áudio.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.90-alpha (`0502c8d`)
+
+#### 🐛 Correções
+- prioritize user-writable yt-dlp paths, add direct github download fallback and installer bundling (`f24207e`)
+
+
+---
+
+
 ## Release - v2.6.89-alpha
 ### 📣 Apresentação da Atualização
 
