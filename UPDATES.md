@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.82-alpha
+### 📣 Apresentação da Atualização
+
+# Correção do RRF de Entidades, Otimização Semântica do RAG e Consulta Instantânea de Diálogos
+
+### 📌 Destaques da Atualização (PT-BR):
+- **Calibração do RRF e Boost Exato para Entidades (`SearchEntities`)**: O cálculo de fusão RRF foi ajustado e enriquecido com multiplicador de até 5.0x para correspondências exatas e parciais em nomes e aliases (`canonical_name`, `aliases`, `display_name`). Entidades registradas não são mais sobrepostas por candidatos vetoriais densos genéricos.
+- **Blindagem do RAG contra Diluição Léxica e Penalidade Indevida**: A normalização de consultas do RAG agora remove prefixos e preenchimentos conversacionais sem perder substantivos ou nomes próprios. Memórias consolidadas e fundidas (status 'merged') não sofrem mais penalização quando houver correspondência direta de palavras-chave.
+- **Consulta Nativa e Ágil de Diálogos (`GetLatestDialogueMessages`)**: Implementada recuperação otimizada de turnos conversacionais reais entre usuário e assistente, excluindo execuções intermediárias de ferramentas MCP e viabilizando leitura direta com identificadores únicos.
+
+---
+
+### 📌 Release Highlights (EN-US):
+- **RRF Recalibration and Exact Boost for Entities (`SearchEntities`)**: RRF fusion score has been calibrated and reinforced with up to 5.0x multiplier for exact and partial text matches on names and aliases (`canonical_name`, `aliases`, `display_name`), ensuring recognized entities are never drowned out by generic dense vectors.
+- **RAG Query Lexical Shielding & Penalty Removal**: RAG query normalization now cleanly strips conversational fillers while preserving nouns and proper names. Consolidated and merged memories no longer suffer reduction penalties when matching query keywords directly.
+- **High-Speed Native Dialogue Querying (`GetLatestDialogueMessages`)**: Direct PostgreSQL retrieval for real human-assistant dialogue turns, filtering out MCP tool logs and providing unique IDs for granular full-memory inspections.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.82-alpha (`706698e`)
+- update development branch (`43d815e`)
+- updates in development (`57b43cf`)
+
+#### 🐛 Correções
+- fix rrf entity ranking formula, add exact name boost, and implement high-speed dialogue retrieval (`93cc5e9`)
+
+
+---
+
+
 ## Release - v2.6.81-alpha
 ### 📣 Apresentação da Atualização
 
