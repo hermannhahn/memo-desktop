@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.6.100-alpha
+### 📣 Apresentação da Atualização
+
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized project directory paths to `/root/repos` across Docker MCP tools and context notices, fixed directory contents expansion in `list_dir`, added broad parameter aliases for Docker filesystem operations, and introduced background dispatch with real-time audit logging to the MEMOROUTER MCP agent plugin.
+
+**Highlights:**
+- Standardized all workspace directories, file resolution fallbacks, and context notices to `/root/repos` to eliminate path confusion for agents.
+- Fixed `list_dir` in Docker MCP tool to properly expand directory paths and return full directory item listings.
+- Added comprehensive parameter aliases (`file_path`, `path`, `target_path`, `target_file`, `sub_dir`, `dir`, `directory`) across `list_dir`, `find_files`, and `grep`.
+- Enhanced `memorouter-agents` MCP server with asynchronous background dispatch (`background: true`), real-time file logging, activity tailing (`memorouter_tail_activity`), and filtered VPS log inspection (`memorouter_vps_logs`).
+
+<!-- lang:pt -->
+**Resumo:** Padronização dos caminhos de diretórios de projetos para `/root/repos` nas ferramentas MCP Docker e avisos de contexto, correção da expansão de diretórios no `list_dir`, adição de suporte a aliases flexíveis de parâmetros nas ferramentas de arquivos do Docker e introdução de despacho em segundo plano com log de auditoria em tempo real no plugin MCP de agentes do MEMOROUTER.
+
+**Destaques:**
+- Padronização de todos os diretórios de workspace, fallbacks de resolução e avisos de contexto para `/root/repos`, eliminando confusões de caminhos para os agentes.
+- Correção do `list_dir` na ferramenta Docker MCP para expandir corretamente caminhos de diretórios e listar todo o conteúdo ao invés de apenas a contagem total.
+- Suporte a múltiplos aliases de parâmetros (`file_path`, `path`, `target_path`, `target_file`, `sub_dir`, `dir`, `directory`) no `list_dir`, `find_files` e `grep`.
+- Aprimoramento do servidor MCP `memorouter-agents` com despacho em background (`background: true`), gravação de log em tempo real no disco, acompanhamento de atividade (`memorouter_tail_activity`) e inspeção de logs da VPS (`memorouter_vps_logs`).
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.100-alpha (`d9eedba`)
+
+#### 🐛 Correções
+- standardize paths to /root/repos, fix list_dir directory listing, and add parameter aliases (`79f8ca3`)
+
+#### 📚 Documentação
+- add North Star meta and Test 2.3 benchmark catalog (`97848dc`)
+
+
+---
+
+
 ## Release - v2.6.99-alpha
 ### 📣 Apresentação da Atualização
 
