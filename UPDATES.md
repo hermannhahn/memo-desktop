@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.6.96-alpha
+### 📣 Apresentação da Atualização
+
+Esta atualização eleva os prazos de tolerância e prazos de leitura/escrita do canal WebSocket com o MEMOROUTER para 10 minutos, eliminando desconexões prematuras durante inferências analíticas extensas ou operações pesadas de RAG e pesquisa profunda.
+
+- **WebSocket Read Deadline Estendido (`600s`)**: Aumentado o prazo de tolerância de leitura de 90s para 10 minutos, garantindo que o cliente mantenha a conexão perfeitamente aberta mesmo durante longas respostas de modelos avançados.
+- **WebSocket Write Deadline Ampliado (`60s`)**: Prazo de gravação de mensagens e envelopes criptografados E2EE expandido de 30s para 60s, evitando falhas de envio em conexões de alta latência.
+- **Heartbeat & Resiliência**: Ciclo contínuo de ping/pong mantido a cada 20 segundos para renovação permanente do canal.
+
+---
+
+This update extends the WebSocket read and write deadline tolerances with MEMOROUTER to 10 minutes, eliminating premature disconnections during long analytical model inferences, deep research runs, or intensive RAG embeddings.
+
+- **Extended WebSocket Read Deadline (`600s`)**: Increased read deadline from 90s to 10 minutes, ensuring the desktop client maintains a stable connection throughout extensive model generation cycles.
+- **Extended WebSocket Write Deadline (`60s`)**: Increased write timeout for message frames and E2EE encrypted envelopes from 30s to 60s, preventing write drops on high-latency links.
+- **Heartbeat & Resilience**: Continuous 20-second ping/pong cycles preserved for continuous keep-alive renewal.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.96-alpha (`072d0ae`)
+- update development branch (`f55f59d`)
+
+
+---
+
+
 ## Release - v2.6.95-alpha
 ### 📣 Apresentação da Atualização
 

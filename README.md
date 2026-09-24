@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.95-alpha`
+## 📥 Download da Última Versão: `v2.6.96-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.95-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/MEMO-Desktop-Setup-v2.6.95-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.96-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/MEMO-Desktop-Setup-v2.6.96-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.95-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/MEMO-Desktop-Setup-v2.6.95-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.96-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/MEMO-Desktop-Setup-v2.6.96-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.95-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.96-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,24 +45,20 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.95-alpha:
-<!-- lang:en -->
-**Summary:** Next-Gen Enterprise Deep Research Engine with multi-hop reflective retrieval loops, full document ingestion from Knowledge Base, and publication-grade technical dossiers with Mermaid diagrams and comparative trade-off tables.
+### 🌟 Notas do Release v2.6.96-alpha:
+Esta atualização eleva os prazos de tolerância e prazos de leitura/escrita do canal WebSocket com o MEMOROUTER para 10 minutos, eliminando desconexões prematuras durante inferências analíticas extensas ou operações pesadas de RAG e pesquisa profunda.
 
-**Highlights:**
-- Multi-Hop Reflective Retrieval Loop: Autonomous Stage 2.5 gap analysis evaluating preliminary evidence and triggering targeted Hop 2 queries.
-- Knowledge Base Full Document Ingestion: High-density structured reading of referenced PDFs and specifications (`kb_document`) up to 30k chars.
-- Publication-Grade Technical Dossier: Standardized output featuring Executive Summary, Mermaid architecture diagrams (`flowchart TD`), side-by-side comparative trade-off tables, failure modes, and standardized citations ledger (`[KB-X]`, `[WEB-X]`, `[YT-X]`, `[MEM-X]`).
-- 100% automated test suite pass across all research and MCP modules.
+- **WebSocket Read Deadline Estendido (`600s`)**: Aumentado o prazo de tolerância de leitura de 90s para 10 minutos, garantindo que o cliente mantenha a conexão perfeitamente aberta mesmo durante longas respostas de modelos avançados.
+- **WebSocket Write Deadline Ampliado (`60s`)**: Prazo de gravação de mensagens e envelopes criptografados E2EE expandido de 30s para 60s, evitando falhas de envio em conexões de alta latência.
+- **Heartbeat & Resiliência**: Ciclo contínuo de ping/pong mantido a cada 20 segundos para renovação permanente do canal.
 
-<!-- lang:pt -->
-**Resumo:** Motor Next-Gen de Deep Research empresarial com loops reflexivos multi-hop, ingestão integral de documentos da Base de Conhecimento e dossiês técnicos de nível de publicação com diagramas Mermaid e matrizes comparativas de trade-offs.
+---
 
-**Destaques:**
-- Loop Reflexivo Multi-Hop: Estágio 2.5 de análise reflexiva de lacunas com disparo de sub-queries direcionadas no Hop 2.
-- Ingestão Integral da Base de Conhecimento: Leitura de alta densidade de documentos e PDFs referenciados (`kb_document`) até 30k caracteres.
-- Dossiê Técnico de Nível de Publicação: Estrutura padronizada com Executive Summary, diagramas Mermaid (`flowchart TD`), tabelas comparativas de trade-offs técnicos, modos de falha e ledger de citações (`[KB-X]`, `[WEB-X]`, `[YT-X]`, `[MEM-X]`).
-- 100% de aprovação na suíte de testes unitários automatizados.
+This update extends the WebSocket read and write deadline tolerances with MEMOROUTER to 10 minutes, eliminating premature disconnections during long analytical model inferences, deep research runs, or intensive RAG embeddings.
+
+- **Extended WebSocket Read Deadline (`600s`)**: Increased read deadline from 90s to 10 minutes, ensuring the desktop client maintains a stable connection throughout extensive model generation cycles.
+- **Extended WebSocket Write Deadline (`60s`)**: Increased write timeout for message frames and E2EE encrypted envelopes from 30s to 60s, preventing write drops on high-latency links.
+- **Heartbeat & Resilience**: Continuous 20-second ping/pong cycles preserved for continuous keep-alive renewal.
 
 ---
 
