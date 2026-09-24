@@ -3,6 +3,45 @@
 ---
 
 
+## Release - v2.6.101-alpha
+### 📣 Apresentação da Atualização
+
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized OpenRouter request attribution headers to `MEMOROUTER` and `https://api.memorouter.com`, standardized agent workspace paths to `/root/repos`, completed the full 4-level Agent Efficiency Benchmark suite (12/12 tests validated), and added background dispatch with real-time audit logging for agent evaluations.
+
+**Highlights:**
+- Updated OpenRouter attribution headers across all client modules to `X-Title: MEMOROUTER` and `HTTP-Referer: https://api.memorouter.com`.
+- Standardized all Docker MCP tool context notices, path resolutions, and agent workspaces to `/root/repos/<project>`.
+- Completed and validated the full 12-test Agent Efficiency Benchmark with 100% precision using Vetor Stark (`agent_1`) as living laboratory.
+- Added parameter alias flexibility to Docker MCP file tools and integrated asynchronous background dispatch (`background: true`) with real-time log tailing in `memorouter-agents`.
+
+<!-- lang:pt -->
+**Resumo:** Padronização dos cabeçalhos de atribuição da OpenRouter para `MEMOROUTER` e `https://api.memorouter.com`, unificação dos caminhos de workspace para `/root/repos`, validação completa dos 4 níveis do Benchmark de Eficiência de Agentes (12/12 testes aprovados) e despacho em background com auditoria em tempo real.
+
+**Destaques:**
+- Atualização dos cabeçalhos HTTP na OpenRouter para `X-Title: MEMOROUTER` e `HTTP-Referer: https://api.memorouter.com` em todos os módulos clientes.
+- Padronização de todos os avisos de contexto, resoluções de caminho e workspaces em containers de agentes para `/root/repos/<projeto>`.
+- Execução e aprovação completa dos 12 testes do Benchmark de Eficiência com 100% de precisão utilizando o Vetor Stark (`agent_1`) como laboratório vivo.
+- Suporte a aliases flexíveis nas ferramentas Docker MCP de arquivos e integração de despacho assíncrono (`background: true`) com acompanhamento de logs em tempo real.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.101-alpha (`3fdc942`)
+- complete benchmark catalog with all Level 3 and Level 4 tests (`d8ccdfe`)
+
+#### 📚 Documentação
+- update patch presentation message for benchmark and openrouter release (`5949bcf`)
+- update benchmark skill with background dispatch and monitoring tools (`e85df33`)
+
+
+---
+
+
 ## Release - v2.6.100-alpha
 ### 📣 Apresentação da Atualização
 
