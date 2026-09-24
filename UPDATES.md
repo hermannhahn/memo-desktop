@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.98-alpha
+### 📣 Apresentação da Atualização
+
+Esta atualização aprimora a resolução inteligente de caminhos nas ferramentas MCP do Docker (`grep`, `find_files`, `list_dir` e `read_file`), adicionando suporte universal ao parâmetro `file_path`, detecção automática de regex e resolução padrão no diretório `/workspace`.
+
+- **Resolução Universal de `file_path` no Grep**: A ação `grep` agora aceita nativamente `file_path`, `file` e `path`, além de `sub_dir`, direcionando buscas para arquivos específicos ou subdiretórios sem falhas de escopo.
+- **Detecção Automática de Expressões Regulares**: O Grep ativa automaticamente a flag estendida `-E` caso o padrão contenha caracteres de regex (como `|`), evitando falhas em buscas com múltiplos termos combinados.
+- **Resolução Padrão em `/workspace` e `/root/repos`**: Busca e listagem sem parâmetros agora inspecionam diretamente a árvore de código do repositório `/workspace`, eliminando varreduras acidentais no diretório `/root`.
+- **Listagem Otimizada de Diretórios (`list_dir`)**: Limite padrão ampliado para 50 itens para acelerar a exploração de arquivos.
+
+---
+
+This update enhances intelligent path resolution across Docker MCP tools (`grep`, `find_files`, `list_dir`, and `read_file`), introducing universal `file_path` parameter support, auto-detection of regular expressions, and default target resolution to `/workspace`.
+
+- **Universal `file_path` Support in Grep**: The `grep` action now natively recognizes `file_path`, `file`, and `path` in addition to `sub_dir`, focusing searches on targeted files or folders accurately.
+- **Automatic Regular Expression Detection**: Grep auto-activates extended regex mode (`-E`) when search patterns contain regex operators (such as `|`), eliminating match errors on compound queries.
+- **Default Resolution to `/workspace` & `/root/repos`**: Grep, find, and directory listings without explicit paths now target the `/workspace` project tree directly instead of `/root`.
+- **Expanded Directory Listing Limit (`list_dir`)**: Increased default limit to 50 items for faster codebase navigation.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.98-alpha (`7e6c99e`)
+
+#### 🐛 Correções
+- support file_path parameter in grep, find_files and resolve workspace by default (`3daf9ea`)
+
+
+---
+
+
 ## Release - v2.6.97-alpha
 ### 📣 Apresentação da Atualização
 
