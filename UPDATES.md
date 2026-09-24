@@ -3,6 +3,48 @@
 ---
 
 
+## Release - v2.6.102-alpha
+### 📣 Apresentação da Atualização
+
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented a two-tier Semantic Embedding Cache (L1 in-memory LRU + L2 PostgreSQL persistent cache) and introduced dynamic on-demand MCP tool discovery and schema inspection.
+
+**Highlights:**
+- Added two-tier Semantic Embedding Cache in Ollama client, eliminating latency and CPU overhead for repeated texts across RAG queries, HyDE expansion, and nightly sleep consolidation.
+- Created PostgreSQL `embedding_cache` table with SHA-256 hashing, atomic upsert, and access frequency telemetry.
+- Implemented dynamic MCP tool discovery (`memo_desktop_list_tools` and `memo_desktop_get_tool_schema`) to prevent prompt token inflation from large tool schemas.
+- Added categorization and tier metadata (`core`, `specialized`, `lazy`) to local MCP tools for intelligent context injection.
+
+<!-- lang:pt -->
+**Resumo:** Implementação de Cache Semântico de Embeddings em duas camadas (L1 RAM em memória + L2 PostgreSQL persistente) e sistema de descoberta dinâmica e inspeção de esquemas sob demanda para ferramentas MCP.
+
+**Destaques:**
+- Adicionado Cache Semântico de Embeddings em duas camadas no cliente Ollama, eliminando latência e processamento em textos repetidos no RAG, HyDE e consolidação noturna do sono.
+- Criada tabela `embedding_cache` no PostgreSQL com chave primária SHA-256, upsert atômico e telemetria de frequência de acessos.
+- Implementadas ferramentas `memo_desktop_list_tools` e `memo_desktop_get_tool_schema` para descoberta dinâmica e redução do consumo de tokens de schemas no System Prompt.
+- Inclusão de metadados de categorização e tiers (`core`, `specialized`, `lazy`) nas ferramentas MCP locais para injeção contextual inteligente.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.102-alpha (`bb24d93`)
+- update development branch (`641a126`)
+- implement dynamic tool discovery and schema retrieval (memo_desktop_list_tools) (`45c2fda`)
+- implement two-tier semantic embedding cache (L1 RAM + L2 PostgreSQL) (`f7b1d17`)
+
+#### 📚 Documentação
+- add phase 111 for dynamic mcp registry (`f2faca4`)
+- add phase 110 for semantic embedding cache (`e58c135`)
+- add phase 109 for openai route modularization (`1865d9b`)
+
+
+---
+
+
 ## Release - v2.6.101-alpha
 ### 📣 Apresentação da Atualização
 
