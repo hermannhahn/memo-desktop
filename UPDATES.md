@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.99-alpha
+### 📣 Apresentação da Atualização
+
+Esta atualização corrige as instruções do diretório de espaço de trabalho (`dockerWorkspaceNotice`), assegura o symlink automático `/workspace -> /root/repos` dentro dos containers e implementa a resolução transparente de subdiretórios de repositórios em todas as operações de arquivos e busca (`read_file`, `grep`, `find_files`, `list_dir`).
+
+- **Symlink Automático de Workspace nos Containers**: Toda execução em container agora verifica e vincula automaticamente `/workspace` a `/root/repos`, garantindo consistência estrutural imediata para ferramentas MCP.
+- **Resolução Transparente de Projetos**: Ferramentas de busca e leitura agora inspecionam automaticamente subpastas de repositórios (ex: `/workspace/memo/<caminho>`) quando caminhos relativos de arquivos de projeto são fornecidos.
+- **Instruções Claras no Prompt de Workspace**: Atualizado o aviso de contexto (`dockerWorkspaceNotice`) orientando que os projetos residem em `/workspace/<nome_do_projeto>`.
+
+---
+
+This update corrects the workspace directory instructions (`dockerWorkspaceNotice`), guarantees the automatic `/workspace -> /root/repos` symlink inside agent containers, and introduces transparent repository subfolder resolution across all file and search MCP tools (`read_file`, `grep`, `find_files`, `list_dir`).
+
+- **Automatic Workspace Symlink in Containers**: All container executions now verify and link `/workspace` to `/root/repos` automatically, ensuring immediate structural consistency.
+- **Transparent Project Path Resolution**: File inspection tools now automatically scan repository subfolders (e.g. `/workspace/memo/<path>`) when relative project file paths are supplied.
+- **Clarified Workspace Context Prompt**: Updated `dockerWorkspaceNotice` instructing agents that project repositories reside directly in `/workspace/<project_name>`.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.99-alpha (`b7c556d`)
+
+#### 🐛 Correções
+- clarify workspace notice, ensure auto-symlink and resolve repo subfolders (`f3b8518`)
+
+
+---
+
+
 ## Release - v2.6.98-alpha
 ### 📣 Apresentação da Atualização
 
