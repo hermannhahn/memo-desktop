@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.97-alpha
+### 📣 Apresentação da Atualização
+
+Esta atualização expande a janela padrão de leitura de arquivos (`read_file`) na ferramenta MCP Docker para 200 linhas (com preservação de numeração de linhas 1-indexed) e introduz a suíte de scripts de benchmark e auditoria de eficiência em `scripts/agy/`.
+
+- **Expansão da Janela de Leitura (`read_file`)**: Aumentada a janela padrão de 10 para 200 linhas (teto de até 1.000 linhas) com numeração explícita de linhas, eliminando loopings repetitivos de micro-inspeções por agentes de IA.
+- **Suíte de Benchmark & Auditoria de Eficiência**: Adicionados scripts de automação (`benchmark_runner.js`, `ltm_inspector.js`, `benchmark_catalog.json`) e a nova skill `agent-efficiency-benchmark`.
+
+---
+
+This update expands the default file reading window (`read_file`) in the Docker MCP tool to 200 lines (with preserved 1-indexed line numbering) and introduces the benchmark and efficiency auditing suite in `scripts/agy/`.
+
+- **Expanded File Reading Window (`read_file`)**: Increased default window from 10 to 200 lines (max up to 1,000 lines) with explicit line numbering, eliminating repetitive micro-inspection loops by AI agents.
+- **Benchmark & Efficiency Auditing Suite**: Added automation scripts (`benchmark_runner.js`, `ltm_inspector.js`, `benchmark_catalog.json`) and the new `agent-efficiency-benchmark` skill.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.97-alpha (`c877689`)
+
+#### 📚 Documentação
+- update patch_msg.txt for read_file window expansion and benchmark suite release (`22e916e`)
+- add agent-efficiency-benchmark skill, scripts/agy suite, and sync AGENTS.md/GEMINI.md (`bd9b42c`)
+
+#### 🐛 Correções
+- expand default read_file window to 200 lines and preserve line numbers for agent inspection (`476e463`)
+- allow empty array skills update without nil bypass in brain sync (`0a85c30`)
+
+
+---
+
+
 ## Release - v2.6.96-alpha
 ### 📣 Apresentação da Atualização
 
