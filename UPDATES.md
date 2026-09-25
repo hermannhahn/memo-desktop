@@ -3,6 +3,30 @@
 ---
 
 
+## Release - v2.6.105-alpha
+### 📣 Apresentação da Atualização
+
+[EN]
+Delegate skills MCP tool execution to MEMOROUTER native FastMCP server, eliminating redundant bridge roundtrips and isolating developer host environment.
+
+[PT]
+Delegação da ferramenta MCP skills para o servidor nativo FastMCP do MEMOROUTER, eliminando roundtrips redundantes de WebSocket e isolando o ambiente local do desenvolvedor.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.105-alpha (`9c1784c`)
+- update development branch (`3fe50f8`)
+
+#### 🔧 Manutenção / Refatoração
+- delegate skills MCP tool to MEMOROUTER native FastMCP server (`d6e94e2`)
+
+
+---
+
+
 ## Release - v2.6.104-alpha
 ### 📣 Apresentação da Atualização
 
