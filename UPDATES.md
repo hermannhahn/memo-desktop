@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.108-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Intelligent filtering and file-saving capabilities have been added to the YouTube transcript tool, removing duplicate rolling cues and timing tags for cleaner context and easier reading.
+
+**Highlights:**
+- Smart deduplication of YouTube auto-generated rolling cues and removal of inline timing tags.
+- Fluid paragraph formatting for improved readability and LLM context efficiency.
+- Direct transcript persistence to Knowledge Base (`save_to_file`) with context window overflow protection.
+
+<!-- lang:pt -->
+**Resumo:** Recursos de filtragem inteligente e salvamento em arquivo foram adicionados à ferramenta de transcrição do YouTube, removendo repetições de legendas e marcações de tempo para um contexto mais limpo e legível.
+
+**Destaques:**
+- Deduplicação inteligente de repetições contínuas de legendas geradas automaticamente pelo YouTube e remoção de tags de tempo.
+- Formatação fluida em parágrafos para leitura aprimorada e maior eficiência de contexto da IA.
+- Salvamento direto de transcrições na Base de Conhecimento (`save_to_file`) com proteção contra estouro de janela de contexto.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.108-alpha (`13d31ea`)
+- update development branch (`967931c`)
+- update development branch (`98c088b`)
+- implement intelligent rolling deduplication, paragraph formatting and file saving for YouTube transcripts (`73fbd66`)
+
+
+---
+
+
 ## Release - v2.6.107-alpha
 ### 📣 Apresentação da Atualização
 
