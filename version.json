@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.105-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.105-alpha/MEMO-Desktop-Setup-v2.6.105-alpha.exe",
-    "notes": "[EN]\nDelegate skills MCP tool execution to MEMOROUTER native FastMCP server, eliminating redundant bridge roundtrips and isolating developer host environment.\n\n[PT]\nDelegação da ferramenta MCP skills para o servidor nativo FastMCP do MEMOROUTER, eliminando roundtrips redundantes de WebSocket e isolando o ambiente local do desenvolvedor."
+    "version": "2.6.106-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.106-alpha/MEMO-Desktop-Setup-v2.6.106-alpha.exe",
+    "notes": "Português:\n- Definição do diretório de trabalho padrão (/root) e suporte a aliases (cwd, dir, directory, working_dir, sub_dir) no executor de comandos do Docker MCP (execDockerCommandExecutor).\n\nEnglish:\n- Set default working directory (/root) and support directory aliases (cwd, dir, directory, working_dir, sub_dir) in Docker MCP command executor (execDockerCommandExecutor)."
 }

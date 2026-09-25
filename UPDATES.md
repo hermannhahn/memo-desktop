@@ -3,6 +3,27 @@
 ---
 
 
+## Release - v2.6.106-alpha
+### 📣 Apresentação da Atualização
+
+Português:
+- Definição do diretório de trabalho padrão (/root) e suporte a aliases (cwd, dir, directory, working_dir, sub_dir) no executor de comandos do Docker MCP (execDockerCommandExecutor).
+
+English:
+- Set default working directory (/root) and support directory aliases (cwd, dir, directory, working_dir, sub_dir) in Docker MCP command executor (execDockerCommandExecutor).
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.106-alpha (`d8a8022`)
+- updates in feature/docker-workdir-defaulting (`3ef087b`)
+
+
+---
+
+
 ## Release - v2.6.105-alpha
 ### 📣 Apresentação da Atualização
 
