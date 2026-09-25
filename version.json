@@ -1,6 +1,6 @@
 {
     "service_name": "ai-bridge",
-    "version": "2.6.106-alpha",
-    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.106-alpha/MEMO-Desktop-Setup-v2.6.106-alpha.exe",
-    "notes": "Português:\n- Definição do diretório de trabalho padrão (/root) e suporte a aliases (cwd, dir, directory, working_dir, sub_dir) no executor de comandos do Docker MCP (execDockerCommandExecutor).\n\nEnglish:\n- Set default working directory (/root) and support directory aliases (cwd, dir, directory, working_dir, sub_dir) in Docker MCP command executor (execDockerCommandExecutor)."
+    "version": "2.6.107-alpha",
+    "download_url": "https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.107-alpha/MEMO-Desktop-Setup-v2.6.107-alpha.exe",
+    "notes": "Português:\n- Bloqueio de segundo plano e execução síncrona obrigatória de comandos Docker e CMD para Subagentes:\n  - Detecção de `is_subagent` e `caller_type=\"subagent\"` nos executores `execDockerCommandExecutor` e `execCmdExecutor`.\n  - Garantia de retorno síncrono inline (stdout/stderr/exit_code) com timeout estendido de até 120s.\n  - Bloqueio total de transição para background e supressão de notificações reativas (`ShouldNotify=false`) para evitar acordar canais externos de mensageria.\n\nEnglish:\n- Prevention of background task transitions and mandatory synchronous execution for Subagents in Docker and CMD tools:\n  - Detection of `is_subagent` and `caller_type=\"subagent\"` across `execDockerCommandExecutor` and `execCmdExecutor`.\n  - Guaranteed inline synchronous return (stdout/stderr/exit_code) with extended 120s execution timeout.\n  - Total prevention of background transitions and suppression of reactive notifications (`ShouldNotify=false`) to prevent external bot channel wakeups."
 }

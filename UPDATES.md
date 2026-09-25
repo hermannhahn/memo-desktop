@@ -3,6 +3,34 @@
 ---
 
 
+## Release - v2.6.107-alpha
+### 📣 Apresentação da Atualização
+
+Português:
+- Bloqueio de segundo plano e execução síncrona obrigatória de comandos Docker e CMD para Subagentes:
+  - Detecção de `is_subagent` e `caller_type="subagent"` nos executores `execDockerCommandExecutor` e `execCmdExecutor`.
+  - Garantia de retorno síncrono inline (stdout/stderr/exit_code) com timeout estendido de até 120s.
+  - Bloqueio total de transição para background e supressão de notificações reativas (`ShouldNotify=false`) para evitar acordar canais externos de mensageria.
+
+English:
+- Prevention of background task transitions and mandatory synchronous execution for Subagents in Docker and CMD tools:
+  - Detection of `is_subagent` and `caller_type="subagent"` across `execDockerCommandExecutor` and `execCmdExecutor`.
+  - Guaranteed inline synchronous return (stdout/stderr/exit_code) with extended 120s execution timeout.
+  - Total prevention of background transitions and suppression of reactive notifications (`ShouldNotify=false`) to prevent external bot channel wakeups.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.107-alpha (`bd613c9`)
+- updates in feature/subagent-sync-tool-execution (`198481c`)
+- enforce synchronous execution and prevent backgrounding for subagent docker and cmd commands (`6b6ddf5`)
+
+
+---
+
+
 ## Release - v2.6.106-alpha
 ### 📣 Apresentação da Atualização
 
