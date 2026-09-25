@@ -3,6 +3,35 @@
 ---
 
 
+## Release - v2.6.104-alpha
+### 📣 Apresentação da Atualização
+
+Esta atualização adiciona a skill built-in padrão de Subagentes Autônomos e aprimora a sincronização de skills com o MEMO Desktop.
+
+- **Skill Built-in de Subagentes Autônomos (`autonomous-subagents`)**: Adicionada skill padrão global com arquitetura e diretrizes completas em inglês inspiradas em padrões multi-agente NVIDIA, delegação, modos síncrono/assíncrono em background, ciclo de vida e fallback de modelos.
+- **Sincronização E2EE Pós-Handshake**: Correção do fluxo de entrega de skills via WebSocket para disparar o evento `sync_db_skills` imediatamente após a confirmação da criptografia ponta a ponta (`e2ee_handshake_confirm`).
+- **Sincronização Abrangente de Agentes**: O evento de sincronização agora empacota as skills ativas de todos os agentes do usuário (`all_agent_skills`) em lote, garantindo disponibilidade instantânea de skills para todas as instâncias MCP.
+
+---
+
+This update introduces the built-in Autonomous Sub-Agents skill and enhances skill synchronization with MEMO Desktop.
+
+- **Autonomous Sub-Agents Built-in Skill (`autonomous-subagents`)**: Added a global standard skill with complete English guidelines based on NVIDIA multi-agent patterns, delegation strategies, synchronous/asynchronous background execution modes, task lifecycle, and model fallback hierarchies.
+- **Post-Handshake E2EE Synchronization**: Fixed the WebSocket skill synchronization flow to trigger `sync_db_skills` immediately once end-to-end encryption is confirmed (`e2ee_handshake_confirm`).
+- **Comprehensive Multi-Agent Skill Sync**: The synchronization event now batches active skills across all user agents (`all_agent_skills`), ensuring instant skill availability for all agent MCP instances.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.104-alpha (`b1a037f`)
+- update development branch (`61840db`)
+
+
+---
+
+
 ## Release - v2.6.103-alpha
 ### 📣 Apresentação da Atualização
 
