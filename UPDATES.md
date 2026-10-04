@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.117-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added native Antigravity IDE support, dedicated editor sub-tabs (Antigravity IDE, VS Code, Cursor, and WSL), and calibrated live status indicators for the Continue.dev integration.
+
+**Highlights:**
+- **Antigravity IDE Support**: Native detection of Antigravity IDE executable/CLI (`antigravity-ide.cmd`), extension presence, and automatic installation via Open VSX Registry.
+- **Editor Sub-Tabs**: Added dedicated sub-tabs to the Continue.dev modal for Antigravity IDE, VS Code, Cursor, and WSL (Linux), with independent status checks, endpoint verification, and action buttons.
+- **Accurate Status Indicators**: Calibrated badge states across card and modals to clearly distinguish between "Integrated", "Installed (Not Integrated)", and "Ready to Install".
+- **Multi-Language Support**: Complete internationalization across all 8 supported languages with synchronized frontend assets.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado suporte nativo ao Antigravity IDE, sub-abas dedicadas por editor (Antigravity IDE, VS Code, Cursor e WSL) e calibração precisa dos indicadores de status da integração Continue.dev.
+
+**Destaques:**
+- **Suporte ao Antigravity IDE**: Detecção nativa do executável/CLI do Antigravity IDE (`antigravity-ide.cmd`), verificação de extensão instalada e instalação automatizada via Open VSX Registry.
+- **Sub-Abas por Editor**: Implementadas abas dedicadas no modal do Continue.dev para Antigravity IDE, VS Code, Cursor e WSL (Linux), com diagnósticos independentes, status de endpoint e botões de ação contextuais.
+- **Indicadores de Status Precisos**: Calibração dos badges no card e modais para diferenciar com precisão "Integrado", "Instalado (Não Integrado)" e "Pronto para Instalar".
+- **Internacionalização Completa**: Suporte completo nos 8 idiomas suportados com sincronização dos bundles do frontend.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.117-alpha (`8fdac8ee`)
+- update development branch (`8bbd2be8`)
+- add Antigravity IDE support and editor subtabs to Continue.dev integration (`eee323b9`)
+
+
+---
+
+
 ## Release - v2.6.116-alpha
 ### 📣 Apresentação da Atualização
 
