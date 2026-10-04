@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.111-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed OpenCode endpoint configuration in WSL with dual-schema compatibility, added live terminal execution console, and introduced SSH status verification.
+
+**Highlights:**
+- **WSL Endpoint Configuration Fix**: Implemented dual-schema configuration (`provider` and `providers`, `options` and `settings`, `npm` and `package`), direct API key embedding in configuration files, and `wslpath` path translation during credentials import.
+- **Live Terminal Execution Box**: Added a dark-themed terminal console in the OpenCode integration modal to stream real-time command execution, outputs, errors, and status for Windows, WSL, and SSH.
+- **SSH Check Status Feature**: Added a dedicated "Check Status" button and status badges (SSH Connection, OpenCode CLI, and MEMOROUTER Endpoint) in the Remote SSH panel with live diagnostic output.
+- **UI State Preservation**: Resolved button label clobbering to ensure action buttons reflect dynamic state (Integrate, Re-integrate, Installed).
+
+<!-- lang:pt -->
+**Resumo:** Correção da configuração do endpoint do OpenCode no WSL com compatibilidade de schema duplo, adição de terminal de execução ao vivo e verificação de status via SSH.
+
+**Destaques:**
+- **Correção da Configuração no WSL**: Implementado suporte a formato duplo de configuração (`provider` e `providers`, `options` e `settings`, `npm` e `package`), inclusão direta da chave de API no arquivo de configuração e tradução de caminho via `wslpath` na importação de credenciais.
+- **Terminal de Execução ao Vivo**: Adicionada caixa preta estilo terminal no modal do OpenCode para exibir comandos executados, saídas, erros e status de conclusão em tempo real para Windows, WSL e SSH.
+- **Verificação de Status SSH (Botão Check)**: Adicionado botão "Verificar Status" e badges informativos (Conexão SSH, OpenCode CLI e Endpoint MEMOROUTER) no painel SSH com saída detalhada de diagnóstico.
+- **Preservação de Estado na Interface**: Corrigido bug de substituição do texto dos botões de ação para manter o estado atualizado (Integrar, Reconfigurar, Instalado).
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.111-alpha (`6bf52de9`)
+- update development branch (`9629d974`)
+- fix OpenCode WSL dual config, add live terminal console and SSH check (`7a23ab39`)
+
+
+---
+
+
 ## Release - v2.6.110-alpha
 ### 📣 Apresentação da Atualização
 
