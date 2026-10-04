@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.112-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed OpenCode multi-environment status detection in the integration modal, resolved Wails IPC parameter binding mismatch, and added resilient HTTP fallback.
+
+**Highlights:**
+- **OpenCode Status Detection Fix**: Resolved a critical type mismatch in the Wails v2 IPC binding where variadic Go arguments caused reflection unmarshaling errors, leaving the modal in an uninitialized "Not Installed" / "No WSL distribution detected" state.
+- **Strict Parameter Signature**: Updated `GetOpenCodeDetailedStatus(distro string)` to use a strict string argument matching Wails IPC expectations, and added `GetOpenCodeStatus()` as a zero-argument backward-compatible alias.
+- **Resilient HTTP API Fallback**: Enhanced frontend status retrieval to automatically fall back to the native HTTP endpoint (`/api/v1/integrations/opencode/status`) if Wails IPC experiences any deserialization or bridge issues.
+- **WSL Distribution Selector**: Improved dropdown population logic to ensure detected WSL distros (e.g., Ubuntu) populate seamlessly when opening the modal.
+
+<!-- lang:pt -->
+**Resumo:** Correção da detecção de status multi-ambiente do OpenCode no modal de integração, resolução de incompatibilidade de assinatura no Wails IPC e adição de fallback HTTP resiliente.
+
+**Destaques:**
+- **Correção da Detecção de Status do OpenCode**: Resolvido erro de incompatibilidade de tipo no binding IPC do Wails v2, onde argumentos variádicos em Go impediam o unmarshal de parâmetros, fazendo o modal cair no estado padrão não detectado ("Not Installed" e "No WSL distribution detected").
+- **Assinatura Estrita de Parâmetro**: Atualizado `GetOpenCodeDetailedStatus(distro string)` para utilizar parâmetro de string estrito alinhado à reflexão do Wails v2, com adição de `GetOpenCodeStatus()` como alias retrocompatível sem argumentos.
+- **Fallback Resiliente via API HTTP**: Implementado mecanismo em cascata no frontend para consultar automaticamente a API HTTP (`/api/v1/integrations/opencode/status`) caso o IPC do Wails apresente qualquer falha de serialização.
+- **Seletor de Distribuições WSL**: Aprimorada a lógica de carregamento do dropdown para garantir que as distribuições WSL detectadas (ex: Ubuntu) sejam exibidas imediatamente ao abrir o modal.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.112-alpha (`05612e7b`)
+
+#### 📚 Documentação
+- update patch_msg.txt with release notes for OpenCode status fix (`7d567456`)
+
+#### 🐛 Correções
+- fix OpenCode status detection Wails IPC binding and add HTTP fallback (`b729d112`)
+
+
+---
+
+
 ## Release - v2.6.111-alpha
 ### 📣 Apresentação da Atualização
 
