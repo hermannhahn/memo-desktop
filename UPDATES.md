@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.115-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added 1-click Continue.dev integration for VS Code and Cursor in the App Hub with multi-environment support and lateral chat guidance.
+
+**Highlights:**
+- **Continue.dev 1-Click Integration**: Added dedicated integration card in the App Hub for Continue.dev, the leading open-source AI code assistant for VS Code and Cursor.
+- **Smart Detection & Auto-Install**: Automatically detects VS Code and Cursor installations on Windows and WSL, with optional automatic CLI extension installation (`--install-extension Continue.continue`).
+- **Resilient Configuration Engine**: Safely merges MEMOROUTER OpenAI-compatible endpoint (`https://api.memorouter.com/v1`) into `~/.continue/config.json` while preserving existing models and setting up tab autocomplete.
+- **Interactive Terminal & Success Modal**: Live execution terminal box inside the modal, plus a success modal showcasing shortcuts (`Ctrl + L` for chat, `Ctrl + I` for inline edits) with copy buttons.
+- **Full Internationalization**: Complete bilingual support across all 8 supported languages (`pt-BR`, `pt-PT`, `en`, `es`, `fr`, `de`, `zh`, `ru`).
+
+<!-- lang:pt -->
+**Resumo:** Adicionada integração em 1-clique com o Continue.dev para VS Code e Cursor no App Hub, com suporte multi-ambiente e guia de chat lateral.
+
+**Destaques:**
+- **Integração em 1-Clique do Continue.dev**: Adicionado card dedicado de integração no App Hub para o Continue.dev, o principal assistente de código com IA de código aberto para VS Code e Cursor.
+- **Detecção Inteligente e Instalação Automática**: Detecta instalações do VS Code e Cursor no Windows e WSL, com opção de instalar a extensão automaticamente via CLI (`--install-extension Continue.continue`).
+- **Motor de Configuração Resiliente**: Realiza merge seguro do endpoint OpenAI do MEMOROUTER (`https://api.memorouter.com/v1`) no `~/.continue/config.json` preservando modelos pré-existentes e configurando tab autocomplete.
+- **Terminal Interativo e Modal de Sucesso**: Terminal ao vivo dentro do modal e modal de sucesso com atalhos de uso (`Ctrl + L` para chat, `Ctrl + I` para edição em linha) e botões de cópia rápida.
+- **Internacionalização Completa**: Suporte completo nos 8 idiomas do MEMO Desktop (`pt-BR`, `pt-PT`, `en`, `es`, `fr`, `de`, `zh`, `ru`).
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.115-alpha (`ecc0ad65`)
+- add 1-click Continue.dev integration for VS Code and Cursor (`da938a72`)
+
+
+---
+
+
 ## Release - v2.6.114-alpha
 ### 📣 Apresentação da Atualização
 

@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.114-alpha`
+## 📥 Download da Última Versão: `v2.6.115-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.114-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/MEMO-Desktop-Setup-v2.6.114-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.115-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/MEMO-Desktop-Setup-v2.6.115-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.114-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/MEMO-Desktop-Setup-v2.6.114-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.115-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/MEMO-Desktop-Setup-v2.6.115-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.114-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.115-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,20 +45,26 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.114-alpha:
+### 🌟 Notas do Release v2.6.115-alpha:
 <!-- lang:en -->
-**Summary:** Updated OpenCode success modal tip to highlight the `/model` agent switcher command with refined English phrasing.
+**Summary:** Added 1-click Continue.dev integration for VS Code and Cursor in the App Hub with multi-environment support and lateral chat guidance.
 
 **Highlights:**
-- **Refined Command Tip**: Updated the pro-tip in the OpenCode success modal from `/connect` to `/model` ("Inside the OpenCode TUI, type /model to view or switch between your MEMOROUTER agents.").
-- **Spelling and Grammar Polish**: Corrected English phrasing (`between` with double 'e') and aligned phrasing across all 8 supported languages.
+- **Continue.dev 1-Click Integration**: Added dedicated integration card in the App Hub for Continue.dev, the leading open-source AI code assistant for VS Code and Cursor.
+- **Smart Detection & Auto-Install**: Automatically detects VS Code and Cursor installations on Windows and WSL, with optional automatic CLI extension installation (`--install-extension Continue.continue`).
+- **Resilient Configuration Engine**: Safely merges MEMOROUTER OpenAI-compatible endpoint (`https://api.memorouter.com/v1`) into `~/.continue/config.json` while preserving existing models and setting up tab autocomplete.
+- **Interactive Terminal & Success Modal**: Live execution terminal box inside the modal, plus a success modal showcasing shortcuts (`Ctrl + L` for chat, `Ctrl + I` for inline edits) with copy buttons.
+- **Full Internationalization**: Complete bilingual support across all 8 supported languages (`pt-BR`, `pt-PT`, `en`, `es`, `fr`, `de`, `zh`, `ru`).
 
 <!-- lang:pt -->
-**Resumo:** Atualização da dica do modal de sucesso do OpenCode para destacar o comando `/model` de alternância de agentes com refinamento textual.
+**Resumo:** Adicionada integração em 1-clique com o Continue.dev para VS Code e Cursor no App Hub, com suporte multi-ambiente e guia de chat lateral.
 
 **Destaques:**
-- **Comando de Alternância de Agentes**: Atualizada a dica profissional no modal de sucesso do OpenCode para indicar o comando `/model` ("Inside the OpenCode TUI, type /model to view or switch between your MEMOROUTER agents.").
-- **Correção Ortográfica e Gramatical**: Ajustada a grafia em inglês (`between`) e alinhadas as traduções correspondentes em todos os 8 idiomas suportados.
+- **Integração em 1-Clique do Continue.dev**: Adicionado card dedicado de integração no App Hub para o Continue.dev, o principal assistente de código com IA de código aberto para VS Code e Cursor.
+- **Detecção Inteligente e Instalação Automática**: Detecta instalações do VS Code e Cursor no Windows e WSL, com opção de instalar a extensão automaticamente via CLI (`--install-extension Continue.continue`).
+- **Motor de Configuração Resiliente**: Realiza merge seguro do endpoint OpenAI do MEMOROUTER (`https://api.memorouter.com/v1`) no `~/.continue/config.json` preservando modelos pré-existentes e configurando tab autocomplete.
+- **Terminal Interativo e Modal de Sucesso**: Terminal ao vivo dentro do modal e modal de sucesso com atalhos de uso (`Ctrl + L` para chat, `Ctrl + I` para edição em linha) e botões de cópia rápida.
+- **Internacionalização Completa**: Suporte completo nos 8 idiomas do MEMO Desktop (`pt-BR`, `pt-PT`, `en`, `es`, `fr`, `de`, `zh`, `ru`).
 
 ---
 
