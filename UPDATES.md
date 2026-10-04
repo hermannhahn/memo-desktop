@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.110-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed console window popups when opening the Integrations tab by enforcing CREATE_NO_WINDOW and HideWindow flags on all OpenCode and WSL CLI commands.
+
+**Highlights:**
+- Suppressed console window creation on Windows for all `wsl.exe`, `opencode`, and `npm` commands executed during status checks, distribution listing, and integration setup.
+- Guaranteed 100% silent execution in background matching the rest of the desktop application.
+
+<!-- lang:pt -->
+**Resumo:** Corrigida a abertura de janelas de prompt de comando (CMD) ao acessar a aba Integrações, aplicando as flags de ocultação e CREATE_NO_WINDOW em todos os comandos do OpenCode e WSL.
+
+**Destaques:**
+- Ocultação completa das janelas de console no Windows para todos os comandos `wsl.exe`, `opencode` e `npm` executados durante verificação de status, listagem de distribuições e configuração da integração.
+- Garantia de execução 100% silenciosa em segundo plano, idêntica ao restante da aplicação.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.110-alpha (`f9bae812`)
+- update development branch (`cff7347d`)
+
+#### 🐛 Correções
+- execute opencode and wsl commands silently without console windows (`79d59482`)
+
+
+---
+
+
 ## Release - v2.6.109-alpha
 ### 📣 Apresentação da Atualização
 
