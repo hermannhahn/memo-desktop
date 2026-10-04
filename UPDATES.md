@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.116-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Corrected Continue.dev integration button labels across card and modals, isolated WSL automated tests to protect user configurations, and verified API key provisioning.
+
+**Highlights:**
+- **Continue.dev Button Labels**: Fixed button text on Continue.dev card and modal panels across all 8 supported languages, changing generic OpenCode text to dedicated Continue action labels ("Integrate Continue" / "Integrar Continue").
+- **Test Isolation & Security**: Added environment guard (`TEST_LIVE_WSL_INSTALL`) to WSL integration tests to guarantee automated test runs never alter local user configurations or credentials.
+- **API Key Provisioning Audit**: Verified API key assignment across integrations, confirming dedicated named keys for OpenCode, Hermes, and Continue.dev.
+
+<!-- lang:pt -->
+**Resumo:** Correção dos rótulos dos botões de integração do Continue.dev no card e modais, isolamento de testes automatizados do WSL para proteger configurações de usuário e auditoria das chaves de API.
+
+**Destaques:**
+- **Rótulos dos Botões do Continue.dev**: Corrigido o texto dos botões no card e modais do Continue.dev nos 8 idiomas suportados, substituindo rótulos residuais do OpenCode por ações dedicadas ("Integrar Continue" / "Integrate Continue").
+- **Isolamento de Testes e Segurança**: Adicionada proteção com variável de ambiente (`TEST_LIVE_WSL_INSTALL`) nos testes do WSL para garantir que testes automatizados nunca modifiquem configurações ou credenciais do usuário.
+- **Auditoria de Chaves de API**: Auditoria completa da atribuição de API keys nas integrações, confirmando chaves provisionadas dedicadas para OpenCode, Hermes e Continue.dev.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.116-alpha (`ea9deaed`)
+- update development branch (`96a2352d`)
+
+#### 🐛 Correções
+- correct Continue button labels, guard WSL tests, and audit API keys (`7843ac95`)
+
+
+---
+
+
 ## Release - v2.6.115-alpha
 ### 📣 Apresentação da Atualização
 
