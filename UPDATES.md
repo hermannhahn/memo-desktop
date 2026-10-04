@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.114-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated OpenCode success modal tip to highlight the `/model` agent switcher command with refined English phrasing.
+
+**Highlights:**
+- **Refined Command Tip**: Updated the pro-tip in the OpenCode success modal from `/connect` to `/model` ("Inside the OpenCode TUI, type /model to view or switch between your MEMOROUTER agents.").
+- **Spelling and Grammar Polish**: Corrected English phrasing (`between` with double 'e') and aligned phrasing across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Atualização da dica do modal de sucesso do OpenCode para destacar o comando `/model` de alternância de agentes com refinamento textual.
+
+**Destaques:**
+- **Comando de Alternância de Agentes**: Atualizada a dica profissional no modal de sucesso do OpenCode para indicar o comando `/model` ("Inside the OpenCode TUI, type /model to view or switch between your MEMOROUTER agents.").
+- **Correção Ortográfica e Gramatical**: Ajustada a grafia em inglês (`between`) e alinhadas as traduções correspondentes em todos os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.114-alpha (`3a22f686`)
+
+#### 📚 Documentação
+- update patch_msg.txt with release notes for /model command tip (`0ba66c19`)
+
+#### 🐛 Correções
+- update OpenCode success tip to use /model command and correct English phrasing (`922e014e`)
+
+
+---
+
+
 ## Release - v2.6.113-alpha
 ### 📣 Apresentação da Atualização
 
