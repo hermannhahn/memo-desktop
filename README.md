@@ -1,70 +1,41 @@
 # 🚀 MEMO Desktop - Repositório Oficial de Downloads
 
-Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO Desktop para Windows (Go Native GUI - MEMOROUTER)**.
+Repositório público oficial para download e distribuição de executáveis do **MEMO Desktop** (MEMOROUTER).
+
+[![Latest Release](https://img.shields.io/github/v/release/hermannhahn/memo-desktop?label=Vers%C3%A3o%20Est%C3%A1vel&color=blue)](https://github.com/hermannhahn/memo-desktop/releases/latest)
+[![Windows](https://img.shields.io/badge/Plataforma-Windows%2010%2B-blue)](https://github.com/hermannhahn/memo-desktop/releases/latest)
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.108-alpha`
+## 📥 Download da Versão Atual (v2.6.109-alpha)
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.108-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/MEMO-Desktop-Setup-v2.6.108-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/AIBrainDevCert.crt)
+Clique no botão abaixo para baixar o instalador oficial:
+
+[**⬇️ Baixar Instalador Oficial (MEMO-Desktop-Setup-v2.6.109-alpha.exe)**](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.109-alpha/MEMO-Desktop-Setup-v2.6.109-alpha.exe)
 
 ---
 
-## 💻 Instruções de Instalação no Windows
+## 📋 Novidades da Versão v2.6.109-alpha
 
-### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/install-memo.bat).
-2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
-
----
-
-## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
-
-### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.108-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/MEMO-Desktop-Setup-v2.6.108-alpha.exe).
-2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
-   - Clique em **"Mais informações"** (*More info*).
-   - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
-
----
-
-### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
-Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.108-alpha/install-cert.bat) na mesma pasta.
-2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
-3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
-
----
-
-## 📋 Histórico de Atualizações (UPDATES.md)
-
-Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
-📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
-
-### 🌟 Notas do Release v2.6.108-alpha:
 <!-- lang:en -->
-**Summary:** Intelligent filtering and file-saving capabilities have been added to the YouTube transcript tool, removing duplicate rolling cues and timing tags for cleaner context and easier reading.
+**Summary:** Added native multi-target integration for OpenCode AI CLI (Windows, WSL, and SSH Remote) with automatic MEMOROUTER endpoint configuration, and removed legacy AGY integration from the Integrations tab.
 
 **Highlights:**
-- Smart deduplication of YouTube auto-generated rolling cues and removal of inline timing tags.
-- Fluid paragraph formatting for improved readability and LLM context efficiency.
-- Direct transcript persistence to Knowledge Base (`save_to_file`) with context window overflow protection.
+- Native OpenCode integration in Chat Clients & OpenAI Endpoints with auto-configuration of provider `memorouter` (`https://api.memorouter.com/v1`) in `~/.config/opencode/opencode.json`.
+- Multi-target modal supporting Local Windows, WSL (Linux) with dynamic distribution detection, and Remote Server via SSH.
+- Credential management with automatic authentication import for OpenCode CLI.
+- Complete removal of legacy AGY integration and cleanup of Coding Agents & CLI Orchestration section.
+- Full internationalization across all 8 supported languages.
 
 <!-- lang:pt -->
-**Resumo:** Recursos de filtragem inteligente e salvamento em arquivo foram adicionados à ferramenta de transcrição do YouTube, removendo repetições de legendas e marcações de tempo para um contexto mais limpo e legível.
+**Resumo:** Adicionada integração nativa multi-ambiente para o OpenCode AI CLI (Windows, WSL e Servidor Remoto SSH) com configuração automática do endpoint MEMOROUTER, e removida a integração legada do AGY da aba Integrações.
 
 **Destaques:**
-- Deduplicação inteligente de repetições contínuas de legendas geradas automaticamente pelo YouTube e remoção de tags de tempo.
-- Formatação fluida em parágrafos para leitura aprimorada e maior eficiência de contexto da IA.
-- Salvamento direto de transcrições na Base de Conhecimento (`save_to_file`) com proteção contra estouro de janela de contexto.
+- Integração nativa do OpenCode na seção Clientes de Chat & Endpoints OpenAI com configuração automática do provedor `memorouter` (`https://api.memorouter.com/v1`) em `~/.config/opencode/opencode.json`.
+- Modal multi-ambiente com suporte a Windows Local, WSL (Linux) com detecção dinâmica de distribuições instaladas e Servidor Remoto via SSH.
+- Gerenciamento seguro de credenciais com importação automática de autenticação no OpenCode CLI.
+- Remoção completa da integração legada com o AGY e limpeza da seção Agentes de Código & Orquestração CLI.
+- Internacionalização completa em todos os 8 idiomas suportados.
 
 ---
-
-## 🔐 Licença e Segurança
-
-- Os executáveis deste repositório são compilações nativas de código fechado (*closed-source*) direcionadas ao Windows 10/11.
-- Copyright © Hermann Hahn - Todos os direitos reservados.
+*Gerado automaticamente pelo pipeline de release do MEMOROUTER.*

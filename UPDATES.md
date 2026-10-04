@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.6.109-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added native multi-target integration for OpenCode AI CLI (Windows, WSL, and SSH Remote) with automatic MEMOROUTER endpoint configuration, and removed legacy AGY integration from the Integrations tab.
+
+**Highlights:**
+- Native OpenCode integration in Chat Clients & OpenAI Endpoints with auto-configuration of provider `memorouter` (`https://api.memorouter.com/v1`) in `~/.config/opencode/opencode.json`.
+- Multi-target modal supporting Local Windows, WSL (Linux) with dynamic distribution detection, and Remote Server via SSH.
+- Credential management with automatic authentication import for OpenCode CLI.
+- Complete removal of legacy AGY integration and cleanup of Coding Agents & CLI Orchestration section.
+- Full internationalization across all 8 supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Adicionada integração nativa multi-ambiente para o OpenCode AI CLI (Windows, WSL e Servidor Remoto SSH) com configuração automática do endpoint MEMOROUTER, e removida a integração legada do AGY da aba Integrações.
+
+**Destaques:**
+- Integração nativa do OpenCode na seção Clientes de Chat & Endpoints OpenAI com configuração automática do provedor `memorouter` (`https://api.memorouter.com/v1`) em `~/.config/opencode/opencode.json`.
+- Modal multi-ambiente com suporte a Windows Local, WSL (Linux) com detecção dinâmica de distribuições instaladas e Servidor Remoto via SSH.
+- Gerenciamento seguro de credenciais com importação automática de autenticação no OpenCode CLI.
+- Remoção completa da integração legada com o AGY e limpeza da seção Agentes de Código & Orquestração CLI.
+- Internacionalização completa em todos os 8 idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.109-alpha (`45ffd264`)
+- update development branch (`df9540ec`)
+- add OpenCode multi-target modal and remove AGY from Integrations tab (`6dd14476`)
+
+#### 🔧 Manutenção / Refatoração
+- update syso resource icons (`3554d636`)
+- remove binary and cli from git tracking, ignore logs and add .env.example (`7e5c799c`)
+
+
+---
+
+
 ## Release - v2.6.108-alpha
 ### 📣 Apresentação da Atualização
 
