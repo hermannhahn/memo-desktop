@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.121-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release improves the updater experience with a more compact dialog, eliminates redundant bracketed messages, prevents Docker Desktop from closing during updates, and stops re-prompting already configured user tokens.
+
+**Highlights:**
+- Refined updater modal layout and reduced vertical height, eliminating excessive whitespace.
+- Removed duplicated bracketed status messages from the updater notification badge.
+- Preserved Docker Desktop during updates by guarding DISM and refining process termination.
+- Prevented spurious token setup prompts on startup when a user token is already configured.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão aprimora a experiência do atualizador com um modal mais compacto, elimina mensagens redundantes entre colchetes, impede o fechamento do Docker Desktop durante atualizações e evita a re-solicitação de tokens de usuário já configurados.
+
+**Destaques:**
+- Layout do modal de atualização refinado com altura vertical reduzida, eliminando espaços vazios desnecessários.
+- Remoção de mensagens duplicadas entre colchetes do badge informativo do updater.
+- Preservação do Docker Desktop em execução durante atualizações através de proteção no DISM e refino no encerramento de processos.
+- Correção da exibição indevida do modal de configuração de token na inicialização quando o token já está configurado.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.121-alpha (`bf26a135`)
+- updates in fix/updater-and-installer-refinements (`d7503173`)
+
+#### 🐛 Correções
+- refine modal dimensions, remove badge repetition, preserve docker desktop, and fix token prompt (`ca3ac413`)
+
+
+---
+
+
 ## Release - v2.6.120-alpha
 ### 📣 Apresentação da Atualização
 

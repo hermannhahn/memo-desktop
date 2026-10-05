@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.120-alpha`
+## 📥 Download da Última Versão: `v2.6.121-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.120-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/MEMO-Desktop-Setup-v2.6.120-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.121-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/MEMO-Desktop-Setup-v2.6.121-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.120-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/MEMO-Desktop-Setup-v2.6.120-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.121-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/MEMO-Desktop-Setup-v2.6.121-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.120-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.121-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,22 +45,24 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.120-alpha:
+### 🌟 Notas do Release v2.6.121-alpha:
 <!-- lang:en -->
-**Summary:** This release refines developer instructions and CLI documentation to optimize agent efficiency, resolves dynamic memory calculation in dashboard doughnut charts, and streamlines repository cleanliness by expunging transient directories.
+**Summary:** This release improves the updater experience with a more compact dialog, eliminates redundant bracketed messages, prevents Docker Desktop from closing during updates, and stops re-prompting already configured user tokens.
 
 **Highlights:**
-- Enhanced CLI interactive help and direct intent cheatsheet in project instructions.
-- Corrected real-time hover count and localization in dashboard memory lifecycle and emotion distribution charts.
-- Purged transient workspace files and hardened repository security.
+- Refined updater modal layout and reduced vertical height, eliminating excessive whitespace.
+- Removed duplicated bracketed status messages from the updater notification badge.
+- Preserved Docker Desktop during updates by guarding DISM and refining process termination.
+- Prevented spurious token setup prompts on startup when a user token is already configured.
 
 <!-- lang:pt -->
-**Resumo:** Esta versão aprimora as instruções e documentação da CLI para otimizar a eficiência dos agentes, corrige a exibição dinâmica de memórias nos gráficos de rosca do dashboard e higieniza o repositório com o expurgo de pastas transitórias.
+**Resumo:** Esta versão aprimora a experiência do atualizador com um modal mais compacto, elimina mensagens redundantes entre colchetes, impede o fechamento do Docker Desktop durante atualizações e evita a re-solicitação de tokens de usuário já configurados.
 
 **Destaques:**
-- Ajuda interativa enriquecida na CLI e guia direto de comandos no manual do projeto.
-- Correção do contador e internacionalização ao passar o mouse sobre os gráficos de ciclo de vida e emoção no dashboard.
-- Expurgo definitivo de arquivos temporários do repositório e reforço da segurança.
+- Layout do modal de atualização refinado com altura vertical reduzida, eliminando espaços vazios desnecessários.
+- Remoção de mensagens duplicadas entre colchetes do badge informativo do updater.
+- Preservação do Docker Desktop em execução durante atualizações através de proteção no DISM e refino no encerramento de processos.
+- Correção da exibição indevida do modal de configuração de token na inicialização quando o token já está configurado.
 
 ---
 
