@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.6.120-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release refines developer instructions and CLI documentation to optimize agent efficiency, resolves dynamic memory calculation in dashboard doughnut charts, and streamlines repository cleanliness by expunging transient directories.
+
+**Highlights:**
+- Enhanced CLI interactive help and direct intent cheatsheet in project instructions.
+- Corrected real-time hover count and localization in dashboard memory lifecycle and emotion distribution charts.
+- Purged transient workspace files and hardened repository security.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão aprimora as instruções e documentação da CLI para otimizar a eficiência dos agentes, corrige a exibição dinâmica de memórias nos gráficos de rosca do dashboard e higieniza o repositório com o expurgo de pastas transitórias.
+
+**Destaques:**
+- Ajuda interativa enriquecida na CLI e guia direto de comandos no manual do projeto.
+- Correção do contador e internacionalização ao passar o mouse sobre os gráficos de ciclo de vida e emoção no dashboard.
+- Expurgo definitivo de arquivos temporários do repositório e reforço da segurança.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.120-alpha (`19bd29cf`)
+- update development branch (`4ec701a1`)
+- add agent containers backup and restore with idle detection and sector reordering (`d33e7413`)
+
+#### 📚 Documentação
+- finalize phase 136 cleanup of temp references and todo (`79d7e46e`)
+- refine CLI instructions in GEMINI.md, AGENTS.md, docs, and skills to eliminate token waste (`8c28d9df`)
+
+#### 🐛 Correções
+- resolve stale closure in doughnut chart tooltips displaying 0 memories (`f038463c`)
+- remove Continue autocomplete endpoint and fix OpenCode model mapping (`4638e722`)
+
+
+---
+
+
 ## Release - v2.6.119-alpha
 ### 📣 Apresentação da Atualização
 
