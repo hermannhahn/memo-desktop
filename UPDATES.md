@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.122-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release fixes WhatsApp incoming message delivery by enforcing the REST API webhook port, corrects the services HUD telemetry counter, and refines MCP tool visibility and automatic lifecycle synchronization for YouTube Music and GPS.
+
+**Highlights:**
+- Fixed WhatsApp webhook delivery by strictly enforcing API port 18400 and isolating unit test configs from user AppData.
+- Corrected the Services tab header telemetry count from 8 to 7 with dynamic subsystem counting.
+- Automated lifecycle activation and deactivation for YouTube Music and GPS tools based on their service/integration statuses.
+- Dynamically hides IoT and GPS navigation items in the sidebar when their corresponding tools or services are deactivated.
+- Blocked execution and console exposure of disabled bridge MCP tools.
+- Renamed Services tab to "Services" across all supported languages.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão corrige a entrega de mensagens do WhatsApp garantindo a porta padrão de webhook da API REST, ajusta o contador da telemetria de Serviços e aprimora a visibilidade e o ciclo de vida das ferramentas YouTube Music e GPS.
+
+**Destaques:**
+- Corrigida a entrega de mensagens do WhatsApp garantindo estritamente a porta de API 18400 e isolando testes de backup da configuração do usuário.
+- Corrigido o contador de subsistemas na telemetria da aba Serviços de 8 para 7 com cálculo dinâmico.
+- Sincronização automática do ciclo de vida das ferramentas YouTube Music e GPS conforme o status de seus serviços/integrações.
+- Ocultação dinâmica dos menus de IoT e GPS na barra lateral quando as ferramentas ou serviços estiverem desativados.
+- Bloqueio no backend e filtragem no Console para ferramentas MCP desativadas.
+- Aba de serviços renomeada para "Serviços" em todos os idiomas suportados.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.122-alpha (`1a8419b6`)
+- updates in feature/tools-services-vault-refinements (`20807592`)
+- tools, services, integrations and vault refinements (Phase 138) (`cddb7271`)
+
+#### 🐛 Correções
+- resolve whatsapp webhook port delivery and telemetry services count (Phase 138) (`d542c3bf`)
+
+
+---
+
+
 ## Release - v2.6.121-alpha
 ### 📣 Apresentação da Atualização
 
