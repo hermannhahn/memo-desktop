@@ -3,6 +3,48 @@
 ---
 
 
+## Release - v2.6.118-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release introduces a dedicated Local Tools tab, enhances model integration setups with agent selection, and strengthens Docker container security with strict agent isolation and single-container limits.
+
+**Highlights:**
+- Created a dedicated Local Tools tab in the navigation menu for managing local MCP tools and permissions.
+- Added a Primary Agent selector for Continue.dev, OpenCode, and Hermes integration cards.
+- Cleaned up the Service Status tab and Model Sleep card for streamlined monitoring.
+- Enforced strict Docker multi-agent isolation: agents can now only list, view, and run commands within their own container.
+- Streamlined Docker limits to a fixed single container per agent with unlimited global capacity.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão introduz uma aba própria para Ferramentas Locais, aprimora a configuração de integrações com seleção de agentes e reforça a segurança de containers Docker com isolamento estrito por agente e limite de container único.
+
+**Destaques:**
+- Criação de uma aba dedicada Ferramentas Locais no menu lateral para gerenciar ferramentas MCP e permissões.
+- Adição de caixa seletora de Agente Principal nos cards de integração do Continue.dev, OpenCode e Hermes.
+- Simplificação da aba Status dos Serviços e do card Sono do Modelo para um monitoramento mais limpo.
+- Implementação de isolamento estrito no MCP Docker: cada agente só enxerga, lista e executa comandos em seu próprio container.
+- Simplificação dos limites do Docker, fixando o máximo em 1 container por agente e capacidade global ilimitada.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.118-alpha (`22bb87e8`)
+- update development branch (`a631db44`)
+- updates in feature/docker-agent-isolation (`6b897f5c`)
+- dedicate local tools tab in sidebar navigation below notes content (`e3923256`)
+- add dynamic primary agent dropdown selector by name across hermes, opencode, and continue (`189ae243`)
+
+#### 🔧 Manutenção / Refatoração
+- remove local tools card from service status tab (`4cdcfebc`)
+- remove agent status list from model sleep card (`bc07c210`)
+
+
+---
+
+
 ## Release - v2.6.117-alpha
 ### 📣 Apresentação da Atualização
 
