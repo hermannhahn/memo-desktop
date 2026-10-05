@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.123-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented permanent multi-anchor token persistence and hardened onboarding checks to ensure user tokens are never erased during updates or runs, preventing the onboarding setup modal from appearing after updates.
+
+**Highlights:**
+- Multi-anchor token persistence backing up the access token across config.json, auth_token.txt, and the Windows Registry.
+- Auto-recovery and anti-reset guard preventing any routine or update from overwriting or clearing an existing user token.
+- Intelligent onboarding check (IsOnboardingRequired) ensuring the setup modal only ever appears on a genuine first install.
+
+<!-- lang:pt -->
+**Resumo:** Implementada blindagem permanente do token de acesso com ancoragem tripla e verificação inteligente de onboarding, garantindo que o token nunca seja resetado em atualizações e que o modal de configuração não apareça após updates.
+
+**Destaques:**
+- Persistência multi-âncora do token de acesso em config.json, auth_token.txt e Registro do Windows.
+- Auto-recuperação e trava anti-reset impedindo que qualquer rotina ou atualização zere ou sobrescreva o token do usuário.
+- Checagem inteligente de onboarding (IsOnboardingRequired) garantindo que o modal apareça estritamente na primeira instalação limpa.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.123-alpha (`37978c60`)
+- update development branch (`3fc0d630`)
+
+#### 🐛 Correções
+- implement multi-anchor token persistence and prevent update onboarding reset (`46c5d080`)
+
+
+---
+
+
 ## Release - v2.6.122-alpha
 ### 📣 Apresentação da Atualização
 
