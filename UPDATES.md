@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.119-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** This release standardizes the Hermes Agent integration with a dedicated setup modal and agent selector, cleans up redundant headers in the Local Tools and IoT tabs, and refines navigation and layout consistency.
+
+**Highlights:**
+- Standardized Hermes Agent integration with a dedicated configuration modal, environment telemetry, primary agent selection, and real-time status feedback.
+- Cleaned up redundant inner headers from the Local Tools tab and added the descriptive HUD title "Enable / Disable Tools".
+- Decoupled the IoT tab HUD header to "Subnet Discovery & Hardware Matrix", eliminating duplication with the top application bar.
+- Updated translations across all 8 supported languages and synchronized frontend assets with the AI Bridge core.
+
+<!-- lang:pt -->
+**Resumo:** Esta versão padroniza a integração do Hermes Agent com modal dedicado e seletor de agente, elimina cabeçalhos redundantes nas abas Ferramentas Locais e IoT, e aprimora a consistência visual da navegação.
+
+**Destaques:**
+- Padronização da integração do Hermes Agent com modal dedicado contendo telemetria de ambiente, seleção de Agente Principal e feedback de status em tempo real.
+- Remoção do cabeçalho redundante na aba Ferramentas Locais e inclusão do título descritivo "Ativar / Desativar Ferramentas" no HUD.
+- Desacoplamento do título do HUD da aba IoT para "Subnet Discovery & Matriz de Hardware", eliminando a repetição com a barra superior do aplicativo.
+- Atualização completa de internacionalização nos 8 idiomas suportados e sincronização dos assets do frontend com o AI Bridge.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.119-alpha (`49042bca`)
+- update development branch (`8e681f54`)
+- updates in feature/tab-headers-cleanup (`8bad4299`)
+
+
+---
+
+
 ## Release - v2.6.118-alpha
 ### 📣 Apresentação da Atualização
 
