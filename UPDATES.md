@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.6.126-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Hardened WebSocket connectivity and expanded operational timeouts between MEMO Desktop and Console to prevent disconnections during long tasks.
+
+**Highlights:**
+- Expanded WebSocket and MCP execution timeouts to 1-2 hours to ensure long tasks never abort prematurely.
+- Hardened socket write deadlines and ping tolerance to eliminate connection drops during large payload transfers.
+
+<!-- lang:pt -->
+**Resumo:** Blindagem da conectividade WebSocket e expansão de todos os timeouts operacionais entre MEMO Desktop e Console para evitar desconexões em tarefas longas.
+
+**Destaques:**
+- Expansão dos timeouts de WebSocket e de execução de MCP para 1 a 2 horas, garantindo que tarefas longas nunca sofram timeout prematuro.
+- Blindagem dos prazos de escrita e tolerância de ping do socket para eliminar quedas durante transferências de grandes volumes de dados.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.126-alpha (`9e5bc596`)
+- update development branch (`77841390`)
+
+#### 🐛 Correções
+- expand timeouts and harden websocket connection against drops on large data (`49a0d151`)
+
+
+---
+
+
 ## Release - v2.6.125-alpha
 ### 📣 Apresentação da Atualização
 
