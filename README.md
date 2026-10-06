@@ -1,51 +1,51 @@
-# 🚀 MEMO Desktop - Repositório Oficial de Downloads
+# 🚀 MEMO Desktop — Official Downloads Repository
 
-Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO Desktop para Windows (Go Native GUI - MEMOROUTER)**.
-
----
-
-## 📥 Download da Última Versão: `v2.6.127-alpha`
-
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.127-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/MEMO-Desktop-Setup-v2.6.127-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/AIBrainDevCert.crt)
+Welcome to the official distributions and releases repository for **MEMO Desktop for Windows (Go Native GUI — MEMOROUTER)**.
 
 ---
 
-## 💻 Instruções de Instalação no Windows
+## 📥 Download Latest Release: `v2.6.127-alpha`
 
-### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.bat).
-2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
-
----
-
-## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
-
-### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.127-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/MEMO-Desktop-Setup-v2.6.127-alpha.exe).
-2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
-   - Clique em **"Mais informações"** (*More info*).
-   - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
+- 📦 **Direct Executable Installer**: [Download MEMO-Desktop-Setup-v2.6.127-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/MEMO-Desktop-Setup-v2.6.127-alpha.exe)
+- ⚡ **Automated Windows Batch Installer (Recommended)**: [Download install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.bat)
+- 📄 **PowerShell Installer Script**: [Download install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.ps1)
+- 🔐 **Certificate Installer Script**: [Download install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-cert.bat)
+- 📄 **Digital Code-Signing Certificate**: [Download AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/AIBrainDevCert.crt)
 
 ---
 
-### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
-Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-cert.bat) na mesma pasta.
-2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
-3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
+## 💻 Windows Installation Instructions
+
+### Recommended Method (1-Click via Batch):
+1. Download the automated installer [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-memo.bat).
+2. Double-click the downloaded file. It will launch PowerShell, request Administrator elevation, register the development certificate in the Windows trust store, and initiate MEMO Desktop setup automatically.
 
 ---
 
-## 📋 Histórico de Atualizações (UPDATES.md)
+## 💻 Windows Defender SmartScreen Instructions
 
-Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
-📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
+### Option 1: Direct Execution (Fastest)
+1. Download [`MEMO-Desktop-Setup-v2.6.127-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/MEMO-Desktop-Setup-v2.6.127-alpha.exe).
+2. Run the installer. If the **Windows Defender SmartScreen** warning appears:
+   - Click on **"More info"** (*Mais informações*).
+   - Click the **"Run anyway"** (*Executar assim mesmo*) button.
 
-### 🌟 Notas do Release v2.6.127-alpha:
+---
+
+### Option 2: Install Development Certificate (Removes All Warnings)
+To register the code-signing certificate in Windows Trusted Root and Trusted Publisher stores:
+1. Download [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/AIBrainDevCert.crt) and [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.127-alpha/install-cert.bat) to the same directory.
+2. Right-click **`install-cert.bat`** and select **"Run as Administrator"**.
+3. The script imports the certificate into both Windows certificate stores automatically.
+
+---
+
+## 📋 Release History & Changelogs (UPDATES.md)
+
+To view the complete changelog history, bug fixes, and feature releases:  
+📄 [View UPDATES.md (Complete Changelog)](UPDATES.md)
+
+### 🌟 Release Notes: `v2.6.127-alpha`:
 <!-- lang:en -->
 **Summary:** Cleaned up and removed all legacy backward-compatibility logic for ai-brain and ai-bridge across the entire system.
 
@@ -64,7 +64,7 @@ Para visualizar o histórico completo de notas de release, correções e novas f
 
 ---
 
-## 🔐 Licença e Segurança
+## 🔐 License and Security
 
-- Os executáveis deste repositório são compilações nativas de código fechado (*closed-source*) direcionadas ao Windows 10/11.
-- Copyright © Hermann Hahn - Todos os direitos reservados.
+- Binaries in this repository are closed-source native builds targeting Windows 10/11.
+- Copyright © Hermann Hahn — All rights reserved.
