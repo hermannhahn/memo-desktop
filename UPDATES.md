@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.127-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Cleaned up and removed all legacy backward-compatibility logic for ai-brain and ai-bridge across the entire system.
+
+**Highlights:**
+- Removed legacy `%AppData%\AI Bridge` data folder migration, checks, and cleanup routines.
+- Removed deprecated `ai-bridge-*` docker containers fallbacks, labels, and services references.
+- Updated updater, installer, and scripts to focus strictly on MEMO Desktop binaries and services.
+
+<!-- lang:pt -->
+**Resumo:** Limpeza completa e remoção de todas as lógicas legadas de retrocompatibilidade com ai-brain e ai-bridge em todo o sistema.
+
+**Destaques:**
+- Remoção de checagens, migrações e rotinas de limpeza da pasta legada `%AppData%\AI Bridge`.
+- Remoção de fallbacks para containers Docker, labels e serviços legados `ai-bridge-*`.
+- Atualização do atualizador, instalador e scripts de instalação com foco estrito nos binários e serviços do MEMO Desktop.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.127-alpha (`62ea1ca5`)
+- update development branch (`6acdb083`)
+
+#### 🐛 Correções
+- remove legacy backwards compatibility logic for ai-brain and ai-bridge (`0e589cc8`)
+- preserve Docker Desktop during updater and check virtualization/wsl before dism (`9474cec1`)
+
+#### 🔧 Manutenção / Refatoração
+- add presentation documents to .gitignore (`7c53c320`)
+
+
+---
+
+
 ## Release - v2.6.126-alpha
 ### 📣 Apresentação da Atualização
 
