@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.124-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented proactive WhatsApp (WAHA) session auto-recovery with a 25s protective cooldown and updated health monitoring endpoints to prevent stuck 'Stopped' and 'Offline' states.
+
+**Highlights:**
+- Proactive auto-recovery in GetSessionStatus and EnsureSession automatically restarting failed or stopped WAHA sessions in background.
+- Integrated EnsureSession across cloud heartbeat telemetry and WebSocket status handlers so the console and desktop app instantly revive dead sessions.
+- Corrected HTTP monitor check to use the unauthenticated /ping endpoint and recognize HTTP 401 as an alive, secured service.
+
+<!-- lang:pt -->
+**Resumo:** Implementada auto-recuperação proativa de sessão do WhatsApp (WAHA) com cooldown de 25s e corrigido o monitoramento de saúde para evitar estados travados em "Stopped" e "Offline".
+
+**Destaques:**
+- Auto-recuperação ativa em GetSessionStatus e EnsureSession reiniciando sessões com falha ou paradas em background automaticamente.
+- Integração do EnsureSession no heartbeat de telemetria e nos handlers WebSocket do Console para restabelecimento imediato de sessões.
+- Correção do monitor de saúde HTTP para utilizar o endpoint /ping e reconhecer HTTP 401 como serviço ativo e protegido.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.124-alpha (`81015ba0`)
+- update development branch (`4acee29a`)
+
+#### 🐛 Correções
+- implement proactive session auto-recovery with cooldown and fix monitor healthcheck (`f41ff7b7`)
+
+
+---
+
+
 ## Release - v2.6.123-alpha
 ### 📣 Apresentação da Atualização
 
