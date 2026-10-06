@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.125-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Permanent backup settings anchor persistence across application updates and removal of deprecated MCP registry tools.
+
+**Highlights:**
+- Multi-anchor backup settings persistence in Windows Registry and dedicated AppData anchor to ensure backup folders and schedules are never reset during updates.
+- Fixed frontend initialization and Temporal Dead Zone in the Backups tab.
+- Integrated backup settings into full configuration backup and restore payloads.
+- Completely removed legacy MCP tools memo_desktop_list_tools and memo_desktop_get_tool_schema from backend and frontend.
+
+<!-- lang:pt -->
+**Resumo:** Ancoragem permanente das configurações da aba Backups contra resets em atualizações e remoção completa das ferramentas MCP obsoletas.
+
+**Destaques:**
+- Persistência redundante das configurações de backup no Registro do Windows e em arquivo dedicado no AppData, garantindo que caminhos e agendamentos nunca sejam resetados em atualizações.
+- Correção de inicialização e eliminação de Temporal Dead Zone na aba Backups no frontend.
+- Inclusão das opções da aba Backups na rotina completa de exportação e restauração de configurações.
+- Remoção definitiva das ferramentas MCP obsoletas memo_desktop_list_tools e memo_desktop_get_tool_schema do backend e frontend.
+
+### 📋 Changelog da Versão
+
+**Total:** 8 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.125-alpha (`e148bb1a`)
+- update development branch (`ef445085`)
+- update API service card badge to API and title to api.memorouter.com (`90ff6f58`)
+- add custom icons for registry tools and contextual fallback (`b55accf8`)
+- reorganize local tools groups and order (`82e72880`)
+
+#### 🐛 Correções
+- implement persistent backup anchor and prevent reset on update (`a806ef3c`)
+- remove memo_desktop_list_tools and memo_desktop_get_tool_schema (`5cf4648f`)
+- dynamically hide GPS settings accordion when service is disabled (`62c3021b`)
+
+
+---
+
+
 ## Release - v2.6.124-alpha
 ### 📣 Apresentação da Atualização
 
