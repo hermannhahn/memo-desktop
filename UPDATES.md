@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.6.128-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Unified developer tools suite (bash, read_file, write_file, edit_file, list_dir, search_code, projects) replacing legacy docker and cmd tools, with active project workspace context and FAQ guidance integration.
+
+**Highlights:**
+- Added unified developer tools: projects, bash, read_file, write_file, edit_file, list_dir, and search_code.
+- Added project workspace management in PostgreSQL with multi-environment support (cmd, wsl, docker, ssh).
+- Integrated project workspaces into recall and dynamic turn context injection with GEMINI.md guidelines and local skills.
+- Added FAQ consultation workflow to guide users on integrations and configurations without refusals.
+
+<!-- lang:pt -->
+**Resumo:** Ferramentas de desenvolvimento unificadas (bash, read_file, write_file, edit_file, list_dir, search_code, projects) substituindo docker e cmd legados, com contexto de workspace de projeto ativo e integração com FAQ.
+
+**Destaques:**
+- Adicionada suíte de ferramentas unificadas de desenvolvimento: projects, bash, read_file, write_file, edit_file, list_dir e search_code.
+- Adicionado gerenciamento de workspaces de projetos no PostgreSQL com suporte a múltiplos ambientes (cmd, wsl, docker, ssh).
+- Integrado workspaces de projetos à ferramenta recall e à injeção dinâmica de contexto com diretrizes do GEMINI.md e skills locais.
+- Adicionado fluxo de consulta ao FAQ para orientar o usuário sobre configurações e integrações evitando recusas.
+
+### 📋 Changelog da Versão
+
+**Total:** 8 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.128-alpha (`b5c3d733`)
+- updates in feature/unified-developer-tools-and-projects (`e913f6ab`)
+- replace docker and cmd with unified developer tools (bash, read_file, write_file, edit_file, list_dir, search_code, projects) (`226bff99`)
+- implement unified recall WS handler and remove global files injection (`d28919a0`)
+
+#### 📚 Documentação
+- mark Phase 147 completed (`06b64575`)
+- modernize and rewrite README.md with updated architecture and doc map (`1e246aee`)
+- translate README.md to English (`3bd27eee`)
+- add master Portuguese and English executive presentation documents (`f3ce052f`)
+
+
+---
+
+
 ## Release - v2.6.127-alpha
 ### 📣 Apresentação da Atualização
 
