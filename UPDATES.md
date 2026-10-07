@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.132-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added multi-term keyword tokenization for FAQ search, dual response keys in bridge, and automatic embedding backfill.
+
+**Highlights:**
+- Tokenized multi-word search queries in ListFAQs and SearchFAQsVector to match individual keywords across title, tags, and content.
+- Returned both items and faqs in list_faqs WebSocket response for seamless cross-platform bridge interoperability.
+- Added automatic background embedding backfill on service startup for all pending FAQ instructions and project workspaces.
+
+<!-- lang:pt -->
+**Resumo:** Adicionada tokenização multi-termo para busca de FAQ, chaves bivalentes no bridge e backfill automático de embeddings.
+
+**Destaques:**
+- Tokenização de consultas multi-palavra em ListFAQs e SearchFAQsVector para casar palavras-chave individuais em título, tags e conteúdo.
+- Retorno de ambas as chaves items e faqs no payload WebSocket de list_faqs para interoperabilidade garantida com a ponte MCP.
+- Backfill automático de embeddings em segundo plano na inicialização do serviço para instruções de FAQ e workspaces de projetos pendentes.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.132-alpha (`3514dbf0`)
+
+#### 🐛 Correções
+- tokenize multi-word search, dual bridge keys, and auto embedding backfill (`15aebeea`)
+
+
+---
+
+
 ## Release - v2.6.131-alpha
 ### 📣 Apresentação da Atualização
 
