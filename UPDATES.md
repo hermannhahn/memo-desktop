@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.130-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added stealth background execution on Windows and strict allowed modes filtering and enforcement for projects and developer tools.
+
+**Highlights:**
+- Silenced all CMD/PowerShell/Docker/WSL executions with CREATE_NO_WINDOW and HideWindow, preventing console windows from popping up on the user screen.
+- Enforced authorized execution modes (cmd, wsl, docker, ssh) set by the user in the Console across projects, bash, read_file, write_file, edit_file, list_dir, search_code, and recall.
+- Filtered projects in projects list and recall to only display and consider workspaces whose execution mode is active in the agent configuration.
+
+<!-- lang:pt -->
+**Resumo:** Implementada execução silenciosa no Windows e aplicação estrita de modos autorizados pelo usuário para workspaces e ferramentas de desenvolvimento.
+
+**Destaques:**
+- Execução completamente silenciosa de comandos CMD/PowerShell/Docker/WSL com CREATE_NO_WINDOW e HideWindow, impedindo abertura e flashes de janelas no Windows.
+- Validação mecânica dos modos autorizados (cmd, wsl, docker, ssh) definidos no Console para as ferramentas projects, bash, read_file, write_file, edit_file, list_dir, search_code e recall.
+- Ocultação e filtragem automática de projetos e workspaces cujos modos foram desmarcados pelo usuário nas configurações do agente.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.130-alpha (`78a5bd4d`)
+- updates in feature/allowed-modes-and-stealth-exec (`f2940bd6`)
+
+
+---
+
+
 ## Release - v2.6.129-alpha
 ### 📣 Apresentação da Atualização
 
