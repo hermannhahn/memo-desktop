@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.129-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Hardened project database methods against nil pointers, added automatic regex detection for code searches, and integrated the Knowledge Base into the unified recall tool.
+
+**Highlights:**
+- Defended all project database operations with defensive checks against nil connections
+- Added automatic regex pattern detection and explicit regex support to search_code tool
+- Integrated Knowledge Base documents and chunks into hybrid recall search and lookup
+- Added vector embeddings support to project workspaces for semantic search
+
+<!-- lang:pt -->
+**Resumo:** Blindagem de métodos de banco de projetos contra ponteiros nulos, auto-detecção de expressões regulares em buscas de código e integração da Base de Conhecimento na ferramenta unificada recall.
+
+**Destaques:**
+- Verificações defensivas contra ponteiros nulos em todos os métodos de projetos no banco
+- Auto-detecção de caracteres regex e parâmetro regex explícito na ferramenta search_code
+- Inclusão de documentos e chunks da Base de Conhecimento na busca híbrida e resgate do recall
+- Suporte a embeddings vetoriais na tabela de projetos para busca semântica
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.129-alpha (`f26644e4`)
+- nil pointer protection on projects, regex in search_code, knowledge base in recall (`602504d6`)
+
+#### 📚 Documentação
+- complete Phase 148 developer tools and workspace validation (`bebd0574`)
+
+
+---
+
+
 ## Release - v2.6.128-alpha
 ### 📣 Apresentação da Atualização
 
