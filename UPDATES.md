@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.131-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Integrated FAQs, project workspaces, and knowledge base chunks into unified RAG search, embeddings, recall, and nightly consolidation.
+
+**Highlights:**
+- Created local PostgreSQL faq_instructions table with pgvector (384d), automated Ollama embeddings, and seed procedural guides.
+- Expanded nightly consolidation (Sono do Modelo - Phase 0.5) to audit and backfill embeddings across chat memories, projects, notes, FAQs, and knowledge chunks.
+- Unified RAG memory search to concurrently retrieve LTM, Notes, FAQs, Projects, and Knowledge Chunks for rich contextual awareness.
+
+<!-- lang:pt -->
+**Resumo:** Integração de instruções de FAQ, workspaces de projetos e base de conhecimento na busca RAG unificada, embeddings, recall e consolidação noturna.
+
+**Destaques:**
+- Criação da tabela faq_instructions no PostgreSQL local com pgvector (384d), embeddings automáticos via Ollama e guias procedurais padrão.
+- Expansão do Sono do Modelo (Etapa 0.5) para auditar e preencher embeddings pendentes em memórias LTM, projetos, notas, FAQs e chunks de conhecimento.
+- Unificação da busca RAG no WebSocket bridge para recuperar concorrentemente LTM, Anotações, FAQs, Projetos e Conhecimento local.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.131-alpha (`73ecd5e5`)
+- integrate faqs and projects into rag, embeddings, recall, and consolidation (`bb65b9a7`)
+
+#### 📚 Documentação
+- update patch_msg and tasks/TODO for phase 151 release (`2b8b8b82`)
+
+
+---
+
+
 ## Release - v2.6.130-alpha
 ### 📣 Apresentação da Atualização
 
