@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.6.140-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Updated comprehensive technical documentation across the codebase, added dedicated specification for the unified recall MCP tool, and detailed autobiographical sleep anchoring and credentials vault security.
+
+**Highlights:**
+- Created dedicated documentation for the unified `recall` tool (`docs/06-mcp-tools/recall-tool.md`) covering multi-source search, omnichannel interaction history, and credentials retrieval.
+- Updated MCP tool catalog (`docs/06-mcp-tools/tool-catalog.md`) to feature `recall`, developer tools (`bash`, `read_file`, `write_file`, `edit_file`, `list_dir`, `search_code`, `projects`), and the `vault` alias.
+- Documented multi-day autobiographical sleep consolidation anchors and MCP tool noise filtering in `docs/02-memory-and-rag/sleep-consolidation.md`.
+- Expanded sovereign credentials vault documentation (`docs/08-security-and-e2ee/credentials-vault.md`) and updated `ltm-rag-memory` skill.
+
+<!-- lang:pt -->
+**Resumo:** Atualizada a documentação técnica abrangente em toda a base de código, adicionada especificação dedicada para a ferramenta MCP unificada recall, e detalhadas a ancoragem autobiográfica do sono e segurança do vault.
+
+**Destaques:**
+- Criação de documentação dedicada para a ferramenta unificada `recall` (`docs/06-mcp-tools/recall-tool.md`), cobrindo busca multi-fonte, histórico omnichannel e recuperação de credenciais.
+- Atualização do catálogo de ferramentas MCP (`docs/06-mcp-tools/tool-catalog.md`) destacando `recall`, ferramentas de desenvolvimento e o alias `vault`.
+- Documentação das âncoras autobiográficas multi-dia de consolidação do sono e filtro de ruído de ferramentas MCP em `docs/02-memory-and-rag/sleep-consolidation.md`.
+- Expansão da documentação do vault soberano (`docs/08-security-and-e2ee/credentials-vault.md`) e atualização da skill `ltm-rag-memory`.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.140-alpha (`799e5641`)
+- updates in fix/standardize-builtin-skills-en (`6aa68abf`)
+
+#### 📚 Documentação
+- add unified recall tool spec, sleep consolidation multi-day anchors, and sovereign vault security (`eec0b868`)
+
+
+---
+
+
 ## Release - v2.6.139-alpha
 ### 📣 Apresentação da Atualização
 
