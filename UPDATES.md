@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.139-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Restored the dedicated credentials_vault MCP tool with vault alias support, exposed secret values in searches, and improved exact match retrieval in recall.
+
+**Highlights:**
+- Restored `credentials_vault` in the active MCP tool catalog with full actions (add, get, list, search, update, delete, verify).
+- Added seamless execution alias for `vault`.
+- Updated `credentials_vault(action: "search")` to return secret values directly, avoiding redundant extra calls.
+- Enhanced `recall(action: "vault")` with exact match credential and value retrieval.
+- Standardized all `credentials_vault` descriptions, schemas, and error messages to canonical English (US).
+
+<!-- lang:pt -->
+**Resumo:** Restauração da ferramenta MCP dedicada credentials_vault com suporte ao alias vault, retorno do valor secreto nas buscas e aprimoramento de correspondência exata no recall.
+
+**Destaques:**
+- Reativação oficial do `credentials_vault` no catálogo MCP com todas as ações (add, get, list, search, update, delete, verify).
+- Adicionado alias transparente de execução para `vault`.
+- Atualizada a ação de busca do `credentials_vault` para retornar o valor secreto diretamente, eliminando chamadas redundantes.
+- Aprimoramento da ação vault no `recall` para recuperação direta de credencial e valor por correspondência exata.
+- Padronização de todas as descrições, schemas e mensagens de erro do `credentials_vault` para inglês canônico (US).
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.139-alpha (`07ba4e8f`)
+- restore credentials_vault tool, add vault alias, and include secret in search (`56ba9a95`)
+
+
+---
+
+
 ## Release - v2.6.138-alpha
 ### 📣 Apresentação da Atualização
 
