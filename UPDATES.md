@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.6.134-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Dual-layer RAG efficiency metrics model in Dashboard analytics, evaluating Prompt Index Hits and Recall Search Precision.
+
+**Highlights:**
+- New dual-layer RAG calculation combining Prompt Index Hit Rate and Recall Search Precision (average of averages).
+- KPI Card 'RAG Auto-Hit Rate' updated with detailed hover breakdown showing prompt coverage, direct ID gets, and single-search hit rate.
+- 'RAG Efficiency Trend' chart upgraded with 3 distinct series: Auto-Context & Index Hits (blue), Single-Search Precision (green), and Search Friction (red).
+- Daily tooltip showing individual percentages and combined global RAG efficiency score.
+
+<!-- lang:pt -->
+**Resumo:** Novo modelo de métricas dual-layer de eficiência RAG no Dashboard, medindo o acerto do índice no prompt e a precisão das buscas no recall.
+
+**Destaques:**
+- Novo cálculo dual-layer de RAG combinando a taxa de acerto do índice do prompt e a precisão de busca do recall (média das médias).
+- Card KPI 'Taxa Auto-RAG' atualizado com tooltip detalhado exibindo cobertura de prompt, leituras diretas por ID e taxa de acerto de 1ª tentativa.
+- Gráfico 'Tendência de Eficiência do RAG' aprimorado com 3 séries: Auto-Contexto e Índice (azul), Busca Precisa (verde) e Atrito de Busca (vermelho).
+- Tooltip diário exibindo porcentagens individuais e eficiência global combinada do dia.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.134-alpha (`056f438b`)
+- update development branch (`358aed2b`)
+
+
+---
+
+
 ## Release - v2.6.133-alpha
 ### 📣 Apresentação da Atualização
 
