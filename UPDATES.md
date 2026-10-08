@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.135-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed the `search_code` tool to avoid crawling into dependency directories (`.venv`, `node_modules`, etc.), honor `.gitignore`/`.dockerignore` and similar ignore files found in the project tree, and skip binary files (PDFs, images, compiled artifacts). Also updated the tool description with a clear priority order — `search_code` is now explicitly labeled as a **last-resort** tool.
+
+**Highlights:**
+- Expanded hardcoded ignored directory list: `.venv`, `venv`, `__pycache__`, `.mypy_cache`, `.tox`, `site-packages`, `.gradle`, `Pods`, `.cache`, `.turbo`, and many more
+- Dynamic `.gitignore`, `.dockerignore`, `.npmignore`, `.eslintignore`, `.prettierignore` and `.hgignore` parsing at each directory level during the walk
+- Binary file detection via extension denylist + file size guard + MIME content sniffing (`http.DetectContentType`)
+- Tool `Description` now lists 7 higher-priority alternatives (recall, README, AGENTS.md, docs/, git log, git pickaxe) the agent must exhaust before using `search_code`
+- Added `net/http` import; all existing tests pass (`go test ./...`)
+
+<!-- lang:pt -->
+**Resumo:** Corrigida a ferramenta `search_code` para não vasculhar pastas de dependências (`.venv`, `node_modules` e similares), honrar arquivos `.gitignore`/`.dockerignore` e similares encontrados na árvore do projeto, e ignorar arquivos binários (PDFs, imagens, artefatos compilados). A description da ferramenta também foi atualizada com uma ordem de prioridade clara — `search_code` agora é explicitamente classificado como **último recurso**.
+
+**Destaques:**
+- Lista de diretórios ignorados expandida: `.venv`, `venv`, `__pycache__`, `.mypy_cache`, `.tox`, `site-packages`, `.gradle`, `Pods`, `.cache`, `.turbo` e muitos outros
+- Leitura dinâmica de `.gitignore`, `.dockerignore`, `.npmignore`, `.eslintignore`, `.prettierignore` e `.hgignore` em cada nível de diretório durante o walk
+- Detecção de arquivo binário por denylist de extensão + guarda de tamanho + sniffing de MIME (`http.DetectContentType`)
+- `Description` da ferramenta agora lista 7 alternativas de maior prioridade (recall, README, AGENTS.md, docs/, git log, git pickaxe) que o agente deve esgotar antes de usar o `search_code`
+- Import `net/http` adicionado; todos os testes passam (`go test ./...`)
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.135-alpha (`4fc7e481`)
+- update development branch (`333c3c5f`)
+
+#### 🐛 Correções
+- smart ignore rules, gitignore/dockerignore support, binary detection, priority-ordered description (`fb003c28`)
+
+
+---
+
+
 ## Release - v2.6.134-alpha
 ### 📣 Apresentação da Atualização
 
