@@ -4,20 +4,20 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ---
 
-## 📥 Download da Última Versão: `v2.6.136-alpha`
+## 📥 Download da Última Versão: `v2.6.137-alpha`
 
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.136-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/MEMO-Desktop-Setup-v2.6.136-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/AIBrainDevCert.crt)
+- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.6.137-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/MEMO-Desktop-Setup-v2.6.137-alpha.exe)
+- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/install-memo.bat)
+- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/install-memo.ps1)
+- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/install-cert.bat)
+- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/AIBrainDevCert.crt)
 
 ---
 
 ## 💻 Instruções de Instalação no Windows
 
 ### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/install-memo.bat).
+1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/install-memo.bat).
 2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
 
 ---
@@ -25,7 +25,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 ## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
 
 ### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.136-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/MEMO-Desktop-Setup-v2.6.136-alpha.exe).
+1. Baixe o instalador [`MEMO-Desktop-Setup-v2.6.137-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/MEMO-Desktop-Setup-v2.6.137-alpha.exe).
 2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
    - Clique em **"Mais informações"** (*More info*).
    - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
@@ -34,7 +34,7 @@ Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO De
 
 ### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
 Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.136-alpha/install-cert.bat) na mesma pasta.
+1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.6.137-alpha/install-cert.bat) na mesma pasta.
 2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
 3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
 
@@ -45,24 +45,22 @@ Para registrar o certificado de código nas duas autoridades confiáveis do Wind
 Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
 📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
 
-### 🌟 Notas do Release v2.6.136-alpha:
+### 🌟 Notas do Release v2.6.137-alpha:
 <!-- lang:en -->
-**Summary:** Restored seamless autobiographical memory recall and sleep consolidation anchoring across all communication channels, ensuring agents accurately remember yesterday's events, tests, and conversations without latency.
+**Summary:** Implemented multi-day autobiographical recency for sleep consolidations and operational MCP tool noise filtering during memory consolidation.
 
 **Highlights:**
-- Omnichannel exemption for consolidated memories, preventing channel filters from hiding daily sleep chapters.
-- Dynamic recency bonus and canonical date matching (period_key) in hybrid vector search.
-- New native latest_consolidation action and expanded 1500-character preview for consolidated memories.
-- Permanent autobiographical consolidation anchor injected into System Prompt to eliminate morning amnesia.
+- Multi-day autobiographical anchoring: returns today's and yesterday's daily consolidated memories simultaneously.
+- Operational MCP tool noise filter: excludes repetitive read/search tool executions from the daily sleep consolidation prompt, keeping narrative summaries clean and focused on human dialogue.
+- Dynamic retrospective recall: automatically injects all recent daily sleep consolidations on retrospective queries.
 
 <!-- lang:pt -->
-**Resumo:** Restaurada a recuperação contínua de memórias autobiográficas e consolidações noturnas em todos os canais de comunicação, garantindo que os agentes se recordem perfeitamente de eventos, testes e conversas anteriores sem lentidão.
+**Resumo:** Implementação de recência autobiográfica multi-dia para consolidações do sono e filtro de ruído de ferramentas MCP operacionais durante a consolidação de memória.
 
 **Destaques:**
-- Isenção omnichannel para memórias consolidadas, impedindo que filtros de canal ocultem os capítulos de sono do agente.
-- Bônus dinâmico de recência (<24h e <48h) e suporte a buscas por data canônica (period_key) na busca vetorial híbrida.
-- Nova ação nativa latest_consolidation no recall e expansão do resumo consolidado para até 1500 caracteres.
-- Âncora autobiográfica permanente do último sono injetada no System Prompt, eliminando a amnésia matinal do agente.
+- Ancoragem autobiográfica multi-dia: disponibiliza simultaneamente os diários consolidados de hoje e de ontem.
+- Filtro de ruído operacional MCP: exclui execuções repetitivas de ferramentas de busca/leitura do prompt de síntese do sono, mantendo a narrativa focada em diálogos e decisões.
+- Recall retrospectivo dinâmico: injeta automaticamente todas as consolidações recentes do sono ao processar consultas retrospectivas.
 
 ---
 

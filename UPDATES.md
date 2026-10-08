@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.137-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented multi-day autobiographical recency for sleep consolidations and operational MCP tool noise filtering during memory consolidation.
+
+**Highlights:**
+- Multi-day autobiographical anchoring: returns today's and yesterday's daily consolidated memories simultaneously.
+- Operational MCP tool noise filter: excludes repetitive read/search tool executions from the daily sleep consolidation prompt, keeping narrative summaries clean and focused on human dialogue.
+- Dynamic retrospective recall: automatically injects all recent daily sleep consolidations on retrospective queries.
+
+<!-- lang:pt -->
+**Resumo:** Implementação de recência autobiográfica multi-dia para consolidações do sono e filtro de ruído de ferramentas MCP operacionais durante a consolidação de memória.
+
+**Destaques:**
+- Ancoragem autobiográfica multi-dia: disponibiliza simultaneamente os diários consolidados de hoje e de ontem.
+- Filtro de ruído operacional MCP: exclui execuções repetitivas de ferramentas de busca/leitura do prompt de síntese do sono, mantendo a narrativa focada em diálogos e decisões.
+- Recall retrospectivo dinâmico: injeta automaticamente todas as consolidações recentes do sono ao processar consultas retrospectivas.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.137-alpha (`5379e1e7`)
+- update development branch (`e6f59026`)
+
+#### 🐛 Correções
+- multi-day autobiographical recency and mcp tool noise filter (`036723d5`)
+
+
+---
+
+
 ## Release - v2.6.136-alpha
 ### 📣 Apresentação da Atualização
 
