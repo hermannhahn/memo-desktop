@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.6.138-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized system language to English (US) across developer tools and recall services, modernized database skill scheme to PostgreSQL, and refined skill hint translations.
+
+**Highlights:**
+- Standardized recall service handlers and developer MCP tools to canonical English (US).
+- Modernized skills URI scheme to `db://` with full PostgreSQL compatibility and bilingual backward support.
+- Refined skills pagination and dependency hint messages into English.
+
+<!-- lang:pt -->
+**Resumo:** Padronização da linguagem do sistema para inglês (US) nas ferramentas de desenvolvedor e serviços de recall, modernização do esquema de skills para PostgreSQL e tradução de dicas de dependência.
+
+**Destaques:**
+- Padronização dos manipuladores de recall e ferramentas MCP de desenvolvedor para inglês canônico (US).
+- Modernização do esquema de URI de skills para `db://` com compatibilidade total para PostgreSQL e suporte retroativo bilíngue.
+- Tradução das mensagens de paginação e dicas de dependência de skills para inglês.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.138-alpha (`02f976fa`)
+
+#### 📚 Documentação
+- document Phase 160 completion and prepare patch_msg.txt (`756f5f03`)
+- document Fase 156 completion and BUG-056 resolution (`f3e49ac0`)
+
+#### 🐛 Correções
+- standardize messages to english, modernize db scheme and update architecture docs (`86dcc42b`)
+- standardize system language to english (US) and update TODO tasks (`0d618e74`)
+
+
+---
+
+
 ## Release - v2.6.137-alpha
 ### 📣 Apresentação da Atualização
 
