@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.6.136-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Restored seamless autobiographical memory recall and sleep consolidation anchoring across all communication channels, ensuring agents accurately remember yesterday's events, tests, and conversations without latency.
+
+**Highlights:**
+- Omnichannel exemption for consolidated memories, preventing channel filters from hiding daily sleep chapters.
+- Dynamic recency bonus and canonical date matching (period_key) in hybrid vector search.
+- New native latest_consolidation action and expanded 1500-character preview for consolidated memories.
+- Permanent autobiographical consolidation anchor injected into System Prompt to eliminate morning amnesia.
+
+<!-- lang:pt -->
+**Resumo:** Restaurada a recuperação contínua de memórias autobiográficas e consolidações noturnas em todos os canais de comunicação, garantindo que os agentes se recordem perfeitamente de eventos, testes e conversas anteriores sem lentidão.
+
+**Destaques:**
+- Isenção omnichannel para memórias consolidadas, impedindo que filtros de canal ocultem os capítulos de sono do agente.
+- Bônus dinâmico de recência (<24h e <48h) e suporte a buscas por data canônica (period_key) na busca vetorial híbrida.
+- Nova ação nativa latest_consolidation no recall e expansão do resumo consolidado para até 1500 caracteres.
+- Âncora autobiográfica permanente do último sono injetada no System Prompt, eliminando a amnésia matinal do agente.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.136-alpha (`c2a3c063`)
+
+#### 🐛 Correções
+- omnichannel consolidated memory retention, recency boost and autobiographical sleep anchoring (`24a162ea`)
+
+
+---
+
+
 ## Release - v2.6.135-alpha
 ### 📣 Apresentação da Atualização
 
