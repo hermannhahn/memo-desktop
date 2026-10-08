@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.6.133-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added support for closing chat sessions with explicit status tracking and enhanced the recall tool with recent interaction retrieval.
+
+**Highlights:**
+- Added `status` and `closed_at` fields to `system_chat_sessions` to support explicit session lifecycle tracking and closure.
+- Implemented `close_chat_session` WebSocket sync action for clean termination of scheduled tasks and background sessions.
+- Enhanced the unified `recall` tool to support `recent` action alongside `latest_interaction`.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado suporte ao encerramento de sessões de chat com rastreamento de status e aprimorada a ferramenta recall para busca de interações recentes.
+
+**Destaques:**
+- Adicionados campos `status` e `closed_at` na tabela `system_chat_sessions` para controle de ciclo de vida e encerramento explícito de sessões.
+- Implementada ação WebSocket `close_chat_session` para fechamento formal de sessões do Task Scheduler e tarefas em segundo plano.
+- Suporte aprimorado na ferramenta unificada `recall` para a ação `recent` como alias de `latest_interaction`.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.133-alpha (`bd360a51`)
+- updates in feat/omnichannel-sessions-and-channel-switch (`7d078b47`)
+
+
+---
+
+
 ## Release - v2.6.132-alpha
 ### 📣 Apresentação da Atualização
 
