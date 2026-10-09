@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.6.144-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Standardized all MCP tools, schemas, and return messages to canonical English, and silenced process/docker executions to eliminate unwanted console window popups.
+
+**Highlights:**
+- Standardized return payloads, error descriptions, and schema parameters to canonical English across all internal MCP tools
+- Eliminated bilingual mixed formats in evidence timestamps
+- Silenced process and container execution using CREATE_NO_WINDOW and stealth auto-start, preventing console CMD window flashes during tools like grep, search_code, and bash
+
+<!-- lang:pt -->
+**Resumo:** Padronizadas todas as ferramentas MCP, schemas e mensagens de retorno exclusivamente para o inglês canônico, e silenciadas as execuções de processos e Docker para eliminar janelas CMD indesejadas.
+
+**Destaques:**
+- Padronização completa de retornos, mensagens de erro e schemas para inglês em todas as ferramentas MCP locais
+- Eliminação de formatações bilíngues mistas em evidências de data/hora
+- Execução silenciosa de containers e processos com CREATE_NO_WINDOW, suprimindo abertura de janelas CMD do console durante comandos como grep, search_code e bash
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.144-alpha (`6f042cb7`)
+- update development branch (`8971f614`)
+
+#### 📚 Documentação
+- mark phase 166 complete (`18c5e696`)
+
+#### 🐛 Correções
+- suppress console window popups during docker and process execution (`ae49fce1`)
+
+#### 🔧 Manutenção / Refatoração
+- standardize all MCP tools schemas and return messages to English only (`41a61a9f`)
+
+
+---
+
+
 ## Release - v2.6.143-alpha
 ### 📣 Apresentação da Atualização
 
