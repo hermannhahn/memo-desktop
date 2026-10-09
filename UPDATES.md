@@ -3,6 +3,45 @@
 ---
 
 
+## Release - v2.6.143-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added native Docker container execution support for developer tools (search_code, list_dir, edit_file), preventing silent zero-result failures when AI agents operate in containerized workspaces.
+
+**Highlights:**
+- Enhanced 'search_code' with native Docker container execution using inline Python regex and grep fallbacks
+- Added Docker support to 'list_dir' with directory depth control, pattern filtering, and noise directory exclusion
+- Added Docker support to 'edit_file' for surgical text replacements directly inside containers
+- Added unit tests for Docker execution helpers with 100% pass rate
+
+<!-- lang:pt -->
+**Resumo:** Adicionado suporte nativo a execução em containers Docker para ferramentas de desenvolvimento (search_code, list_dir, edit_file), eliminando retornos vazios silenciosos quando agentes de IA operam em workspaces containerizados.
+
+**Destaques:**
+- Aprimorado o 'search_code' com execução nativa dentro de containers Docker via script Python com regex e fallback para grep
+- Adicionado suporte a Docker no 'list_dir' com controle de profundidade, filtros de padrão e exclusão de pastas de ruído
+- Adicionado suporte a Docker no 'edit_file' para substituições cirúrgicas de texto diretamente nos containers
+- Adicionados testes unitários para os executores Docker com 100% de aprovação
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.143-alpha (`731f39be`)
+
+#### 📚 Documentação
+- add release notes for patch release (`d37efa97`)
+- add autonomous scripts tool documentation, skill, and AGY windowing updates (`5714c15d`)
+
+#### 🐛 Correções
+- add docker container execution support to search_code, list_dir, and edit_file (`01e58b36`)
+
+
+---
+
+
 ## Release - v2.6.142-alpha
 ### 📣 Apresentação da Atualização
 
