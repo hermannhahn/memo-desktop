@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.6.142-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added AGY-style context window protection across developer tools, unified automatic background task detachment for scripts, enhanced Docker script execution, and optimized updater performance.
+
+**Highlights:**
+- Implemented AGY-style windowing for 'read_file' (800 lines / 40KB cap) and 'list_dir' (150 entries cap) with pagination guidance
+- Added automatic background detachment and streaming logs for long-running scripts exceeding 30 seconds
+- Exposed task log files in 'bash' and 'scripts' for surgical slicing via 'read_file' on large command outputs
+- Enhanced 'scripts' execution with Docker stdin streaming, auto-start for stopped containers, and restricted path write protection
+- Optimized updater to eliminate redundant 3.8GB Docker image pulls during updates
+
+<!-- lang:pt -->
+**Resumo:** Adicionada proteção de janela de contexto no estilo AGY para as ferramentas de desenvolvedor, desprendimento automático em background para scripts, execução aprimorada de scripts em Docker e otimização no atualizador.
+
+**Destaques:**
+- Implementado fracionamento estilo AGY para 'read_file' (máx 800 linhas / 40KB) e 'list_dir' (máx 150 itens) com orientações de paginação
+- Adicionado desprendimento automático para segundo plano e logs em streaming para scripts que demoram mais de 30 segundos
+- Expostos caminhos dos arquivos de log em 'bash' e 'scripts' para fatiamento cirúrgico via 'read_file' em saídas volumosas
+- Aprimorada execução da ferramenta 'scripts' com streaming stdin em Docker, auto-início de containers parados e proteção de escrita em diretórios restritos
+- Otimizado o atualizador para eliminar downloads redundantes de 3.8GB da imagem Docker durante atualizações
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.142-alpha (`0bc85b42`)
+- update development branch (`ac60e561`)
+- add AGY-style context window protection and unified background lifecycle (`e181f0eb`)
+
+#### 🐛 Correções
+- prevent restricted path writes, support docker stdin execution, and auto-start containers (`8e731d9a`)
+- remove redundant docker compose pull in ComposeUpdate (`3c04be7d`)
+
+
+---
+
+
 ## Release - v2.6.141-alpha
 ### 📣 Apresentação da Atualização
 
