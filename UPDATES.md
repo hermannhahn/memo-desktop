@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.6.141-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented autonomous agent scripts runner (tool 'scripts') with multi-environment execution, extract-and-accumulate scratchpad directory, and full recall integration.
+
+**Highlights:**
+- Added unified 'scripts' MCP tool supporting list, read, save, run, and delete across project, agent, and global scopes
+- Created '.agents/scripts/scratch/' scratchpad directory for heavy data extractions without token exhaustion
+- Integrated autonomous scripts discovery and inspection into recall search and get actions
+- Added full WebSocket synchronization and automated unit tests for scripts lifecycle
+
+<!-- lang:pt -->
+**Resumo:** Implementada a ferramenta de execução de scripts autônomos (ferramenta 'scripts') com suporte a múltiplos ambientes, diretório scratchpad para extração e acúmulo, e integração completa com recall.
+
+**Destaques:**
+- Adicionada a ferramenta MCP unificada 'scripts' com ações list, read, save, run e delete nos escopos project, agent e global
+- Criado o diretório scratchpad '.agents/scripts/scratch/' para extração de dados pesados sem estourar a janela de contexto
+- Integrada a descoberta e inspeção de scripts autônomos nas ações de busca e obtenção da ferramenta recall
+- Adicionada sincronização WebSocket completa e testes unitários automatizados para o ciclo de vida de scripts
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.6.141-alpha (`225d840c`)
+- update development branch (`3426cc19`)
+- implement autonomous agent scripts MCP tool, scratchpad and recall integration (`e342bcf8`)
+
+
+---
+
+
 ## Release - v2.6.140-alpha
 ### 📣 Apresentação da Atualização
 
