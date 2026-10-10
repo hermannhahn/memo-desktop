@@ -3,6 +3,52 @@
 ---
 
 
+## Release - v2.8.1-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Released surgical diff engine, shadow workspace pre-delivery gatekeeping, provider attribution update, and devtools synchronization CLI.
+
+**Highlights:**
+- Added `gatekeep` silent pre-delivery verification engine with structured diagnostics.
+- Added shadow branch lifecycle (`shadow_create`, `shadow_validate`, `shadow_merge`, `shadow_abort`).
+- Standardized OpenRouter attribution headers to `https://memorouter.com`.
+- Added `devtools:sync` command in developer CLI for automated repository backup.
+
+<!-- lang:pt -->
+**Resumo:** Lançamento do motor de diffs cirúrgicos, gatekeeping pré-entrega com shadow workspaces, atualização de atribuição de provedores e comando CLI para sincronização de devtools.
+
+**Destaques:**
+- Adicionado motor silencioso de gatekeeping `gatekeep` com diagnóstico estruturado.
+- Suporte ao ciclo de shadow branches (`shadow_create`, `shadow_validate`, `shadow_merge`, `shadow_abort`).
+- Padronização do cabeçalho de atribuição na OpenRouter para `https://memorouter.com`.
+- Adicionado comando `devtools:sync` na CLI para sincronização e backup automático.
+
+### 📋 Changelog da Versão
+
+**Total:** 9 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.1-alpha (`18072ea3`)
+- update development branch (`500863ff`)
+- implement shadow workspaces and silent pre-delivery gatekeeping engine (`832cb886`)
+- implement resilient surgical diff engine with CRLF and drift tolerance (`8e042493`)
+
+#### 📚 Documentação
+- complete FASE 170 in TODO.md (`0d085df2`)
+- complete FASE 168 in TODO.md (`4d4c3230`)
+- add pipeline STM coordination with Goal Anchoring to session-working-memory.md (`83a50c84`)
+
+#### 🐛 Correções
+- update HTTP-Referer header to memorouter.com (`900951c1`)
+
+#### 🔧 Manutenção / Refatoração
+- add agent instructions and governance to .gitignore (`538e999f`)
+
+
+---
+
+
 ## Release - v2.8.0-alpha
 ### 📣 Apresentação da Atualização
 
