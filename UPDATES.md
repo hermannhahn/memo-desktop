@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.8.0-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added seamless host task log reading in Developer Tools for Docker environments, ensuring agents can inspect truncated outputs without container path errors.
+
+**Highlights:**
+- Transparent host task log reading in `read_file` when project is running in Docker mode
+- Automated detection of Windows drive and UNC paths to prevent invalid `docker exec` calls on host logs
+- Comprehensive test coverage with 100% pass rate in developer tools test suite
+
+<!-- lang:pt -->
+**Resumo:** Adicionada leitura transparente de logs de tarefas do host no Developer Tools para ambientes Docker, garantindo que agentes possam inspecionar saídas truncadas sem erros de caminho de container.
+
+**Destaques:**
+- Leitura transparente de logs de tarefas do host em `read_file` quando o projeto opera em modo Docker
+- Detecção automática de letras de unidade Windows e caminhos UNC para prevenir chamadas inválidas de `docker exec` em logs do host
+- Cobertura abrangente de testes com 100% de aprovação na suíte de testes de developer tools
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.0-alpha (`f7a7aedb`)
+- updates in fix/read-file-task-log-host-fallback (`9bb5c45a`)
+
+#### 🐛 Correções
+- support host task log reading in read_file when active project is in docker mode (`1bcd94e7`)
+
+
+---
+
+
 ## Release - v2.7.0-alpha
 ### 📣 Apresentação da Atualização
 
