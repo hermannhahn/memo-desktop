@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.8.2-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Added session ID tracking and sticky routing support across OpenRouter, DeepSeek, and OpenAI-compatible clients.
+
+**Highlights:**
+- Added `SessionID` field and `WithSessionID` method in OpenRouter client with `X-Session-ID` header.
+- Enabled session affinity context in DeepSeek and Claude consolidation requests.
+- Maximized prompt cache hit rates and grouped multi-step executions in provider dashboards.
+
+<!-- lang:pt -->
+**Resumo:** Adicionado rastreamento de ID de sessão e sticky routing nos clientes OpenRouter, DeepSeek e compatíveis com OpenAI.
+
+**Destaques:**
+- Adicionado campo `SessionID` e método `WithSessionID` no cliente OpenRouter com header `X-Session-ID`.
+- Propagação de afinidade de sessão em requisições DeepSeek e Claude na consolidação.
+- Maximização de acertos de cache de prompt e agrupamento de execuções multi-step nos painéis de provedores.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.2-alpha (`43375d3e`)
+- update development branch (`eaf1b799`)
+- add X-Session-ID and session_id tracking for OpenRouter, DeepSeek, and OpenAI-compatible clients (`57e4b203`)
+
+
+---
+
+
 ## Release - v2.8.1-alpha
 ### 📣 Apresentação da Atualização
 
