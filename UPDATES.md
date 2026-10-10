@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.7.0-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Ecosystem minor synchronization with MEMOROUTER 1.4.0-alpha, enhanced background task log piping, and token-safe deliverable offloading support.
+
+**Highlights:**
+- Architectural synchronization with autonomous sub-agent orchestration protocols and safe windowing tokens
+- Enforced clean background detachment and structured stream logs across local MCP tools
+- Bumped version to v1.4.0-alpha aligned with ecosystem multi-agent capabilities
+
+<!-- lang:pt -->
+**Resumo:** Sincronização minor de ecossistema com MEMOROUTER 1.4.0-alpha, aprimoramento no piping de logs em segundo plano e suporte a offloading de entregáveis com safe windowing de tokens.
+
+**Destaques:**
+- Sincronização arquitetural com protocolos de orquestração autônoma de sub-agentes e safe windowing de tokens
+- Garantia de isolamento e desprendimento limpo em segundo plano com logs estruturados nas ferramentas MCP locais
+- Atualização de versão minor para v1.4.0-alpha alinhada com as capacidades multi-agente do ecossistema
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.7.0-alpha (`14b9e5de`)
+- updates in feature/subagent-orchestration-token-offloading (`be022ea9`)
+
+#### 📚 Documentação
+- update mcp tool catalog with docker container execution, safe windowing, and process sandboxing (`bcf243ea`)
+
+
+---
+
+
 ## Release - v2.6.144-alpha
 ### 📣 Apresentação da Atualização
 
