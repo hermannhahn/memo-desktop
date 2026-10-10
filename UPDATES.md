@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.8.4-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Retired real-time emotional load triggers during live chat interactions, delegating emotional analysis and memory importance scoring exclusively to autonomous Sleep Consolidation cycles to ensure zero API multipliers and avoid rate limits on free-tier LLM providers.
+
+**Highlights:**
+- Removed live message reception emotional load triggers, ensuring exactly one primary request per conversational turn on the server.
+- Retired legacy realtime debounce timers and unused configuration fields (`EmotionalRealtimeEnabled`) for a cleaner architecture.
+- Preserved efficient multi-message batching during autonomous Sleep Consolidation cycles (`runEmotionalForAgent`), calculating emotional loads and LTM context weights in chunks of up to 6 items.
+
+<!-- lang:pt -->
+**Resumo:** Descontinuação do cálculo de carga emocional em tempo real durante interações ao vivo, delegando a classificação emocional e relevância de memória exclusivamente aos ciclos autônomos de Sono do Modelo para garantir zero chamadas secundárias e evitar rate limits em provedores gratuitos.
+
+**Destaques:**
+- Remoção do gatilho de carga emocional na recepção de mensagens, assegurando exatamente uma única requisição primária por turno de chat.
+- Limpeza de temporizadores legados de debounce e campos de configuração obsoletos (`EmotionalRealtimeEnabled`) para manter o código limpo.
+- Preservação do processamento em lote no Sono do Modelo (`runEmotionalForAgent`), calculando emoções e pesos de relevância na LTM em lotes de até 6 mensagens em segundo plano.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.4-alpha (`97af50d5`)
+- update development branch (`e4586808`)
+- retire realtime emotional load and consolidate exclusively during sleep cycles (`4652cd9b`)
+
+
+---
+
+
 ## Release - v2.8.3-alpha
 ### 📣 Apresentação da Atualização
 
