@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.8.3-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Optimized real-time emotional load and memory importance processing with turn-level debouncing (2.5s) and multi-message batching, reducing auxiliary API calls by up to 66% and preventing rate-limit errors on free and tiered LLM providers.
+
+**Highlights:**
+- Multi-message batching evaluates user queries and assistant responses together in a single structured JSON request.
+- Intelligent 2.5-second turn debounce groups complete interaction pairs before triggering background analysis.
+- Resilient JSON array parsing with transparent per-item fallback ensures zero classification data loss.
+
+<!-- lang:pt -->
+**Resumo:** Otimização do cálculo de carga emocional e importância de memórias em tempo real com debounce de turno (2.5s) e processamento em lote (batching), reduzindo em até 66% as chamadas à API e prevenindo estouro de limites de requisições em provedores de modelos free.
+
+**Destaques:**
+- Batching multi-mensagem analisa a pergunta do usuário e a resposta do assistente juntas em uma única requisição JSON.
+- Debounce inteligente de 2.5s aguarda a conclusão do turno para agrupar as mensagens pendentes antes de disparar a análise.
+- Parser resiliente de arrays JSON com fallback individual automático, garantindo que nenhuma classificação seja perdida.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.3-alpha (`a12239fa`)
+- update development branch (`d914ec08`)
+- batch pending emotional load and debounce realtime turns (`221fd352`)
+
+
+---
+
+
 ## Release - v2.8.2-alpha
 ### 📣 Apresentação da Atualização
 
