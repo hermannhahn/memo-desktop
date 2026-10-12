@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.8.6-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+fix(mcp): intercept server deliverable paths in read_file and sync benchmark skills
+- Intercept attempted reads on /app/database/ or database/subagents/outputs/ in read_file tool, providing clear actionable instructions to use subagent(action='output').
+- Sync Level 5 Multi-Agent Orchestration guidelines and testing protocols in agent-efficiency-benchmark skill.
+<!-- lang:pt -->
+fix(mcp): interceptação inteligente de entregáveis de subagentes no read_file e sincronização de skills de benchmark
+- Interceptação de tentativas de leitura em /app/database/ ou database/subagents/outputs/ na ferramenta read_file, direcionando com clareza para subagent(action='output').
+- Sincronização das diretrizes e protocolos de teste do Nível 5 de Orquestração Multi-Agente na skill agent-efficiency-benchmark.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.6-alpha (`59b5fa08`)
+- update development branch (`344992a4`)
+
+#### 📚 Documentação
+- sync agent efficiency benchmark skill and multi-agent protocols (`40e8b3da`)
+
+#### 🐛 Correções
+- intercept server deliverable paths in read_file and guide to subagent output (`4083ba11`)
+
+
+---
+
+
 ## Release - v2.8.5-alpha
 ### 📣 Apresentação da Atualização
 
