@@ -3,6 +3,44 @@
 ---
 
 
+## Release - v2.8.5-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Shielded managed MEMOROUTER provider credentials in agent UI displays and enforced strict ephemeral in-memory storage for sleep consolidation runs.
+
+**Highlights:**
+- Masked UI Agent Labels: Adjusted `DisplayLabel()` for agents using the managed `memorouter` provider to display their model identifier or `"managed"`, preventing upstream API key prefix leakage in desktop views and WebViews.
+- Ephemeral Credential Storage: Enforced that upstream credentials received from the Bridge API reside exclusively in volatile memory (`BrainAgent` structs) during active execution, ensuring zero disk persistence on user machines.
+- Seamless Sleep Consolidation: Verified end-to-end memory consolidation execution for agents configured with the managed `memorouter` provider without requiring manual user API keys.
+
+<!-- lang:pt -->
+**Resumo:** Blindagem de segurança das credenciais gerenciadas do provedor MEMOROUTER na interface do usuário e isolamento estrito em memória volátil durante ciclos de consolidação do sono.
+
+**Destaques:**
+- Mascaramento de Rótulos no Frontend: Ajuste em `DisplayLabel()` para que agentes com provedor `memorouter` exibam o identificador do modelo ou `"managed"`, evitando qualquer vazamento de prefixo de chave privada em componentes visuais e WebViews.
+- Armazenamento Estritamente Efêmero: Garantia de que credenciais upstream obtidas da API Bridge permaneçam apenas em memória RAM volátil durante a execução da consolidação, sem gravação em disco local na máquina do usuário.
+- Consolidação do Sono Contínua: Verificação ponta a ponta da execução do sono para agentes com provedor oficial MEMOROUTER sem requerer chaves de terceiros configuradas pelo usuário.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.5-alpha (`2689f916`)
+- update development branch (`cf96c272`)
+- updates in fix/consolidation-memorouter-provider-key (`facc67f9`)
+- add memorouter provider routing to brain api v1 (`0bce7186`)
+
+#### 🐛 Correções
+- shield memorouter managed keys in agent label and enforce ephemeral storage (`3c05a04d`)
+- preserve and map official memorouter presets for upstream execution (`c46b270e`)
+- resolve credentials and models for managed memorouter provider during sleep (`85f492b1`)
+
+
+---
+
+
 ## Release - v2.8.4-alpha
 ### 📣 Apresentação da Atualização
 
