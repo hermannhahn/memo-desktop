@@ -3,6 +3,47 @@
 ---
 
 
+## Release - v2.8.16-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Native on-demand Piper TTS engine integration, unified Kokoro/Piper neural audio port (:8880), GitHub voice catalog sync, and repository governance sanitization.
+**Highlights:**
+- Integrated native on-demand Piper TTS engine with streaming stdin synthesis and automated UTF-8 encoding.
+- Unified HTTP audio server on port 8880 routing dynamically between Kokoro and Piper voices under standard OpenAI `/v1/audio/speech`.
+- Added GitHub voice models catalog integration with lazy on-demand downloading and explicit pre-download button in the Services panel.
+- Cleaned up repository root: untracked dev folders (`tasks/`, `scripts/`, `.vscode/`, `tests/`) to `.gitignore` and synced with `devtools-memorouter`.
+- Modernized `DEVELOPMENT.md` and `README.md` to reflect closed-source native Windows architecture.
+<!-- lang:pt -->
+**Resumo:** Migração do motor Piper TTS para execução nativa sob demanda no MEMO Desktop, porta neural unificada (:8880) com Kokoro, catálogo de vozes via GitHub e sanitização de governança.
+**Destaques:**
+- Motor nativo Piper TTS integrado com síntese via streaming stdin e codificação UTF-8 automatizada.
+- Servidor HTTP unificado na porta 8880 com roteamento dinâmico entre Kokoro e Piper no padrão OpenAI `/v1/audio/speech`.
+- Integração ao catálogo do GitHub com download lazy sob demanda e botão de pré-instalação na aba "Services".
+- Sanitização da raiz do repositório: pastas de desenvolvimento (`tasks/`, `scripts/`, `.vscode/`, `tests/`) adicionadas ao `.gitignore` e sincronizadas no `devtools-memorouter`.
+- Modernização integral de `DEVELOPMENT.md` e `README.md` documentando a arquitetura nativa para Windows.
+
+### 📋 Changelog da Versão
+
+**Total:** 7 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.16-alpha (`d95bb24e`)
+- native on-demand Piper TTS with unified HTTP port 8880 and GitHub voice catalog (`74a903a8`)
+
+#### 🔧 Manutenção / Refatoração
+- clean up root files, ignore patch_msg, update .env.example, README, and DEVELOPMENT.md (`5ff69f6e`)
+- sanitize root scripts, ignore tasks/scripts/vscode/tests and untrack from git (`794b5dda`)
+
+#### 📚 Documentação
+- index native kokoro and piper tts engines in architecture map (`c48934a7`)
+- add Piper TTS native migration plan specification (`b4876be9`)
+- add native Kokoro endpoints and reference map in docs (`29b48b68`)
+
+
+---
+
+
 ## Release - v2.8.15-alpha
 ### 📣 Apresentação da Atualização
 
