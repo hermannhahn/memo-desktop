@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.8.10-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### 100% Silent Headless Docker Execution & Native Win32 SCM Service Management
+- **100% Silent Headless Docker Daemon**: Completely eliminated console and CMD window visibility when starting `com.docker.backend.exe -with-frontend=false`. Configured `CREATE_NO_WINDOW` and `HideWindow: true` (SW_HIDE) without `DETACHED_PROCESS` and `CREATE_BREAKAWAY_FROM_JOB` to prevent Windows 11 Windows Terminal from allocating visible console tabs.
+- **Native Win32 Service Management**: Replaced command-line calls (`net.exe start com.docker.service`) with direct Win32 Service Control Manager (SCM) RPC calls using `golang.org/x/sys/windows/svc/mgr`, eliminating console flashes entirely.
+- **Dual-Layer Window Hiding Guard**: Added asynchronous window monitoring (`user32.dll` `ShowWindow(hwnd, SW_HIDE)`) during daemon startup to ensure zero desktop interference.
+
+<!-- lang:pt -->
+### Execução 100% Silenciosa do Motor Docker Headless & Gestão Nativa Win32 SCM
+- **Motor Docker 100% Silencioso**: Eliminada por completo a exibição de janelas CMD e console ao iniciar `com.docker.backend.exe -with-frontend=false`. Configurado `CREATE_NO_WINDOW` e `HideWindow: true` (SW_HIDE) sem `DETACHED_PROCESS` e `CREATE_BREAKAWAY_FROM_JOB` para impedir que o Windows Terminal do Windows 11 capture o processo e renderize abas visíveis no desktop.
+- **Gestão Nativa de Serviços via Win32 SCM**: Substituídas as chamadas via linha de comando (`net.exe start com.docker.service`) por chamadas diretas de RPC ao Service Control Manager (SCM) do Windows via `golang.org/x/sys/windows/svc/mgr`, eliminando piscadas de tela por completo.
+- **Salvaguarda Dupla de Ocultação de Janelas**: Adicionado monitoramento assíncrono de janelas (`user32.dll` `ShowWindow(hwnd, SW_HIDE)`) durante o arranque do daemon para assegurar zero interferência no desktop do usuário.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.10-alpha (`c40cb7a3`)
+- update development branch (`552e132a`)
+- updates in fix/silent-headless-docker-windows (`e0a1553b`)
+
+#### 🐛 Correções
+- silent headless com.docker.backend.exe launch and native Win32 SCM service start (`52e339ae`)
+
+
+---
+
+
 ## Release - v2.8.9-alpha
 ### 📣 Apresentação da Atualização
 
