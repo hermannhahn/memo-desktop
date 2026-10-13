@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.8.13-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Kokoro multi-lingual inference, install state reset on health check, and native service status reporting.
+
+**Highlights:**
+- Added automatic `--kokoro-lang` resolution (`pt-br` for Brazilian voices, `en`, `es`, `fr`, etc.) for Kokoro v1.0 multi-lingual model
+- Guaranteed install state reset and completion when Kokoro is already healthy or finishes startup, preventing stuck "Preparing / 0%" banner
+- Mapped native Kokoro status in `GetServiceStatus` to accurately display Active / Stopped badges in Services tab without Docker
+
+<!-- lang:pt -->
+**Resumo:** Correção de inferência multi-língua do Kokoro, reset de estado de instalação em health check e status nativo do serviço.
+
+**Destaques:**
+- Adicionada resolução automática de `--kokoro-lang` (`pt-br` para vozes brasileiras, `en`, `es`, `fr`, etc.) para o modelo multi-língua Kokoro v1.0
+- Garantido o reset e conclusão do progresso de instalação quando o Kokoro já está saudável ou conclui inicialização, eliminando banner preso em "Preparing / 0%"
+- Mapeado status nativo do Kokoro em `GetServiceStatus` para exibir badges Active / Stopped com precisão na aba Services sem depender de Docker
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.13-alpha (`7a2cf22e`)
+- updates in fix/kokoro-inference-and-ui-status (`fc89182b`)
+
+#### 🐛 Correções
+- add --kokoro-lang flag, reset install state on healthy and report native status (`64d4f450`)
+
+
+---
+
+
 ## Release - v2.8.12-alpha
 ### 📣 Apresentação da Atualização
 
