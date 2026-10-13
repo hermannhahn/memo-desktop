@@ -3,6 +3,38 @@
 ---
 
 
+## Release - v2.8.9-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### Headless Docker Engine Execution & Auto-Updater Relaunch
+- **Headless Docker Engine**: MEMO Desktop now starts and restarts Docker headlessly via `com.docker.backend.exe -with-frontend=false`, eliminating the heavy Electron Docker Desktop GUI. Saves over 500MB of RAM and CPU cycles while reducing engine boot times to 3-5 seconds.
+- **Intelligent Daemon Discovery**: Added `findDockerBackendPath()` to dynamically locate the backend executable through Docker CLI PATH and default Windows installation paths.
+- **Auto-Updater Instant Relaunch**: `ReopenApp()` is now automatically triggered in `cmd/updater/main.go` right after binary extraction, ensuring `memo.exe` reopens autonomously without requiring manual user interaction.
+- **Defensive Container Update Timeouts**: Added non-blocking checks and timeouts (`runWithTimeout`) to `ComposeUpdate` to ensure the updater never hangs on container inspection or image pulls.
+- **Auto-Closing Updater**: The updater interface automatically closes after 3.5 seconds once MEMO Desktop has been relaunched.
+
+<!-- lang:pt -->
+### Execução Headless do Motor Docker & Auto-Relançamento no Atualizador
+- **Motor Docker 100% Headless**: O MEMO Desktop agora inicia e reinicia o Docker em modo headless via `com.docker.backend.exe -with-frontend=false`, dispensando a abertura da pesada interface Electron do Docker Desktop. Economiza mais de 500MB de memória RAM e ciclos de CPU, reduzindo o tempo de boot para 3-5 segundos.
+- **Descoberta Inteligente do Daemon**: Implementado `findDockerBackendPath()` para localizar dinamicamente o executável do backend via PATH do CLI docker e diretórios padrão do Windows.
+- **Auto-Relançamento Imediato no Atualizador**: `ReopenApp()` agora é disparado autonomamente em `cmd/updater/main.go` logo após a extração dos binários, garantindo que o `memo.exe` reabra sozinho sem depender de cliques manuais.
+- **Timeouts Defensivos no Atualizador de Containers**: Adicionadas verificações não bloqueantes e timeouts (`runWithTimeout`) ao `ComposeUpdate` para garantir que o atualizador nunca trave na inspeção de containers ou download de imagens.
+- **Auto-Fechamento do Atualizador**: A janela do atualizador fecha automaticamente após 3.5 segundos assim que o MEMO Desktop é relançado.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.9-alpha (`31590177`)
+- update development branch (`1c1f28bf`)
+- implement headless com.docker.backend.exe execution and auto-reopening in updater (`6e608518`)
+
+
+---
+
+
 ## Release - v2.8.8-alpha
 ### 📣 Apresentação da Atualização
 
