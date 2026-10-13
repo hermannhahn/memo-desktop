@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.8.15-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Windows CLI UTF-8 command-line argument encoding for uppercase accented characters in native Kokoro TTS runner.
+
+**Highlights:**
+- Implemented Windows-1252 (CP1252) byte-to-rune translation table for the 0x80..0x9F range, ensuring UTF-8 multibyte sequences for uppercase accented vowels (Á, É, Í, Ó, Ú, Â, Ê, etc.) are accurately preserved in sherpa-onnx argv
+- Resolved pronunciation defects for sentence-starting accented words in Portuguese
+- Expanded unit tests and native runner test suite covering uppercase and lowercase accented words
+
+<!-- lang:pt -->
+**Resumo:** Correção de codificação UTF-8 na linha de comando do Windows para caracteres acentuados maiúsculos no runner nativo do Kokoro TTS.
+
+**Destaques:**
+- Implementada tabela de tradução Windows-1252 (CP1252) byte-a-rune para a faixa 0x80..0x9F, garantindo que sequências multibyte UTF-8 de vogais acentuadas maiúsculas (Á, É, Í, Ó, Ú, Â, Ê, etc.) sejam fielmente preservadas no argv do sherpa-onnx
+- Resolvidas distorções de pronúncia em palavras iniciadas com acento maiúsculo no português
+- Expandidos testes unitários e testes com o runner nativo cobrindo palavras acentuadas maiúsculas e minúsculas
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.15-alpha (`ff3d0b55`)
+
+#### 🐛 Correções
+- map Windows-1252 table for uppercase accented characters in CLI runner (`0dc06a54`)
+
+
+---
+
+
 ## Release - v2.8.14-alpha
 ### 📣 Apresentação da Atualização
 
