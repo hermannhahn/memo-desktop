@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.8.11-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### Native Standalone Kokoro TTS Migration & Legacy Docker Expunge
+- **Standalone Native Execution**: Migrated Kokoro TTS from Docker container to high-performance local native execution (Sherpa-ONNX runner) binding to `127.0.0.1:8880` with zero Docker or WSL virtualization dependencies.
+- **Resource Footprint**: Decreased RAM usage from ~2.0 GB to ~200 MB and disk footprint from ~2.5 GB to ~420 MB.
+- **Voice Parity & Blending**: Preserved all 53 voices (including Portuguese `pm_alex`, `pf_dora`, `pm_santa`), acoustic style blending (`v1(60)+v2(40)`), phonetic text cleaning, and 100% OpenAI-compatible endpoint parity (`/health`, `/v1/audio/speech`).
+- **Strict On-Demand Lifecycle**: Downloads and initializes assets exclusively when toggled in the Services tab or when requested by voice agents.
+- **Legacy Docker Cleanup**: Expunged container configurations, Compose profiles, hardware limit allocators, and relay checks for `memo-desktop-kokoro`.
+
+<!-- lang:pt -->
+### Migração do Kokoro TTS para Execução Local Nativa & Expurgo do Docker
+- **Execução Nativa Standalone**: Kokoro TTS migrado de container Docker para execução nativa local de alta performance (runner Sherpa-ONNX) na porta `127.0.0.1:8880`, eliminando a necessidade do Docker Desktop ou virtualização WSL.
+- **Eficiência de Recursos**: Redução de consumo de RAM de ~2.0 GB para ~200 MB e espaço em disco de ~2.5 GB para ~420 MB.
+- **Paridade Total de Vozes & Blending**: Preservação de todas as 53 vozes (incluindo PT-BR `pm_alex`, `pf_dora`, `pm_santa`), mistura de estilos acústicos (`v1(60)+v2(40)`), sanitização fonética e endpoints 100% compatíveis com OpenAI (`/health`, `/v1/audio/speech`).
+- **Ciclo Estritamente Sob Demanda**: Download e inicialização ativados sob demanda pela aba Serviços ou ao acionar agentes com voz.
+- **Expurgo Residual de Docker**: Remoção de perfis do Compose, limites de hardware e checks de relay de `memo-desktop-kokoro`.
+
+### 📋 Changelog da Versão
+
+**Total:** 4 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.11-alpha (`c019f466`)
+- update development branch (`b1b0abc6`)
+- migrate kokoro tts to native standalone execution without docker (`d2f0bc87`)
+
+#### 🐛 Correções
+- expunge legacy kokoro container references and enforce on-demand installation (`b5bda506`)
+
+
+---
+
+
 ## Release - v2.8.10-alpha
 ### 📣 Apresentação da Atualização
 
