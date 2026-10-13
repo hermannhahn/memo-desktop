@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.8.8-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fix Docker relay false-positive restart loop, implement multi-service consensus detection, add database TCP check, and harden Docker Desktop relaunch routines.
+**Highlights:**
+- Multi-Service Consensus: Docker relay freeze is now only diagnosed if 100% of running containers fail simultaneously; if any active service responds normally, the relay is verified healthy.
+- PostgreSQL TCP Health Check: Added CheckTCP for PostgreSQL in monitor, preventing HTTP GET requests from returning false EOF errors.
+- Startup & Warmup Grace Periods: Added a 90-second recovery mute on application boot and 30-second container warmup tolerance.
+- Resilient Docker Relaunch: Hardened RestartDockerDesktop and EnsureDockerRunning to guarantee com.docker.service is running, start com.docker.backend.exe detached, and launch Docker Desktop UI properly.
+<!-- lang:pt -->
+**Resumo:** Correção do falso positivo e loop de reinício do Docker, detecção de relay travado por consenso multi-serviço, verificação TCP para banco de dados e fortalecimento do reinício do Docker Desktop.
+**Destaques:**
+- Consenso Multi-Serviço: O relay só é considerado travado se 100% dos containers em execução falharem simultaneamente; se ao menos um responder normalmente via HTTP, o relay é considerado saudável.
+- Monitoramento TCP para PostgreSQL: Implementado CheckTCP para banco de dados, eliminando requisições HTTP GET na porta do PostgreSQL que geravam EOF e disparavam reinício indevido.
+- Carência de Inicialização e Warmup: Adicionada janela de 90s após a inicialização do app e tolerância de 30s de warmup por container para permitir que serviços internos (ex: WAHA) subam sem falso positivo.
+- Reinício Resiliente do Docker Desktop: Fortalecidas as funções RestartDockerDesktop e EnsureDockerRunning para assegurar o serviço com.docker.service, subir o backend e relançar o Docker Desktop e containers core.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.8-alpha (`f739429f`)
+- update development branch (`bb2b5b08`)
+
+#### 🐛 Correções
+- multi-service consensus relay detection, postgres tcp check and resilient restart (`b45d5e48`)
+
+
+---
+
+
 ## Release - v2.8.7-alpha
 ### 📣 Apresentação da Atualização
 
