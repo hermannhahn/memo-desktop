@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.8.14-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixed Windows CLI UTF-8 command-line argument encoding for native Kokoro TTS runner and improved punctuation sanitization for accented Portuguese speech.
+
+**Highlights:**
+- Resolved MSVC ANSI (CP1252) command-line conversion bug via byte-to-rune Latin-1 marshalling, ensuring sherpa-onnx receives pristine UTF-8 strings without phonetic symbol corruption ("trema", "mail") on accented words
+- Normalized typographical em/en dashes to commas and ellipses to standard dots in text sanitizer for natural speech pauses
+- Added automated unit tests verifying UTF-8 runner argument encoding and punctuation cleanup
+
+<!-- lang:pt -->
+**Resumo:** Correção de codificação UTF-8 de argumentos de linha de comando no Windows para o runner nativo do Kokoro TTS e sanitização de pontuação para voz em português.
+
+**Destaques:**
+- Corrigido problema de conversão ANSI (CP1252) da MSVC via mapeamento byte-a-rune Latin-1, garantindo que o sherpa-onnx receba texto UTF-8 puro sem distorções fonéticas em palavras acentuadas ("áudio", "comunicação")
+- Normalizados travessões para vírgulas e reticências para pontos no sanitizador de texto, proporcionando pausas naturais na fala
+- Adicionados testes unitários automatizados validando a codificação de argumentos e a limpeza de pontuação
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.14-alpha (`c28708fe`)
+
+#### 🐛 Correções
+- map UTF-8 bytes to Latin-1 runes for Windows CLI runner and sanitize punctuation (`383f2dda`)
+
+
+---
+
+
 ## Release - v2.8.13-alpha
 ### 📣 Apresentação da Atualização
 
