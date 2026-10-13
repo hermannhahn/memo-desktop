@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.8.7-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implemented autonomous Docker port relay recovery with debounced health checks, reverted WSL2 to native NAT networking, and integrated local Ollama model management with hardware warning modals.
+**Highlights:**
+- Added `relay_recovery.go` to autonomously detect Windows post-sleep Docker port relay freezes (`Empty reply from server` / EOF) when containers are running.
+- Enforced strict 3-check debounce across an 8-10 second window and a 15-minute cooldown guard to prevent false alarms or restart loops.
+- Implemented `RestartDockerDesktop()` to cleanly flush WSL virtual network sockets and relaunch Docker Desktop detached.
+- Integrated `relay_frozen` status into `brain_sync.go` services reporting and local health monitor.
+- Added WebSocket bridge handlers for local Ollama catalog synchronization (`ollama_list_models`, `ollama_pull_model`) and hardware requirement warning modals for local LLM downloads.
+<!-- lang:pt -->
+**Resumo:** Implementada auto-recuperação autônoma do relay de portas do Docker com checagens debounced, reversão do WSL2 para o modo NAT padrão e gerenciamento de modelos Ollama locais com modal de avisos de hardware.
+**Destaques:**
+- Adicionado módulo `relay_recovery.go` para diagnosticar autonomamente o congelamento do relay de portas do Docker pós-suspensão do Windows (`Empty reply from server` / EOF) com containers em execução.
+- Implementado debounce estrito de 3 checagens consecutivas em janela de 8-10 segundos e trava de cooldown de 15 minutos para prevenir disparos falsos ou loops de reinicialização.
+- Implementada a rotina `RestartDockerDesktop()` para flush limpo de sockets virtuais do WSL e reinicialização desanexada do Docker Desktop.
+- Integrado o status `relay_frozen` ao relatório de serviços do `brain_sync.go` e ao monitor de saúde local.
+- Adicionados handlers de ponte WebSocket para sincronização dinâmica do catálogo do Ollama local (`ollama_list_models`, `ollama_pull_model`) e modal de requisitos de hardware para download de LLMs.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.7-alpha (`ad7d1772`)
+- update development branch (`d25abfd6`)
+- add WebSocket actions for listing models and background model pulling (`d4253f42`)
+- updates in feature/installer-cmd-ps1-memo-cert (`9bf19b42`)
+
+#### 🐛 Correções
+- autonomous debounced relay recovery and revert WSL to NAT mode (`4a7e2e94`)
+
+
+---
+
+
 ## Release - v2.8.6-alpha
 ### 📣 Apresentação da Atualização
 

@@ -1,63 +1,53 @@
-# 🚀 MEMO Desktop - Repositório Oficial de Downloads
+# MEMO Desktop — Release v${version}
 
-Bem-vindo ao repositório oficial de distribuições e instaladores do **MEMO Desktop para Windows (Go Native GUI - MEMOROUTER)**.
-
----
-
-## 📥 Download da Última Versão: `v2.8.6-alpha`
-
-- 📦 **Instalador Executável Direto**: [Baixar MEMO-Desktop-Setup-v2.8.6-alpha.exe](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/MEMO-Desktop-Setup-v2.8.6-alpha.exe)
-- ⚡ **Instalador Automatizado Windows (Recomendado)**: [Baixar install-memo.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/install-memo.bat)
-- 📄 **Script PowerShell**: [Baixar install-memo.ps1](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/install-memo.ps1)
-- 🔐 **Script de Certificado**: [Baixar install-cert.bat](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/install-cert.bat)
-- 📄 **Certificado Digital**: [Baixar AIBrainDevCert.crt](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/AIBrainDevCert.crt)
+Official distribution release of **MEMO Desktop for Windows (Go Native GUI - MEMOROUTER)**.
 
 ---
 
-## 💻 Instruções de Instalação no Windows
+## ⚡ Quick One-Line Web Installation (Recommended)
 
-### Método Recomendado (1-Clique via Batch):
-1. Baixe o instalador [`install-memo.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/install-memo.bat).
-2. Dê um duplo clique no arquivo baixado. Ele executará o PowerShell diretamente, solicitará elevação de privilégios de Administrador, registrará o certificado no Windows e iniciará a instalação do MEMO Desktop automaticamente.
+Automatically registers the development certificate and launches the setup wizard without any Windows SmartScreen warnings:
 
----
+### PowerShell (Run as Administrator or Standard prompt):
+```powershell
+irm https://raw.githubusercontent.com/${PRIMARY_DOWNLOAD_REPO}/main/install.ps1 | iex
+```
 
-## 💻 Instruções de Instalação e Liberação do Windows SmartScreen
-
-### Opção 1: Execução Direta (Mais Rápida)
-1. Baixe o instalador [`MEMO-Desktop-Setup-v2.8.6-alpha.exe`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/MEMO-Desktop-Setup-v2.8.6-alpha.exe).
-2. Execute o instalador. Se a tela do **Windows Defender SmartScreen** aparecer:
-   - Clique em **"Mais informações"** (*More info*).
-   - Clique no botão **"Executar assim mesmo"** (*Run anyway*).
+### Command Prompt / CMD (via curl):
+```cmd
+curl -fsSL https://raw.githubusercontent.com/${PRIMARY_DOWNLOAD_REPO}/main/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
 
 ---
 
-### Opção 2: Instalação do Certificado de Desenvolvimento (Remove Todos os Avisos)
-Para registrar o certificado de código nas duas autoridades confiáveis do Windows (*Trusted Root* e *Trusted Publisher*):
-1. Baixe os arquivos [`AIBrainDevCert.crt`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/AIBrainDevCert.crt) e [`install-cert.bat`](https://github.com/hermannhahn/memo-desktop/releases/download/v2.8.6-alpha/install-cert.bat) na mesma pasta.
-2. Clique com o botão direito em **`install-cert.bat`** e escolha **"Executar como Administrador"**.
-3. O script importará o certificado nas duas lojas de certificados do Windows automaticamente.
+## 🚀 Downloads
+
+| Asset | Description |
+|---|---|
+| [📦 MEMO-Desktop-Setup-v${version}.exe](https://github.com/${PRIMARY_DOWNLOAD_REPO}/releases/download/v${version}/MEMO-Desktop-Setup-v${version}.exe) | Windows Inno Setup Full Installer |
+| [📜 install.ps1](https://github.com/${PRIMARY_DOWNLOAD_REPO}/releases/download/v${version}/install.ps1) | PowerShell One-Line Web Installer |
+| [📜 install.cmd](https://github.com/${PRIMARY_DOWNLOAD_REPO}/releases/download/v${version}/install.cmd) | CMD / curl One-Line Web Installer |
+| [🔐 memo-certificate.crt](https://github.com/${PRIMARY_DOWNLOAD_REPO}/releases/download/v${version}/memo-certificate.crt) | Code Signing Certificate |
+| [📜 install-cert.bat](https://github.com/${PRIMARY_DOWNLOAD_REPO}/releases/download/v${version}/install-cert.bat) | Certificate Installer Script |
 
 ---
 
-## 📋 Histórico de Atualizações (UPDATES.md)
+## 🛡️ Manual SmartScreen Installation Guide
 
-Para visualizar o histórico completo de notas de release, correções e novas funcionalidades, acesse:
-📄 [Visualizar UPDATES.md (Histórico Completo)](UPDATES.md)
-
-### 🌟 Notas do Release v2.8.6-alpha:
-<!-- lang:en -->
-fix(mcp): intercept server deliverable paths in read_file and sync benchmark skills
-- Intercept attempted reads on /app/database/ or database/subagents/outputs/ in read_file tool, providing clear actionable instructions to use subagent(action='output').
-- Sync Level 5 Multi-Agent Orchestration guidelines and testing protocols in agent-efficiency-benchmark skill.
-<!-- lang:pt -->
-fix(mcp): interceptação inteligente de entregáveis de subagentes no read_file e sincronização de skills de benchmark
-- Interceptação de tentativas de leitura em /app/database/ ou database/subagents/outputs/ na ferramenta read_file, direcionando com clareza para subagent(action='output').
-- Sincronização das diretrizes e protocolos de teste do Nível 5 de Orquestração Multi-Agente na skill agent-efficiency-benchmark.
+If installing manually instead of using the one-line commands above:
+1. Download `memo-certificate.crt` and `install-cert.bat` into the same folder.
+2. Right-click `install-cert.bat` and select **"Run as Administrator"**.
+3. Run `MEMO-Desktop-Setup-v${version}.exe` directly without any security warnings.
 
 ---
 
-## 🔐 Licença e Segurança
+## 📋 Release Notes
 
-- Os executáveis deste repositório são compilações nativas de código fechado (*closed-source*) direcionadas ao Windows 10/11.
-- Copyright © Hermann Hahn - Todos os direitos reservados.
+${releaseNotes || '- General improvements and maintenance updates.'}
+
+---
+
+## 🔐 License and Security
+
+- Closed-source native Windows 10/11 binaries built and signed for MEMOROUTER.
+- Copyright © Hermann Hahn - All rights reserved.
