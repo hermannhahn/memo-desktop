@@ -3,6 +3,41 @@
 ---
 
 
+## Release - v2.8.12-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### Fix Native Kokoro TTS On-Demand Asset Download and Extraction
+- **Sherpa-ONNX v1.13.8 Release**: Updated runner asset URL to official `v1.13.8` Windows x64 shared release, fixing 404 errors during on-demand asset retrieval.
+- **Native Tar.bz2 Engine Extraction**: Replaced legacy zip decompression with Go stdlib tar.bz2 extraction, extracting runner executable and runtime DLLs (`onnxruntime.dll`) directly to bin.
+- **Cross-Platform Archive Path Parsing**: Normalized archive path splitting using separator-agnostic parsing, ensuring robust extraction of multilingual models.
+- **Synchronous Install Start**: Immediate synchronous emission of `SetInstallStart` in WebSocket bridge `tts_install` handler eliminating race conditions in status polling.
+- **Real-Time Progress Tracking**: Propagated percentage and title to install progress callback, providing live visual feedback during download and extraction.
+- **Engine Speed Parameter**: Adapted speech speed to `--kokoro-length-scale=%.2f` (`1.0/speed`) for native Sherpa-ONNX Kokoro synthesis.
+
+<!-- lang:pt -->
+### Correção do Download e Extração Sob Demanda do Kokoro TTS Nativo
+- **Release Sherpa-ONNX v1.13.8**: Atualização da URL do runner para a release oficial `v1.13.8` Windows x64 compartilhada, corrigindo erro 404 no download sob demanda.
+- **Extração Nativa Tar.bz2 dos Binários**: Substituição da descompactação de zip pela extração de `.tar.bz2` nativa no Go, extraindo o executável e DLLs de runtime (`onnxruntime.dll`) diretamente para a pasta bin.
+- **Tratamento Agnóstico de Separadores**: Normalização de caminhos no pacote de modelos multilíngue garantindo extração robusta em qualquer separador de diretório.
+- **Início Síncrono de Instalação**: Inicialização imediata de `SetInstallStart` no handler `tts_install` do WebSocket bridge, eliminando condições de corrida na consulta de status.
+- **Progresso Visual em Tempo Real**: Propagação de percentual e título no callback de instalação para atualização dinâmica da barra de progresso.
+- **Velocidade de Fala Nativamente Mapeada**: Ajuste do parâmetro de velocidade para `--kokoro-length-scale=%.2f` (`1.0/speed`) no runner nativo.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.12-alpha (`cbc63b5e`)
+
+#### 🐛 Correções
+- fix on-demand download url, tar.bz2 extraction, and sync install progress (`2c77e195`)
+
+
+---
+
+
 ## Release - v2.8.11-alpha
 ### 📣 Apresentação da Atualização
 
