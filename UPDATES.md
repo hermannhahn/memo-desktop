@@ -3,6 +3,34 @@
 ---
 
 
+## Release - v2.8.17-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Full 21-voice offline catalog fallback in PiperDownloader, resilient GitHub API fallback, and architecture documentation update.
+**Highlights:**
+- Added complete 21-voice catalog fallback in `internal/services/piper_downloader.go` from `hermannhahn/ai-devices`.
+- Guaranteed that all Piper voice models remain available for listing and download even under GitHub API rate limiting.
+- Synchronized technical architecture docs (`docs/01-architecture/piper-tts-native.md`) and voice skill (`.agents/skills/voice-tts-api/SKILL.md`).
+<!-- lang:pt -->
+**Resumo:** Catálogo completo de 21 vozes como fallback offline no PiperDownloader, proteção contra rate limit da GitHub API e atualização de documentação.
+**Destaques:**
+- Inclusão de fallback offline para o catálogo completo de 21 modelos de voz do Piper em `internal/services/piper_downloader.go`.
+- Garantia de disponibilidade de todas as vozes para listagem e download mesmo em caso de indisponibilidade ou rate limit da API do GitHub.
+- Sincronização da documentação técnica (`docs/01-architecture/piper-tts-native.md`) e da skill (`.agents/skills/voice-tts-api/SKILL.md`).
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.17-alpha (`e0bafe86`)
+- add complete 21-voice catalog fallback in piper_downloader (`9f426b66`)
+
+
+---
+
+
 ## Release - v2.8.16-alpha
 ### 📣 Apresentação da Atualização
 
