@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.8.18-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Silent background execution for standalone Piper TTS subprocesses and technical architecture documentation update.
+**Highlights:**
+- Configured `cmd.SysProcAttr = hideWindow()` in `internal/services/piper_native.go`, preventing flashing command prompt windows during speech synthesis.
+- Validated native Piper audio generation with full automated unit test suite.
+- Updated architecture specification in `docs/01-architecture/piper-tts-native.md`.
+<!-- lang:pt -->
+**Resumo:** Execução em segundo plano silenciosa para os subprocessos do Piper TTS nativo e atualização da arquitetura técnica.
+**Destaques:**
+- Configuração de `cmd.SysProcAttr = hideWindow()` em `internal/services/piper_native.go`, eliminando janelas de prompt de comando durante a síntese de voz.
+- Validação da síntese de áudio do Piper com a suíte completa de testes unitários automatizados.
+- Atualização da especificação técnica de arquitetura em `docs/01-architecture/piper-tts-native.md`.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.18-alpha (`d3e479bf`)
+
+#### 🐛 Correções
+- execute piper natively without flashing console window on Windows (`f901831f`)
+
+
+---
+
+
 ## Release - v2.8.17-alpha
 ### 📣 Apresentação da Atualização
 
