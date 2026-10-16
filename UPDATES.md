@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.8.20-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Fixes Kokoro TTS voice selection, speech speed controls, and pitch shifting, ensuring seamless multilingual Portuguese pronunciation and complete speaker mapping.
+
+**Highlights:**
+- Exact mapping of all 54 Kokoro v1.0 neural voice timbres (Alex, Bella, Adam, Dora, etc.).
+- Intelligent Portuguese phonetic language routing so global timbres speak clean Portuguese without phonetic distortions.
+- Proportional speed scaling and pitch modulation support.
+
+<!-- lang:pt -->
+**Resumo:** Correção na troca de vozes do Kokoro TTS, controles de velocidade de fala e modulação de tom (pitch), garantindo pronúncia correta em português e mapeamento completo de timbres.
+
+**Destaques:**
+- Mapeamento exato dos 54 timbres neurais do Kokoro v1.0 (Alex, Bella, Adam, Dora, etc.).
+- Roteamento fonético inteligente em português para que vozes internacionais falem em português com alta fidelidade.
+- Suporte a ajuste proporcional de velocidade e modulação de tom.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.20-alpha (`d9b86b10`)
+- map 54 speakers, multilingual routing and speed scale in native engine (`1c47a164`)
+
+
+---
+
+
 ## Release - v2.8.19-alpha
 ### 📣 Apresentação da Atualização
 
