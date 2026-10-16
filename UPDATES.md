@@ -3,6 +3,36 @@
 ---
 
 
+## Release - v2.8.22-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+### Architectural Deduplication of Skills Discovery & Workspace Guidelines
+- Unified skills discovery in `DiscoverSkills` with multi-dimensional tracking (`seenPaths`, `seenTitles`, `seenNames`), eliminating duplicate database mirrors of local filesystem skills.
+- Implemented defensive deduplication by skill name in `FilterActiveSkillsForAgent`, ensuring zero duplicate entries in `<skills>` prompt injections and tool catalogs.
+- Added workspace skill deduplication in `InspectProjectContext` across `.agents/skills` and `.gemini/skills`.
+
+<!-- lang:pt -->
+### Deduplicação Arquitetural de Descoberta de Skills e Diretrizes de Workspace
+- Unificada a descoberta de skills em `DiscoverSkills` com rastreamento multidimensional (`seenPaths`, `seenTitles`, `seenNames`), eliminando duplicatas de skills locais refletidas pelo banco.
+- Implementada deduplicação defensiva por nome em `FilterActiveSkillsForAgent`, garantindo zero entradas duplicadas na injeção de `<skills>` no prompt e no catálogo de ferramentas.
+- Adicionada deduplicação de skills do workspace em `InspectProjectContext` entre as pastas `.agents/skills` e `.gemini/skills`.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.22-alpha (`f91c0c8a`)
+
+#### 🐛 Correções
+- unify discovery and deduplicate local and database skills (`3b8a4e59`)
+- support multiline YAML descriptions and initial text fallback (`db99e90f`)
+
+
+---
+
+
 ## Release - v2.8.21-alpha
 ### 📣 Apresentação da Atualização
 
