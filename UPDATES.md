@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.8.19-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Internationalized project workspace management and developer tool notices to strict English, ensuring seamless compatibility across multi-mode environments.
+
+**Highlights:**
+- Fully translated `projects` and `bash` MCP tool messages, notices, and error payloads to English (US).
+- Added comprehensive technical documentation for the `projects` tool, detailing workspace lifecycles, existing container repository registration, cloning, and allowed modes enforcement.
+
+<!-- lang:pt -->
+**Resumo:** Internacionalização completa das mensagens e avisos do gerenciador de projetos e ferramentas de desenvolvimento para inglês estrito, garantindo compatibilidade uniforme em múltiplos ambientes.
+
+**Destaques:**
+- Tradução integral para inglês (US) dos avisos, mensagens de segundo plano e payloads de erro das ferramentas MCP `projects` e `bash`.
+- Inclusão de documentação técnica modular para a ferramenta `projects`, detalhando o ciclo de vida de workspaces, registro de repositórios existentes em containers, clonagem e restrição por modos autorizados.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.19-alpha (`aa6a1292`)
+- updates in fix/agent-skills-scoping (`871cc159`)
+
+#### 🐛 Correções
+- translate projects tool notices and errors to English (`ccf532eb`)
+- scope database skills strictly to agent active assignments (`fe7e577e`)
+- include healthy and installed flags in unified tts_status WebSocket payload (`81d1621e`)
+
+
+---
+
+
 ## Release - v2.8.18-alpha
 ### 📣 Apresentação da Atualização
 
