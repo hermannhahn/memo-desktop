@@ -3,6 +3,46 @@
 ---
 
 
+## Release - v2.8.21-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Implements dynamic desktop skills discovery, execution mode titles, allowed modes security gate, and dynamic toggles for user PC global skills and global guidelines.
+
+**Highlights:**
+- Dynamic Skills Discovery: Discovers skills in active project workspaces (.agents/skills, .gemini/skills) with explicit mode prefix ([cmd], [docker], etc.).
+- Allowed Modes Security Gate: Enforces user-authorized execution modes (cmd, wsl, docker, ssh) across discovery, recall, and execution.
+- User PC Global Toggles: Added dynamic switches for reading global skills (~/.gemini, ~/.agents) and global GEMINI.md/AGENTS.md guidelines.
+- Active Project Rules Resolution: Injects active project rules with GEMINI.md precedence and allowed modes validation without accidental global bleeding.
+- Decoupled Anti-Monolith Modules: Introduced internal/mcp/skills_global.go and internal/mcp/global_rules.go.
+
+<!-- lang:pt -->
+**Resumo:** Implementa descoberta dinâmica de skills do desktop, títulos por modo de execução, trava de segurança por modos permitidos e switches dinâmicos para skills e regras globais do PC do usuário.
+
+**Destaques:**
+- Descoberta Dinâmica de Skills: Localiza skills nos projetos ativos (.agents/skills, .gemini/skills) com prefixo explícito do modo ([cmd], [docker], etc.).
+- Trava de Segurança por Modos Permitidos: Aplica autorização estrita de modos (cmd, wsl, docker, ssh) na varredura, recall e execução.
+- Switches Globais do PC do Usuário: Adicionados toggles dinâmicos para leitura de skills globais (~/.gemini, ~/.agents) e diretrizes globais GEMINI.md/AGENTS.md.
+- Resolução de Regras do Projeto Ativo: Injeta regras do projeto ativo com precedência para GEMINI.md e validação de modos, evitando contaminação global acidental.
+- Módulos Desacoplados Anti-Monólito: Criados internal/mcp/skills_global.go e internal/mcp/global_rules.go.
+
+### 📋 Changelog da Versão
+
+**Total:** 5 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.21-alpha (`e2b0f50a`)
+- add dynamic global skills and global rules switches (`dd3a547e`)
+- dynamic desktop skills with allowed_modes gate, path titles and clean slate (`c65549d4`)
+
+#### 📚 Documentação
+- update skills tool description with dynamic mode titles and global toggles (`5051dff3`)
+- document 54-speaker mapping and auto portuguese detection in kokoro architecture (`642eb927`)
+
+
+---
+
+
 ## Release - v2.8.20-alpha
 ### 📣 Apresentação da Atualização
 
