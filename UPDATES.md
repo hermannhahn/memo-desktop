@@ -3,6 +3,37 @@
 ---
 
 
+## Release - v2.8.23-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Safe skills soft-deletion lifecycle, pagination and tag filtering in skills MCP tool, and nightly vector re-embedding.
+
+**Highlights:**
+- Host PC files and container workspaces are strictly preserved; skills deletion now safely marks them as ignored (`is_ignored`) with a restore option in the Web Console.
+- Added pagination (`page`, `page_size`, `pagination_hint`) and tag filtering (`tags`, `query`) to the `skills` MCP tool.
+- Integrated Step 6 in nightly memory consolidation (Model Sleep) to automatically backfill 384d vector embeddings for skills in PostgreSQL via Ollama.
+
+<!-- lang:pt -->
+**Resumo:** Ciclo de vida seguro de skills (soft-delete), paginação e busca por tags na ferramenta MCP de skills, e re-embedding vetorial noturno.
+
+**Destaques:**
+- Arquivos do PC e dos containers são estritamente preservados; a remoção de skills agora as marca como ignoradas (`is_ignored`) com opção de restauração no Web Console.
+- Adicionada paginação (`page`, `page_size`, `pagination_hint`) e filtro por tags (`tags`, `query`) na ferramenta MCP `skills`.
+- Integrada a Etapa 6 no sono do modelo (consolidação noturna) para gerar automaticamente embeddings vetoriais 384d para skills no PostgreSQL via Ollama.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.23-alpha (`5964dc5f`)
+- safe soft-deletion lifecycle, pagination and nightly re-embedding (`e533711b`)
+
+
+---
+
+
 ## Release - v2.8.22-alpha
 ### 📣 Apresentação da Atualização
 
