@@ -3,6 +3,43 @@
 ---
 
 
+## Release - v2.8.24-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Enforce first-person autobiographical perspective in memory consolidation and self-review.
+
+**Highlights:**
+- Updated the self-review (autorrevisão / red team) prompt to mandate first-person perspective for audit adjustments, preventing third-person narrator overwrites.
+- Added deterministic safeguard functions (`HasThirdPersonAssistantNarrator` and `ConvertThirdPersonToFirstPerson`) to automatically sanitize any third-person expressions before database persistence.
+- Unified first-person autobiographical voice across progressive pyramid tiers (weekly, monthly, annual) and semantic cluster merge prompts.
+
+<!-- lang:pt -->
+**Resumo:** Perspectiva autobiográfica obrigatória em primeira pessoa na consolidação de memória e na autorrevisão.
+
+**Destaques:**
+- Prompt de autorrevisão (autocrítica / red team) atualizado para exigir estritamente primeira pessoa nos ajustes, impedindo que revisões sobrescrevam memórias em terceira pessoa.
+- Funções determinísticas de salvaguarda (`HasThirdPersonAssistantNarrator` e `ConvertThirdPersonToFirstPerson`) para sanitizar automaticamente expressões em terceira pessoa antes da persistência no banco.
+- Unificação da voz em primeira pessoa nos tiers progressivos da pirâmide (semanal, mensal, anual) e nos prompts de fusão de clusters.
+
+### 📋 Changelog da Versão
+
+**Total:** 6 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.24-alpha (`97db60d1`)
+- update development branch (`f3918dae`)
+- enforce 1st-person autobiographical perspective in consolidation prompts (`6f5c6e29`)
+
+#### 🐛 Correções
+- enforce first-person autobiographical perspective in consolidation and self-review (`3463990a`)
+- send images via sendImage for native photo mode with sendFile fallback (`1ed76336`)
+- support send_file rich media delivery via ws bridge and waha (`e203539e`)
+
+
+---
+
+
 ## Release - v2.8.23-alpha
 ### 📣 Apresentação da Atualização
 
