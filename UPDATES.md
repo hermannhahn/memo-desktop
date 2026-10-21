@@ -3,6 +3,40 @@
 ---
 
 
+## Release - v2.8.25-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Integrations Hub overhaul with sleek vertical accordion list layout, standardized "Integrate" buttons, full Qoder AI IDE and CLI integration, and dynamic multi-tenant agent resolution.
+**Highlights:**
+- Transformed Integrations tab into a responsive vertical accordion list with live status badges, rotating chevrons, and direct action triggers.
+- Standardized integration button text across all cards to "Integrate" (and "Manage Integration" when active), fixing legacy client-specific labels.
+- Added comprehensive Qoder (IDE & CLI) integration, injecting OpenAI-compatible custom provider in ~/.qoder/settings.json across Windows and WSL.
+- Implemented dynamic agent name resolution and dedicated named token provisioning with zero hardcoded credentials or personas.
+
+<!-- lang:pt -->
+**Resumo:** Reestruturação da aba Integrations com visualização em lista vertical de accordions, botões padronizados para "Integrate", integração completa com o Qoder AI IDE e CLI, e resolução dinâmica de agentes para múltiplos usuários.
+**Destaques:**
+- Transformação da aba Integrations em lista vertical de accordions com badges de status em tempo real, chevrons animados e acionamento direto.
+- Padronização do botão de integração em todos os cards para "Integrate" (e "Manage Integration" quando integrado), corrigindo o texto herdado no Hermes.
+- Adicionada integração oficial com o Qoder (IDE e CLI), injetando provedor customizado OpenAI-compatible em ~/.qoder/settings.json no Windows e WSL.
+- Implementada resolução dinâmica de nome de exibição do agente e provisionamento de token nomeado sem nenhuma credencial ou persona hardcodada.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.25-alpha (`ef52e1ac`)
+- updates in feat/integrations-accordion-qoder (`19a003ce`)
+
+#### 🔧 Manutenção / Refatoração
+- dynamic agent display name resolution for multi-tenant integrations (`003d9266`)
+
+
+---
+
+
 ## Release - v2.8.24-alpha
 ### 📣 Apresentação da Atualização
 
