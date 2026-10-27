@@ -3,6 +3,39 @@
 ---
 
 
+## Release - v2.8.27-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Beatrice 2 Voice Modulator audio truncation fix, ensuring 100% audio duration preservation on any speech length, accurate playback duration metrics, and customizable preview text in the GUI settings modal.
+**Highlights:**
+- Refactored Beatrice 2 pitch shifting to synchronous 1:1 timeline advancement with intra-window granular resampling and linear interpolation, eliminating premature audio cutoff at ~12 seconds.
+- Ensured 100% preservation of duration and audio signal across speech of any length, verified up to 120s with zero duration drift.
+- Replaced synthetic execution latency with exact PCM WAV playback duration calculation (`GetWavDurationMs`) across `ModulateBase64` and WebSocket `tts_synthesize`.
+- Added custom preview text input (`#input-beatrice-test-text`) in the Beatrice 2 Settings modal with 8-language translations and increased context synthesis timeout to 120s.
+
+<!-- lang:pt -->
+**Resumo:** Correção de truncamento de áudio no modulador de voz Beatrice 2, garantindo preservação integral de 100% da duração da fala para áudios de qualquer extensão, cálculo exato de tempo de reprodução e suporte a texto customizado de teste no modal.
+**Destaques:**
+- Refatoração do algoritmo de pitch shift do Beatrice 2 para avanço síncrono 1:1 na linha do tempo com reamostragem granular intra-janela e interpolação linear, eliminando o encerramento prematuro observado aos ~12 segundos.
+- Garantia de preservação de 100% da duração e integridade do sinal para falas de qualquer duração, verificado em testes de até 120s com zero desvio.
+- Substituição da latência de execução de processo pelo cálculo exato de reprodução PCM WAV (`GetWavDurationMs`) em `ModulateBase64` e `tts_synthesize` via WebSocket.
+- Adição de campo de texto customizado de teste (`#input-beatrice-test-text`) no modal de configurações com suporte a 8 idiomas e aumento do timeout de síntese para 120s.
+
+### 📋 Changelog da Versão
+
+**Total:** 2 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.27-alpha (`51cf94d1`)
+
+#### 🐛 Correções
+- eliminate audio truncation and preserve exact duration on long audio (`61080c72`)
+
+
+---
+
+
 ## Release - v2.8.26-alpha
 ### 📣 Apresentação da Atualização
 
