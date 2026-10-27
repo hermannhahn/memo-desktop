@@ -3,6 +3,42 @@
 ---
 
 
+## Release - v2.8.26-alpha
+### 📣 Apresentação da Atualização
+
+<!-- lang:en -->
+**Summary:** Beatrice 2 Neural Voice Modulator and conversion engine integration, supporting causal real-time acoustic timbre conversion across all local TTS engines (Kokoro and Piper), dedicated model storage in %USERPROFILE%\.memo\voices\beatrice\, interactive GUI configuration with live audio preview, and full multi-language i18n support.
+**Highlights:**
+- Integrated Beatrice 2 real-time causal Voice Conversion (VC) engine based on StreamVC principles (ArXiv 2401.03078) with pitch (-12 to +12 semitones) and formant (-1.5 to +1.5) control.
+- Enabled acoustic cascade post-processing across all available local voice synthesis options (Kokoro 24kHz and Piper 16/22.05kHz) as well as arbitrary WebSocket audio buffers.
+- Configured dedicated local model repository at %USERPROFILE%\.memo\voices\beatrice\ with support for built-in profiles (Tsukuyomichan, JVS Corpus, Tokinashigure, OLUNE) and custom .zip packages.
+- Added Services tab card, interactive settings modal with dynamic sliders, Explorer folder launcher, and live voice audition/test preview player.
+- Sourced and synchronized complete 8-language translations across frontend UI dictionaries.
+
+<!-- lang:pt -->
+**Resumo:** Integração do motor de conversão de voz neural e modulador acústico Beatrice 2, com suporte à transformação de timbre em tempo real sobre todos os motores TTS locais (Kokoro e Piper), armazenamento dedicado em %USERPROFILE%\.memo\voices\beatrice\, modal interativo de configurações com teste de áudio ao vivo e internacionalização em 8 idiomas.
+**Destaques:**
+- Integração do motor causal de Voice Conversion (VC) Beatrice 2 baseado nos princípios do StreamVC (ArXiv 2401.03078) com ajuste fino de tom (-12 a +12 semitons) e formantes (-1.5 a +1.5).
+- Ativação do pós-processamento acústico em cascata sobre todas as opções de síntese locais (Kokoro 24kHz e Piper 16/22.05kHz), além de buffers diretos via WebSocket.
+- Criação e gestão do repositório local de modelos em %USERPROFILE%\.memo\voices\beatrice\ com suporte a perfis integrados (Tsukuyomichan, JVS Corpus, Tokinashigure, OLUNE) e pacotes customizados (.zip).
+- Adição de card na aba Services, modal de configurações com sliders reativos, botão para abrir a pasta no Explorer e player de teste de áudio ao vivo.
+- Internacionalização completa sincronizada nos dicionários do frontend nos 8 idiomas do sistema.
+
+### 📋 Changelog da Versão
+
+**Total:** 3 alteração(ões) acumulada(s) desde a última release.
+
+#### ✨ Novidades
+- updates for release v2.8.26-alpha (`9ec786f5`)
+- integrate Beatrice 2 neural voice conversion and acoustic modulator (`ebd12251`)
+
+#### 📚 Documentação
+- sync D5 Voice Generation flowchart and diagrams viewer (`a02344bd`)
+
+
+---
+
+
 ## Release - v2.8.25-alpha
 ### 📣 Apresentação da Atualização
 
